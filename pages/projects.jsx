@@ -1,62 +1,69 @@
 import Page from "../components/page/page";
 import PageVariableView from "../components/page/pageVariableView";
-import Card from "../components/project/card";
 import Link from "../components/link/link";
 import LinkHeader from "../components/link/linkHeader";
 import LinkSection from "../components/link/linkSection";
+import LinkProject from "../components/link/linkProject";
 
 const Projects = () => {
   return (
     <Page header="Projekty" id="projects">
       <PageVariableView>
-        <Card
-          title="Portfolio"
-          description="Strona zawierająca informacje o mnie, moich projektach itp. (Włąśnie ja przeglądasz)"
-          lib="Next, React, Emotion"
-          lang="Html, Scss, Javascript"
+        <LinkProject
           href="https://github.com/MateuszPerczak/portfolio"
+          target="_blank"
+          header="Portfolio"
+          description="Strona zawierająca informacje o mnie, moich projektach itp. (Włąśnie ja przeglądasz)"
+          libs="Next, React, Emotion"
+          lang="Html, Scss, Javascript"
         />
-        <Card
-          title="PySpec"
+        <LinkProject
+          href="https://github.com/MateuszPerczak/PySpec"
+          target="_blank"
+          header="PySpec"
           description="Aplikacja dla systemów Microsoft Windows, która identyfikuje procesor, pamięć RAM, chipset płyty głównej (oraz inne właściwości sprzętu komputerowego) zainstalowane w komputerze."
-          lib="Tkinter, WMI, GPUtil, DarkDetect, ..."
+          libs="Tkinter, WMI, GPUtil, DarkDetect, ..."
           lang="Python"
-          href="https://github.com/losek1/PySpec"
         />
-        <Card
-          title="Cypher"
+        <LinkProject
+          href="https://github.com/MateuszPerczak/Cypher"
+          target="_blank"
+          header="Cypher"
           description="Aplikacja dla systemów Microsoft Windows, pozwalająca w łatwy sposób zaszyfrować / odszyfrować wybrane pliki."
-          lib="Tkinter, Cryptography, Base64, ZipFile, DarkDetect, ..."
+          libs="Tkinter, Cryptography, Base64, ZipFile, DarkDetect, ..."
           lang="Python"
-          href="https://github.com/losek1/Cypher"
         />
-        <Card
-          title="PyHash"
+        <LinkProject
+          href="https://github.com/MateuszPerczak/PyHash"
+          target="_blank"
+          header="PyHash"
           description="Aplikacja dla systemów Microsoft Windows, pozwalająca w łatwy sposób wygenerować hash (sha1, sha256, md5) dla wybranych plików."
-          lib="Tkinter, Hashlib, Pyperclip, DarkDetect, ..."
+          libs="Tkinter, Hashlib, Pyperclip, DarkDetect, ..."
           lang="Python"
-          href="https://github.com/losek1/PyHash"
         />
-        <Card
-          title="Sounder5"
+        <LinkProject
+          href="https://github.com/MateuszPerczak/Sounder5"
+          target="_blank"
+          header="Sounder5"
           description="Zaawansowany odtwarzacz muzyczny dla systemów Microsoft Windows, umożliwiający odtwarzanie utworów dzwiękowych w popularnych formatach (mp3, ogg, wav, flac)."
-          lib="Tkinter, Pygame, Win10toast, Win32file, Winreg, Ctypes, Difflib, Shutil, Hashlib, Psutil, DarkDetect, ..."
+          libs="Tkinter, Pygame, Win10toast, Win32file, Winreg, Ctypes, Difflib, Shutil, Hashlib, Psutil, DarkDetect, ..."
           lang="Python"
-          href="https://github.com/losek1/Sounder5"
         />
-        <Card
-          title="SamPy"
+        <LinkProject
+          href="https://github.com/MateuszPerczak/SamPy"
+          target="_blank"
+          header="PyHash"
           description="Aplikacja dla systemów Microsoft Windows, pozwalająca w łatwy sposób znaleść zduplikowane pliki w wybranych folderach."
-          lib="Tkinter, Hashlib, Webbrowser, ..."
+          libs="Tkinter, Hashlib, Webbrowser, ..."
           lang="Python"
-          href="https://github.com/losek1/SamPy"
         />
-        <Card
-          title="WASM-Compressor"
+        <LinkProject
+          href="https://github.com/MateuszPerczak/WASM-Compressor"
+          target="_blank"
+          header="WASM-Compressor"
           description="Przestarzała aplikacja dla systemów Microsoft Windows, pozwalająca skompresować pliki webassembly (wasm)."
-          lib="Tkinter, brotli"
+          libs="Tkinter, brotli, ..."
           lang="Python"
-          href="https://github.com/losek1/WASM-Compressor"
         />
       </PageVariableView>
       <Link href="https://github.com/MateuszPerczak?tab=repositories">

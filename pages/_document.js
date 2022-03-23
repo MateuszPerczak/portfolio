@@ -14,7 +14,15 @@ const Document = () => {
           href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap"
           rel="stylesheet"
         />
-        <meta description="Portfolio" author="Mateusz Perczak" />
+
+        <link
+          rel="preload"
+          href="/fonts/Segoe Fluent Icons/Segoe Fluent Icons.ttf"
+          as="font"
+          crossOrigin=""
+        />
+        <meta name="description" content="Portfolio" />
+        <meta name="author" content="Mateusz Perczak" />
       </Head>
       <body>
         <Main />

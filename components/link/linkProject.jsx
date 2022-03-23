@@ -5,23 +5,23 @@ const LinkWrapper = styled.a`
   flex: 1;
   flex-grow: 1;
   flex-direction: column;
-  justify-content: flex-start;
-  border-radius: 4px;
-  transition: border 200ms;
   text-decoration: none;
+  border-radius: 4px;
+  transition: border 150ms;
   min-width: 350px;
   @media (max-width: 460px) {
     min-width: fit-content;
   }
+
   border: 1px solid
     ${({ theme: { border } }) => {
       return border;
     }};
-  color: ${({ theme: { color } }) => {
-    return color;
-  }};
   background: ${({ theme: { background, backgroundDark } }) => {
     return `linear-gradient(-45deg, ${background}, ${backgroundDark})`;
+  }};
+  color: ${({ theme: { color } }) => {
+    return color;
   }};
   &:hover {
     border: 1px solid
@@ -31,9 +31,24 @@ const LinkWrapper = styled.a`
   }
 `;
 
-const LibrariesWrapper = styled.div`
+const HeaderWrapper = styled.div`
+  padding: 10px;
+  flex-grow: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+`;
+
+const DescriptionWrapper = styled.div`
+  font-size: 0.9rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+`;
+
+const LangWrapper = styled.div`
   font-size: 0.8rem;
   padding: 5px 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
   border-top: 1px solid
     ${({ theme: { border } }) => {
       return border;
@@ -43,31 +58,19 @@ const LibrariesWrapper = styled.div`
   }};
 `;
 
-const InfoWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  justify-content: flex-start;
-  padding: 10px;
-`;
-
-const TextWrapper = styled.div`
-  font-size: 0.9rem;
-`;
-
-const ProjectCard = ({ title, description, lib, lang, href }) => {
+const LinkProject = ({ href, header, description, lang, libs, ...rest }) => {
   return (
-    <LinkWrapper href={href} rel="noreferrer noopener" target="_blank">
-      <InfoWrapper>
-        <h1>{title}</h1>
-        <TextWrapper>{description}</TextWrapper>
-      </InfoWrapper>
-      <LibrariesWrapper>
+    <LinkWrapper href={href} {...rest}>
+      <HeaderWrapper>
+        <h1>{header}</h1>
+        <DescriptionWrapper>{description}</DescriptionWrapper>
+      </HeaderWrapper>
+      <LangWrapper>
         <p>Język: {lang}</p>
-        <p>Biblioteki i frameworki: {lib}</p>
-      </LibrariesWrapper>
+        <p>Biblioteki i frameworki: {libs}</p>
+      </LangWrapper>
     </LinkWrapper>
   );
 };
 
-export default ProjectCard;
+export default LinkProject;

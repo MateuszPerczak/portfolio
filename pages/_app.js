@@ -22,10 +22,12 @@ const App = ({ Component, pageProps }) => {
             font-family: "Catamaran", sans-serif;
             background: ${theme.background};
             color: ${theme.color};
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
           }
           @font-face {
-          font-family: "Segoe Fluent Icons";
-          src: url("../public/fonts/Segoe Fluent Icons.ttf") format("truetype");
+            font-family: "Segoe Fluent Icons";
+            src: url('/fonts/Segoe Fluent Icons/Segoe Fluent Icons.ttf') format('truetype');
           }
           ::selection {
             color: ${theme.color};
