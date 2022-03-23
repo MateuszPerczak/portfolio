@@ -23,6 +23,10 @@ const App = ({ Component, pageProps }) => {
             background: ${theme.background};
             color: ${theme.color};
           }
+          @font-face {
+          font-family: "Segoe Fluent Icons";
+          src: url("../public/fonts/Segoe Fluent Icons.ttf") format("truetype");
+          }
           ::selection {
             color: ${theme.color};
             background: ${theme.backgroundDark};

@@ -6,13 +6,15 @@ const DivWrapper = styled.div`
   padding: 5px;
 `;
 
-const CardLang = ({ lang, header }) => {
+const CardWork = ({ from, to, description }) => {
   return (
     <DivWrapper>
-      <h4>{header}</h4>
-      {lang}
+      <h4>{description}</h4>
+      <span>
+        {from} - {to}
+      </span>
     </DivWrapper>
   );
 };
 
-export default CardLang;
+export default CardWork;

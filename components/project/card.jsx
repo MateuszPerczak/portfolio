@@ -3,17 +3,15 @@ import styled from "@emotion/styled";
 const LinkWrapper = styled.a`
   display: flex;
   flex: 1;
+  flex-grow: 1;
   flex-direction: column;
   justify-content: flex-start;
   border-radius: 4px;
   transition: border 200ms;
   text-decoration: none;
-  min-width: 95px;
-  @media (min-width: 350px) {
-    min-width: 350px;
-  }
-  @media (min-width: 1000px) {
-    min-width: 400px;
+  min-width: 350px;
+  @media (max-width: 460px) {
+    min-width: fit-content;
   }
   border: 1px solid
     ${({ theme: { border } }) => {
@@ -59,7 +57,7 @@ const TextWrapper = styled.div`
 
 const ProjectCard = ({ title, description, lib, lang, href }) => {
   return (
-    <LinkWrapper href={href}>
+    <LinkWrapper href={href} rel="noreferrer noopener" target="_blank">
       <InfoWrapper>
         <h1>{title}</h1>
         <TextWrapper>{description}</TextWrapper>

@@ -12,7 +12,10 @@ const Skills = () => {
         <CardLang lang="HTML5, CSS, SCSS, Markdown" />
       </Card>
       <Card header="Kontrola wersji" icon="&#xF22C;">
-        <CardLang lang="Git, Github" />
+        <CardLang lang="Git, Github, Github Actions" />
+      </Card>
+      <Card header="Środowiska wykonywania i implementacje" icon="&#xE621;">
+        <CardLang lang="NodeJS, PyPy" />
       </Card>
       <Card header="Frameworki, biblioteki, itp." icon="&#xEC7A;">
         <CardLang
@@ -23,6 +26,7 @@ const Skills = () => {
           header="Python"
           lang="Tkinter, Pygame, os, json, logging, traceback, PIL, io, random, requests, threading, mutagen, win10toast, psutil, zipfile, hashlib, difflib, ctypes, darkdetect, wmi, GPUtil, platform, dataclasses, cryptography, pyperclip, webbrowser, win32api"
         />
+        <CardLang header="C#" lang="microsoft-ui-xaml" />
       </Card>
       <Card header="Języki" icon="&#xF2B7;">
         <CardLang lang="Polski - Native" level="Native" />

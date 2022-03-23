@@ -1,19 +1,20 @@
 import styled from "@emotion/styled";
 
 const LinkWrapper = styled.a`
-  padding: 10px;
-  border-radius: 4px;
-  transition: border 200ms;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
+  border-radius: 4px;
+  transition: border 150ms;
   border: 1px solid
     ${({ theme: { border } }) => {
       return border;
     }};
-  color: ${({ theme: { color } }) => {
-    return color;
-  }};
   background: ${({ theme: { background, backgroundDark } }) => {
     return `linear-gradient(-45deg, ${background}, ${backgroundDark})`;
+  }};
+  color: ${({ theme: { color } }) => {
+    return color;
   }};
   &:hover {
     border: 1px solid
@@ -23,13 +24,12 @@ const LinkWrapper = styled.a`
   }
 `;
 
-const ProjectLink = ({ header, description, href }) => {
+const Link = ({ href, rel = "noopener noreferrer", children, ...rest }) => {
   return (
-    <LinkWrapper href={href}>
-      <h1>{header}</h1>
-      <span>{description}</span>
+    <LinkWrapper href={href} rel={rel} {...rest}>
+      {children}
     </LinkWrapper>
   );
 };
 
-export default ProjectLink;
+export default Link;
