@@ -10,7 +10,7 @@ const Projects = () => {
     <Page header="Projekty" id="projects">
       <PageVariableView>
         <LinkProject
-          href="https://github.com/MateuszPerczak/portfolio"
+          href="https://github.com/MateuszPerczak/mateuszperczak.github.io"
           target="_blank"
           header="Portfolio"
           description="Strona zawierająca informacje o mnie, moich projektach itp. (Włąśnie ja przeglądasz)"
