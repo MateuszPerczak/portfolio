@@ -82,7 +82,7 @@ const PageNotFound = () => {
   return (
     <StyleWrapper>
       <Head>
-        <title>Page not found!</title>
+        <title>Page not found</title>
       </Head>
       <Section>
         <FloatingCard>

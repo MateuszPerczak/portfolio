@@ -1,21 +1,32 @@
 import Page from "../components/page/page";
-import Info from "../components/info/info";
-import InfoImg from "../components/info/infoImg";
-import InfoText from "../components/info/infoText";
+import Card from "../components/card/card";
+import CardImg from "../components/card/cardImg";
+import CardText from "../components/card/cardText";
+import CardList from "../components/card/cardList";
 
 const AboutMe = () => {
   return (
     <Page header="O Mnie" id="about-me">
-      <Info>
-        <InfoImg
+      <Card header="Kim jestem?" icon="&#xE136;">
+        <CardImg
           src="https://avatars.githubusercontent.com/u/40388335?v=4"
           alt="avatar"
         />
-        <InfoText
-          header="Kim jestem?"
+        <CardText
+          header="Well ..."
           description="Hejka, nazywam się Mateusz, mam 20 lat i uwielbiam programować. Moja przygoda z programowaniem zaczęła się w roku 2015, gdy zaczynałem pisać pierwsze skrypty w cmd. W 2018 r. rozpoczołem przygodę z Python'em głównie pisząc aplikacje desktopowe. Aktualnie tworzę strony oraz aplikacje webowe z wykorzystaniem popularnych frameworków."
         />
-      </Info>
+      </Card>
+      <Card header="W planach" icon="&#xE1DC;">
+        <CardList header="Portfolio">
+          <li>Dodanie framework'u i18next</li>
+          <li>Dodanie Markdown</li>
+        </CardList>
+        <CardList header="Aplikacje">
+          <li>Aplikacja do zarządzania save'ami z gier</li>
+          <li>Przepisanie odtwarzacza muzycznego do web app</li>
+        </CardList>
+      </Card>
     </Page>
   );
 };

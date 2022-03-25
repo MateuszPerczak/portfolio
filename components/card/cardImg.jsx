@@ -18,7 +18,7 @@ const ImgWrapper = styled.img`
     }};
 `;
 
-const InfoImg = ({ src, alt }) => {
+const CardImg = ({ src, alt }) => {
   return (
     <DivWrapper>
       <ImgWrapper src={src} alt={alt}></ImgWrapper>
@@ -26,4 +26,4 @@ const InfoImg = ({ src, alt }) => {
   );
 };
 
-export default InfoImg;
+export default CardImg;

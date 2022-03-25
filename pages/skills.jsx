@@ -1,36 +1,36 @@
 import Page from "../components/page/page";
 import Card from "../components/card/card";
-import CardLang from "../components/card/cardLang";
+import CardText from "../components/card/cardText";
 
 const Skills = () => {
   return (
     <Page header="Umiejętności" id="skills">
       <Card header="Języki programowania" icon="&#xE943;">
-        <CardLang lang="JavaScript, Python, C#" />
+        <CardText description="JavaScript, Python, C#" />
       </Card>
       <Card header="Języki opisowe" icon="&#xE943;">
-        <CardLang lang="HTML5, CSS, SCSS, Markdown" />
+        <CardText description="HTML5, CSS, SCSS, Markdown" />
       </Card>
       <Card header="Kontrola wersji" icon="&#xF22C;">
-        <CardLang lang="Git, Github, Github Actions" />
+        <CardText description="Git, Github, Github Actions" />
       </Card>
       <Card header="Środowiska wykonywania i implementacje" icon="&#xE621;">
-        <CardLang lang="NodeJS, PyPy" />
+        <CardText description="NodeJS, PyPy" />
       </Card>
       <Card header="Frameworki, biblioteki, itp." icon="&#xEC7A;">
-        <CardLang
+        <CardText
           header="JavaScript"
-          lang="React, Next, Astro, Webpack, Emotion, i18next"
+          description="React, Next, Astro, Webpack, Emotion, i18next"
         />
-        <CardLang
+        <CardText
           header="Python"
-          lang="Tkinter, Pygame, os, json, logging, traceback, PIL, io, random, requests, threading, mutagen, win10toast, psutil, zipfile, hashlib, difflib, ctypes, darkdetect, wmi, GPUtil, platform, dataclasses, cryptography, pyperclip, webbrowser, win32api"
+          description="Tkinter, Pygame, os, json, logging, traceback, PIL, io, random, requests, threading, mutagen, win10toast, psutil, zipfile, hashlib, difflib, ctypes, darkdetect, wmi, GPUtil, platform, dataclasses, cryptography, pyperclip, webbrowser, win32api"
         />
-        <CardLang header="C#" lang="microsoft-ui-xaml" />
+        <CardText header="C#" description="microsoft-ui-xaml" />
       </Card>
       <Card header="Języki" icon="&#xF2B7;">
-        <CardLang lang="Polski - Native" level="Native" />
-        <CardLang lang="Angielski - C1" level="C1" />
+        <CardText description="Polski - Native" level="Native" />
+        <CardText description="Angielski - C1" level="C1" />
       </Card>
     </Page>
   );

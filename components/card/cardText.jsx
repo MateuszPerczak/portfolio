@@ -6,13 +6,13 @@ const DivWrapper = styled.div`
   padding: 5px;
 `;
 
-const CardLang = ({ lang, header }) => {
+const CardText = ({ header, description }) => {
   return (
     <DivWrapper>
       <h4>{header}</h4>
-      {lang}
+      {description}
     </DivWrapper>
   );
 };
 
-export default CardLang;
+export default CardText;

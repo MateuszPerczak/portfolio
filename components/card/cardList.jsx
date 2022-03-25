@@ -1,18 +1,21 @@
 import styled from "@emotion/styled";
 
+const ListWrapper = styled.ul`
+  list-style: circle;
+`;
+
 const DivWrapper = styled.div`
   font-size: 0.9rem;
-  border-radius: 5px;
   padding: 5px;
 `;
 
-const InfoText = ({ header, description }) => {
+const CardList = ({ header, children }) => {
   return (
     <DivWrapper>
       <h4>{header}</h4>
-      {description}
+      <ListWrapper>{children}</ListWrapper>
     </DivWrapper>
   );
 };
 
-export default InfoText;
+export default CardList;

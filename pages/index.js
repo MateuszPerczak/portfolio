@@ -12,7 +12,7 @@ const Index = () => {
   return (
     <>
       <Head>
-        <title>Portfolio</title>
+        <title>Mateusz Perczak - Portfolio</title>
       </Head>
       <Nav />
       <Content>
