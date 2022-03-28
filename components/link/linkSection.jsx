@@ -15,10 +15,15 @@ const TextWrapper = styled.div`
   overflow: hidden;
 `;
 
+const HeaderWrapper = styled.div`
+  font-size: 0.9rem;
+  font-weight: bold;
+`;
+
 const LinkSection = ({ description, header, alllowSection = false }) => {
   return (
     <DivWrapper alllowSection={alllowSection}>
-      <h4>{header}</h4>
+      <HeaderWrapper>{header}</HeaderWrapper>
       <TextWrapper>{description}</TextWrapper>
     </DivWrapper>
   );
