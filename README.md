@@ -7,7 +7,7 @@ This portfolio was created using:
 - Emotion
 
 
-<p align="center"><img src="img/lighthouse.jpg" alt="Sounder" height="120px"></p>
+<p align="left"><img src="img/lighthouse.jpg" alt="Sounder" height="120px"></p>
 
 ## Licenses
 
