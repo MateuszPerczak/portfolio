@@ -6,6 +6,9 @@ This portfolio was created using:
 - React
 - Emotion
 
+
+<p align="center"><img src="img/lighthouse.jpg" alt="Sounder" height="120px"></p>
+
 ## Licenses
 
 [Microsoft Fluent Icons](https://github.com/microsoft/fluentui)
