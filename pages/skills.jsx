@@ -29,8 +29,8 @@ const Skills = () => {
         <CardText header="C#" description="microsoft-ui-xaml" />
       </Card>
       <Card header="Języki" icon="&#xF2B7;">
-        <CardText description="Polski - Native" level="Native" />
-        <CardText description="Angielski - C1" level="C1" />
+        <CardText description="Polski - Native" />
+        <CardText description="Angielski - B2+" />
       </Card>
     </Page>
   );

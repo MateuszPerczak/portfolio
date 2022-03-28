@@ -13,7 +13,7 @@ const Projects = () => {
           href="https://github.com/MateuszPerczak/mateuszperczak.github.io"
           target="_blank"
           header="Portfolio"
-          description="Strona zawierająca informacje o mnie, moich projektach itp. (Włąśnie ja przeglądasz)"
+          description="Strona zawierająca informacje o mnie, moich projektach itp. (Właśnie ją przeglądasz)"
           libs="Next, React, Emotion"
           lang="Html, Scss, Javascript"
         />
@@ -45,7 +45,7 @@ const Projects = () => {
           href="https://github.com/MateuszPerczak/Sounder5"
           target="_blank"
           header="Sounder5"
-          description="Zaawansowany odtwarzacz muzyczny dla systemów Microsoft Windows, umożliwiający odtwarzanie utworów dzwiękowych w popularnych formatach (mp3, ogg, wav, flac)."
+          description="Zaawansowany odtwarzacz muzyczny dla systemów Microsoft Windows, umożliwiający odtwarzanie utworów dźwiękowych w popularnych formatach (mp3, ogg, wav, flac)."
           libs="Tkinter, Pygame, Win10toast, Win32file, Winreg, Ctypes, Difflib, Shutil, Hashlib, Psutil, DarkDetect, ..."
           lang="Python"
         />
@@ -53,7 +53,7 @@ const Projects = () => {
           href="https://github.com/MateuszPerczak/SamPy"
           target="_blank"
           header="PyHash"
-          description="Aplikacja dla systemów Microsoft Windows, pozwalająca w łatwy sposób znaleść zduplikowane pliki w wybranych folderach."
+          description="Aplikacja dla systemów Microsoft Windows, pozwalająca w łatwy sposób znaleźć z duplikowane pliki w wybranych folderach."
           libs="Tkinter, Hashlib, Webbrowser, ..."
           lang="Python"
         />
@@ -61,7 +61,7 @@ const Projects = () => {
           href="https://github.com/MateuszPerczak/WASM-Compressor"
           target="_blank"
           header="WASM-Compressor"
-          description="Przestarzała aplikacja dla systemów Microsoft Windows, pozwalająca skompresować pliki webassembly (wasm)."
+          description="Przestarzała aplikacja dla systemów Microsoft Windows, pozwalająca skompresować pliki WebAssembly (Wasm)."
           libs="Tkinter, brotli, ..."
           lang="Python"
         />

@@ -23,6 +23,10 @@ const Document = () => {
         />
         <meta name="description" content="Portfolio" />
         <meta name="author" content="Mateusz Perczak" />
+        <link
+          rel="icon"
+          href="https://avatars.githubusercontent.com/u/40388335?v=4"
+        />
       </Head>
       <body>
         <Main />

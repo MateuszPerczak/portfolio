@@ -14,16 +14,16 @@ const AboutMe = () => {
         />
         <CardText
           header="Well ..."
-          description="Hejka, nazywam się Mateusz, mam 20 lat i uwielbiam programować. Moja przygoda z programowaniem zaczęła się w roku 2015, gdy zaczynałem pisać pierwsze skrypty w cmd. W 2018 r. rozpoczołem przygodę z Python'em głównie pisząc aplikacje desktopowe. Aktualnie tworzę strony oraz aplikacje webowe z wykorzystaniem popularnych frameworków."
+          description="Hejka, nazywam się Mateusz, mam 20 lat i uwielbiam programować. Moja przygoda z programowaniem zaczęła się w roku 2015, gdy zaczynałem pisać pierwsze skrypty w cmd. W 2018 r. rozpocząłem przygodę z Python'em, głównie pisząc aplikacje desktopowe. Aktualnie tworzę strony oraz aplikacje webowe z wykorzystaniem popularnych frameworków."
         />
       </Card>
       <Card header="W planach" icon="&#xE1DC;">
         <CardList header="Portfolio">
-          <li>Dodanie framework'u i18next</li>
+          <li>Dodanie framework&apos;u i18next</li>
           <li>Dodanie Markdown</li>
         </CardList>
         <CardList header="Aplikacje">
-          <li>Aplikacja do zarządzania save'ami z gier</li>
+          <li>Aplikacja do zarządzania save&apos;ami z gier</li>
           <li>Przepisanie odtwarzacza muzycznego do web app</li>
         </CardList>
       </Card>

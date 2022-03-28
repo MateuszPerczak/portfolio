@@ -5,7 +5,7 @@ import CardWork from "../components/card/cardWork";
 const Experience = () => {
   return (
     <Page header="Doświadczenie" id="experience">
-      <Card header="Pracownik buirowy" icon="&#xF427;">
+      <Card header="Pracownik biurowy" icon="&#xF427;">
         <CardWork
           description="Staż w firmie DIGGER Izabela Grębowiec"
           from="05.2021 r."
