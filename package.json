@@ -15,7 +15,7 @@
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
     "@mdx-js/loader": "^2.1.0",
-    "@next/mdx": "^12.1.0",
+    "@next/mdx": "^12.1.2",
     "fs": "^0.0.1-security",
     "lodash": "^4.17.21",
     "next": "12.1.0",
