@@ -14,19 +14,18 @@ const Document = () => {
           href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap"
           rel="stylesheet"
         />
-
         <link
           rel="preload"
           href="/fonts/Segoe Fluent Icons/Segoe Fluent Icons.ttf"
           as="font"
-          crossOrigin=""
+          crossOrigin="true"
         />
-        <meta name="description" content="Portfolio" />
-        <meta name="author" content="Mateusz Perczak" />
         <link
           rel="icon"
           href="https://avatars.githubusercontent.com/u/40388335?v=4"
         />
+        <meta name="description" content="Portfolio" />
+        <meta name="author" content="Mateusz Perczak" />
       </Head>
       <body>
         <Main />

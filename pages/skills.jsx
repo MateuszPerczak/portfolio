@@ -1,26 +1,30 @@
+import { useTranslation } from "next-i18next";
 import Page from "../components/page/page";
 import Card from "../components/card/card";
 import CardText from "../components/card/cardText";
 
 const Skills = () => {
+  // translation
+  const { t } = useTranslation("skills");
+
   return (
-    <Page header="Umiejętności" id="skills">
-      <Card header="Języki programowania" icon="&#xE943;">
+    <Page header={t("skills")} id="skills">
+      <Card header={t("programmingLanguages")} icon="&#xE943;">
         <CardText description="JavaScript, Python, C#" />
       </Card>
-      <Card header="Języki opisowe" icon="&#xE943;">
+      <Card header={t("descriptiveLanguages")} icon="&#xE943;">
         <CardText description="HTML5, CSS, SCSS, Markdown" />
       </Card>
-      <Card header="Kontrola wersji" icon="&#xF22C;">
+      <Card header={t("versionControl")} icon="&#xF22C;">
         <CardText description="Git, Github, Github Actions" />
       </Card>
-      <Card header="Środowiska wykonywania i implementacje" icon="&#xE621;">
+      <Card header={t("runtimes&implementations")} icon="&#xE621;">
         <CardText description="NodeJS, PyPy" />
       </Card>
-      <Card header="Frameworki, biblioteki, itp." icon="&#xEC7A;">
+      <Card header={t("libraries&frameworks")} icon="&#xEC7A;">
         <CardText
           header="JavaScript"
-          description="React, Next, Astro, Webpack, Emotion, i18next"
+          description="React, Next, Astro, Webpack, Emotion, i18next, Lodash"
         />
         <CardText
           header="Python"
@@ -28,9 +32,9 @@ const Skills = () => {
         />
         <CardText header="C#" description="microsoft-ui-xaml" />
       </Card>
-      <Card header="Języki" icon="&#xF2B7;">
-        <CardText description="Polski - Native" />
-        <CardText description="Angielski - B2+" />
+      <Card header={t("languages")} icon="&#xF2B7;">
+        <CardText description={`${t("polish")} - Native`} />
+        <CardText description={`${t("english")} - B2+`} />
       </Card>
     </Page>
   );

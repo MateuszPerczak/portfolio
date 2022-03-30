@@ -2,6 +2,7 @@ import { Global, css, ThemeProvider } from "@emotion/react";
 import useColorTheme from "../hooks/useColorTheme";
 import consoleInit from "../scripts/consoleInit";
 import { useEffect } from "react";
+import { appWithTranslation } from "next-i18next";
 
 const App = ({ Component, pageProps }) => {
   const { theme } = useColorTheme();
@@ -58,4 +59,4 @@ const App = ({ Component, pageProps }) => {
   );
 };
 
-export default App;
+export default appWithTranslation(App);

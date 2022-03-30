@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import NavItem from "./navItem";
 import NavHamburger from "./navHamburger";
 import NavSeperator from "./navSeperator";
+import { useTranslation } from "next-i18next";
 
 const NavWrapper = styled.nav`
   display: flex;
@@ -34,6 +35,9 @@ const NavWrapper = styled.nav`
 `;
 
 const Nav = () => {
+  // translation
+  const { t } = useTranslation("common");
+
   const [isNavOpen, setOpen] = useState(false);
 
   const toggleNav = () => {
@@ -48,35 +52,35 @@ const Nav = () => {
       <NavHamburger icon="&#xE8E4;" onClick={toggleNav} />
       <NavSeperator />
       <NavItem
-        text="O mnie"
+        text={t("aboutMe")}
         icon="&#xE13D;"
         isNavOpen={isNavOpen}
         href="#about-me"
         onClick={hideNav}
       />
       <NavItem
-        text="Umiejętności"
+        text={t("skills")}
         icon="&#xE7BE;"
         isNavOpen={isNavOpen}
         href="#skills"
         onClick={hideNav}
       />
       <NavItem
-        text="Doświadczenie"
+        text={t("experience")}
         icon="&#xE821;"
         isNavOpen={isNavOpen}
         href="#experience"
         onClick={hideNav}
       />
       <NavItem
-        text="Projekty"
+        text={t("projects")}
         icon="&#xE74C;"
         isNavOpen={isNavOpen}
         href="#projects"
         onClick={hideNav}
       />
       <NavItem
-        text="Kontakt"
+        text={t("contact")}
         icon="&#xE715;"
         isNavOpen={isNavOpen}
         href="#contact"
