@@ -13,7 +13,7 @@ const DivWrapper = styled.div`
   background: ${({ theme: { background } }) => {
     return background;
   }};
-  animation: ping 800ms ease-out both;
+  animation: ping 0.6s ease-out both;
   @keyframes ping {
     0% {
       transform: scale(1);

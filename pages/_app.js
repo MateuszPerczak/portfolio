@@ -2,7 +2,6 @@ import { Global, css, ThemeProvider } from "@emotion/react";
 import useColorTheme from "../hooks/useColorTheme";
 import consoleInit from "../scripts/consoleInit";
 import { useEffect } from "react";
-import { appWithTranslation } from "next-i18next";
 
 const App = ({ Component, pageProps }) => {
   const { theme } = useColorTheme();
@@ -25,6 +24,7 @@ const App = ({ Component, pageProps }) => {
             color: ${theme.color};
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
+            transition: background 200ms, color 200ms;
           }
           @font-face {
             font-family: "Segoe Fluent Icons";
@@ -59,4 +59,4 @@ const App = ({ Component, pageProps }) => {
   );
 };
 
-export default appWithTranslation(App);
+export default App;

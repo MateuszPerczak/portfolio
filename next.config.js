@@ -1,5 +1,3 @@
-const { i18n } = require("./next-i18next.config");
-
 const withMDX = require("@next/mdx")({
   extension: /\.mdx?$/,
   options: {
@@ -18,7 +16,6 @@ const nextConfig = {
     process.env.NODE_ENV === "production"
       ? "https://mateuszperczak.github.io/"
       : "",
-  i18n,
 };
 
 module.exports = nextConfig;

@@ -1,5 +1,4 @@
 import styled from "@emotion/styled";
-import { useTranslation } from "next-i18next";
 
 const LinkWrapper = styled.a`
   display: flex;
@@ -60,8 +59,6 @@ const LangWrapper = styled.div`
 `;
 
 const LinkProject = ({ href, header, description, lang, libs, ...rest }) => {
-  // translation
-  const { t } = useTranslation("project");
   return (
     <LinkWrapper href={href} {...rest}>
       <HeaderWrapper>
@@ -69,8 +66,8 @@ const LinkProject = ({ href, header, description, lang, libs, ...rest }) => {
         <DescriptionWrapper>{description}</DescriptionWrapper>
       </HeaderWrapper>
       <LangWrapper>
-        <p>{`${t("lang")} ${lang}`}</p>
-        <p>{`${t("libs")} ${libs}`}</p>
+        <p>Język: {lang}</p>
+        <p>Biblioteki i frameworki: {libs}</p>
       </LangWrapper>
     </LinkWrapper>
   );

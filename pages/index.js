@@ -1,4 +1,3 @@
-import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import PageLoading from "../components/page/pageLoading";
 import Nav from "../components/nav/nav";
 import Content from "../components/content/content";
@@ -29,21 +28,5 @@ const Index = () => {
     </>
   );
 };
-
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, [
-        "common",
-        "aboutMe",
-        "skills",
-        "experience",
-        "projects",
-        "contact",
-        "project",
-      ])),
-    },
-  };
-}
 
 export default Index;

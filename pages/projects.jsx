@@ -1,4 +1,3 @@
-import { useTranslation } from "next-i18next";
 import Page from "../components/page/page";
 import PageVariableView from "../components/page/pageVariableView";
 import Link from "../components/link/link";
@@ -7,17 +6,14 @@ import LinkSection from "../components/link/linkSection";
 import LinkProject from "../components/link/linkProject";
 
 const Projects = () => {
-  // translation
-  const { t } = useTranslation("projects");
-
   return (
-    <Page header={t("projects")} id="projects">
+    <Page header="Projekty" id="projects">
       <PageVariableView>
         <LinkProject
           href="https://github.com/MateuszPerczak/mateuszperczak.github.io"
           target="_blank"
           header="Portfolio"
-          description={t("portfolio")}
+          description="Strona zawierająca informacje o mnie, moich projektach itp. (Właśnie ją przeglądasz)"
           libs="Next, React, Emotion, Markdown, Lodash, i18next"
           lang="Html, Scss, Javascript"
         />
@@ -25,7 +21,7 @@ const Projects = () => {
           href="https://github.com/MateuszPerczak/PySpec"
           target="_blank"
           header="PySpec"
-          description={t("pySpec")}
+          description="Aplikacja dla systemów Microsoft Windows, która identyfikuje procesor, pamięć RAM, chipset płyty głównej (oraz inne właściwości sprzętu komputerowego) zainstalowane w komputerze."
           libs="Tkinter, WMI, GPUtil, DarkDetect, ..."
           lang="Python"
         />
@@ -33,7 +29,7 @@ const Projects = () => {
           href="https://github.com/MateuszPerczak/Cypher"
           target="_blank"
           header="Cypher"
-          description={t("cypher")}
+          description="Aplikacja dla systemów Microsoft Windows, pozwalająca w łatwy sposób zaszyfrować / odszyfrować wybrane pliki."
           libs="Tkinter, Cryptography, Base64, ZipFile, DarkDetect, ..."
           lang="Python"
         />
@@ -41,7 +37,7 @@ const Projects = () => {
           href="https://github.com/MateuszPerczak/PyHash"
           target="_blank"
           header="PyHash"
-          description={t("pyHash")}
+          description="Aplikacja dla systemów Microsoft Windows, pozwalająca w łatwy sposób wygenerować hash (sha1, sha256, md5) dla wybranych plików."
           libs="Tkinter, Hashlib, Pyperclip, DarkDetect, ..."
           lang="Python"
         />
@@ -49,7 +45,7 @@ const Projects = () => {
           href="https://github.com/MateuszPerczak/Sounder5"
           target="_blank"
           header="Sounder5"
-          description={t("sounder5")}
+          description="Zaawansowany odtwarzacz muzyczny dla systemów Microsoft Windows, umożliwiający odtwarzanie utworów dźwiękowych w popularnych formatach (mp3, ogg, wav, flac)."
           libs="Tkinter, Pygame, Win10toast, Win32file, Winreg, Ctypes, Difflib, Shutil, Hashlib, Psutil, DarkDetect, ..."
           lang="Python"
         />
@@ -57,7 +53,7 @@ const Projects = () => {
           href="https://github.com/MateuszPerczak/SamPy"
           target="_blank"
           header="SamPy"
-          description={t("samPy")}
+          description="Aplikacja dla systemów Microsoft Windows, pozwalająca w łatwy sposób znaleźć z duplikowane pliki w wybranych folderach."
           libs="Tkinter, Hashlib, Webbrowser, ..."
           lang="Python"
         />
@@ -65,14 +61,14 @@ const Projects = () => {
           href="https://github.com/MateuszPerczak/WASM-Compressor"
           target="_blank"
           header="WASM-Compressor"
-          description={t("wasm")}
+          description="Przestarzała aplikacja dla systemów Microsoft Windows, pozwalająca skompresować pliki WebAssembly (Wasm)."
           libs="Tkinter, brotli, ..."
           lang="Python"
         />
       </PageVariableView>
       <Link href="https://github.com/MateuszPerczak?tab=repositories">
         <LinkHeader header="Github" icon="&#xE167;" />
-        <LinkSection description={t("githubLink")} />
+        <LinkSection description="Zobacz inne projekty na moim githubie!" />
       </Link>
     </Page>
   );
