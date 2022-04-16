@@ -24,7 +24,6 @@ const App = ({ Component, pageProps }) => {
             color: ${theme.color};
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
-            transition: background 200ms, color 200ms;
           }
           @font-face {
             font-family: "Segoe Fluent Icons";
