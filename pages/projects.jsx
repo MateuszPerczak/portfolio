@@ -18,6 +18,14 @@ const Projects = () => {
           lang="Html, Scss, Javascript"
         />
         <LinkProject
+          href="https://mateuszperczak.github.io/tictactoe/"
+          target="_blank"
+          header="TicTacToe"
+          description="Gra kółko i krzyżyk mojega autorstwa wykorzystująca bibliotekę React"
+          libs="React, Emotion, Lodash"
+          lang="Html, Scss, Javascript"
+        />
+        <LinkProject
           href="https://github.com/MateuszPerczak/PySpec"
           target="_blank"
           header="PySpec"
