@@ -50,6 +50,14 @@ const Projects = () => {
           lang="Python"
         />
         <LinkProject
+          href="https://github.com/MateuszPerczak/TkDeb"
+          target="_blank"
+          header="TkDeb"
+          description="Zaawansowane narzędzie developerskie ułatwiające korzystanie z biblioteki tkinter, pozwalające w łatwy sposób zarządzać gui."
+          libs="Tkinter, os, ..."
+          lang="Python"
+        />
+        <LinkProject
           href="https://github.com/MateuszPerczak/Sounder5"
           target="_blank"
           header="Sounder5"

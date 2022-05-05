@@ -20,9 +20,6 @@ const AboutMe = () => {
           />
         </Card>
         <Card header="W planach" icon="&#xE1DC;" flex={1}>
-          <CardList header="Portfolio">
-            <li>Dodanie Markdown</li>
-          </CardList>
           <CardList header="Aplikacje">
             <li>Aplikacja do zarządzania save&apos;ami z gier</li>
             <li>Przepisanie odtwarzacza muzycznego do web app</li>
