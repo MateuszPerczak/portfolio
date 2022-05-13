@@ -8,6 +8,7 @@ const DivWrapper = styled.div`
   padding: 10px;
   gap: 10px;
   height: 100vh;
+  width: 100vw;
 `;
 
 const PageCenter = ({ children }) => {

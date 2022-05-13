@@ -27,7 +27,8 @@ const App = ({ Component, pageProps }) => {
           }
           @font-face {
             font-family: "Segoe Fluent Icons";
-            src: url('/fonts/Segoe Fluent Icons/Segoe Fluent Icons.ttf') format('truetype');
+            src: url("/fonts/Segoe Fluent Icons/Segoe Fluent Icons.ttf")
+              format("truetype");
           }
           ::selection {
             color: ${theme.color};
@@ -46,9 +47,11 @@ const App = ({ Component, pageProps }) => {
           ::-webkit-scrollbar-thumb:hover {
             background: ${theme.backgroundDark};
           }
-          }
+
           #__next {
             display: flex;
+            background: ${theme.background};
+            color: ${theme.color};
           }
         `}
       />

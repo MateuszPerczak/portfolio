@@ -12,9 +12,16 @@ const ButtonWrapper = styled.a`
   margin-top: 10px;
   padding: 10px;
   gap: 10px;
+  border-radius: 4px;
+  transition: background-color 150ms ease-out;
   color: ${({ theme: { color } }) => {
     return color;
   }};
+  &:hover {
+    background: ${({ theme: { backgroundDark } }) => {
+      return backgroundDark;
+    }};
+  }
 `;
 const IconWrapper = styled.span`
   font-family: "Segoe Fluent Icons", sans-serif;

@@ -10,7 +10,7 @@ const NavWrapper = styled.nav`
   gap: 10px;
   align-items: flex-start;
   position: fixed;
-  margin: 0 10px 10px 10px;
+  margin: 10px;
   border-radius: 4px;
   padding: 10px 0 10px 0;
   overflow: hidden;
