@@ -26,6 +26,14 @@ const Projects = () => {
           lang="Html, Scss, Javascript"
         />
         <LinkProject
+          href="https://github.com/Py4Js/PyScript-React"
+          target="_blank"
+          header="PyScript-React"
+          description="Biblioteka łącząca React'a z PyScript'em. Pozwala uruchamiać skrypty pythona w przeglądarce."
+          libs="React, folium"
+          lang="Python, Typescript"
+        />
+        <LinkProject
           href="https://github.com/MateuszPerczak/PySpec"
           target="_blank"
           header="PySpec"
