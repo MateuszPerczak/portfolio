@@ -42,6 +42,13 @@ const AboutMe = () => {
         </Panel>
 
         <Panel>
+          <PanelHeader header={t("nowLearning")} icon="&#xE1D3;" />
+          <PanelContent flexDirection="row" flexWrap="wrap">
+            <span>TypeScript</span>
+          </PanelContent>
+        </Panel>
+
+        <Panel>
           <PanelHeader header={t("usefulLinks")} icon="&#xE167;" />
           <PanelContent flexDirection="row" flexWrap="wrap">
             <PanelLink href="https://www.linkedin.com/in/mateuszperczak/">

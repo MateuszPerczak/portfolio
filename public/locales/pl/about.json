@@ -3,5 +3,6 @@
   "workingOn": "Aktualnie pracuje nad",
   "aboutMe": "Coś o mnie",
   "usefulLinks": "Przydatne linki",
-  "description": "Hejka, nazywam się Mateusz, mam 20 lat i uwielbiam programować. Moja przygoda z programowaniem zaczęła się w roku 2015, gdy zaczynałem pisać pierwsze skrypty w cmd. W 2018 r. rozpocząłem przygodę z Python'em, głównie pisząc aplikacje desktopowe. Aktualnie tworzę strony oraz aplikacje webowe z wykorzystaniem popularnych frameworków."
+  "description": "Hejka, nazywam się Mateusz, mam 20 lat i uwielbiam programować. Moja przygoda z programowaniem zaczęła się w roku 2015, gdy zaczynałem pisać pierwsze skrypty w cmd. W 2018 r. rozpocząłem przygodę z Python'em, głównie pisząc aplikacje desktopowe. Aktualnie tworzę strony oraz aplikacje webowe z wykorzystaniem popularnych frameworków.",
+  "nowLearning": "Aktualnie uczę się"
 }
