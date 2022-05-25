@@ -9,8 +9,8 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "lts/*"
-      - run: npm install
-      - run: npm run build
+      - run: yarn --ignore-engines
+      - run: yarn build
       - uses: ahmadnassri/action-dependabot-auto-merge@v2
         with:
           target: minor
