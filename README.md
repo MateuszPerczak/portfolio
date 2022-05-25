@@ -5,7 +5,7 @@
 ![GitHub branch checks state](https://img.shields.io/github/checks-status/MateuszPerczak/mateuszperczak.github.io/master?style=flat-square)
 ![Website](https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Fmateuszperczak.github.io%2F)
 
-<p align="center"><img src="images/preview.png" alt="Portfolio"></p>
+![Website preview](./images/preview.png)
 
 ## Libraries
 
