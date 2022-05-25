@@ -12,6 +12,7 @@ const Experience = () => {
   const transition = useSpring({
     from: { opacity: 0, transform: "scale(0.95)" },
     to: { opacity: 1, transform: "scale(1)" },
+    config: { tension: 400 },
   });
 
   const { t } = useTranslation("experience");
