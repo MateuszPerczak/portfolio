@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import NavSpacer from "./NavSpacer";
 import NavItem from "./NavItem";
 import NavHamburger from "./NavHamburger";
-import { useState } from "react";
+import { useState, memo } from "react";
 import { useSpring, animated } from "react-spring";
 import { useTranslation } from "react-i18next";
 import routesToComponnetsMapper from "../../Routes/routesToComponnetsMapper";
@@ -88,4 +88,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default memo(Nav);

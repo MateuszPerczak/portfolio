@@ -20,66 +20,113 @@ const Projects = () => {
       <PageWrap>
         <PanelProject
           header="Portfolio"
-          href="https://github.com/MateuszPerczak/mateuszperczak.github.io"
           description={t("portfolio")}
-          lang="React, Emotion, react-spring, react-router-dom, react-reduce-motion, react-i18next, use-system-theme, react-circle-flags"
+          links={[
+            {
+              href: "https://github.com/MateuszPerczak/mateuszperczak.github.io",
+              name: "Github",
+            },
+          ]}
+          lang="React, Emotion, react-spring, react-i18next, ..."
         />
         <PanelProject
           header="TicTacToe"
-          href="https://github.com/MateuszPerczak/tictactoe"
           description={t("ticTacToe")}
-          lang="React, Emotion, Lodash, react-router-dom"
-          website="https://mateuszperczak.github.io/tictactoe/"
+          links={[
+            {
+              href: "https://github.com/MateuszPerczak/tictactoe",
+              name: "Github",
+            },
+            {
+              href: "https://mateuszperczak.github.io/tictactoe/",
+              name: "Demo",
+            },
+          ]}
+          lang="React, Emotion, Lodash, react-router-dom, ..."
         />
         <PanelProject
           header="PyScript-React"
-          href="https://github.com/Py4Js/PyScript-React"
           description={t("pyScriptReact")}
-          lang="React, Python, Folium, Lodash, Storybook, Jest"
+          links={[
+            {
+              href: "https://github.com/Py4Js/PyScript-React",
+              name: "Github",
+            },
+          ]}
+          lang="React, Python, Folium, Lodash, Storybook, Jest, ..."
         />
 
         <PanelProject
           header="Cypher"
-          href="https://github.com/MateuszPerczak/Cypher"
           description={t("cypher")}
+          links={[
+            {
+              href: "https://github.com/MateuszPerczak/Cypher",
+              name: "Github",
+            },
+          ]}
           lang="Python, Tkinter, Cryptography, Base64, ZipFile, DarkDetect, ..."
         />
 
         <PanelProject
           header="PySpec"
-          href="https://github.com/MateuszPerczak/PySpec"
           description={t("pySpec")}
+          links={[
+            {
+              href: "https://github.com/MateuszPerczak/PySpec",
+              name: "Github",
+            },
+          ]}
           lang="Python, Tkinter, WMI, GPUtil, DarkDetect, ..."
         />
 
         <PanelProject
           header="PyHash"
-          href="https://github.com/MateuszPerczak/PyHash"
           description={t("pyHash")}
+          links={[
+            {
+              href: "https://github.com/MateuszPerczak/PyHash",
+              name: "Github",
+            },
+          ]}
           lang="Python, Tkinter, Hashlib, Pyperclip, DarkDetect, ..."
         />
 
         <PanelProject
           header="TkDeb"
-          href="https://github.com/MateuszPerczak/TkDeb"
           description={t("tkDeb")}
+          links={[
+            {
+              href: "https://github.com/MateuszPerczak/TkDeb",
+              name: "Github",
+            },
+          ]}
           lang="Python, Tkinter, os, ..."
         />
 
         <PanelProject
           header="Sounder5"
-          href="https://github.com/MateuszPerczak/Sounder5"
           description={t("sounder")}
-          lang="Python, Tkinter, Pygame, Win10toast, Win32file, Winreg, Ctypes, Difflib, Shutil, Hashlib, Psutil, DarkDetect, ..."
+          links={[
+            {
+              href: "https://github.com/MateuszPerczak/Sounder5",
+              name: "Github",
+            },
+          ]}
+          lang="Python, Tkinter, Pygame, Win10toast, DarkDetect, ..."
         />
 
         <PanelProject
           header="SamPy"
-          href="https://github.com/MateuszPerczak/SamPy"
           description={t("samPy")}
+          links={[
+            {
+              href: "https://github.com/MateuszPerczak/SamPy",
+              name: "Github",
+            },
+          ]}
           lang="Python, Tkinter, Hashlib, Webbrowser, ..."
         />
-        {/* <PanelProject header="" href="" description="" lang="" /> */}
       </PageWrap>
     </animated.div>
   );

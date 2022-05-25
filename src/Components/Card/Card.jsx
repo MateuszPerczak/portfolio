@@ -1,6 +1,7 @@
+import { memo } from "react";
 import styled from "@emotion/styled";
 
-const StyledCard = styled.div`
+const Card = styled.div`
   display: flex;
   flex-direction: row;
   @media (max-width: 500px) {
@@ -26,4 +27,4 @@ const StyledCard = styled.div`
     }};
 `;
 
-export default StyledCard;
+export default memo(Card);

@@ -3,10 +3,10 @@
   "portfolio": "Strona zawierająca informacje o mnie, moich projektach itp. (Właśnie ją przeglądasz)",
   "ticTacToe": "Gra kółko i krzyżyk mojega autorstwa wykorzystująca bibliotekę React",
   "pyScriptReact": "Biblioteka łącząca React'a z PyScript'em. Pozwala uruchamiać skrypty pythona w przeglądarce.",
-  "cypher": "Aplikacja dla systemów Microsoft Windows, pozwalająca w łatwy sposób zaszyfrować / odszyfrować wybrane pliki.",
-  "pySpec": "Aplikacja dla systemów Microsoft Windows, która identyfikuje procesor, pamięć RAM, chipset płyty głównej (oraz inne właściwości sprzętu komputerowego) zainstalowane w komputerze.",
+  "cypher": "Aplikacja pozwalająca w łatwy sposób zaszyfrować / odszyfrować wybrane pliki.",
+  "pySpec": "Aplikacja identyfikująca procesor, pamięć RAM, chipset płyty głównej (oraz inne właściwości sprzętu komputerowego) zainstalowane w komputerze.",
   "sounder": "Zaawansowany odtwarzacz muzyczny dla systemów Microsoft Windows, umożliwiający odtwarzanie utworów dźwiękowych w popularnych formatach (mp3, ogg, wav, flac).",
-  "pyHash": "Aplikacja dla systemów Microsoft Windows, pozwalająca w łatwy sposób wygenerować hash (sha1, sha256, md5) dla wybranych plików.",
+  "pyHash": "Aplikacja pozwalająca w łatwy sposób wygenerować hash (sha1, sha256, md5) dla wybranych plików.",
   "tkDeb": "Zaawansowane narzędzie developerskie ułatwiające korzystanie z biblioteki tkinter, pozwalające w łatwy sposób zarządzać gui.",
-  "samPy": "Aplikacja dla systemów Microsoft Windows, pozwalająca w łatwy sposób znaleźć z duplikowane pliki w wybranych folderach."
+  "samPy": "Aplikacja pozwalająca w łatwy sposób znaleźć zduplikowane pliki w wybranych folderach."
 }

@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import PanelHeader from "./PanelHeader";
+import PanelLang from "./PanelLang";
 import PanelContent from "./PanelContent";
 import PanelLink from "./PanelLink";
 import Text from "../Text/Text";
@@ -21,27 +22,7 @@ const StyledPanel = styled.div`
     }};
 `;
 
-const StyledText = styled.div`
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 10px;
-  line-height: 1.5;
-
-  border-radius: 0 0 10px 10px;
-  background: ${({ theme: { background } }) => {
-    return background;
-  }};
-  color: ${({ theme: { colorDark } }) => {
-    return colorDark;
-  }};
-  border-top: 1px solid
-    ${({ theme: { border } }) => {
-      return border;
-    }};
-`;
-
-const PanelProject = ({ href, header, description, lang, website = "" }) => {
+const PanelProject = ({ header, description, lang, links = [] }) => {
   return (
     <StyledPanel>
       <PanelHeader header={header} icon="&#xECAA;" />
@@ -49,12 +30,15 @@ const PanelProject = ({ href, header, description, lang, website = "" }) => {
         <Text fontSize={0.9}>{description}</Text>
       </PanelContent>
       <PanelContent flexDirection="row" flexWrap="wrap">
-        <PanelLink href={href}>Github</PanelLink>
-        {website && <PanelLink href={website}>Website</PanelLink>}
+        {links.map((link, index) => {
+          return (
+            <PanelLink key={index} href={link.href}>
+              {link.name}
+            </PanelLink>
+          );
+        })}
       </PanelContent>
-      <StyledText>
-        <Text fontSize={0.8}>{lang}</Text>
-      </StyledText>
+      <PanelLang fontSize={0.8}>{lang}</PanelLang>
     </StyledPanel>
   );
 };
