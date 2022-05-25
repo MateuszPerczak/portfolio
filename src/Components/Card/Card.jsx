@@ -6,6 +6,7 @@ const StyledCard = styled.div`
   @media (max-width: 500px) {
     width: calc(100vw);
     height: calc(100vh);
+    border-radius: 0px;
   }
   width: min(90vw - 10px, 1000px);
   height: min(70vh - 1rem, 700px);

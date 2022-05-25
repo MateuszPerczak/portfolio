@@ -10,7 +10,7 @@ const StyledPanel = styled.div`
   width: 40%;
   flex-grow: 1;
   border-radius: 10px;
-  min-width: 200px;
+  min-width: 205px;
   transition: box-shadow 300ms;
   background: ${({ theme: { backgroundLight, background } }) => {
     return `linear-gradient(45deg, ${backgroundLight}, ${background})`;
