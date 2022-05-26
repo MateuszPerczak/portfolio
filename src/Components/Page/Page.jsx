@@ -17,7 +17,7 @@ const StyledPage = styled.div`
     }};
   }
   &:hover {
-    overflow: auto;
+    overflow-y: auto;
     ::-webkit-scrollbar-thumb {
       background: ${({ theme: { backgroundLight } }) => {
         return backgroundLight;
