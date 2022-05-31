@@ -11,6 +11,7 @@ import Card from "./Components/Card/Card";
 import Page from "./Components/Page/Page";
 import darkTheme from "./Themes/darkTheme";
 import lightTheme from "./Themes/lightTheme";
+import Pride from "./Components/Pride/Pride";
 
 const Nav = lazy(() => {
   return import("./Components/Nav/Nav");
@@ -45,6 +46,7 @@ const App = () => {
     <>
       <StylesProvider themes={themes} theme={theme} />
       <ThemeProvider theme={themes[theme]}>
+        <Pride />
         <BrowserRouter>
           <Suspense fallback={<Loader />}>
             <Card>
