@@ -1,5 +1,6 @@
-import { Global, css, ThemeProvider } from "@emotion/react";
+import { ThemeProvider } from "@emotion/react";
 import { Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
+import StylesProvider from "./Global/StylesProvider";
 import { lazy, Suspense, useState, useEffect, createElement } from "react";
 import { useReduceMotion } from "react-reduce-motion";
 import useSystemTheme from "use-system-theme";
@@ -42,53 +43,9 @@ const App = () => {
       skipAnimation: prefersReducedMotion,
     });
   }, [prefersReducedMotion]);
-
   return (
     <>
-      <Global
-        styles={css`
-          *,
-          *::before,
-          *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-          }
-          body {
-            font-family: "Poppins", sans-serif;
-            background: radial-gradient(
-              ${themes[theme].background},
-              ${themes[theme].backgroundDark}
-            );
-            color: ${themes[theme].color};
-          }
-          #root {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100vw;
-            height: 100vh;
-          }
-          @font-face {
-            font-family: "Segoe Fluent Icons";
-            src: url("./fonts/Segoe Fluent Icons.ttf") format("truetype");
-          }
-          ::-webkit-scrollbar {
-            width: 6px;
-          }
-          ::-webkit-scrollbar-track {
-            background: ${themes[theme].background};
-          }
-          ::-webkit-scrollbar-thumb {
-            background: ${themes[theme].backgroundDark};
-            border-radius: 4px;
-          }
-          ::selection {
-            background: ${themes[theme].color};
-            color: ${themes[theme].backgroundDark};
-          }
-        `}
-      />
+      <StylesProvider themes={themes} theme={theme} />
       <ThemeProvider theme={themes[theme]}>
         <BrowserRouter>
           <Suspense fallback={<Loader />}>
