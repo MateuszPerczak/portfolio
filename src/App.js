@@ -6,11 +6,9 @@ import { useReduceMotion } from "react-reduce-motion";
 import useSystemTheme from "use-system-theme";
 import { Globals } from "react-spring";
 import routesToComponnetsMapper from "./Routes/routesToComponnetsMapper";
-
 import Loader from "./Components/Loader/Loader";
 import Card from "./Components/Card/Card";
 import Page from "./Components/Page/Page";
-
 import darkTheme from "./Themes/darkTheme";
 import lightTheme from "./Themes/lightTheme";
 
