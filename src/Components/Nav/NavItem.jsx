@@ -28,6 +28,11 @@ const StyledItem = styled(Link)`
       return backgroundContrast;
     }};
   }
+  &:active {
+    background: ${({ theme: { background } }) => {
+      return background;
+    }};
+  }
 `;
 
 const NavItem = ({ icon, to, content, isOpen, setOpen }) => {

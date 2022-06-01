@@ -12,7 +12,7 @@ const StyledPanel = styled.div`
   flex-grow: 1;
   border-radius: 10px;
   min-width: 205px;
-  transition: box-shadow 300ms;
+  transition: box-shadow 300ms, transform 300ms;
   background: ${({ theme: { backgroundLight, background } }) => {
     return `linear-gradient(45deg, ${backgroundLight}, ${background})`;
   }};
@@ -20,6 +20,14 @@ const StyledPanel = styled.div`
     ${({ theme: { border } }) => {
       return border;
     }};
+
+  &:hover {
+    box-shadow: 0 0 15px 0
+      ${({ theme: { shadow } }) => {
+        return shadow;
+      }};
+    transform: translateY(-5px);
+  }
 `;
 
 const PanelProject = ({ header, description, lang, links = [] }) => {

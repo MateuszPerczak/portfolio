@@ -21,6 +21,10 @@ const StyledHamburger = styled.div`
       return backgroundContrast;
     }};
   }
+  &:active {
+    background: ${({ theme: { background } }) => {
+      return background;
+    }};
 `;
 
 const NavHamburger = ({ onClick, isOpen }) => {

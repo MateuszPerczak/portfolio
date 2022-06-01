@@ -6,11 +6,13 @@ const StyledList = styled(animated.div)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 5px;
   position: absolute;
   width: 100%;
   left: 0;
   top: 35px;
   border-radius: 10px;
+  padding: 5px;
   overflow: hidden;
   background: ${({ theme: { background } }) => {
     return background;
@@ -26,8 +28,8 @@ const ComboList = ({ isOpen, children }) => {
     height: isOpen ? "250%" : "0%",
     visibility: isOpen ? "visible" : "hidden",
     config: {
-      mass: 1.2,
-      tension: 300,
+      tension: 400,
+      mass: 0.5,
     },
   });
 
