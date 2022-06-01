@@ -13,7 +13,7 @@ const StyledPride = styled.div`
   background-position: 100% 0;
   overflow: hidden;
   user-select: none;
-  opacity: 0.7;
+  opacity: 0.9;
 `;
 
 const StyledText = styled.div`
