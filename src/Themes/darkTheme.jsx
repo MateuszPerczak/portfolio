@@ -3,6 +3,7 @@ const theme = {
   backgroundDark: "#212121",
   backgroundContrast: "#2a2a2a",
   backgroundLight: "#313131",
+  backgroundBlur: "#252525aa",
   color: "#fff",
   colorDark: "#aaa",
   border: "#3b3b3b",

@@ -3,6 +3,7 @@ const lightTheme = {
   backgroundContrast: "#f0f0f0",
   backgroundDark: "#e1e1e1",
   backgroundLight: "#e1e1e1",
+  backgroundBlur: "#fafafa99",
   color: "#000",
   colorDark: "#333",
   border: "#bababa",
