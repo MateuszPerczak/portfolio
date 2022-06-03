@@ -44,7 +44,7 @@ const PanelProject = ({ header, description, langs, links = [] }) => {
         {links.map((link, index) => {
           return (
             <PanelLink key={index} href={link.href}>
-              {link.name}
+              {link.header}
             </PanelLink>
           );
         })}
