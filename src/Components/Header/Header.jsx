@@ -6,7 +6,6 @@ const StyledHeader = styled.header`
   left: 0;
   padding: 20px;
   font-size: 1.5rem;
-  font-weight: bold;
   user-select: none;
   z-index: 2;
   background: ${({ theme: { backgroundBlur } }) => {

@@ -36,7 +36,7 @@ const Nav = () => {
     },
   });
 
-  const { t } = useTranslation("nav");
+  const { t } = useTranslation();
 
   return (
     <StyledNav style={transition}>

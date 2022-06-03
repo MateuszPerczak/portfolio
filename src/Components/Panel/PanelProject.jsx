@@ -4,6 +4,7 @@ import PanelLang from "./PanelLang";
 import PanelContent from "./PanelContent";
 import PanelLink from "./PanelLink";
 import Text from "../Text/Text";
+import { useTranslation } from "react-i18next";
 
 const StyledPanel = styled.div`
   display: flex;
@@ -30,12 +31,14 @@ const StyledPanel = styled.div`
   }
 `;
 
-const PanelProject = ({ header, description, lang, links = [] }) => {
+const PanelProject = ({ header, description, langs, links = [] }) => {
+  const { t } = useTranslation("projects");
+
   return (
     <StyledPanel>
       <PanelHeader header={header} icon="&#xECAA;" />
       <PanelContent flexDirection="row" flexWrap="wrap" flexGrow={1}>
-        <Text fontSize={0.9}>{description}</Text>
+        <Text fontSize={0.9}>{t(description)}</Text>
       </PanelContent>
       <PanelContent flexDirection="row" flexWrap="wrap">
         {links.map((link, index) => {
@@ -46,7 +49,7 @@ const PanelProject = ({ header, description, lang, links = [] }) => {
           );
         })}
       </PanelContent>
-      <PanelLang fontSize={0.8}>{lang}</PanelLang>
+      <PanelLang fontSize={0.8}>{langs}</PanelLang>
     </StyledPanel>
   );
 };

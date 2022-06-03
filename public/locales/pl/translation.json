@@ -1,1 +1,8 @@
-{}
+{
+  "aboutMe": "O mnie",
+  "skills": "Umiejętności",
+  "experience": "Doświadczenie",
+  "projects": "Projekty",
+  "contact": "Kontakt",
+  "settings": "Ustawienia"
+}

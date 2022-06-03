@@ -1,5 +1,4 @@
 {
-  "title": "Projekty",
   "portfolio": "Strona zawierająca informacje o mnie, moich projektach itp. (Właśnie ją przeglądasz)",
   "ticTacToe": "Gra kółko i krzyżyk mojega autorstwa wykorzystująca bibliotekę React",
   "pyScriptReact": "Biblioteka łącząca React'a z PyScript'em. Pozwala uruchamiać skrypty pythona w przeglądarce.",
