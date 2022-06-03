@@ -17,7 +17,6 @@ const StylesProvider = ({ themes, theme }) => {
             ${themes[theme].background},
             ${themes[theme].backgroundDark}
           );
-
           color: ${themes[theme].color};
         }
         #root {

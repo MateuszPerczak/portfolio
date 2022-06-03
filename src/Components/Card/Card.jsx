@@ -11,6 +11,7 @@ const Card = styled.div`
   }
   width: min(90vw - 10px, 1000px);
   height: min(70vh - 1rem, 700px);
+  min-height: 350px;
   border-radius: 10px;
   overflow: hidden;
   transition: width 100ms, height 100ms;
