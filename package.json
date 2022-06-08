@@ -23,7 +23,7 @@
     "react-spring": "^9.4.5",
     "touch": "^3.1.0",
     "use-system-theme": "^0.1.1",
-    "yarn": "^1.22.18"
+    "yarn": "^1.22.19"
   },
   "scripts": {
     "start": "cross-env PUBLIC_URL=/ react-scripts start",
