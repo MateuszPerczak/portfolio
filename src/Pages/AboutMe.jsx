@@ -32,16 +32,20 @@ const AboutMe = () => {
             />
           </PanelContent>
         </Panel>
-
         <Panel>
           <PanelHeader header={t("workingOn")} icon="&#xE15E;" />
-          <PanelContent flexDirection="row">
+          <PanelContent flexDirection="row" flexWrap="wrap">
             <PanelLink href="https://github.com/Py4Js/PyScript-React">
               PyScript-React
             </PanelLink>
+            <PanelLink href="https://github.com/MateuszPerczak/tictactoe">
+              TicTacToe
+            </PanelLink>
+            <PanelLink href="https://github.com/MateuszPerczak/PyEvo">
+              PyEvo - Evolution Simulator
+            </PanelLink>
           </PanelContent>
         </Panel>
-
         <Panel>
           <PanelHeader header={t("nowLearning")} icon="&#xE1D3;" />
           <PanelContent flexDirection="row" flexWrap="wrap">

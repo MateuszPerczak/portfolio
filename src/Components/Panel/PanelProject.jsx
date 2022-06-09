@@ -21,9 +21,8 @@ const StyledPanel = styled.div`
     ${({ theme: { border } }) => {
       return border;
     }};
-
   &:hover {
-    box-shadow: 0 0 15px 0
+    box-shadow: 0 0 15px 2px
       ${({ theme: { shadow } }) => {
         return shadow;
       }};
