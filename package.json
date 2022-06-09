@@ -10,7 +10,7 @@
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "gh-pages": "^4.0.0",
-    "i18next": "^21.8.8",
+    "i18next": "^21.8.9",
     "i18next-browser-languagedetector": "^6.1.4",
     "i18next-http-backend": "^1.4.1",
     "react": "^18.1.0",
@@ -23,7 +23,7 @@
     "react-spring": "^9.4.5",
     "touch": "^3.1.0",
     "use-system-theme": "^0.1.1",
-    "yarn": "^1.22.18"
+    "yarn": "^1.22.19"
   },
   "scripts": {
     "start": "cross-env PUBLIC_URL=/ react-scripts start",
