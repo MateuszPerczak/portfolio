@@ -7,5 +7,6 @@
   "sounder": "Advanced music player which allows you to play audio tracks in popular formats (mp3, Ogg, Wav, FLAC), create playlists, and more.",
   "pyHash": "Simple desktop app witch generates hashes for selected file.",
   "tkDeb": "Advanced developer tool facilitating the use of the Tkinter library, allowing you to easily manage GUI.",
-  "samPy": "An application that allows you to easily find duplicate files in selected folders."
+  "samPy": "An application that allows you to easily find duplicate files in selected folders.",
+  "pyEvo": "Advanced simulator of evolution and natural selection of creatures living inside virtual environments."
 }
