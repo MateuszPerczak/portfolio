@@ -3,7 +3,6 @@ import { Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
 import StylesProvider from "./Global/StylesProvider";
 import { lazy, Suspense, useState, useEffect, createElement } from "react";
 import { useReduceMotion } from "react-reduce-motion";
-import useSystemTheme from "use-system-theme";
 import { Globals } from "react-spring";
 import routesToComponnetsMapper from "./Routes/routesToComponnetsMapper";
 import Loader from "./Components/Loader/Loader";
@@ -12,40 +11,29 @@ import Page from "./Components/Page/Page";
 import darkTheme from "./Themes/darkTheme";
 import lightTheme from "./Themes/lightTheme";
 import Pride from "./Components/Pride/Pride";
+import useTheme from "./Hooks/useTheme";
 
 const Nav = lazy(() => {
   return import("./Components/Nav/Nav");
 });
 
 const App = () => {
-  const [theme, setTheme] = useState("light");
-  const [useDarkMode, setDarkMode] = useState(false);
-
-  const themes = {
-    light: lightTheme,
-    dark: darkTheme,
-  };
-
-  useEffect(() => {
-    setTheme(useDarkMode ? "dark" : "light");
-  }, [useDarkMode]);
-
-  const systemTheme = useSystemTheme(true);
-  useEffect(() => {
-    setTheme(systemTheme);
-    systemTheme === "dark" ? setDarkMode(true) : setDarkMode(false);
-  }, [systemTheme]);
-
   const prefersReducedMotion = useReduceMotion();
+
+  const theme = useTheme();
+
   useEffect(() => {
     Globals.assign({
       skipAnimation: prefersReducedMotion,
     });
   }, [prefersReducedMotion]);
+
+  const themes = { dark: darkTheme };
+
   return (
     <>
-      <StylesProvider themes={themes} theme={theme} />
-      <ThemeProvider theme={themes[theme]}>
+      <StylesProvider themes={themes} theme={"dark"} />
+      <ThemeProvider theme={themes["dark"]}>
         <Pride />
         <BrowserRouter>
           <Suspense fallback={<Loader />}>
@@ -86,8 +74,7 @@ const App = () => {
                   <Route
                     path={routesToComponnetsMapper.settings.route}
                     element={createElement(
-                      routesToComponnetsMapper.settings.component,
-                      { useDarkMode, setDarkMode }
+                      routesToComponnetsMapper.settings.component
                     )}
                   />
                   <Route path="*" element={<Navigate to="/" />} />

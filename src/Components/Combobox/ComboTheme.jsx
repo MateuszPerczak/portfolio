@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const StyledItem = styled.span`
+const StyledComboTheme = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -18,4 +18,12 @@ const StyledItem = styled.span`
   }
 `;
 
-export default StyledItem;
+const ComboTheme = ({ value, name, onSelectionChange }) => {
+  return (
+    <StyledComboTheme onClick={() => onSelectionChange(value)}>
+      {name}
+    </StyledComboTheme>
+  );
+};
+
+export default ComboTheme;

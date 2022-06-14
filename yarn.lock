@@ -8759,11 +8759,6 @@ uri-js@^4.2.2:
   dependencies:
     punycode "^2.1.0"
 
-use-system-theme@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/use-system-theme/-/use-system-theme-0.1.1.tgz#d2fde1e7e31f4dffe32b05317a6742c691b3b045"
-  integrity sha512-R2Y10XUacgoj8NgZzq7o/XW1EYHBAGKiOivnVviL9s3QKfcx2R2yNtfpFh85W6066K6CZgDizKl/NdecqlN9sQ==
-
 util-deprecate@^1.0.1, util-deprecate@^1.0.2, util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"

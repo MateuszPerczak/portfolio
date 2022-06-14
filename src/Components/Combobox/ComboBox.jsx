@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { useState, createElement, useEffect } from "react";
 import styled from "@emotion/styled";
+import { useSpring } from "react-spring";
 import Icon from "../Icon/Icon";
-import ComboList from "./ComboList";
-import ComboItem from "./ComboItem";
-import { CircleFlag } from "react-circle-flags";
+import ComboBoxList from "./ComboBoxList";
 
 const StyledComboBox = styled.div`
   position: relative;
@@ -26,32 +25,45 @@ const StyledComboBox = styled.div`
     }};
 `;
 
-const ComboBox = ({ itemsSource, placeholderText = "", onSelectionChange }) => {
+const ComboBox = ({
+  itemsSource = [],
+  placeholderText = "",
+  onSelectionChange,
+  updatePlaceholder = false,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedValue, setSelectedValue] = useState(placeholderText);
+
+  useEffect(() => {
+    setSelectedValue(placeholderText);
+  }, [updatePlaceholder ? placeholderText : null]);
+
+  const animatedList = useSpring({
+    height: isOpen ? `${itemsSource.length * 130}%` : "0%",
+    visibility: isOpen ? "visible" : "hidden",
+    config: {
+      tension: 400,
+      mass: 0.5,
+    },
+  });
 
   return (
     <StyledComboBox onClick={() => setIsOpen(!isOpen)}>
       <span>{selectedValue}</span>
       <Icon>{isOpen ? "\uE010" : "\uE0E5"}</Icon>
-      <ComboList isOpen={isOpen}>
-        {Array.isArray(itemsSource)
-          ? itemsSource.map((item, index) => {
-              return (
-                <ComboItem
-                  key={index}
-                  onClick={() => {
-                    setSelectedValue(item.name);
-                    onSelectionChange(item.language);
-                  }}
-                >
-                  {item.name}
-                  <CircleFlag countryCode={item.flag} height="18" />
-                </ComboItem>
-              );
-            })
-          : null}
-      </ComboList>
+      <ComboBoxList style={animatedList} onMouseLeave={() => setIsOpen(false)}>
+        {itemsSource.map((item, index) => {
+          return createElement(item.component, {
+            name: item.name,
+            value: item.value,
+            onSelectionChange: (value) => {
+              onSelectionChange(value);
+              setSelectedValue(item.name);
+            },
+            key: index,
+          });
+        })}
+      </ComboBoxList>
     </StyledComboBox>
   );
 };

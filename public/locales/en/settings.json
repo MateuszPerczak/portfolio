@@ -1,11 +1,17 @@
 {
   "title": "Settings",
   "appearance": "Appearance",
-  "themeDark": "Enable dark mode",
+  "themeSelection": "Choose app appearance",
   "language": "Language",
   "selectLanguage": "Select language",
   "thisPortfolio": "This portfolio",
   "viewOnGithub": "View this project on Github",
   "usedLibraies": "Used libraries",
-  "selectedLanguage": "English"
+  "selectedLanguage": "English",
+  "selectedThemeLight": "Light",
+  "selectedThemeDark": "Dark",
+  "selectedThemeSystem": "System Theme",
+  "light": "Light",
+  "dark": "Dark",
+  "system": "System Theme"
 }

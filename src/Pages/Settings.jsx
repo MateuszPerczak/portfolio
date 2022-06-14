@@ -1,27 +1,36 @@
 import { memo } from "react";
 import { useSpring, animated } from "react-spring";
+import { useTranslation } from "react-i18next";
+import ComboLang from "../Components/Combobox/ComboLang";
+import ComboTheme from "../Components/Combobox/ComboTheme";
 import PageContent from "../Components/Page/PageContent";
 import Header from "../Components/Header/Header";
 import Panel from "../Components/Panel/Panel";
-import Switch from "../Components/Switch/Switch";
 import ComboBox from "../Components/Combobox/ComboBox";
 import PanelHeader from "../Components/Panel/PanelHeader";
 import PanelContent from "../Components/Panel/PanelContent";
 import PanelSetting from "../Components/Panel/PanelSetting";
 import PanelLink from "../Components/Panel/PanelLink";
-import { useTranslation } from "react-i18next";
 
-const Settings = ({ useDarkMode, setDarkMode }) => {
-  const languages = [
-    { name: "Polski", language: "pl", flag: "pl" },
-    { name: "English", language: "en", flag: "us" },
-  ];
-
+const Settings = () => {
   const { t, i18n } = useTranslation("settings");
 
   const changeLanguages = (lang) => {
     i18n.changeLanguage(lang);
   };
+
+  const languages = [
+    { name: "Polski", value: "pl", component: ComboLang },
+    { name: "English", value: "en", component: ComboLang },
+  ];
+
+  const themes = [
+    { name: t("light"), value: "light", component: ComboTheme },
+    { name: t("dark"), value: "dark", component: ComboTheme },
+    { name: t("system"), value: "system", component: ComboTheme },
+  ];
+
+  const changeTheme = (theme) => {};
 
   const transition = useSpring({
     from: { opacity: 0, transform: "scale(1.1)" },
@@ -36,8 +45,13 @@ const Settings = ({ useDarkMode, setDarkMode }) => {
           <PanelHeader header={t("appearance")} icon="&#xE2B1;" />
           <PanelContent>
             <PanelSetting>
-              <span>{t("themeDark")}</span>
-              <Switch value={useDarkMode} onClick={setDarkMode} />
+              <span>{t("themeSelection")}</span>
+              <ComboBox
+                itemsSource={themes}
+                placeholderText={t("light")}
+                onSelectionChange={changeTheme}
+                updatePlaceholder
+              />
             </PanelSetting>
           </PanelContent>
         </Panel>
@@ -78,9 +92,6 @@ const Settings = ({ useDarkMode, setDarkMode }) => {
             </PanelLink>
             <PanelLink href="https://react.i18next.com/">
               react-i18next
-            </PanelLink>
-            <PanelLink href="https://github.com/xcv58/use-system-theme#readme">
-              use-system-theme
             </PanelLink>
             <PanelLink href="https://github.com/tnovau/react-circle-flags#readme">
               react-circle-flags

@@ -1,11 +1,17 @@
 {
   "title": "Ustawienia",
   "appearance": "Motyw",
-  "themeDark": "Użyj ciemnego motywu",
+  "themeSelection": "Wybierz wygląd aplikacji",
   "language": "Język",
   "selectLanguage": "Wybierz język",
   "thisPortfolio": "To portfolio",
   "viewOnGithub": "Zobacz ten projekt na Github'ie",
   "usedLibraies": "Użyte biblioteki",
-  "selectedLanguage": "Polski"
+  "selectedLanguage": "Polski",
+  "selectedThemeLight": "Jasny",
+  "selectedThemeDark": "Ciemny",
+  "selectedThemeSystem": "Motyw Systemu",
+  "light": "Jasny",
+  "dark": "Ciemny",
+  "system": "Systemowy"
 }
