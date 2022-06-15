@@ -29,33 +29,32 @@ const ComboBox = ({
   itemsSource = [],
   placeholderText = "",
   onSelectionChange,
-  updatePlaceholder = false,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedValue, setSelectedValue] = useState(placeholderText);
 
   useEffect(() => {
     setSelectedValue(placeholderText);
-  }, [updatePlaceholder ? placeholderText : null]);
+  }, [placeholderText]);
 
   const animatedList = useSpring({
     height: isOpen ? `${itemsSource.length * 130}%` : "0%",
     visibility: isOpen ? "visible" : "hidden",
     config: {
-      tension: 400,
-      mass: 0.5,
+      tension: 300,
+      mass: 1.1,
     },
   });
 
   return (
     <StyledComboBox onClick={() => setIsOpen(!isOpen)}>
       <span>{selectedValue}</span>
-      <Icon>{isOpen ? "\uE010" : "\uE0E5"}</Icon>
+      <Icon size={0.9}>{isOpen ? "\uE010" : "\uE0E5"}</Icon>
       <ComboBoxList style={animatedList} onMouseLeave={() => setIsOpen(false)}>
         {itemsSource.map((item, index) => {
           return createElement(item.component, {
             name: item.name,
-            value: item.value,
+            values: item.values,
             onSelectionChange: (value) => {
               onSelectionChange(value);
               setSelectedValue(item.name);

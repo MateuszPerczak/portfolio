@@ -1,3 +1,6 @@
+import darkTheme from "../Themes/darkTheme";
+import lightTheme from "../Themes/lightTheme";
+
 const useTheme = () => {
   // initialize the theme
 

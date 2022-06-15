@@ -15,8 +15,9 @@ const ComboBoxList = styled(animated.div)`
   padding: 5px;
   overflow: hidden;
   z-index: 1;
-  background: ${({ theme: { background } }) => {
-    return background;
+  backdrop-filter: blur(5px) saturate(180%);
+  background: ${({ theme: { backgroundBlur } }) => {
+    return backgroundBlur;
   }};
   border: 1px solid
     ${({ theme: { border } }) => {

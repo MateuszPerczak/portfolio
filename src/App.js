@@ -20,8 +20,6 @@ const Nav = lazy(() => {
 const App = () => {
   const prefersReducedMotion = useReduceMotion();
 
-  const theme = useTheme();
-
   useEffect(() => {
     Globals.assign({
       skipAnimation: prefersReducedMotion,

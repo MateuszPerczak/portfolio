@@ -5,22 +5,23 @@ const StyledComboTheme = styled.div`
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 100%;
+
   padding: 5px 10px;
   border-radius: 10px;
-  background: ${({ theme: { background } }) => {
-    return background;
-  }};
   &:hover {
-    background: ${({ theme: { backgroundDark } }) => {
-      return backgroundDark;
+    background: ${({ theme: { hoverBlur } }) => {
+      return hoverBlur;
     }};
+    box-shadow: 0 0 5px 0
+      ${({ theme: { shadow } }) => {
+        return shadow;
+      }};
   }
 `;
 
-const ComboTheme = ({ value, name, onSelectionChange }) => {
+const ComboTheme = ({ values, name, onSelectionChange }) => {
   return (
-    <StyledComboTheme onClick={() => onSelectionChange(value)}>
+    <StyledComboTheme onClick={() => onSelectionChange(values.value)}>
       {name}
     </StyledComboTheme>
   );

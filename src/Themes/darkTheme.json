@@ -5,8 +5,8 @@
   "backgroundLight": "#313131",
   "backgroundBlur": "#252525aa",
   "color": "#fff",
+  "hoverBlur": "#3b3b3b55",
   "colorDark": "#aaa",
   "border": "#3b3b3b",
-  "shadow": "#1a1a1a",
-  "ball": "#fff"
+  "shadow": "#1a1a1a"
 }

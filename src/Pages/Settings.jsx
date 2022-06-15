@@ -20,14 +20,28 @@ const Settings = () => {
   };
 
   const languages = [
-    { name: "Polski", value: "pl", component: ComboLang },
-    { name: "English", value: "en", component: ComboLang },
+    {
+      name: "Polski",
+      values: {
+        value: "pl",
+        flag: "pl",
+      },
+      component: ComboLang,
+    },
+    {
+      name: "English",
+      values: {
+        value: "en",
+        flag: "gb",
+      },
+      component: ComboLang,
+    },
   ];
 
   const themes = [
-    { name: t("light"), value: "light", component: ComboTheme },
-    { name: t("dark"), value: "dark", component: ComboTheme },
-    { name: t("system"), value: "system", component: ComboTheme },
+    { name: t("light"), values: { value: "light" }, component: ComboTheme },
+    { name: t("dark"), values: { value: "dark" }, component: ComboTheme },
+    { name: t("system"), values: { value: "system" }, component: ComboTheme },
   ];
 
   const changeTheme = (theme) => {};
@@ -50,7 +64,6 @@ const Settings = () => {
                 itemsSource={themes}
                 placeholderText={t("light")}
                 onSelectionChange={changeTheme}
-                updatePlaceholder
               />
             </PanelSetting>
           </PanelContent>
