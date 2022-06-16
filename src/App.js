@@ -1,17 +1,18 @@
 import { ThemeProvider } from "@emotion/react";
 import { Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
 import StylesProvider from "./Global/StylesProvider";
-import { lazy, Suspense, useState, useEffect, createElement } from "react";
+import { lazy, Suspense, useEffect, createElement } from "react";
 import { useReduceMotion } from "react-reduce-motion";
 import { Globals } from "react-spring";
 import routesToComponnetsMapper from "./Routes/routesToComponnetsMapper";
 import Loader from "./Components/Loader/Loader";
 import Card from "./Components/Card/Card";
 import Page from "./Components/Page/Page";
-import darkTheme from "./Themes/darkTheme";
-import lightTheme from "./Themes/lightTheme";
 import Pride from "./Components/Pride/Pride";
-import useTheme from "./Hooks/useTheme";
+import useSystemTheme from "react-use-system-theme";
+import useLocalStorage from "use-local-storage";
+import lightTheme from "./Themes/lightTheme";
+import darkTheme from "./Themes/darkTheme";
 
 const Nav = lazy(() => {
   return import("./Components/Nav/Nav");
@@ -26,12 +27,20 @@ const App = () => {
     });
   }, [prefersReducedMotion]);
 
-  const themes = { dark: darkTheme };
+  const systemTheme = useSystemTheme();
+
+  const themes = {
+    dark: darkTheme,
+    light: lightTheme,
+    system: systemTheme === "light" ? lightTheme : darkTheme,
+  };
+
+  const [theme, setTheme] = useLocalStorage("theme", "system");
 
   return (
     <>
-      <StylesProvider themes={themes} theme={"dark"} />
-      <ThemeProvider theme={themes["dark"]}>
+      <StylesProvider theme={themes[theme]} />
+      <ThemeProvider theme={themes[theme]}>
         <Pride />
         <BrowserRouter>
           <Suspense fallback={<Loader />}>
@@ -72,7 +81,8 @@ const App = () => {
                   <Route
                     path={routesToComponnetsMapper.settings.route}
                     element={createElement(
-                      routesToComponnetsMapper.settings.component
+                      routesToComponnetsMapper.settings.component,
+                      { theme, setTheme }
                     )}
                   />
                   <Route path="*" element={<Navigate to="/" />} />

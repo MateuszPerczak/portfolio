@@ -1,6 +1,6 @@
 import { Global, css } from "@emotion/react";
 
-const StylesProvider = ({ themes, theme }) => {
+const StylesProvider = ({ theme }) => {
   return (
     <Global
       styles={css`
@@ -14,10 +14,10 @@ const StylesProvider = ({ themes, theme }) => {
         body {
           font-family: "Poppins", sans-serif;
           background: radial-gradient(
-            ${themes[theme].background},
-            ${themes[theme].backgroundDark}
+            ${theme.background},
+            ${theme.backgroundDark}
           );
-          color: ${themes[theme].color};
+          color: ${theme.color};
         }
         #root {
           display: flex;
@@ -34,15 +34,15 @@ const StylesProvider = ({ themes, theme }) => {
           width: 6px;
         }
         ::-webkit-scrollbar-track {
-          background: ${themes[theme].background};
+          background: ${theme.background};
         }
         ::-webkit-scrollbar-thumb {
-          background: ${themes[theme].backgroundDark};
+          background: ${theme.backgroundDark};
           border-radius: 4px;
         }
         ::selection {
-          background: ${themes[theme].color};
-          color: ${themes[theme].backgroundDark};
+          background: ${theme.color};
+          color: ${theme.backgroundDark};
         }
       `}
     />

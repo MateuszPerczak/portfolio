@@ -12,7 +12,7 @@ import PanelContent from "../Components/Panel/PanelContent";
 import PanelSetting from "../Components/Panel/PanelSetting";
 import PanelLink from "../Components/Panel/PanelLink";
 
-const Settings = () => {
+const Settings = ({ theme, setTheme }) => {
   const { t, i18n } = useTranslation("settings");
 
   const changeLanguages = (lang) => {
@@ -44,7 +44,9 @@ const Settings = () => {
     { name: t("system"), values: { value: "system" }, component: ComboTheme },
   ];
 
-  const changeTheme = (theme) => {};
+  const changeTheme = (theme) => {
+    setTheme(theme);
+  };
 
   const transition = useSpring({
     from: { opacity: 0, transform: "scale(1.1)" },
@@ -62,7 +64,7 @@ const Settings = () => {
               <span>{t("themeSelection")}</span>
               <ComboBox
                 itemsSource={themes}
-                placeholderText={t("light")}
+                placeholderText={t(theme)}
                 onSelectionChange={changeTheme}
               />
             </PanelSetting>
@@ -102,6 +104,12 @@ const Settings = () => {
             </PanelLink>
             <PanelLink href="https://reactrouter.com/">
               react-router-dom
+            </PanelLink>
+            <PanelLink href="https://github.com/nas5w/use-local-storage#readme">
+              use-local-storage
+            </PanelLink>
+            <PanelLink href="https://github.com/zebateira/react-use-system-theme#readme">
+              react-use-system-theme
             </PanelLink>
             <PanelLink href="https://react.i18next.com/">
               react-i18next

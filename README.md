@@ -15,7 +15,8 @@
 - react-reduce-motion
 - react-router-dom
 - react-i18next
-- use-system-theme
+- react-use-system-theme
+- use-local-storage
 - react-circle-flags
 
 ## Icons
