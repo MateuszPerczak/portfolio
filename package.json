@@ -15,7 +15,7 @@
     "i18next-browser-languagedetector": "^6.1.4",
     "i18next-http-backend": "^1.4.1",
     "npm": "^8.12.2",
-    "react": "^18.1.0",
+    "react": "^18.2.0",
     "react-circle-flags": "^0.0.17",
     "react-dom": "^18.1.0",
     "react-i18next": "^11.17.1",
