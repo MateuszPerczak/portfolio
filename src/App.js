@@ -8,7 +8,6 @@ import routesToComponnetsMapper from "./Routes/routesToComponnetsMapper";
 import Loader from "./Components/Loader/Loader";
 import Card from "./Components/Card/Card";
 import Page from "./Components/Page/Page";
-import Pride from "./Components/Pride/Pride";
 import useSystemTheme from "react-use-system-theme";
 import useLocalStorage from "use-local-storage";
 import lightTheme from "./Themes/lightTheme";
@@ -39,9 +38,8 @@ const App = () => {
 
   return (
     <>
-      <StylesProvider theme={themes[theme]} />
       <ThemeProvider theme={themes[theme]}>
-        <Pride />
+        <StylesProvider />
         <BrowserRouter>
           <Suspense fallback={<Loader />}>
             <Card>
