@@ -8,5 +8,5 @@
   "pyHash": "Simple desktop app witch generates hashes for selected file.",
   "tkDeb": "Advanced developer tool facilitating the use of the Tkinter library, allowing you to easily manage GUI.",
   "samPy": "An application that allows you to easily find duplicate files in selected folders.",
-  "pyEvo": "Advanced simulator of evolution and natural selection of creatures living inside virtual environments."
+  "luix": "Virtual desktop simulating real OS. It has a taskbar, a window manager, and some basic applications. Which can be expanded."
 }

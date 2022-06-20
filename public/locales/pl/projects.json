@@ -8,5 +8,5 @@
   "pyHash": "Aplikacja pozwalająca w łatwy sposób wygenerować hash (sha1, sha256, md5) dla wybranych plików.",
   "tkDeb": "Zaawansowane narzędzie developerskie ułatwiające korzystanie z biblioteki tkinter, pozwalające w łatwy sposób zarządzać gui.",
   "samPy": "Aplikacja pozwalająca w łatwy sposób znaleźć zduplikowane pliki w wybranych folderach.",
-  "pyEvo": "Zaawansowany symulator evolucji, naturalnej selekcji organizmów żyjących w wirtualnym świecie."
+  "luix": "Wirtualny pulpit odwzorowywujący system operacyjny. Posiada pasek zadań, menedżer okien i kilka podstawowych aplikacji wraz z możliwością ich poszerzenia."
 }

@@ -41,15 +41,15 @@
   },
   {
     "id": 4,
-    "header": "PyEvo",
-    "description": "pyEvo",
+    "header": "Luix",
+    "description": "luix",
     "links": [
       {
-        "href": "https://github.com/MateuszPerczak/PyEvo",
+        "href": "https://github.com/MateuszPerczak/LUIX",
         "header": "Github"
       }
     ],
-    "langs": "Python, Pygame, ..."
+    "langs": "React, Emotion, react-spring, ..."
   },
   {
     "id": 5,
