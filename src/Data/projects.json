@@ -45,8 +45,12 @@
     "description": "luix",
     "links": [
       {
-        "href": "https://github.com/MateuszPerczak/LUIX",
+        "href": "https://github.com/MateuszPerczak/Luix",
         "header": "Github"
+      },
+      {
+        "href": "https://mateuszperczak.github.io/Luix/",
+        "header": "Demo"
       }
     ],
     "langs": "React, Emotion, react-spring, ..."
