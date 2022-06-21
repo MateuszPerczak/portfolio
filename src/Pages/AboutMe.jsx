@@ -38,11 +38,8 @@ const AboutMe = () => {
             <PanelLink href="https://github.com/Py4Js/PyScript-React">
               PyScript-React
             </PanelLink>
-            <PanelLink href="https://github.com/MateuszPerczak/tictactoe">
-              TicTacToe
-            </PanelLink>
-            <PanelLink href="https://github.com/MateuszPerczak/PyEvo">
-              PyEvo - Evolution Simulator
+            <PanelLink href="https://github.com/MateuszPerczak/Luix">
+              Luix
             </PanelLink>
           </PanelContent>
         </Panel>

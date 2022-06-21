@@ -56,9 +56,9 @@ const Skills = () => {
             <PanelSkill
               // eslint-disable-next-line no-script-url
               header="JavaScript, TypeScript:"
-              description="React, Next, Astro, Emotion, Webpack, react-spring,
-              react-reduce-motion, react-router-dom, react-i18next, Lodash,
-              use-system-theme"
+              description="React, Next, Astro, Emotion, Webpack, Lodash, react-spring,
+              react-reduce-motion, react-router-dom, react-i18next,
+              use-system-theme, react-draggable, use-local-storage"
             />
             <PanelSkill
               header="Python:"

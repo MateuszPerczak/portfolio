@@ -3,7 +3,7 @@
   "ticTacToe": "Just a simple tic-tac-toe game",
   "pyScriptReact": "A library that connects React with PyScript. It allows you to run python scripts in the browser.",
   "cypher": "Desktop application witch allows user to easily encrypt/decrypt selected files.",
-  "pySpec": "A desktop app that identifies the CPU, RAM, motherboard chipset (and other hardware properties) installed on the computer.",
+  "pySpec": "A desktop app that identifies the CPU, RAM, motherboard chipset (and other hardware properties) installed in the computer.",
   "sounder": "Advanced music player which allows you to play audio tracks in popular formats (mp3, Ogg, Wav, FLAC), create playlists, and more.",
   "pyHash": "Simple desktop app witch generates hashes for selected file.",
   "tkDeb": "Advanced developer tool facilitating the use of the Tkinter library, allowing you to easily manage GUI.",
