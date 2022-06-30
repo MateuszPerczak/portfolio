@@ -2,11 +2,13 @@
   "light": {
     "background": "#fff",
     "color": "#000",
-    "nav": "#fff"
+    "nav": "#fff",
+    "border": "#4A4A4A"
   },
   "dark": {
-    "background": "#000",
+    "background": "#121212",
     "color": "#fff",
-    "nav": "#272A33b5"
+    "nav": "#272A33b5",
+    "border": "#2c3e50"
   }
 }

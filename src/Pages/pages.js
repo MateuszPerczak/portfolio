@@ -4,7 +4,7 @@ const pages = [
   { id: 2, name: "Experience", icon: "\uE821", to: "" },
   { id: 3, name: "Projects", icon: "\uE74C", to: "" },
   { id: 4, name: "Contact", icon: "\uE715", to: "" },
-  { id: 5, name: "Settings", icon: "\uE115", to: "" },
+  { id: 5, name: "Preferences", icon: "\uE15E", to: "" },
 ];
 
 export default pages;

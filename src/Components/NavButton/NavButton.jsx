@@ -7,7 +7,7 @@ const NavButton = styled(animated.div)`
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  height: 100%;
+  width: 100%;
   aspect-ratio: 1;
   user-select: none;
   border-radius: 8px;
@@ -36,7 +36,7 @@ const NavButton = styled(animated.div)`
     }};
     transform: scale(0);
     position: absolute;
-    top: -35px;
+    right: -60px;
     font-size: 11px;
     width: fit-content;
     padding: 5px 10px;

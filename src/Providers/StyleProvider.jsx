@@ -1,6 +1,6 @@
 import { Global, css, useTheme } from "@emotion/react";
 
-const StylesProvider = () => {
+const StyleProvider = () => {
   const theme = useTheme();
   return (
     <Global
@@ -21,13 +21,17 @@ const StylesProvider = () => {
           overflow: hidden;
         }
         #root {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding: 10px;
+
           width: 100%;
           height: 100%;
-          overflow: hidden;
         }
       `}
     />
   );
 };
 
-export default StylesProvider;
+export default StyleProvider;
