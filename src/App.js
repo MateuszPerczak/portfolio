@@ -83,7 +83,13 @@ const App = () => {
                       { theme, setTheme }
                     )}
                   />
-                  <Route path="*" element={<Navigate to="/" />} />
+                  <Route
+                    path="*"
+                    element={createElement(
+                      routesToComponnetsMapper.pageNotFound.component
+                    )}
+                  />
+                  {/* <Route path="*" element={<Navigate to="/" />} /> */}
                 </Routes>
               </Page>
             </Card>

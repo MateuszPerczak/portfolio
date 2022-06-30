@@ -18,6 +18,9 @@ const Experience = lazy(() => {
 const Contact = lazy(() => {
   return import("../Pages/Contact");
 });
+const PageNotFound = lazy(() => {
+  return import("../Pages/PageNotFound");
+});
 
 const routesToComponnetsMapper = {
   aboutMe: { route: "/", component: AboutMe },
@@ -26,6 +29,7 @@ const routesToComponnetsMapper = {
   experience: { route: "/experience", component: Experience },
   contact: { route: "/contact", component: Contact },
   settings: { route: "/settings", component: Settings },
+  pageNotFound: { route: "/404", component: PageNotFound },
 };
 
 export default routesToComponnetsMapper;

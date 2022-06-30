@@ -1,0 +1,18 @@
+[
+  {
+    "id": 0,
+    "description": "ITSpecialist",
+    "date": "05.2020 r. - 05.2020 r."
+  },
+  {
+    "id": 1,
+    "description": "officeWorker",
+    "date": "05.2021 r. - 10.2021 r."
+  },
+  {
+    "id": 2,
+    "description": "productionWorker",
+    "date": "11.2021 r. - 02.2022 r."
+  },
+  { "id": 3, "description": "fullStackDeveloper", "date": "07.2022 r." }
+]
