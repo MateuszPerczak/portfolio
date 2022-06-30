@@ -1,0 +1,12 @@
+{
+  "light": {
+    "background": "#fff",
+    "color": "#000",
+    "nav": "#fff"
+  },
+  "dark": {
+    "background": "#000",
+    "color": "#fff",
+    "nav": "#272A33b5"
+  }
+}
