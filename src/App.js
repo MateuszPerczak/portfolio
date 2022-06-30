@@ -1,5 +1,5 @@
 import { ThemeProvider } from "@emotion/react";
-import { Routes, Route, Navigate, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import StylesProvider from "./Global/StylesProvider";
 import { lazy, Suspense, useEffect, createElement } from "react";
 import { useReduceMotion } from "react-reduce-motion";
@@ -83,7 +83,13 @@ const App = () => {
                       { theme, setTheme }
                     )}
                   />
-                  <Route path="*" element={<Navigate to="/" />} />
+                  <Route
+                    path="*"
+                    element={createElement(
+                      routesToComponnetsMapper.pageNotFound.component
+                    )}
+                  />
+                  {/* <Route path="*" element={<Navigate to="/" />} /> */}
                 </Routes>
               </Page>
             </Card>

@@ -7,6 +7,7 @@ import Panel from "../Components/Panel/Panel";
 import PanelContent from "../Components/Panel/PanelContent";
 import PanelHeader from "../Components/Panel/PanelHeader";
 import PanelSkill from "../Components/Panel/PanelSkill";
+import experience from "../Data/experience.json";
 
 const Experience = () => {
   const transition = useSpring({
@@ -21,33 +22,19 @@ const Experience = () => {
     <animated.div style={transition}>
       <Header>{t("title")}</Header>
       <PageContent>
-        <Panel>
-          <PanelHeader header={t("practice")} icon="&#xF427;" />
-          <PanelContent>
-            <PanelSkill
-              header={t("ITSpecialist")}
-              description="05.2020 r. - 05.2020 r."
-            />
-          </PanelContent>
-        </Panel>
-        <Panel>
-          <PanelHeader header={t("internship")} icon="&#xF427;" />
-          <PanelContent>
-            <PanelSkill
-              header={t("officeWorker")}
-              description="05.2021 r. - 10.2021 r."
-            />
-          </PanelContent>
-        </Panel>
-        <Panel>
-          <PanelHeader header="Magorex sp. z o.o. sp. k." icon="&#xF427;" />
-          <PanelContent>
-            <PanelSkill
-              header={t("productionWorker")}
-              description="11.2021 r. - 02.2022 r."
-            />
-          </PanelContent>
-        </Panel>
+        {experience.map((exp) => {
+          return (
+            <Panel key={exp.id}>
+              <PanelHeader header={t(exp.id)} icon="&#xF427;" />
+              <PanelContent>
+                <PanelSkill
+                  header={t(exp.description)}
+                  description={exp.date}
+                />
+              </PanelContent>
+            </Panel>
+          );
+        })}
       </PageContent>
     </animated.div>
   );
