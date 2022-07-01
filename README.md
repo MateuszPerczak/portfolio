@@ -37,5 +37,5 @@ yarn
 yarn start
 ```
 
-3. Find out that this react app is using JavaScript.
-4. Give up!
+3. Find out that this react app is using TypeScript.
+4. Be impresed!
