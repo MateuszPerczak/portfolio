@@ -13,7 +13,7 @@ const AppContent: FC = (): JSX.Element => {
         <Nav />
         <Suspense fallback={<Loader />}>
           <Routes>
-            <Route path="/" element={<></>} />
+            <Route path="/" element={<>Test</>} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </Suspense>

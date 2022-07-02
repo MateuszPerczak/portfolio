@@ -1,14 +1,15 @@
 import styled from "@emotion/styled";
+import { animated } from "react-spring";
 
-const StyledNav = styled.nav`
+const StyledNav = styled(animated.nav)`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 5px;
-  padding: 10px 0;
+  padding: 10px;
   height: 100%;
-  width: 60px;
   user-select: none;
+  overflow: hidden;
   background: ${({ theme: { navbar } }) => {
     return navbar;
   }};
