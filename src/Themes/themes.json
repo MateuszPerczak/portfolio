@@ -1,4 +1,18 @@
 {
-  "light": {},
-  "dark": {}
+  "light": {
+    "background": "#fafafa",
+    "color": "#000",
+    "card": "#212121",
+    "navbar": "#212121",
+    "border": "#3b3b3b",
+    "shadow": "#1a1a1a"
+  },
+  "dark": {
+    "background": "#252525",
+    "color": "#fff",
+    "card": "#252525",
+    "navbar": "#212121",
+    "border": "#3b3b3b",
+    "shadow": "#1a1a1a"
+  }
 }

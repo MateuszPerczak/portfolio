@@ -1,7 +1,8 @@
-import { css, Global } from "@emotion/react";
+import { css, Global, Theme, useTheme } from "@emotion/react";
 import { FC, memo } from "react";
 
 const GlobalStyle: FC = (): JSX.Element => {
+  const theme: Theme = useTheme();
   return (
     <Global
       styles={css`
@@ -10,16 +11,20 @@ const GlobalStyle: FC = (): JSX.Element => {
         *::before {
           box-sizing: border-box;
           margin: 0;
+          padding: 0;
         }
         body {
           font-family: "PT Sans Caption", sans-serif;
-          background-color: #000;
-          color: #fff;
+          background-color: ${theme.background};
+          color: ${theme.color};
         }
         #root {
           height: 100vh;
           display: grid;
           place-items: center;
+        }
+        ::-webkit-scrollbar {
+          width: 8px;
         }
       `}
     />
