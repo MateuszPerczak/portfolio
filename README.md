@@ -2,7 +2,7 @@
 
 ![GitHub](https://img.shields.io/github/license/MateuszPerczak/mateuszperczak.github.io?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/MateuszPerczak/mateuszperczak.github.io?style=flat-square)
-![GitHub branch checks state](https://img.shields.io/github/checks-status/MateuszPerczak/mateuszperczak.github.io/master?style=flat-square)
+![GitHub branch checks state](https://img.shields.io/github/checks-status/MateuszPerczak/mateuszperczak.github.io/test?style=flat-square)
 ![Website](https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Fmateuszperczak.github.io%2F)
 
 ![Website preview](./images/preview.png)
