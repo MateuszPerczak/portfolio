@@ -6,6 +6,7 @@
     <meta name="description" content="Portfolio" />
     <meta name="author" content="Mateusz Perczak" />
     <meta name="keywords" content="Portfolio, Mateusz Perczak" />
+    <title>Mateusz Perczak - Portfolio</title>
     <link
       rel="icon"
       href="https://avatars.githubusercontent.com/u/40388335?v=4"
@@ -14,11 +15,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap"
-      rel="stylesheet"
+      rel="preload stylesheet"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="./fonts/Segoe Fluent Icons.ttf"
+      as="font"
+      crossorigin
     />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div id="root" />
   </body>
 </html>

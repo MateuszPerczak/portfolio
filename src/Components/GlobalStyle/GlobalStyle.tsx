@@ -23,6 +23,10 @@ const GlobalStyle: FC = (): JSX.Element => {
           display: grid;
           place-items: center;
         }
+        @font-face {
+          font-family: "Segoe Fluent Icons";
+          src: url("./fonts/Segoe Fluent Icons.ttf") format("truetype");
+        }
         ::-webkit-scrollbar {
           width: 8px;
         }
