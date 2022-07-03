@@ -14,7 +14,7 @@ const GlobalStyle: FC = (): JSX.Element => {
           padding: 0;
         }
         body {
-          font-family: "PT Sans Caption", sans-serif;
+          font-family: "Poppins", sans-serif;
           background-color: ${theme.background};
           color: ${theme.color};
         }

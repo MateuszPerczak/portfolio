@@ -6,6 +6,7 @@ export const StyledNavButton = styled(Link)`
   align-items: center;
   gap: 10px;
   flex-wrap: nowrap;
+  white-space: nowrap;
   width: 100%;
   min-width: 39px;
   height: 39px;
