@@ -38,8 +38,8 @@ const AboutMe = () => {
             <PanelLink href="https://github.com/Py4Js/PyScript-React">
               PyScript-React
             </PanelLink>
-            <PanelLink href="https://github.com/MateuszPerczak/Luix">
-              Luix
+            <PanelLink href="https://github.com/MateuszPerczak/mateuszperczak.github.io">
+              My portfolio
             </PanelLink>
           </PanelContent>
         </Panel>
