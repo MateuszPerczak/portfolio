@@ -25,11 +25,18 @@ const Nav: FC = (): JSX.Element => {
         isOpen={isOpen}
         onClick={() => setIsOpen((wasOpen) => !wasOpen)}
       />
-      {routes.map((route, index) => {
-        return <NavButton key={index} {...route} name={t(route.name)} />;
-      })}
+      {routes
+        .filter((route) => route.position === "top")
+        .map((route, index) => {
+          return <NavButton key={index} {...route} name={t(route.name)} />;
+        })}
+
       <NavSpacer />
-      <NavButton icon="&#xE15E;" path="/preferences" name={t("preferences")} />
+      {routes
+        .filter((route) => route.position === "bottom")
+        .map((route, index) => {
+          return <NavButton key={index} {...route} name={t(route.name)} />;
+        })}
     </StyledNav>
   );
 };
