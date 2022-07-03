@@ -4,6 +4,7 @@ import GlobalStyle from "../GlobalStyle/GlobalStyle";
 import Card from "../Card/Card";
 import Nav from "../Nav/Nav";
 import Loader from "../Loader/Loader";
+import routes from "../../Routes/routes";
 
 const AppContent: FC = (): JSX.Element => {
   return (
@@ -13,7 +14,9 @@ const AppContent: FC = (): JSX.Element => {
         <Nav />
         <Suspense fallback={<Loader />}>
           <Routes>
-            <Route path="/" element={<>Test</>} />
+            {routes.map(({ component: Component, ...rest }, index) => {
+              return <Route key={index} {...rest} element={<Component />} />;
+            })}
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </Suspense>

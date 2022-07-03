@@ -4,6 +4,9 @@ import { useState } from "react";
 import { useSpring } from "react-spring";
 
 import NavHamburger from "../NavHamburger/NavHamburger";
+import NavButton from "../NavButton/NavButton";
+
+import routes from "../../Routes/routes";
 
 const Nav: FC = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,6 +22,9 @@ const Nav: FC = (): JSX.Element => {
         isOpen={isOpen}
         onClick={() => setIsOpen((wasOpen) => !wasOpen)}
       />
+      {routes.map((route, index) => {
+        return <NavButton key={index} {...route} />;
+      })}
     </StyledNav>
   );
 };
