@@ -20,7 +20,7 @@ const Nav: FC = (): JSX.Element => {
   const { t } = useTranslation();
 
   return (
-    <StyledNav style={animatedNav}>
+    <StyledNav style={animatedNav} onMouseLeave={() => setIsOpen(false)}>
       <NavHamburger
         isOpen={isOpen}
         onClick={() => setIsOpen((wasOpen) => !wasOpen)}
@@ -29,7 +29,7 @@ const Nav: FC = (): JSX.Element => {
         return <NavButton key={index} {...route} name={t(route.name)} />;
       })}
       <NavSpacer />
-      <NavButton icon="&#xE115;" path="/" name={t("preferences")} />
+      <NavButton icon="&#xE15E;" path="/preferences" name={t("preferences")} />
     </StyledNav>
   );
 };

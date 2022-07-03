@@ -17,6 +17,7 @@ const AppContent: FC = (): JSX.Element => {
             {routes.map(({ component: Component, ...rest }, index) => {
               return <Route key={index} {...rest} element={<Component />} />;
             })}
+            <Route path="/preferences" element={<>Settings</>} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
         </Suspense>

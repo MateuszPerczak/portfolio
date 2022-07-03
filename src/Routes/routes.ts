@@ -1,6 +1,19 @@
-import { FC } from "react";
+import { FC, lazy, LazyExoticComponent } from "react";
 
-import AboutMe from "../Pages/AboutMe";
+const AboutMe: LazyExoticComponent<FC> = lazy(
+  (): Promise<typeof import("../Pages/AboutMe")> => {
+    return new Promise((resolve) => {
+      resolve(import("../Pages/AboutMe"));
+    });
+  }
+);
+const Skills: LazyExoticComponent<FC> = lazy(
+  (): Promise<typeof import("../Pages/Skills")> => {
+    return new Promise((resolve) => {
+      resolve(import("../Pages/Skills"));
+    });
+  }
+);
 
 type routeType = {
   path: string;
@@ -18,7 +31,7 @@ const routes: routeType[] = [
   },
   {
     path: "/skills",
-    component: AboutMe,
+    component: Skills,
     icon: "\uE7BE",
     name: "skills",
   },
