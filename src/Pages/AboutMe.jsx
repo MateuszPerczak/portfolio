@@ -49,7 +49,6 @@ const AboutMe = () => {
             <span>TypeScript</span>
           </PanelContent>
         </Panel>
-
         <Panel>
           <PanelHeader header={t("usefulLinks")} icon="&#xE167;" />
           <PanelContent flexDirection="row" flexWrap="wrap">
