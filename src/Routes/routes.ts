@@ -7,6 +7,7 @@ const AboutMe: LazyExoticComponent<FC> = lazy(
     });
   }
 );
+
 const Skills: LazyExoticComponent<FC> = lazy(
   (): Promise<typeof import("../Pages/Skills")> => {
     return new Promise((resolve) => {
@@ -28,8 +29,13 @@ type routeType = {
   component: FC;
   icon: string;
   name: string;
-  position: string;
+  position: RoutePosition;
 };
+
+export enum RoutePosition {
+  Top = "top",
+  Bottom = "bottom",
+}
 
 const routes: routeType[] = [
   {
@@ -37,42 +43,42 @@ const routes: routeType[] = [
     component: AboutMe,
     icon: "\uE13D",
     name: "aboutMe",
-    position: "top",
+    position: RoutePosition.Top,
   },
   {
     path: "/skills",
     component: Skills,
     icon: "\uE7BE",
     name: "skills",
-    position: "top",
+    position: RoutePosition.Top,
   },
   {
     path: "/experience",
     component: AboutMe,
     icon: "\uE821",
     name: "experience",
-    position: "top",
+    position: RoutePosition.Top,
   },
   {
     path: "/projects",
     component: AboutMe,
     icon: "\uE74C",
     name: "projects",
-    position: "top",
+    position: RoutePosition.Top,
   },
   {
     path: "/contact",
     component: AboutMe,
     icon: "\uE715",
     name: "contact",
-    position: "top",
+    position: RoutePosition.Top,
   },
   {
     path: "/preferences",
     component: Preferences,
     icon: "\uE15E",
     name: "preferences",
-    position: "bottom",
+    position: RoutePosition.Bottom,
   },
 ];
 

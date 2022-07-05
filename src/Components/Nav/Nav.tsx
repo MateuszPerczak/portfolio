@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useMemo } from "react";
 import StyledNav from "./Nav.style";
 import { useState } from "react";
 import { useSpring } from "react-spring";
@@ -7,7 +7,7 @@ import NavHamburger from "../NavHamburger/NavHamburger";
 import NavButton from "../NavButton/NavButton";
 import NavSpacer from "../NavSpacer/NavSpacer";
 
-import routes from "../../Routes/routes";
+import routes, { RoutePosition } from "../../Routes/routes";
 
 const Nav: FC = (): JSX.Element => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,24 +19,29 @@ const Nav: FC = (): JSX.Element => {
 
   const { t } = useTranslation();
 
+  const navItems = useMemo(() => {
+    return routes.reduce(
+      (acc, { position, name, ...rest }) => {
+        const { path } = rest;
+        acc[position].push(<NavButton key={path} {...rest} name={t(name)} />);
+        return acc;
+      },
+      {
+        top: [],
+        bottom: [],
+      } as { [key in RoutePosition]: JSX.Element[] }
+    );
+  }, [t]);
+
   return (
     <StyledNav style={animatedNav} onMouseLeave={() => setIsOpen(false)}>
       <NavHamburger
         isOpen={isOpen}
         onClick={() => setIsOpen((wasOpen) => !wasOpen)}
       />
-      {routes
-        .filter((route) => route.position === "top")
-        .map((route, index) => {
-          return <NavButton key={index} {...route} name={t(route.name)} />;
-        })}
-
+      {navItems.top}
       <NavSpacer />
-      {routes
-        .filter((route) => route.position === "bottom")
-        .map((route, index) => {
-          return <NavButton key={index} {...route} name={t(route.name)} />;
-        })}
+      {navItems.bottom}
     </StyledNav>
   );
 };
