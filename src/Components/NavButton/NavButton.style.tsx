@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const StyledNavButton = styled(Link)`
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 11px;
   flex-wrap: nowrap;
   white-space: nowrap;
   width: 100%;
@@ -12,7 +12,7 @@ export const StyledNavButton = styled(Link)`
   height: 39px;
   border-radius: 10px;
   font-size: 18px;
-  padding-left: 11px;
+  padding-left: 10px;
   overflow: hidden;
   cursor: pointer;
   text-decoration: none;
