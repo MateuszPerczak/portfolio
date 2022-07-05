@@ -24,6 +24,14 @@ const Preferences: LazyExoticComponent<FC> = lazy(
   }
 );
 
+const Contact: LazyExoticComponent<FC> = lazy(
+  (): Promise<typeof import("../Pages/Contact")> => {
+    return new Promise((resolve) => {
+      resolve(import("../Pages/Contact"));
+    });
+  }
+);
+
 type routeType = {
   path: string;
   component: FC;
@@ -68,7 +76,7 @@ const routes: routeType[] = [
   },
   {
     path: "/contact",
-    component: AboutMe,
+    component: Contact,
     icon: "\uE715",
     name: "contact",
     position: RoutePosition.Top,
