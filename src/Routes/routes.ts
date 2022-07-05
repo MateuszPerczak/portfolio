@@ -32,6 +32,22 @@ const Contact: LazyExoticComponent<FC> = lazy(
   }
 );
 
+const Projects: LazyExoticComponent<FC> = lazy(
+  (): Promise<typeof import("../Pages/Projects")> => {
+    return new Promise((resolve) => {
+      resolve(import("../Pages/Projects"));
+    });
+  }
+);
+
+const Experience: LazyExoticComponent<FC> = lazy(
+  (): Promise<typeof import("../Pages/Experience")> => {
+    return new Promise((resolve) => {
+      resolve(import("../Pages/Experience"));
+    });
+  }
+);
+
 type routeType = {
   path: string;
   component: FC;
@@ -62,14 +78,14 @@ const routes: routeType[] = [
   },
   {
     path: "/experience",
-    component: AboutMe,
+    component: Experience,
     icon: "\uE821",
     name: "experience",
     position: RoutePosition.Top,
   },
   {
     path: "/projects",
-    component: AboutMe,
+    component: Projects,
     icon: "\uE74C",
     name: "projects",
     position: RoutePosition.Top,
