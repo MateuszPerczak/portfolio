@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export const StyledNavButton = styled(Link)`
   display: flex;
   align-items: center;
-  gap: 11px;
+  gap: 13px;
   flex-wrap: nowrap;
   white-space: nowrap;
   width: 100%;
