@@ -1,6 +1,17 @@
-import styled from "@emotion/styled";
+import { Theme } from "@emotion/react";
+import styled, { StyledComponent } from "@emotion/styled";
+import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
 
-const StyledPanelHeader = styled.header`
+type StyledPanelHeaderComponent = StyledComponent<
+  {
+    theme?: Theme;
+    as?: ElementType;
+  },
+  DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>,
+  Record<string, unknown>
+>;
+
+const StyledPanelHeader: StyledPanelHeaderComponent = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;

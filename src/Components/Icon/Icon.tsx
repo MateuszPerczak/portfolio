@@ -1,16 +1,14 @@
 import { Theme } from "@emotion/react";
 import styled, { StyledComponent } from "@emotion/styled";
+import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
 
 type IconComponent = StyledComponent<
   {
-    theme?: Theme | undefined;
-    as?: React.ElementType<any> | undefined;
+    theme?: Theme;
+    as?: ElementType;
   },
-  React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLSpanElement>,
-    HTMLSpanElement
-  >,
-  {}
+  DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>,
+  Record<string, unknown>
 >;
 
 const Icon: IconComponent = styled.span`

@@ -4,11 +4,11 @@ import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
 
 type NavSpacerComponent = StyledComponent<
   {
-    theme?: Theme | undefined;
-    as?: ElementType<any> | undefined;
+    theme?: Theme;
+    as?: ElementType;
   },
   DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  {}
+  Record<string, unknown>
 >;
 
 const NavSpacer: NavSpacerComponent = styled.div`

@@ -4,16 +4,17 @@ import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
 
 type PanelContentComponent = StyledComponent<
   {
-    theme?: Theme | undefined;
-    as?: ElementType<any> | undefined;
+    theme?: Theme;
+    as?: ElementType;
   },
   DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  {}
+  Record<string, unknown>
 >;
 
 const PanelContent: PanelContentComponent = styled.div`
   display: flex;
   padding: 10px;
+  gap: 10px;
 `;
 
 export default PanelContent;

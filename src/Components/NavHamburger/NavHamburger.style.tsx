@@ -1,6 +1,17 @@
-import styled from "@emotion/styled";
+import { Theme } from "@emotion/react";
+import styled, { StyledComponent } from "@emotion/styled";
+import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
 
-const StyledNavHamburger = styled.div`
+type StyledNavHamburgerComponent = StyledComponent<
+  {
+    theme?: Theme;
+    as?: ElementType;
+  },
+  DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
+  Record<string, unknown>
+>;
+
+const StyledNavHamburger: StyledNavHamburgerComponent = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;

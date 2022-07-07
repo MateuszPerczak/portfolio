@@ -1,6 +1,17 @@
-import styled from "@emotion/styled";
+import { Theme } from "@emotion/react";
+import styled, { StyledComponent } from "@emotion/styled";
+import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
 
-const StyledCard = styled.div`
+type StyledCardComponent = StyledComponent<
+  {
+    theme?: Theme | undefined;
+    as?: ElementType<any> | undefined;
+  },
+  DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
+  {}
+>;
+
+const StyledCard: StyledCardComponent = styled.div`
   display: flex;
   flex-direction: row;
   width: min(90vw - 10px, 1000px);

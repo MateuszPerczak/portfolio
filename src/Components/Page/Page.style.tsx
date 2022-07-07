@@ -5,20 +5,20 @@ import { animated } from "react-spring";
 
 type StyledPageComponent = StyledComponent<
   {
-    theme?: Theme | undefined;
-    as?: ElementType<any> | undefined;
+    theme?: Theme;
+    as?: ElementType;
   },
   DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  {}
+  Record<string, unknown>
 >;
 
 type StyledHeaderComponent = StyledComponent<
   {
-    theme?: Theme | undefined;
-    as?: ElementType<any> | undefined;
+    theme?: Theme;
+    as?: ElementType;
   },
   DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>,
-  {}
+  Record<string, unknown>
 >;
 
 export const StyledPage: StyledPageComponent = styled.div`

@@ -5,6 +5,8 @@ import Panel from "../Components/Panel/Panel";
 import PanelHeader from "../Components/PanelHeader/PanelHeader";
 import PanelContent from "../Components/PanelContent/PanelContent";
 import PanelImage from "../Components/PanelImage/PanelImage";
+import usefulLinks from "../Data/usefulLinks.json";
+import Link from "../Components/Link/Link";
 
 const AboutMe: FC = (): JSX.Element => {
   const { t } = useTranslation("aboutMe");
@@ -24,7 +26,15 @@ const AboutMe: FC = (): JSX.Element => {
 
       <Panel>
         <PanelHeader header={t("usefulLinks")} icon="&#xE167;" />
-        <PanelContent></PanelContent>
+        <PanelContent>
+          {usefulLinks.map((link, index) => {
+            return (
+              <Link key={index} href={link.href}>
+                {link.header}
+              </Link>
+            );
+          })}
+        </PanelContent>
       </Panel>
     </Page>
   );
