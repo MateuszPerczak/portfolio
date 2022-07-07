@@ -18,6 +18,7 @@ const Page: FC<PageProps> = ({ children, header }: PageProps): JSX.Element => {
     },
     config: {
       tension: 300,
+      mass: 0.5,
     },
   });
 

@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, memo } from "react";
 import { useTranslation } from "react-i18next";
 import Page from "../Components/Page/Page";
 import Panel from "../Components/Panel/Panel";
@@ -56,4 +56,4 @@ const AboutMe: FC = (): JSX.Element => {
   );
 };
 
-export default AboutMe;
+export default memo(AboutMe);
