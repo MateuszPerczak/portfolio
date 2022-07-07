@@ -34,6 +34,7 @@ export const StyledPage: StyledPageComponent = styled.div`
 export const StyledHeader: StyledHeaderComponent = styled.header`
   position: sticky;
   top: 0;
+  z-index: 2;
   display: flex;
   align-items: center;
   width: 100%;
@@ -54,4 +55,5 @@ export const StyledChildren = styled(animated.div)`
   display: flex;
   flex-direction: column;
   padding: 10px;
+  gap: 10px;
 `;
