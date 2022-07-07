@@ -23,7 +23,23 @@ const AboutMe: FC = (): JSX.Element => {
           />
         </PanelContent>
       </Panel>
-
+      <Panel>
+        <PanelHeader header={t("workingOn")} icon="&#xE2AD;" />
+        <PanelContent>
+          <Link href="https://github.com/MateuszPerczak/mateuszperczak.github.io">
+            My portfolio
+          </Link>
+          <Link href="https://github.com/Py4Js/PyScript-React">
+            PyScript-React
+          </Link>
+        </PanelContent>
+      </Panel>
+      <Panel>
+        <PanelHeader header={t("currentlyLearning")} icon="&#xE1D3;" />
+        <PanelContent>
+          <span>TypeScript</span>
+        </PanelContent>
+      </Panel>
       <Panel>
         <PanelHeader header={t("usefulLinks")} icon="&#xE167;" />
         <PanelContent>

@@ -28,7 +28,10 @@ const GlobalStyle: FC = (): JSX.Element => {
           src: url("./fonts/Segoe Fluent Icons.ttf") format("truetype");
         }
         ::-webkit-scrollbar {
-          width: 8px;
+          width: 6px;
+        }
+        ::-webkit-scrollbar-thumb {
+          border-radius: 10px;
         }
       `}
     />

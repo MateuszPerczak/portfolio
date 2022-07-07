@@ -25,9 +25,20 @@ export const StyledPage: StyledPageComponent = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  ::-webkit-scrollbar-thumb {
+    background: ${({ theme: { background } }) => {
+      return background;
+    }};
+  }
   &:hover {
     overflow-y: auto;
+    ::-webkit-scrollbar-thumb {
+      background: ${({ theme: { scrollbar } }) => {
+        return scrollbar;
+      }};
+    }
   }
 `;
 
