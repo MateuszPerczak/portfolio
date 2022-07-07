@@ -11,5 +11,6 @@ declare module "@emotion/react" {
     hamburger: string;
     header: string;
     scrollbar: string;
+    date: string;
   }
 }

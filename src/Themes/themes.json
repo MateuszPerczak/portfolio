@@ -8,7 +8,8 @@
     "shadow": "#bababa",
     "hamburger": "#f0f0f0",
     "header": "#fafafa99",
-    "scrollbar": "#e1e1e1"
+    "scrollbar": "#e1e1e1",
+    "date": "#222"
   },
   "dark": {
     "background": "#252525",
@@ -19,6 +20,7 @@
     "shadow": "#1a1a1a",
     "hamburger": "#2a2a2a",
     "header": "#252525aa",
-    "scrollbar": "#333"
+    "scrollbar": "#333",
+    "date": "#bbb"
   }
 }
