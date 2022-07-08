@@ -10,6 +10,10 @@ const StyledNav = styled(animated.nav)`
   height: 100%;
   user-select: none;
   overflow: hidden;
+  @media (max-width: 500px) {
+    z-index: 3;
+    position: absolute;
+  }
   background: ${({ theme: { navbar } }) => {
     return navbar;
   }};

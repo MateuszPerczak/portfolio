@@ -9,7 +9,7 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: "en",
-    debug: true,
+    debug: process.env.NODE_ENV === "development",
     backend: {
       loadPath: "./locales/{{lng}}/{{ns}}.json",
     },

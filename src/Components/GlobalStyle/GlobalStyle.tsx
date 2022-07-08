@@ -33,6 +33,10 @@ const GlobalStyle: FC = (): JSX.Element => {
         ::-webkit-scrollbar-thumb {
           border-radius: 10px;
         }
+        ::selection {
+          background-color: ${theme.color};
+          color: ${theme.shadow};
+        }
       `}
     />
   );

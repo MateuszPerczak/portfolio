@@ -14,6 +14,10 @@ type StyledCardComponent = StyledComponent<
 const StyledCard: StyledCardComponent = styled.div`
   display: flex;
   flex-direction: row;
+  @media (max-width: 500px) {
+    width: 100%;
+    height: 100%;
+  }
   width: min(90vw - 10px, 1000px);
   height: min(70vh - 1rem, 700px);
   border-radius: 10px;

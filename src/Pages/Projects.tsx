@@ -1,30 +1,22 @@
-import { FC } from "react";
-import { useTranslation } from "react-i18next";
+import { FC, memo } from "react";
+import { useTranslation, UseTranslationResponse } from "react-i18next";
 import Page from "../Components/Page/Page";
-
-import Panel from "../Components/Panel/Panel";
-import PanelHeader from "../Components/PanelHeader/PanelHeader";
-import PanelContent from "../Components/PanelContent/PanelContent";
-
-import Link from "../Components/Link/Link";
-
+import PanelProject from "../Components/PanelProject/PanelProject";
+import PanelWrapper from "../Components/PanelWrapper/PanelWrapper";
 import projects from "../Data/projects.json";
 
 const Projects: FC = (): JSX.Element => {
-  const { t } = useTranslation("projects");
+  const { t }: UseTranslationResponse<string> = useTranslation("projects");
 
   return (
     <Page header={t("projects")}>
-      {projects.map((project, index) => {
-        return (
-          <Panel key={index}>
-            <PanelHeader header={project.header} icon="&#xECAA;" />
-            <PanelContent>dsds</PanelContent>
-          </Panel>
-        );
-      })}
+      <PanelWrapper>
+        {projects.map((project, index) => {
+          return <PanelProject key={index} {...project} t={t} />;
+        })}
+      </PanelWrapper>
     </Page>
   );
 };
 
-export default Projects;
+export default memo(Projects);

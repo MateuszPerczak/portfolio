@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, memo } from "react";
 import { useTranslation } from "react-i18next";
 import Page from "../Components/Page/Page";
 
@@ -11,4 +11,4 @@ const Preferences: FC = (): JSX.Element => {
     </Page>
   );
 };
-export default Preferences;
+export default memo(Preferences);

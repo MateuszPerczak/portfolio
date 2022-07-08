@@ -27,6 +27,9 @@ export const StyledPage: StyledPageComponent = styled.div`
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
+  @media (max-width: 500px) {
+    margin-left: 60px;
+  }
   ::-webkit-scrollbar-thumb {
     background: ${({ theme: { background } }) => {
       return background;

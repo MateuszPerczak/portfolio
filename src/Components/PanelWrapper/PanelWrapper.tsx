@@ -2,7 +2,7 @@ import { Theme } from "@emotion/react";
 import styled, { StyledComponent } from "@emotion/styled";
 import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
 
-type PanelComponent = StyledComponent<
+type PanelWrapperComponent = StyledComponent<
   {
     theme?: Theme;
     as?: ElementType;
@@ -11,18 +11,12 @@ type PanelComponent = StyledComponent<
   Record<string, unknown>
 >;
 
-const Panel: PanelComponent = styled.div`
+const PanelWrapper: PanelWrapperComponent = styled.div`
   display: flex;
-  flex-direction: column;
-  border-radius: 10px;
-  overflow: hidden;
-  background: ${({ theme: { hamburger } }) => {
-    return hamburger;
-  }};
-  border: 1px solid
-    ${({ theme: { border } }) => {
-      return border;
-    }};
+  flex-direction: row;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 10px;
 `;
 
-export default Panel;
+export default PanelWrapper;

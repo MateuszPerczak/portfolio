@@ -4,6 +4,7 @@ import { useSpring } from "react-spring";
 
 type PageProps = PropsWithChildren<{
   header: string;
+  wrap?: boolean;
 }>;
 
 const Page: FC<PageProps> = ({ children, header }: PageProps): JSX.Element => {
