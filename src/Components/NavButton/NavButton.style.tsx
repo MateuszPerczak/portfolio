@@ -20,7 +20,7 @@ type NavButtonSpan = StyledComponent<
 type NavButtonA = StyledComponent<
   LinkProps &
     RefAttributes<HTMLAnchorElement> & {
-      theme?: Theme | undefined;
+      theme?: Theme;
     },
   {},
   {}
@@ -29,7 +29,7 @@ type NavButtonA = StyledComponent<
 export const StyledNavButton: NavButtonA = styled(Link)`
   display: flex;
   align-items: center;
-  gap: 13px;
+  gap: 10px;
   flex-wrap: nowrap;
   white-space: nowrap;
   width: 100%;
@@ -37,7 +37,7 @@ export const StyledNavButton: NavButtonA = styled(Link)`
   height: 39px;
   border-radius: 10px;
   font-size: 18px;
-  padding-left: 10px;
+  padding-left: 11px;
   overflow: hidden;
   cursor: pointer;
   text-decoration: none;

@@ -12,15 +12,12 @@ const Experience: FC = (): JSX.Element => {
 
   return (
     <Page header={t("experience")}>
-      {experience.map((exp, index) => {
+      {experience.map(({ key, date }, index) => {
         return (
           <Panel key={index}>
-            <PanelHeader header={t(`${exp.key}.header`)} icon="&#xF427;" />
+            <PanelHeader header={t(`${key}.header`)} icon="&#xF427;" />
             <PanelContent>
-              <PanelExp
-                description={t(`${exp.key}.description`)}
-                date={exp.date}
-              />
+              <PanelExp description={t(`${key}.description`)} date={date} />
             </PanelContent>
           </Panel>
         );

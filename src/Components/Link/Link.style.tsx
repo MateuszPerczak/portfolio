@@ -15,6 +15,8 @@ const StyledLink: LinkA = styled.a`
   color: ${({ theme: { color } }) => {
     return color;
   }};
+  text-overflow: ellipsis;
+  overflow: hidden;
 `;
 
 export default StyledLink;

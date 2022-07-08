@@ -24,7 +24,6 @@ export const StyledPanelSkill: PanelSkillDiv = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5px;
-
   width: 100%;
 `;
 
@@ -35,4 +34,7 @@ export const StyledPanelSkillHeader: PanelSkillSpan = styled.span`
 export const StyledPanelSkillDescription: PanelSkillSpan = styled.span`
   font-size: 0.8rem;
   line-height: 1.2rem;
+  color: ${({ theme: { date } }) => {
+    return date;
+  }};
 `;

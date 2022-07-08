@@ -22,6 +22,7 @@ const StyledCard: CardDiv = styled.div`
   height: min(70vh - 1rem, 700px);
   border-radius: 10px;
   overflow: hidden;
+  transition: width 100ms, height 100ms;
   box-shadow: 0 0 15px 0
     ${({ theme: { shadow } }) => {
       return shadow;

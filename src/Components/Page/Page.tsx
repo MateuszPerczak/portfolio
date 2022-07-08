@@ -10,7 +10,7 @@ type PageProps = PropsWithChildren<{
 const Page: FC<PageProps> = ({ children, header }: PageProps): JSX.Element => {
   const animatedPage = useSpring({
     from: {
-      transform: "translateY(50%)",
+      transform: "translateY(150px)",
       opacity: 0,
     },
     to: {
