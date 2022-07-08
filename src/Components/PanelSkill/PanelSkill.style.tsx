@@ -2,7 +2,7 @@ import { Theme } from "@emotion/react";
 import styled, { StyledComponent } from "@emotion/styled";
 import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
 
-type PanelExpDiv = StyledComponent<
+type PanelSkillDiv = StyledComponent<
   {
     theme?: Theme;
     as?: ElementType;
@@ -11,7 +11,7 @@ type PanelExpDiv = StyledComponent<
   Record<string, unknown>
 >;
 
-type PanelExpSpan = StyledComponent<
+type PanelSkillSpan = StyledComponent<
   {
     theme?: Theme;
     as?: ElementType;
@@ -20,14 +20,19 @@ type PanelExpSpan = StyledComponent<
   Record<string, unknown>
 >;
 
-export const StyledPanelExp: PanelExpDiv = styled.div`
+export const StyledPanelSkill: PanelSkillDiv = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5px;
-  font-size: 0.9rem;
+
+  width: 100%;
 `;
 
-export const StyledPanelExpDate: PanelExpSpan = styled.span`
+export const StyledPanelSkillHeader: PanelSkillSpan = styled.span`
+  font-size: 1rem;
+`;
+
+export const StyledPanelSkillDescription: PanelSkillSpan = styled.span`
   font-size: 0.8rem;
-  color: ${({ theme: { date } }) => date};
+  line-height: 1.2rem;
 `;

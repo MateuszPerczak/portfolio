@@ -3,6 +3,15 @@ import styled, { StyledComponent } from "@emotion/styled";
 import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
 import Panel from "../Panel/Panel";
 
+type PanelProjectSpan = StyledComponent<
+  {
+    theme?: Theme;
+    as?: ElementType;
+  },
+  DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>,
+  Record<string, unknown>
+>;
+
 export const StyledProjectPanel = styled(Panel)`
   width: 40%;
   @media (max-width: 600px) {
@@ -12,23 +21,14 @@ export const StyledProjectPanel = styled(Panel)`
   flex: 1;
 `;
 
-type StyledProjectComponent = StyledComponent<
-  {
-    theme?: Theme;
-    as?: ElementType;
-  },
-  DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>,
-  Record<string, unknown>
->;
-
-export const StyledProjectLangs: StyledProjectComponent = styled.span`
+export const StyledProjectLangs: PanelProjectSpan = styled.span`
   font-size: 0.8rem;
   padding: 10px;
   background-color: ${({ theme: { background } }) => background};
   color: ${({ theme: { date } }) => date};
 `;
 
-export const StyledProjectDescription: StyledProjectComponent = styled.span`
+export const StyledProjectDescription: PanelProjectSpan = styled.span`
   font-size: 0.9rem;
   padding: 10px;
   flex: 1;

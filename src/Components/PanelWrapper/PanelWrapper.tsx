@@ -2,7 +2,7 @@ import { Theme } from "@emotion/react";
 import styled, { StyledComponent } from "@emotion/styled";
 import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
 
-type PanelWrapperComponent = StyledComponent<
+type PanelWrapperDiv = StyledComponent<
   {
     theme?: Theme;
     as?: ElementType;
@@ -11,7 +11,7 @@ type PanelWrapperComponent = StyledComponent<
   Record<string, unknown>
 >;
 
-const PanelWrapper: PanelWrapperComponent = styled.div`
+const PanelWrapper: PanelWrapperDiv = styled.div`
   display: flex;
   flex-direction: row;
   flex: 1;

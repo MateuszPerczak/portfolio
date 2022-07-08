@@ -2,7 +2,7 @@ import { Theme } from "@emotion/react";
 import styled, { StyledComponent } from "@emotion/styled";
 import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
 
-type StyledCardComponent = StyledComponent<
+type CardDiv = StyledComponent<
   {
     theme?: Theme | undefined;
     as?: ElementType<any> | undefined;
@@ -11,7 +11,7 @@ type StyledCardComponent = StyledComponent<
   {}
 >;
 
-const StyledCard: StyledCardComponent = styled.div`
+const StyledCard: CardDiv = styled.div`
   display: flex;
   flex-direction: row;
   @media (max-width: 500px) {

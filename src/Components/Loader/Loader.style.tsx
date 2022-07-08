@@ -3,7 +3,7 @@ import styled, { StyledComponent } from "@emotion/styled";
 import { Theme } from "@emotion/react";
 import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
 
-type StyledLoaderComponent = StyledComponent<
+type LoaderDiv = StyledComponent<
   {
     theme?: Theme;
     as?: ElementType;
@@ -12,12 +12,15 @@ type StyledLoaderComponent = StyledComponent<
   Record<string, unknown>
 >;
 
-export const StyledLoader: StyledLoaderComponent = styled.div`
+export const StyledLoader: LoaderDiv = styled.div`
   display: grid;
   place-items: center;
   flex: 1;
   overflow: hidden;
   user-select: none;
+  @media (max-width: 500px) {
+    margin-left: 60px;
+  }
 `;
 
 export const AnimatedLoader = styled(animated.div)`

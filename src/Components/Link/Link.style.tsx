@@ -2,7 +2,7 @@ import { Theme } from "@emotion/react";
 import styled, { StyledComponent } from "@emotion/styled";
 import { ElementType, DetailedHTMLProps, AnchorHTMLAttributes } from "react";
 
-type StyledLinkComponent = StyledComponent<
+type LinkA = StyledComponent<
   {
     theme?: Theme;
     as?: ElementType;
@@ -11,7 +11,7 @@ type StyledLinkComponent = StyledComponent<
   Record<string, unknown>
 >;
 
-const StyledLink: StyledLinkComponent = styled.a`
+const StyledLink: LinkA = styled.a`
   color: ${({ theme: { color } }) => {
     return color;
   }};

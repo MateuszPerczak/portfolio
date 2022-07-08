@@ -2,7 +2,7 @@ import { Theme } from "@emotion/react";
 import styled, { StyledComponent } from "@emotion/styled";
 import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
 
-type NavSpacerDiv = StyledComponent<
+type PanelSkillWrapperDiv = StyledComponent<
   {
     theme?: Theme;
     as?: ElementType;
@@ -11,8 +11,10 @@ type NavSpacerDiv = StyledComponent<
   Record<string, unknown>
 >;
 
-const NavSpacer: NavSpacerDiv = styled.div`
-  flex: 1;
+const PanelSkillWrapper: PanelSkillWrapperDiv = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 `;
 
-export default NavSpacer;
+export default PanelSkillWrapper;

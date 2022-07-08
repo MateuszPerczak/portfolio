@@ -2,7 +2,7 @@ import { Theme } from "@emotion/react";
 import styled, { StyledComponent } from "@emotion/styled";
 import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
 
-type PanelContentComponent = StyledComponent<
+type PanelContentDiv = StyledComponent<
   {
     theme?: Theme;
     as?: ElementType;
@@ -11,7 +11,7 @@ type PanelContentComponent = StyledComponent<
   Record<string, unknown>
 >;
 
-const PanelContent: PanelContentComponent = styled.div`
+const PanelContent: PanelContentDiv = styled.div`
   display: flex;
   padding: 10px;
   gap: 10px;

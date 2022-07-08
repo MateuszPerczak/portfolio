@@ -1,9 +1,32 @@
 import { Theme } from "@emotion/react";
 import styled, { StyledComponent } from "@emotion/styled";
-import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
-import { Link } from "react-router-dom";
+import {
+  ElementType,
+  DetailedHTMLProps,
+  HTMLAttributes,
+  RefAttributes,
+} from "react";
+import { Link, LinkProps } from "react-router-dom";
 
-export const StyledNavButton = styled(Link)`
+type NavButtonSpan = StyledComponent<
+  {
+    theme?: Theme;
+    as?: ElementType;
+  },
+  DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>,
+  Record<string, unknown>
+>;
+
+type NavButtonA = StyledComponent<
+  LinkProps &
+    RefAttributes<HTMLAnchorElement> & {
+      theme?: Theme | undefined;
+    },
+  {},
+  {}
+>;
+
+export const StyledNavButton: NavButtonA = styled(Link)`
   display: flex;
   align-items: center;
   gap: 13px;
@@ -34,15 +57,6 @@ export const StyledNavButton = styled(Link)`
   }
 `;
 
-type NavButtonComponent = StyledComponent<
-  {
-    theme?: Theme;
-    as?: ElementType;
-  },
-  DetailedHTMLProps<HTMLAttributes<HTMLSpanElement>, HTMLSpanElement>,
-  Record<string, unknown>
->;
-
-export const NavButtonText: NavButtonComponent = styled.span`
+export const NavButtonText: NavButtonSpan = styled.span`
   font-size: 15px;
 `;

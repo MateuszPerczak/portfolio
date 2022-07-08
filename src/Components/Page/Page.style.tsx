@@ -3,7 +3,7 @@ import styled, { StyledComponent } from "@emotion/styled";
 import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
 import { animated } from "react-spring";
 
-type StyledPageComponent = StyledComponent<
+type PageDiv = StyledComponent<
   {
     theme?: Theme;
     as?: ElementType;
@@ -12,7 +12,7 @@ type StyledPageComponent = StyledComponent<
   Record<string, unknown>
 >;
 
-type StyledHeaderComponent = StyledComponent<
+type PageHeader = StyledComponent<
   {
     theme?: Theme;
     as?: ElementType;
@@ -21,7 +21,7 @@ type StyledHeaderComponent = StyledComponent<
   Record<string, unknown>
 >;
 
-export const StyledPage: StyledPageComponent = styled.div`
+export const StyledPage: PageDiv = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -45,7 +45,7 @@ export const StyledPage: StyledPageComponent = styled.div`
   }
 `;
 
-export const StyledHeader: StyledHeaderComponent = styled.header`
+export const StyledHeader: PageHeader = styled.header`
   position: sticky;
   top: 0;
   z-index: 2;

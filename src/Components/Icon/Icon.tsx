@@ -2,7 +2,7 @@ import { Theme } from "@emotion/react";
 import styled, { StyledComponent } from "@emotion/styled";
 import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
 
-type IconComponent = StyledComponent<
+type IconSpan = StyledComponent<
   {
     theme?: Theme;
     as?: ElementType;
@@ -11,7 +11,7 @@ type IconComponent = StyledComponent<
   Record<string, unknown>
 >;
 
-const Icon: IconComponent = styled.span`
+const Icon: IconSpan = styled.span`
   font-family: "Segoe Fluent Icons", sans-serif;
 `;
 

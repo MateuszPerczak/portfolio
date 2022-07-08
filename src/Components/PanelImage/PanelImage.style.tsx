@@ -2,7 +2,7 @@ import { Theme } from "@emotion/react";
 import styled, { StyledComponent } from "@emotion/styled";
 import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
 
-type StylePanelImageComponent = StyledComponent<
+type PanelImageDiv = StyledComponent<
   {
     theme?: Theme;
     as?: ElementType;
@@ -11,7 +11,21 @@ type StylePanelImageComponent = StyledComponent<
   Record<string, unknown>
 >;
 
-export const StylePanelImage: StylePanelImageComponent = styled.div`
+type StyledlImgProps = {
+  src: string;
+  alt: string;
+};
+
+type PanelImageDivProps = StyledComponent<
+  {
+    theme?: Theme;
+    as?: ElementType;
+  } & StyledlImgProps,
+  DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
+  Record<string, unknown>
+>;
+
+export const StylePanelImage: PanelImageDiv = styled.div`
   display: flex;
   gap: 10px;
   @media (max-width: 650px) {
@@ -20,12 +34,7 @@ export const StylePanelImage: StylePanelImageComponent = styled.div`
   font-size: 0.9rem;
 `;
 
-type StyledlImgProps = {
-  src: string;
-  alt: string;
-};
-
-export const StyledlImg = styled.div<StyledlImgProps>`
+export const StyledlImg: PanelImageDivProps = styled.div<StyledlImgProps>`
   border-radius: 10px;
   min-width: 150px;
   min-height: 150px;
@@ -42,7 +51,7 @@ export const StyledlImg = styled.div<StyledlImgProps>`
     }};
 `;
 
-export const StyledImgWrapper: StylePanelImageComponent = styled.div`
+export const StyledImgWrapper: PanelImageDiv = styled.div`
   display: flex;
   flex: 1;
   align-items: flex-start;
