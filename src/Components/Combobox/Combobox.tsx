@@ -13,7 +13,7 @@ const Combobox: FC<ComboboxProps> = ({ header, children }): JSX.Element => {
 
   const animatedList = useSpring({
     height: isOpen
-      ? `${Array.isArray(children) ? children.length * 110 : 0}%`
+      ? `${Array.isArray(children) ? children.length * 110 : 110}%`
       : "0%",
     opacity: isOpen ? 1 : 0,
     config: {

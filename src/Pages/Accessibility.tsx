@@ -1,4 +1,4 @@
-import { FC, memo, useContext, useEffect } from "react";
+import { FC, memo, useContext } from "react";
 import { useTranslation } from "react-i18next";
 import { Themes } from "../Hooks/useTheme";
 import ThemeContext from "../Contexts/ThemeContext";
