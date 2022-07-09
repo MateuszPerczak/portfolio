@@ -24,7 +24,7 @@ const AboutMe: FC = (): JSX.Element => {
         </PanelContent>
       </Panel>
       <Panel>
-        <PanelHeader header={t("workingOn")} icon="&#xE2AD;" />
+        <PanelHeader header={t("workingOn")} icon="&#xE15E;" />
         <PanelContent>
           <Link href="https://github.com/MateuszPerczak/mateuszperczak.github.io">
             My portfolio

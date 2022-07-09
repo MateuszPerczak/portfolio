@@ -15,13 +15,16 @@ const Panel: PanelDiv = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 10px;
-  overflow: hidden;
   background: ${({ theme: { hamburger } }) => {
     return hamburger;
   }};
   border: 1px solid
     ${({ theme: { border } }) => {
       return border;
+    }};
+  box-shadow: 0 0 5px 0
+    ${({ theme: { shadow } }) => {
+      return shadow;
     }};
 `;
 

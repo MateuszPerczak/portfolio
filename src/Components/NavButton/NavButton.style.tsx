@@ -29,7 +29,7 @@ type NavButtonA = StyledComponent<
 export const StyledNavButton: NavButtonA = styled(Link)`
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 11px;
   flex-wrap: nowrap;
   white-space: nowrap;
   width: 100%;
