@@ -8,7 +8,7 @@
         "header": "Github"
       }
     ],
-    "langs": "React, Emotion, react-spring, react-i18next, ..."
+    "langs": "TypeScript, React, Emotion, react-spring, react-i18next, ..."
   },
   {
     "header": "TicTacToe",
@@ -23,7 +23,7 @@
         "header": "Demo"
       }
     ],
-    "langs": "React, Emotion, Lodash, react-router-dom, ..."
+    "langs": "TypeScript, React, Emotion, Lodash, react-router-dom, ..."
   },
   {
     "header": "PyScript-React",
@@ -34,7 +34,7 @@
         "header": "Github"
       }
     ],
-    "langs": "React, Python, Folium, Lodash, Storybook, Jest, ..."
+    "langs": "JavaScript, React, Python, Folium, Lodash, Storybook, Jest, ..."
   },
   {
     "header": "Luix",
@@ -49,7 +49,7 @@
         "header": "Demo"
       }
     ],
-    "langs": "React, Emotion, react-spring, ..."
+    "langs": "JavaScript, React, Emotion, react-spring, ..."
   },
   {
     "header": "Cypher",
