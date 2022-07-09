@@ -17,12 +17,12 @@ import ComboboxTheme from "../Components/ComboboxTheme/ComboboxTheme";
 import ComboboxLang from "../Components/ComboboxLang/ComboboxLang";
 
 const Preferences: FC = (): JSX.Element => {
-  const { t, i18n } = useTranslation("accessibility");
+  const { t, i18n } = useTranslation("preferences");
   const { changeLanguage } = i18n;
   const { browserTheme, setbrowserTheme } = useContext(ThemeContext);
 
   return (
-    <Page header={t("accessibility")}>
+    <Page header={t("preferences")}>
       <Panel>
         <PanelHeader header={t("appearance")} icon="&#xE2B1;" />
         <PanelSetting>
