@@ -14,6 +14,7 @@ type PanelProjectSpan = StyledComponent<
 
 export const StyledProjectPanel = styled(Panel)`
   width: 40%;
+  overflow: hidden;
   @media (max-width: 400px) {
     min-width: 180px;
   }
