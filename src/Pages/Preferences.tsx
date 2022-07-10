@@ -1,4 +1,5 @@
 import { FC, memo, useContext } from "react";
+import useDate from "../Hooks/useDate";
 import { useTranslation } from "react-i18next";
 import { Themes } from "../Hooks/useTheme";
 import ThemeContext from "../Contexts/ThemeContext";
@@ -20,6 +21,8 @@ const Preferences: FC = (): JSX.Element => {
   const { t, i18n } = useTranslation("preferences");
   const { changeLanguage } = i18n;
   const { browserTheme, setbrowserTheme } = useContext(ThemeContext);
+
+  const date = useDate();
 
   return (
     <Page header={t("preferences")}>
@@ -77,6 +80,10 @@ const Preferences: FC = (): JSX.Element => {
             );
           })}
         </PanelSettingInfo>
+      </Panel>
+      <Panel>
+        <PanelHeader header="Copyright" icon="&#xEB95;" />
+        <PanelContent>Mateusz Perczak &copy; {date}</PanelContent>
       </Panel>
     </Page>
   );
