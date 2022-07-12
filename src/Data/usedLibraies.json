@@ -2,10 +2,6 @@
   { "header": "React", "href": "https://pl.reactjs.org/" },
   { "header": "Emotion", "href": "https://emotion.sh/docs/introduction" },
   { "header": "react-spring", "href": "https://react-spring.io/" },
-  {
-    "header": "react-reduce-motion",
-    "href": "https://github.com/infiniteluke/react-reduce-motion"
-  },
   { "header": "react-router-dom", "href": "https://reactrouter.com/" },
   {
     "header": "use-local-storage",
