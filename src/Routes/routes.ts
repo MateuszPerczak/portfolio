@@ -16,10 +16,10 @@ const Skills: LazyExoticComponent<FC> = lazy(
   }
 );
 
-const Accessibility: LazyExoticComponent<FC> = lazy(
-  (): Promise<typeof import("../Pages/Accessibility")> => {
+const Preferences: LazyExoticComponent<FC> = lazy(
+  (): Promise<typeof import("../Pages/Preferences")> => {
     return new Promise((resolve) => {
-      resolve(import("../Pages/Accessibility"));
+      resolve(import("../Pages/Preferences"));
     });
   }
 );
@@ -98,10 +98,10 @@ const routes: routeType[] = [
     position: RoutePosition.Top,
   },
   {
-    path: "/accessibility",
-    component: Accessibility,
-    icon: "\uE07F",
-    name: "accessibility",
+    path: "/preferences",
+    component: Preferences,
+    icon: "\uE15E",
+    name: "preferences",
     position: RoutePosition.Bottom,
   },
 ];

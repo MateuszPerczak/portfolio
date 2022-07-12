@@ -26,5 +26,5 @@ export const StyledLoader: LoaderDiv = styled.div`
 export const AnimatedLoader = styled(animated.div)`
   display: grid;
   place-items: center;
-  font-size: 7vmin;
+  font-size: 3rem;
 `;

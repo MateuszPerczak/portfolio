@@ -41,7 +41,7 @@ const Skills: FC = (): JSX.Element => {
         <PanelHeader header={t("runtimesAndImplementations")} icon="&#xE621;" />
         <PanelContent>
           <PanelSkillWrapper>
-            <PanelSkill description="Git, Github, GitLab, Github actions" />
+            <PanelSkill description="NodeJS, PyPy" />
           </PanelSkillWrapper>
         </PanelContent>
       </Panel>
