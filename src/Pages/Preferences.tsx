@@ -21,7 +21,6 @@ const Preferences: FC = (): JSX.Element => {
   const { t, i18n } = useTranslation("preferences");
   const { changeLanguage } = i18n;
   const { browserTheme, setbrowserTheme } = useContext(ThemeContext);
-
   const date = useDate();
 
   return (
