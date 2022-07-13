@@ -1,17 +1,7 @@
-import { Theme } from "@emotion/react";
-import styled, { StyledComponent } from "@emotion/styled";
-import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
+import styled from "@emotion/styled";
+import PanelSkillWrapperComponent from "./PanelSkillWrapper.types";
 
-type PanelSkillWrapperDiv = StyledComponent<
-  {
-    theme?: Theme;
-    as?: ElementType;
-  },
-  DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  Record<string, unknown>
->;
-
-const PanelSkillWrapper: PanelSkillWrapperDiv = styled.div`
+const PanelSkillWrapper: PanelSkillWrapperComponent = styled.div`
   display: flex;
   flex-direction: column;
   gap: 5px;

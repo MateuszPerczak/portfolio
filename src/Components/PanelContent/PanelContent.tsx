@@ -1,17 +1,7 @@
-import { Theme } from "@emotion/react";
-import styled, { StyledComponent } from "@emotion/styled";
-import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
+import styled from "@emotion/styled";
+import PanelContentComponent from "./PanelContent.types";
 
-type PanelContentDiv = StyledComponent<
-  {
-    theme?: Theme;
-    as?: ElementType;
-  },
-  DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  Record<string, unknown>
->;
-
-const PanelContent: PanelContentDiv = styled.div`
+const PanelContent: PanelContentComponent = styled.div`
   display: flex;
   padding: 10px;
   gap: 10px;
