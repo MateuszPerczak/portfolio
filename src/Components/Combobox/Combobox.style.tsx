@@ -1,18 +1,8 @@
-import { Theme } from "@emotion/react";
-import styled, { StyledComponent } from "@emotion/styled";
-import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
+import styled from "@emotion/styled";
 import { animated } from "react-spring";
+import ComboboxComponent from "./Combobox.types";
 
-type ComboboxDiv = StyledComponent<
-  {
-    theme?: Theme;
-    as?: ElementType;
-  },
-  DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  Record<string, unknown>
->;
-
-export const StyledCombobox: ComboboxDiv = styled.div`
+export const StyledCombobox: ComboboxComponent = styled.div`
   position: relative;
   display: flex;
   align-items: center;

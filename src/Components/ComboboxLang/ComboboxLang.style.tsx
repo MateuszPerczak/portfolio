@@ -1,17 +1,7 @@
-import { Theme } from "@emotion/react";
-import styled, { StyledComponent } from "@emotion/styled";
-import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
+import styled from "@emotion/styled";
+import ComboboxLangComponent from "./ComboboxLang.types";
 
-type ComboboxLangDiv = StyledComponent<
-  {
-    theme?: Theme;
-    as?: ElementType;
-  },
-  DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  Record<string, unknown>
->;
-
-export const StyledComboboxLang: ComboboxLangDiv = styled.div`
+export const StyledComboboxLang: ComboboxLangComponent = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -1,18 +1,8 @@
 import { animated } from "react-spring";
-import styled, { StyledComponent } from "@emotion/styled";
-import { Theme } from "@emotion/react";
-import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
+import styled from "@emotion/styled";
+import LoaderComponent from "./Loader.types";
 
-type LoaderDiv = StyledComponent<
-  {
-    theme?: Theme;
-    as?: ElementType;
-  },
-  DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  Record<string, unknown>
->;
-
-export const StyledLoader: LoaderDiv = styled.div`
+export const StyledLoader: LoaderComponent = styled.div`
   display: grid;
   place-items: center;
   flex: 1;

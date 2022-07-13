@@ -1,27 +1,8 @@
-import { Theme } from "@emotion/react";
-import styled, { StyledComponent } from "@emotion/styled";
-import { ElementType, DetailedHTMLProps, HTMLAttributes } from "react";
+import styled from "@emotion/styled";
 import { animated } from "react-spring";
+import PageComponent, { PageHeaderComponent } from "./Page.types";
 
-type PageDiv = StyledComponent<
-  {
-    theme?: Theme;
-    as?: ElementType;
-  },
-  DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>,
-  Record<string, unknown>
->;
-
-type PageHeader = StyledComponent<
-  {
-    theme?: Theme;
-    as?: ElementType;
-  },
-  DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>,
-  Record<string, unknown>
->;
-
-export const StyledPage: PageDiv = styled.div`
+export const StyledPage: PageComponent = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -45,7 +26,7 @@ export const StyledPage: PageDiv = styled.div`
   }
 `;
 
-export const StyledHeader: PageHeader = styled.header`
+export const StyledHeader: PageHeaderComponent = styled.header`
   position: sticky;
   top: 0;
   z-index: 2;
