@@ -30,6 +30,7 @@ const Nav: FC = (): JSX.Element => {
       animate={{
         width: isOpen ? "200px" : "60px",
       }}
+      initial={{ width: "60px" }}
       transition={{ type: "spring", mass: 0.5, stiffness: 150, damping: 12 }}
       onMouseLeave={() => setIsOpen(false)}
     >
