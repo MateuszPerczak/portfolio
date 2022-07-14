@@ -11,7 +11,7 @@
 
 - React
 - Emotion
-- react-spring
+- framer-motion
 - react-reduce-motion
 - react-router-dom
 - react-i18next
