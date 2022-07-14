@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { animated } from "react-spring";
+import { motion } from "framer-motion";
 import ComboboxComponent from "./Combobox.types";
 
 export const StyledCombobox: ComboboxComponent = styled.div`
@@ -22,7 +22,7 @@ export const StyledCombobox: ComboboxComponent = styled.div`
     }};
 `;
 
-export const ComboboxList = styled(animated.div)`
+export const ComboboxList = styled(motion.div)`
   position: absolute;
   top: calc(100% + 5px);
   left: 0;

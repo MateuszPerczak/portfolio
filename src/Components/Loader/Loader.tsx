@@ -1,19 +1,20 @@
 import { FC } from "react";
 import { StyledLoader, AnimatedLoader } from "./Loader.style";
 import Icon from "../Icon/Icon";
-import { useSpring } from "react-spring";
 
 const Loader: FC = (): JSX.Element => {
-  const animatedLoader = useSpring({
-    from: { transform: "rotate(0deg)" },
-    to: { transform: "rotate(360deg)" },
-    config: { mass: 3, tension: 150 },
-    loop: true,
-  });
-
   return (
     <StyledLoader>
-      <AnimatedLoader style={animatedLoader}>
+      <AnimatedLoader
+        animate={{ opacity: 1, transform: "rotate(360deg)" }}
+        transition={{
+          type: "spring",
+          mass: 0.6,
+          stiffness: 50,
+          repeat: Infinity,
+          repeatDelay: 0.1,
+        }}
+      >
         <Icon>&#xE72C;</Icon>
       </AnimatedLoader>
     </StyledLoader>
