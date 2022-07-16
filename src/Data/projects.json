@@ -8,7 +8,22 @@
         "header": "Github"
       }
     ],
-    "langs": "TypeScript, React, Emotion, react-spring, react-i18next, ..."
+    "langs": "TypeScript, React, Emotion, react-i18next, framer-motion ..."
+  },
+  {
+    "header": "Weather",
+    "description": "weather",
+    "links": [
+      {
+        "href": "https://github.com/MateuszPerczak/weather",
+        "header": "Github"
+      },
+      {
+        "href": "https://mateuszperczak.github.io/weather/",
+        "header": "Demo"
+      }
+    ],
+    "langs": "TypeScript, React, Emotion, Lodash, react-router-dom, react-query, framer-motion ..."
   },
   {
     "header": "TicTacToe",
@@ -23,7 +38,7 @@
         "header": "Demo"
       }
     ],
-    "langs": "TypeScript, React, Emotion, Lodash, react-router-dom, ..."
+    "langs": "TypeScript, React, Emotion, Lodash, react-router-dom, react-spring, ..."
   },
   {
     "header": "PyScript-React",
