@@ -51,7 +51,7 @@ const Skills: FC = (): JSX.Element => {
           <PanelSkillWrapper>
             <PanelSkill
               header="JavaScript, TypeScript:"
-              description="React, Next, Astro, Emotion, Webpack, Lodash, framer-motion, react-spring,
+              description="React, Next, Astro, Emotion, Webpack, Lodash, framer-motion, react-querry, react-spring,
               react-reduce-motion, react-router-dom, react-i18next,
               use-system-theme, react-draggable, use-local-storage ..."
             />
