@@ -6,16 +6,19 @@ const Loader: FC = (): JSX.Element => {
   return (
     <StyledLoader>
       <AnimatedLoader
-        animate={{ opacity: 1, transform: "rotate(360deg)" }}
+        animate={{
+          scale: [1, 0.8, 2, 2, 2, 2, 2, 2, 1],
+          y: [0, 0, -10, 10, 5, 5, 5, 5, 0],
+          rotate: [0, 0, 0, 5, -5, 5, -5, 5, 0, 0],
+          opacity: [1, 1, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 0.8, 1],
+        }}
         transition={{
-          type: "spring",
-          mass: 0.6,
-          stiffness: 50,
+          easing: "easeOut",
           repeat: Infinity,
-          repeatDelay: 0.1,
+          repeatDelay: 1,
         }}
       >
-        <Icon>&#xE72C;</Icon>
+        <Icon>&#xE12A;</Icon>
       </AnimatedLoader>
     </StyledLoader>
   );

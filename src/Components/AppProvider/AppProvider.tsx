@@ -4,6 +4,8 @@ import { BrowserRouter } from "react-router-dom";
 import useConsole from "../../Hooks/useConsole";
 import useTheme from "../../Hooks/useTheme";
 import ThemeContext from "../../Contexts/ThemeContext";
+import { MotionConfig } from "framer-motion";
+import { LazyMotion, domAnimation } from "framer-motion";
 
 const AppProvider: FC<PropsWithChildren> = ({ children }): JSX.Element => {
   const { themeObject, browserTheme, setbrowserTheme } = useTheme();
@@ -13,7 +15,11 @@ const AppProvider: FC<PropsWithChildren> = ({ children }): JSX.Element => {
   return (
     <ThemeProvider theme={themeObject}>
       <ThemeContext.Provider value={{ browserTheme, setbrowserTheme }}>
-        <BrowserRouter>{children}</BrowserRouter>
+        <MotionConfig reducedMotion="user">
+          <LazyMotion features={domAnimation}>
+            <BrowserRouter>{children}</BrowserRouter>
+          </LazyMotion>
+        </MotionConfig>
       </ThemeContext.Provider>
     </ThemeProvider>
   );

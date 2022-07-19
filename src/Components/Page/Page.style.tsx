@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import PageComponent, { PageHeaderComponent } from "./Page.types";
 
 export const StyledPage: PageComponent = styled.div`
@@ -46,7 +46,7 @@ export const StyledHeader: PageHeaderComponent = styled.header`
     }};
 `;
 
-export const StyledChildren = styled(motion.div)`
+export const StyledChildren = styled(m.div)`
   display: flex;
   flex-direction: column;
   padding: 10px;

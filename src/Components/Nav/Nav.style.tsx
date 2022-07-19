@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
-const StyledNav = styled(motion.nav)`
+const StyledNav = styled(m.nav)`
   display: flex;
   flex-direction: column;
   align-items: flex-start;

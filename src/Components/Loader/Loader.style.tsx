@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import styled from "@emotion/styled";
 import LoaderComponent from "./Loader.types";
 
@@ -13,7 +13,7 @@ export const StyledLoader: LoaderComponent = styled.div`
   }
 `;
 
-export const AnimatedLoader = styled(motion.div)`
+export const AnimatedLoader = styled(m.div)`
   display: grid;
   place-items: center;
   font-size: 3rem;

@@ -13,7 +13,7 @@ const Page: FC<PageProps> = ({ children, header }: PageProps): JSX.Element => {
       <StyledChildren
         initial={{ opacity: 0, transform: "translateY(100px)" }}
         animate={{ opacity: 1, transform: "translateY(0px)" }}
-        transition={{ type: "spring", mass: 0.2, stiffness: 150 }}
+        transition={{ type: "spring", mass: 0.5, stiffness: 200, damping: 15 }}
         layoutScroll
       >
         {children}
