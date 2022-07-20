@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { memo } from "react";
 import CardComponent from "./Card.types";
 
 const Card: CardComponent = styled.div`
@@ -26,4 +27,4 @@ const Card: CardComponent = styled.div`
     }};
 `;
 
-export default Card;
+export default memo(Card);

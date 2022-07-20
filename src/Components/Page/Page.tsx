@@ -1,4 +1,5 @@
-import { FC, PropsWithChildren } from "react";
+import type { FC, PropsWithChildren } from "react";
+import { memo } from "react";
 import { StyledPage, StyledHeader, StyledChildren } from "./Page.style";
 
 type PageProps = PropsWithChildren<{
@@ -22,4 +23,4 @@ const Page: FC<PageProps> = ({ children, header }: PageProps): JSX.Element => {
   );
 };
 
-export default Page;
+export default memo(Page);

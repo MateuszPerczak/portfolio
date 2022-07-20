@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { memo } from "react";
 import ComboboxThemeComponent from "./ComboboxTheme.types";
 
 const ComboboxTheme: ComboboxThemeComponent = styled.div`
@@ -14,4 +15,4 @@ const ComboboxTheme: ComboboxThemeComponent = styled.div`
   }
 `;
 
-export default ComboboxTheme;
+export default memo(ComboboxTheme);

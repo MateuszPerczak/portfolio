@@ -8,6 +8,12 @@ import type {
 } from "react";
 import type { LinkProps } from "react-router-dom";
 
+export type NavButtonProps = {
+  icon: string;
+  name: string;
+  path: string;
+};
+
 export type NavButtonTextComponent = StyledComponent<
   {
     theme?: Theme;

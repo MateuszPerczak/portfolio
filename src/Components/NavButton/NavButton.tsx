@@ -1,12 +1,8 @@
-import { FC } from "react";
+import type { FC } from "react";
+import { memo } from "react";
 import { StyledNavButton, NavButtonText } from "./NavButton.style";
 import Icon from "../Icon/Icon";
-
-type NavButtonProps = {
-  icon: string;
-  name: string;
-  path: string;
-};
+import type { NavButtonProps } from "./NavButton.types";
 
 const NavButton: FC<NavButtonProps> = ({
   icon,
@@ -21,4 +17,4 @@ const NavButton: FC<NavButtonProps> = ({
   );
 };
 
-export default NavButton;
+export default memo(NavButton);

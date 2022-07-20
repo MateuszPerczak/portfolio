@@ -1,4 +1,5 @@
-import { FC } from "react";
+import type { FC } from "react";
+import { memo } from "react";
 import { StyledLoader, AnimatedLoader } from "./Loader.style";
 import Icon from "../Icon/Icon";
 
@@ -24,4 +25,4 @@ const Loader: FC = (): JSX.Element => {
   );
 };
 
-export default Loader;
+export default memo(Loader);
