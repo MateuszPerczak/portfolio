@@ -23,7 +23,7 @@ type NavButtonComponent = StyledComponent<
       theme?: Theme;
     },
   {},
-  {}
+  Record<string, unknown>
 >;
 
 export default NavButtonComponent;
