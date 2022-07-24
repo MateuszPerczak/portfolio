@@ -10,5 +10,6 @@
   "tkDeb": "Zaawansowane narzędzie developerskie ułatwiające korzystanie z biblioteki tkinter, pozwalające w łatwy sposób zarządzać gui.",
   "samPy": "Aplikacja pozwalająca w łatwy sposób znaleźć zduplikowane pliki w wybranych folderach.",
   "luix": "Wirtualny pulpit odwzorowywujący system operacyjny. Posiada pasek zadań, menedżer okien i kilka podstawowych aplikacji wraz z możliwością ich poszerzenia.",
-  "weather": "Aplikacja web'owa pozwalająca na sprawdzenie pogody w wybranym regionie Polski."
+  "weather": "Aplikacja web'owa pozwalająca na sprawdzenie pogody w wybranym regionie Polski.",
+  "hardwareinfo": "Aplikacja identyfikująca procesor, pamięć RAM, chipset płyty głównej (oraz inne właściwości sprzętu komputerowego) zainstalowane w komputerze."
 }

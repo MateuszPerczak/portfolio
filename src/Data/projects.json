@@ -26,6 +26,17 @@
     "langs": "TypeScript, React, Emotion, Lodash, react-router-dom, react-query, framer-motion ..."
   },
   {
+    "header": "Hardwareinfo",
+    "description": "hardwareinfo",
+    "links": [
+      {
+        "href": "https://github.com/MateuszPerczak/hardwareinfo",
+        "header": "Github"
+      }
+    ],
+    "langs": "TypeScript, Rust, Tauri, React, Emotion, framer-motion ..."
+  },
+  {
     "header": "TicTacToe",
     "description": "ticTacToe",
     "links": [

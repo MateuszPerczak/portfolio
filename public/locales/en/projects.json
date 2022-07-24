@@ -10,5 +10,6 @@
   "tkDeb": "Advanced developer tool facilitating the use of the Tkinter library, allowing you to easily manage GUI.",
   "samPy": "An application that allows you to easily find duplicate files in selected folders.",
   "luix": "Virtual desktop simulating real OS. It has a taskbar, a window manager, and some basic applications. Which can be expanded.",
-  "weather": "Web app that allows you to find weather forecast for any city in the Poland."
+  "weather": "Web app that allows you to find weather forecast for any city in the Poland.",
+  "hardwareinfo": "Desktop application (new version of PySpec) with identifies the CPU, RAM, motherboard chipset (and other hardware properties) installed in the computer."
 }
