@@ -16,8 +16,11 @@ const Skills: FC = (): JSX.Element => {
         <PanelHeader header={t("programingLanguages")} icon="&#xE943;" />
         <PanelContent>
           <PanelSkillWrapper>
-            <PanelSkill header="Regular:" description="JavaScript, Python" />
-            <PanelSkill header="Junior:" description="TypeScript, C#" />
+            <PanelSkill
+              header="Regular:"
+              description="TypeScript, JavaScript, Python"
+            />
+            <PanelSkill header="Junior:" description="C#" />
           </PanelSkillWrapper>
         </PanelContent>
       </Panel>
