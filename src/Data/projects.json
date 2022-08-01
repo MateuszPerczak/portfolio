@@ -37,6 +37,21 @@
     "langs": "TypeScript, Rust, Tauri, React, Emotion, framer-motion ..."
   },
   {
+    "header": "Luix",
+    "description": "luix",
+    "links": [
+      {
+        "href": "https://github.com/MateuszPerczak/Luix",
+        "header": "Github"
+      },
+      {
+        "href": "https://mateuszperczak.github.io/Luix/",
+        "header": "Demo"
+      }
+    ],
+    "langs": "JavaScript, React, Emotion, react-spring, ..."
+  },
+  {
     "header": "TicTacToe",
     "description": "ticTacToe",
     "links": [
@@ -61,21 +76,6 @@
       }
     ],
     "langs": "TypeScript, React, Python, Folium, Lodash, Storybook, Jest, ..."
-  },
-  {
-    "header": "Luix",
-    "description": "luix",
-    "links": [
-      {
-        "href": "https://github.com/MateuszPerczak/Luix",
-        "header": "Github"
-      },
-      {
-        "href": "https://mateuszperczak.github.io/Luix/",
-        "header": "Demo"
-      }
-    ],
-    "langs": "JavaScript, React, Emotion, react-spring, ..."
   },
   {
     "header": "Cypher",
