@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://mateuszperczak.github.io/",
   "dependencies": {
-    "@emotion/react": "^11.9.3",
+    "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "framer-motion": "^6.5.1",
     "i18next": "^21.8.16",
