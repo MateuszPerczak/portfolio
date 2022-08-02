@@ -1,7 +1,7 @@
 {
   "name": "vite-project",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -24,9 +24,14 @@
     "use-local-storage": "^2.3.6"
   },
   "devDependencies": {
+    "@nabla/vite-plugin-eslint": "^1.4.1",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
     "@vitejs/plugin-react": "^2.0.0",
+    "eslint": "^8.21.0",
+    "eslint-plugin-react": "^7.30.1",
     "typescript": "^4.6.4",
     "vite": "^3.0.0"
   }
