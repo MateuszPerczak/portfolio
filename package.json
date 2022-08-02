@@ -1,58 +1,22 @@
 {
-  "name": "mateuszperczak.github.io",
-  "version": "0.1.0",
+  "name": "vite-project",
   "private": true,
-  "homepage": "https://mateuszperczak.github.io/",
-  "dependencies": {
-    "@emotion/react": "^11.9.3",
-    "@emotion/styled": "^11.9.3",
-    "i18next": "^21.8.11",
-    "i18next-browser-languagedetector": "^6.1.4",
-    "i18next-http-backend": "^1.4.1",
-    "react": "^18.2.0",
-    "react-circle-flags": "^0.0.17",
-    "react-dom": "^18.2.0",
-    "react-i18next": "^11.18.0",
-    "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
-    "react-spring": "^9.4.5",
-    "react-use-system-theme": "^1.1.1",
-    "typescript": "^4.4.2",
-    "use-local-storage": "^2.3.6"
-  },
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "cross-env PUBLIC_URL=/ react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "publish": "gh-pages -b deploy -d build -t true",
-    "build:publish": "npm run build && nodetouch ./build/.nojekyll && npm run publish"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/jest": "^28.1.5",
-    "@types/node": "^18.0.3",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
-    "cross-env": "^7.0.3",
-    "gh-pages": "^4.0.0",
-    "touch": "^3.1.0"
+    "@vitejs/plugin-react": "^2.0.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.0.0"
   }
 }
