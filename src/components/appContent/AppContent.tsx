@@ -1,7 +1,13 @@
 import type { FC } from "react";
+import GlobalStyle from "../globalStyle/GlobalStyle";
 
 const AppContent: FC = (): JSX.Element => {
-  return <div>TEST</div>;
+  return (
+    <>
+      <GlobalStyle />
+      TEST
+    </>
+  );
 };
 
 export default AppContent;

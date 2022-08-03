@@ -1,4 +1,4 @@
-import { FC } from "react";
+import type { FC } from "react";
 import AppProvider from "../appProvider/AppProvider";
 import AppContent from "../appContent/AppContent";
 
