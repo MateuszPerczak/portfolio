@@ -1,13 +1,18 @@
 import type { FC } from "react";
-
 import GlobalStyle from "../globalStyle/GlobalStyle";
-import Page from "../page/Page";
+import AboutMe from "@/pages/AboutMe";
+import Footer from "@/pages/Footer";
+import Skills from "@/pages/Skills";
+import Nav from "@components/nav/Nav";
 
 const AppContent: FC = (): JSX.Element => {
   return (
     <>
       <GlobalStyle />
-      <Page>Whad I Do</Page>
+      <Nav />
+      <AboutMe />
+      <Skills />
+      <Footer />
     </>
   );
 };

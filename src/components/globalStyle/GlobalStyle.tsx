@@ -1,5 +1,6 @@
 import { css, Global, Theme, useTheme } from "@emotion/react";
-import { FC, memo } from "react";
+import { memo } from "react";
+import type { FC } from "react";
 
 const GlobalStyle: FC = (): JSX.Element => {
   const theme: Theme = useTheme();
@@ -13,9 +14,12 @@ const GlobalStyle: FC = (): JSX.Element => {
           box-sizing: border-box;
           margin: 0;
           padding: 0;
+          /* outline: 1px solid ${theme.accent}; */
         }
         body {
-          font-family: "Gilroy";
+          display: grid;
+          place-items: center;
+          font-family: "Caros";
           background-color: ${theme.background};
           color: ${theme.color};
         }
@@ -23,11 +27,18 @@ const GlobalStyle: FC = (): JSX.Element => {
           height: 100vh;
           display: grid;
           place-items: center;
+          overflow-x: hidden;
+          max-width: 1920px;
+          width: 100%;
+
+          scroll-behavior: smooth;
         }
-        @font-face {
-          font-family: "Caros";
-          font-style: normal;
-          src: local("Caros");
+        ::-webkit-scrollbar {
+          width: 4px;
+        }
+        ::-webkit-scrollbar-thumb {
+          border-radius: 10px;
+          background-color: ${theme.accent};
         }
       `}
     />

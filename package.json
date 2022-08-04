@@ -24,7 +24,9 @@
     "use-local-storage": "^2.3.6"
   },
   "devDependencies": {
+    "@emotion/babel-plugin": "^11.10.0",
     "@nabla/vite-plugin-eslint": "^1.4.1",
+    "@types/node": "^18.6.3",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.32.0",
