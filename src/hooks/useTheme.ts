@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import useLocalStorage from "use-local-storage";
 import useSystemTheme from "react-use-system-theme";
-import themes from "../Themes/themes.json";
+import themes from "../themes/themes";
 
 export enum Themes {
   System = "system",
@@ -10,10 +10,7 @@ export enum Themes {
 }
 
 const useTheme = () => {
-  const [browserTheme, setbrowserTheme] = useLocalStorage<Themes>(
-    "theme",
-    Themes.System
-  );
+  const [browserTheme, setbrowserTheme] = useLocalStorage<Themes>("theme", Themes.System);
 
   const systemTheme = useSystemTheme();
 
