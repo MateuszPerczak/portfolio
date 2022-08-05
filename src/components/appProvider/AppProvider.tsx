@@ -3,8 +3,8 @@ import { ThemeProvider } from "@emotion/react";
 import useTheme from "@/hooks/useTheme";
 
 const AppProvider: FC<PropsWithChildren> = ({ children }) => {
-  const { themeObject, browserTheme, setbrowserTheme } = useTheme();
+  const theme = useTheme();
 
-  return <ThemeProvider theme={themeObject}>{children}</ThemeProvider>;
+  return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 };
 export default AppProvider;

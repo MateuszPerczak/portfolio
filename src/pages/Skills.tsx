@@ -4,7 +4,7 @@ import PageHeader from "@components/pageHeader/PageHeader";
 
 const Skills: FC = (): JSX.Element => {
   return (
-    <Page>
+    <Page id="skills">
       <PageHeader header="UMIEJĘTNOŚCI" description="CO UMIEM?" />
     </Page>
   );

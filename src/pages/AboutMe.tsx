@@ -4,7 +4,7 @@ import PageHeader from "@components/pageHeader/PageHeader";
 
 const AboutMe: FC = (): JSX.Element => {
   return (
-    <Page>
+    <Page id="about">
       <PageHeader header="O MNIE" description="KIM JESTEM?" />
     </Page>
   );

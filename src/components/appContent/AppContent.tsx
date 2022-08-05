@@ -1,9 +1,11 @@
 import type { FC } from "react";
-import GlobalStyle from "../globalStyle/GlobalStyle";
-import AboutMe from "@/pages/AboutMe";
-import Footer from "@/pages/Footer";
-import Skills from "@/pages/Skills";
+import GlobalStyle from "@components/globalStyle/GlobalStyle";
 import Nav from "@components/nav/Nav";
+import AboutMe from "@/pages/AboutMe";
+import Skills from "@/pages/Skills";
+import Experience from "@/pages/Experience";
+import Projects from "@/pages/Projects";
+import Footer from "@/pages/Footer";
 
 const AppContent: FC = (): JSX.Element => {
   return (
@@ -12,6 +14,8 @@ const AppContent: FC = (): JSX.Element => {
       <Nav />
       <AboutMe />
       <Skills />
+      <Experience />
+      <Projects />
       <Footer />
     </>
   );
