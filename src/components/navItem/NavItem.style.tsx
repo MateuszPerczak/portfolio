@@ -1,18 +1,18 @@
 import styled from "@emotion/styled";
 
-const StyledNavItem = styled.div`
+const StyledNavItem = styled.a`
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: relative;
-  font-size: min(3vmin, 1rem);
-  flex: 1;
-  height: 100%;
-  user-select: none;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px;
+  white-space: nowrap;
+  font-size: 1.3rem;
   transition: background-color 200ms;
+  color: ${({ theme: { color } }) => color};
+  text-decoration: none;
   &:hover {
     background-color: ${({ theme: { accent } }) => accent};
-    box-shadow: 0 0 5px #00000033;
   }
 `;
 

@@ -1,21 +1,36 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
-const StyledNav = styled.nav`
+const StyledNav = styled(motion.nav)`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-  width: 100%;
-  height: 70px;
-  font-size: 2rem;
-  position: sticky;
+  justify-content: flex-end;
+  position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  /* border-bottom: 1px solid ${({ theme: { accent } }) => accent}; */
-  /* box-shadow: 0 5px 20px #00000044; */
+  height: 100%;
+  padding: 10px;
+  z-index: 1;
+  user-select: none;
+  border-right: 2px solid ${({ theme: { accent } }) => accent};
   background-color: ${({ theme: { navbar } }) => navbar};
   backdrop-filter: blur(30px) saturate(360%);
+`;
+
+export const StyledNavHeader = styled.div`
+  transform: rotate(-90deg);
+  font-size: 1.1rem;
+`;
+
+export const StyledNavContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
 `;
 
 export default StyledNav;
