@@ -32,10 +32,10 @@ const GlobalStyle: FC = (): JSX.Element => {
           width: 100%;
           height: 100%;
           padding-left: 70px;
-          max-width: 1700px;
           scroll-behavior: smooth;
           scroll-snap-type: y mandatory;
           overflow-y: scroll;
+          overflow-x: hidden;
         }
         ::-webkit-scrollbar {
           width: 10px;
