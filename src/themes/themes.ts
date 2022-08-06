@@ -22,7 +22,7 @@ const themes: Themes = {
     navbar: "#282828aa",
     scrollbar: "#242424",
     shadow: "#212121",
-    card: "#1f1f1f",
+    card: "#1a1a1a",
   },
 };
 

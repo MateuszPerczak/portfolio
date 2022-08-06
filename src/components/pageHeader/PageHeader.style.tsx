@@ -17,6 +17,9 @@ export const StyledPageDescription = styled(motion.span)`
 
 export const StyledPageSubHeader = styled(motion.span)`
   font-size: 4rem;
+  color: ${({ theme: { background } }) => background};
+  background-color: ${({ theme: { accent } }) => accent};
+  padding: 0 10px;
 `;
 
 export default StyledPageHeader;

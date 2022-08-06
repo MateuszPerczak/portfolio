@@ -18,7 +18,7 @@ const AppContent: FC = (): JSX.Element => {
       <Skills />
       <Experience />
       <Projects />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

@@ -14,8 +14,8 @@ const StyledNav = styled(motion.nav)`
   z-index: 1;
   user-select: none;
   border-right: 2px solid ${({ theme: { accent } }) => accent};
-
-  backdrop-filter: blur(30px) saturate(360%);
+  background-color: ${({ theme: { navbar } }) => navbar};
+  backdrop-filter: blur(30px) saturate(240%);
 `;
 
 export const StyledNavHeader = styled.div`
