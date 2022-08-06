@@ -1,4 +1,5 @@
 import type { FC } from "react";
+import { memo } from "react";
 import { useState } from "react";
 import NavItem from "@components/navItem/NavItem";
 
@@ -37,4 +38,4 @@ const Nav: FC = (): JSX.Element => {
   );
 };
 
-export default Nav;
+export default memo(Nav);
