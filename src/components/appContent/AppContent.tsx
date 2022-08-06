@@ -6,10 +6,12 @@ import Skills from "@/pages/Skills";
 import Experience from "@/pages/Experience";
 import Projects from "@/pages/Projects";
 import Footer from "@/pages/Footer";
+import Cursor from "@/components/cursor/Cursor";
 
 const AppContent: FC = (): JSX.Element => {
   return (
     <>
+      <Cursor />
       <GlobalStyle />
       <Nav />
       <AboutMe />

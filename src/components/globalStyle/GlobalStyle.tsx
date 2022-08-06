@@ -25,6 +25,7 @@ const GlobalStyle: FC = (): JSX.Element => {
           overflow: hidden;
           width: 100%;
           height: 100vh;
+          cursor: none;
         }
         #root {
           display: flex;

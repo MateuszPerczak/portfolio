@@ -11,6 +11,7 @@ const StyledNavItem = styled.a`
   transition: background-color 200ms;
   color: ${({ theme: { color } }) => color};
   text-decoration: none;
+  cursor: none;
   &:hover {
     background-color: ${({ theme: { accent } }) => accent};
   }
