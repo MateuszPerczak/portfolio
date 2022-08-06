@@ -1,9 +1,9 @@
 import useSystemTheme from "react-use-system-theme";
-import themes from "../themes/themes";
+import themes, { ColorThemes } from "../themes/themes";
 
 const useTheme = () => {
-  const systemTheme: string = useSystemTheme();
-  return themes[systemTheme || "dark"];
+  const systemTheme: ColorThemes = useSystemTheme(ColorThemes.Dark);
+  return themes[systemTheme];
 };
 
 export default useTheme;

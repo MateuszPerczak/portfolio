@@ -1,6 +1,11 @@
 export type Theme = Record<string, string>;
 
-type Themes = Record<string, Theme>;
+export enum ColorThemes {
+  Light = "light",
+  Dark = "dark",
+}
+
+type Themes = Record<ColorThemes, Theme>;
 
 const themes: Themes = {
   light: {
