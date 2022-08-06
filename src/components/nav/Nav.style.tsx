@@ -14,14 +14,7 @@ const StyledNav = styled(motion.nav)`
   z-index: 1;
   user-select: none;
   border-right: 2px solid ${({ theme: { accent } }) => accent};
-  background: repeating-linear-gradient(
-    90deg,
-    ${({ theme: { navbar } }) => navbar},
-    transparent 10%,
-    ${({ theme: { navbar } }) => navbar},
-    transparent 10%
-  );
-  background-size: 15px 15px;
+
   backdrop-filter: blur(30px) saturate(360%);
 `;
 

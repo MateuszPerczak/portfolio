@@ -32,7 +32,6 @@ const Nav: FC = (): JSX.Element => {
         <NavItem header="Umiejętności" scrollToId="#skills" />
         <NavItem header="Doświadczenie" scrollToId="#experience" />
         <NavItem header="Projekty" scrollToId="#projects" />
-        <NavItem header="Kontakt" scrollToId="#footer" />
       </StyledNavContent>
       <StyledNavHeader>MENU</StyledNavHeader>
     </StyledNav>

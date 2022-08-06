@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const Page = styled.div`
+const Page = styled.article`
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
