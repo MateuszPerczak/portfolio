@@ -4,7 +4,6 @@ import useTheme from "@/hooks/useTheme";
 
 const AppProvider: FC<PropsWithChildren> = ({ children }) => {
   const theme = useTheme();
-
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 };
 export default AppProvider;

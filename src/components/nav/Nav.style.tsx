@@ -6,6 +6,7 @@ const StyledNav = styled(motion.nav)`
   align-items: center;
   justify-content: flex-end;
   position: fixed;
+  gap: 10px;
   top: 0;
   left: 0;
   height: 100%;
@@ -25,11 +26,11 @@ export const StyledNavHeader = styled.div`
 export const StyledNavContent = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  gap: 10px;
   width: 100%;
-  padding: 10px;
+  gap: 10px;
+  padding-left: 20px;
   overflow: hidden;
 `;
 

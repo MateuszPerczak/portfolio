@@ -12,6 +12,7 @@ const StyledPageHeader = styled(motion.div)`
 export const StyledPageDescription = styled(motion.span)`
   font-size: 1.3rem;
   color: ${({ theme: { accent } }) => accent};
+  letter-spacing: 0.1rem;
 `;
 
 export const StyledPageSubHeader = styled(motion.span)`

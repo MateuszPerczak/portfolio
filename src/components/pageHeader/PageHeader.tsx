@@ -16,7 +16,7 @@ const PageHeader: FC<PageHeaderProps> = ({
       opacity: 0,
     },
     onscreen: {
-      x: 0,
+      x: "0%",
       opacity: 1,
       transition: {
         type: "spring",
