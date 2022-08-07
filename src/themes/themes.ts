@@ -18,7 +18,7 @@ const themes: Themes = {
   dark: {
     background: "#282828",
     color: "#fff",
-    accent: "#ea225b",
+    accent: "#3b4ca6",
     navbar: "#282828aa",
     scrollbar: "#242424",
     shadow: "#00000066",

@@ -10,8 +10,8 @@ const Projects: FC = (): JSX.Element => {
     <Page id="projects">
       <PageHeader header="PROJEKTY" description="CO ZROBIŁEM?" />
       <PageContent flexWrap>
-        {projects.map((project) => (
-          <Project key={project.id}>{project.name}</Project>
+        {projects.map(({ id, ...rest }) => (
+          <Project key={id} {...rest} />
         ))}
       </PageContent>
     </Page>

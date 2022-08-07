@@ -15,4 +15,12 @@ const StyledProject = styled(motion.div)`
   }
 `;
 
+export const StyledProjectHeader = styled(motion.span)`
+  font-size: 1.2rem;
+`;
+
+export const StyledProjectDescription = styled(motion.span)`
+  font-size: 1rem;
+`;
+
 export default StyledProject;

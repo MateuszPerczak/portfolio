@@ -1,28 +1,34 @@
 type Project = {
   id: number;
-  name: string;
+  header: string;
+  description: string;
 };
 
 const projects: Project[] = [
   {
     id: 1,
-    name: "HARDWAREINFO",
+    header: "HARDWAREINFO",
+    description: "",
   },
   {
     id: 2,
-    name: "WEATHER",
+    header: "WEATHER",
+    description: "",
   },
   {
     id: 3,
-    name: "LUIX",
+    header: "LUIX",
+    description: "",
   },
   {
     id: 4,
-    name: "PYSCRIPTREACT",
+    header: "PYSCRIPTREACT",
+    description: "",
   },
   {
     id: 5,
-    name: "TICTACTOE",
+    header: "TICTACTOE",
+    description: "",
   },
 ];
 

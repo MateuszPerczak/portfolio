@@ -5,7 +5,7 @@ import AboutMe from "@/pages/AboutMe";
 import Skills from "@/pages/Skills";
 import Experience from "@/pages/Experience";
 import Projects from "@/pages/Projects";
-import Footer from "@/pages/Footer";
+import Footer from "@components/footer/Footer";
 import Cursor from "@/components/cursor/Cursor";
 
 const AppContent: FC = (): JSX.Element => {
@@ -18,7 +18,7 @@ const AppContent: FC = (): JSX.Element => {
       <Skills />
       <Experience />
       <Projects />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
