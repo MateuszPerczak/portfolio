@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 
 const StyledCursor = styled(motion.div)`
-  position: fixed;
+  position: absolute;
   width: 20px;
   aspect-ratio: 1;
   border-radius: 50%;

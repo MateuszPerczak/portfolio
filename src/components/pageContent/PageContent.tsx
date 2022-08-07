@@ -7,7 +7,6 @@ const PageContent = styled.div<PageContentProps>`
   flex-wrap: ${({ flexWrap }) => (flexWrap ? "wrap" : "nowrap")};
   gap: 10px;
   width: 100%;
-
   padding: 20px 0;
 `;
 

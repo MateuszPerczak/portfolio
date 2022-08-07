@@ -1,5 +1,8 @@
 import type { FC } from "react";
-import StyledPageSection, { StyledPageContent } from "./PageSection.style";
+import StyledPageSection, {
+  StyledPageContent,
+  StyledPageHeader,
+} from "./PageSection.style";
 import type PageSectionProps from "./PageSection.types";
 
 const PageSection: FC<PageSectionProps> = ({
@@ -7,8 +10,18 @@ const PageSection: FC<PageSectionProps> = ({
   children,
 }: PageSectionProps): JSX.Element => {
   return (
-    <StyledPageSection>
-      <h2>{header}</h2>
+    <StyledPageSection
+      initial={{ x: "-100%", opacity: 0 }}
+      whileInView={{ x: 0, opacity: 1 }}
+      viewport={{ once: true, amount: "some" }}
+      transition={{
+        type: "spring",
+        stiffness: 100,
+        damping: 15,
+        mass: 1,
+      }}
+    >
+      <StyledPageHeader>{header}</StyledPageHeader>
       <StyledPageContent>{children}</StyledPageContent>
     </StyledPageSection>
   );

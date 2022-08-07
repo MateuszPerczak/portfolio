@@ -47,7 +47,7 @@ const GlobalStyle: FC = (): JSX.Element => {
         }
         ::selection {
           background-color: ${theme.accent};
-          color: ${theme.background};
+          color: ${theme.color};
         }
         @font-face {
           font-family: "Caros";
