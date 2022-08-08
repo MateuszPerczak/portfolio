@@ -7,7 +7,6 @@ const StyledProject = styled(motion.div)`
   gap: 10px;
   flex: 1;
   min-width: 300px;
-  height: 200px;
   padding: 20px;
   background-color: ${({ theme: { card } }) => card};
   border: 2px solid transparent;

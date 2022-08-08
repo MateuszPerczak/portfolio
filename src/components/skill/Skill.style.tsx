@@ -6,7 +6,7 @@ const StyledSkill = styled(motion.div)`
   flex-direction: column;
   gap: 10px;
   flex: 1;
-  min-width: 150px;
+  min-width: 250px;
   padding: 20px;
   background-color: ${({ theme: { card } }) => card};
 `;
