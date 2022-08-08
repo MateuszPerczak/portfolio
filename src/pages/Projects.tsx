@@ -4,6 +4,8 @@ import PageHeader from "@components/pageHeader/PageHeader";
 import PageContent from "@/components/pageContent/PageContent";
 import projects from "@/data/projects";
 import Project from "@/components/project/Project";
+import PageBottom from "@/components/pageBottom/PageBottom";
+import Button from "@/components/button/Button";
 
 const Projects: FC = (): JSX.Element => {
   return (
@@ -14,6 +16,9 @@ const Projects: FC = (): JSX.Element => {
           <Project key={id} {...rest} />
         ))}
       </PageContent>
+      <PageBottom>
+        <Button href="">ZOBACZ WIĘCEJ PROJEKTÓW</Button>
+      </PageBottom>
     </Page>
   );
 };
