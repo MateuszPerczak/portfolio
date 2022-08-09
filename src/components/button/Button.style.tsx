@@ -9,6 +9,7 @@ const StyledButton = styled(motion.a)`
   letter-spacing: 0.2rem;
   border: 2px solid transparent;
   transition: border 200ms;
+  cursor: none;
   &:hover {
     border: 2px solid ${({ theme: { accent } }) => accent};
   }

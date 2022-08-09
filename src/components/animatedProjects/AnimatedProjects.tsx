@@ -1,9 +1,9 @@
 import type { FC } from "react";
-import skills from "@/data/skills";
-import Skill from "@/components/skill/Skill";
+import projects from "@/data/projects";
+import Project from "@/components/project/Project";
 import AnimatedContainer from "@/components/animatedContainer/AnimatedContainer";
 
-const AnimatedSkills: FC = (): JSX.Element => {
+const AnimatedProjects: FC = (): JSX.Element => {
   const skillsAnimation = {
     initial: { x: "-100%", opacity: 0 },
     whileInView: {
@@ -27,15 +27,11 @@ const AnimatedSkills: FC = (): JSX.Element => {
       }}
       viewport={{ once: true, amount: "some" }}
     >
-      {skills.map(({ id, ...rest }) => {
-        return <Skill key={id} variants={skillsAnimation} {...rest} />;
+      {projects.map(({ id, ...rest }) => {
+        return <Project key={id} variants={skillsAnimation} {...rest} />;
       })}
     </AnimatedContainer>
   );
 };
 
-export default AnimatedSkills;
-
-// initial={{ x: "-100%", opacity: 0 }}
-// whileInView={{ x: 0, opacity: 1 }}
-// viewport={{ once: true, amount: "some" }}
+export default AnimatedProjects;
