@@ -34,6 +34,11 @@ const projects: Project[] = [
     header: "TICTACTOE",
     description: "Gra kółko i krzyżyk mojega autorstwa wykorzystująca bibliotekę React.",
   },
+  {
+    id: 5,
+    header: "PYHASH",
+    description: "(sha1, sha256, md5) dla wybranych plików.",
+  },
 ];
 
 export default projects;
