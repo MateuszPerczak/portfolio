@@ -2,11 +2,11 @@ import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 
 const StyledProject = styled(motion.div)`
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
   flex: 1;
-  min-width: 300px;
   padding: 20px;
   background-color: ${({ theme: { card } }) => card};
   border: 2px solid transparent;

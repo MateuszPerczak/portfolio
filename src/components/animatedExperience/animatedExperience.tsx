@@ -1,8 +1,8 @@
 import type { FC } from "react";
-import projects from "@/data/projects";
-import Project from "@/components/project/Project";
+import experience from "@/data/experience";
+import Experience from "@/components/experience/Experience";
 import AnimatedContainer from "@/components/animatedContainer/AnimatedContainer";
-import { slideFromLeft } from "@/animations/animations";
+import { slideFromBottom } from "@/animations/animations";
 
 const AnimatedProjects: FC = (): JSX.Element => {
   return (
@@ -14,8 +14,8 @@ const AnimatedProjects: FC = (): JSX.Element => {
       }}
       viewport={{ once: true, amount: "some" }}
     >
-      {projects.map(({ id, ...rest }) => {
-        return <Project key={id} variants={slideFromLeft} {...rest} />;
+      {experience.map(({ id, ...rest }) => {
+        return <Experience key={id} variants={slideFromBottom} {...rest} />;
       })}
     </AnimatedContainer>
   );

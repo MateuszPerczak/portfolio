@@ -27,12 +27,17 @@ const skills: Skill[] = [
   },
   {
     id: 5,
+    header: "BAZY DANYCH",
+    description: "MySQL",
+  },
+  {
+    id: 6,
     header: "FRAMEWORKI, BIBLIOTEKI, ITP.",
     description:
       "React, Next, Vite, Astro, Emotion, Webpack, Lodash, Framer-motion, React-querry, I18next, React-spring, ...",
   },
   {
-    id: 6,
+    id: 7,
     header: "JĘZYK",
     description: "Polski, English - B2",
   },

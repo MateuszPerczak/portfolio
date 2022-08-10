@@ -14,7 +14,9 @@ const Projects: FC = (): JSX.Element => {
         <AnimatedProjects />
       </PageContent>
       <PageBottom>
-        <Button href="">ZOBACZ WIĘCEJ PROJEKTÓW</Button>
+        <Button href="https://github.com/MateuszPerczak?tab=repositories">
+          ZOBACZ WIĘCEJ PROJEKTÓW
+        </Button>
       </PageBottom>
     </Page>
   );
