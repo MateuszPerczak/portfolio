@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
-const StyledNavbar = styled.nav`
+const StyledNavbar = styled(motion.nav)`
   display: flex;
   align-items: center;
   justify-content: flex-start;

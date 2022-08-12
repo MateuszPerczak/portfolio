@@ -16,7 +16,7 @@ const GlobalStyle: FC = (): JSX.Element => {
           /* outline: 1px solid ${theme.accent}; */
         }
         body {
-          font-family: "Poppins";
+          font-family: "Caros";
           background-color: ${theme.background};
           color: ${theme.color};
           overflow: hidden;
