@@ -37,7 +37,8 @@ const projects: Project[] = [
   {
     id: 5,
     header: "PYHASH",
-    description: "(sha1, sha256, md5) dla wybranych plików.",
+    description:
+      "Aplikacja pozwalająca w łatwy sposób wygenerować hash (sha1, sha256, md5) dla wybranych plików.",
   },
 ];
 
