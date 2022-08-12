@@ -16,26 +16,18 @@ const GlobalStyle: FC = (): JSX.Element => {
           /* outline: 1px solid ${theme.accent}; */
         }
         body {
-          display: flex;
-          align-items: center;
-          font-family: "Caros";
+          font-family: "Segoe ui";
           background-color: ${theme.background};
           color: ${theme.color};
           overflow: hidden;
           width: 100%;
           height: 100vh;
-          cursor: none;
         }
         #root {
           display: flex;
           flex-direction: column;
           width: 100%;
           height: 100%;
-          padding-left: 70px;
-          scroll-behavior: smooth;
-          scroll-snap-type: y mandatory;
-          overflow-y: scroll;
-          overflow-x: hidden;
         }
         ::-webkit-scrollbar {
           width: 10px;
