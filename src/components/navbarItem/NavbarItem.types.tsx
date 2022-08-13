@@ -1,3 +1,5 @@
-type NavbarItemProps = {};
+type NavbarItemProps = {
+  header: string;
+};
 
 export default NavbarItemProps;

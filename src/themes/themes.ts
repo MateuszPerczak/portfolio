@@ -11,7 +11,6 @@ const themes: Themes = {
   light: {
     background: "#fafafa",
     color: "#000",
-    description: "#333",
     accent: "#D9114A",
     navbar: "#fafafaaa",
     scrollbar: "#eee",
@@ -21,7 +20,7 @@ const themes: Themes = {
   dark: {
     background: "#282828",
     color: "#fff",
-    description: "#bbb",
+    link: "#808080",
     accent: "#3b4ca6",
     navbar: "#212121aa",
     scrollbar: "#242424",

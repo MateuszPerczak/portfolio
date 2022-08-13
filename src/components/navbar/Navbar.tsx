@@ -8,10 +8,10 @@ const Navbar: FC = (): JSX.Element => {
     <StyledNavbar>
       <NavbarLogo />
       <StyledNavbarItems>
-        <NavbarItem />
-        <NavbarItem />
-        <NavbarItem />
-        <NavbarItem />
+        <NavbarItem header="O mnie" />
+        <NavbarItem header="Dośwaidczenie" />
+        <NavbarItem header="Umiejętności" />
+        <NavbarItem header="Projekty" />
       </StyledNavbarItems>
     </StyledNavbar>
   );
