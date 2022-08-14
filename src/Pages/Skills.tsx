@@ -54,7 +54,7 @@ const Skills: FC = (): JSX.Element => {
           <PanelSkillWrapper>
             <PanelSkill
               header="JavaScript, TypeScript:"
-              description="React, Next, Astro, Emotion, Webpack, Lodash, framer-motion, react-querry, react-spring,
+              description="React, Next, Astro, Vite, Emotion, Webpack, Lodash, RxJS, framer-motion, react-querry, react-spring,
               react-reduce-motion, react-router-dom, react-i18next,
               use-system-theme, react-draggable, use-local-storage ..."
             />
@@ -66,6 +66,14 @@ const Skills: FC = (): JSX.Element => {
               hashlib, ctypes, dataclasses, autocorrect ..."
             />
             <PanelSkill header="C#:" description="WinUi" />
+          </PanelSkillWrapper>
+        </PanelContent>
+      </Panel>
+      <Panel>
+        <PanelHeader header={t("dataBases")} icon="&#xEE94;" />
+        <PanelContent>
+          <PanelSkillWrapper>
+            <PanelSkill header="Junior:" description="MySQL, Oracle" />
           </PanelSkillWrapper>
         </PanelContent>
       </Panel>

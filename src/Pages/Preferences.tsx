@@ -69,7 +69,7 @@ const Preferences: FC = (): JSX.Element => {
         </PanelContent>
       </Panel>
       <Panel>
-        <PanelHeader header={t("usedLibraies")} icon="&#xE943;" />
+        <PanelHeader header={t("usedLibraies")} icon="&#xEB3C;" />
         <PanelSettingInfo>
           {usedLibraies.map(({ header, href }, index) => {
             return (
