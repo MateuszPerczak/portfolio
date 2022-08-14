@@ -1,28 +1,23 @@
 import { useState, useEffect } from "react";
+import { fromEvent, throttleTime } from "rxjs";
 
 const useWindowDimensions = () => {
-  const hasWindow = typeof window !== "undefined";
-
   const getWindowDimensions = () => {
-    const { innerWidth: width, innerHeight: height } = hasWindow
-      ? window
-      : { innerWidth: 0, innerHeight: 0 };
+    const { innerWidth: width, innerHeight: height } = window;
     return { width, height };
   };
 
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
 
   useEffect(() => {
-    if (!hasWindow) return;
+    const subscription = fromEvent(window, "resize")
+      .pipe(throttleTime(300))
+      .subscribe(() => {
+        setWindowDimensions(getWindowDimensions());
+      });
 
-    const handleResize = () => {
-      setWindowDimensions(getWindowDimensions());
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, [hasWindow]);
+    return () => subscription.unsubscribe();
+  }, []);
 
   return windowDimensions;
 };
