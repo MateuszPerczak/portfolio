@@ -1,6 +1,0 @@
-yarn.lock
-node_modules
-dist
-dist-ssr
-*.local
-node_modules/*
