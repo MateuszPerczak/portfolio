@@ -1,0 +1,146 @@
+[
+  {
+    "header": "Portfolio",
+    "description": "portfolio",
+    "links": [
+      {
+        "href": "https://github.com/MateuszPerczak/mateuszperczak.github.io",
+        "header": "Github"
+      }
+    ],
+    "langs": "TypeScript, React, Emotion, react-i18next, framer-motion ..."
+  },
+  {
+    "header": "Weather",
+    "description": "weather",
+    "links": [
+      {
+        "href": "https://github.com/MateuszPerczak/weather",
+        "header": "Github"
+      },
+      {
+        "href": "https://mateuszperczak.github.io/weather/",
+        "header": "Demo"
+      }
+    ],
+    "langs": "TypeScript, React, Emotion, Lodash, react-router-dom, react-query, framer-motion ..."
+  },
+  {
+    "header": "Hardwareinfo",
+    "description": "hardwareinfo",
+    "links": [
+      {
+        "href": "https://github.com/MateuszPerczak/hardwareinfo",
+        "header": "Github"
+      }
+    ],
+    "langs": "TypeScript, Rust, Tauri, React, Emotion, framer-motion ..."
+  },
+  {
+    "header": "Luix",
+    "description": "luix",
+    "links": [
+      {
+        "href": "https://github.com/MateuszPerczak/Luix",
+        "header": "Github"
+      },
+      {
+        "href": "https://mateuszperczak.github.io/Luix/",
+        "header": "Demo"
+      }
+    ],
+    "langs": "JavaScript, React, Emotion, react-spring, ..."
+  },
+  {
+    "header": "TicTacToe",
+    "description": "ticTacToe",
+    "links": [
+      {
+        "href": "https://github.com/MateuszPerczak/tictactoe",
+        "header": "Github"
+      },
+      {
+        "href": "https://mateuszperczak.github.io/tictactoe/",
+        "header": "Demo"
+      }
+    ],
+    "langs": "TypeScript, React, Emotion, Lodash, react-router-dom, react-spring, ..."
+  },
+  {
+    "header": "PyScript-React",
+    "description": "pyScriptReact",
+    "links": [
+      {
+        "href": "https://github.com/Py4Js/PyScript-React",
+        "header": "Github"
+      }
+    ],
+    "langs": "TypeScript, React, Python, Folium, Lodash, Storybook, Jest, ..."
+  },
+  {
+    "header": "Cypher",
+    "description": "cypher",
+    "links": [
+      {
+        "href": "https://github.com/MateuszPerczak/Cypher",
+        "header": "Github"
+      }
+    ],
+    "langs": "Python, Tkinter, Cryptography, Base64, ZipFile, DarkDetect, ..."
+  },
+  {
+    "header": "PySpec",
+    "description": "pySpec",
+    "links": [
+      {
+        "href": "https://github.com/MateuszPerczak/PySpec",
+        "header": "Github"
+      }
+    ],
+    "langs": "Python, Tkinter, WMI, GPUtil, DarkDetect, ..."
+  },
+  {
+    "header": "PyHash",
+    "description": "pyHash",
+    "links": [
+      {
+        "href": "https://github.com/MateuszPerczak/PyHash",
+        "header": "Github"
+      }
+    ],
+    "langs": "Python, Tkinter, Hashlib, Pyperclip, DarkDetect, ..."
+  },
+  {
+    "header": "TkDeb",
+    "description": "tkDeb",
+    "links": [
+      {
+        "href": "https://github.com/MateuszPerczak/TkDeb",
+        "header": "Github"
+      }
+    ],
+    "langs": "Python, Tkinter, os, ..."
+  },
+  {
+    "header": "Sounder5",
+    "description": "sounder",
+    "links": [
+      {
+        "href": "https://github.com/MateuszPerczak/Sounder5",
+        "header": "Github"
+      }
+    ],
+    "langs": "Python, Tkinter, Pygame, Win10toast, DarkDetect, ..."
+  },
+  {
+    "header": "SamPy",
+    "description": "samPy",
+    "links": [
+      {
+        "href": "https://github.com/MateuszPerczak/SamPy",
+        "header": "Github"
+      }
+    ],
+    "langs": "Python, Tkinter, Hashlib, Webbrowser, ..."
+  }
+]

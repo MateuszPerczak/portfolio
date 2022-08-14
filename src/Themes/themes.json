@@ -1,0 +1,26 @@
+{
+  "light": {
+    "background": "#fafafa",
+    "color": "#000",
+    "card": "#fafafa",
+    "navbar": "#e1e1e1",
+    "border": "#bababa",
+    "shadow": "#bababa",
+    "hamburger": "#f0f0f0",
+    "header": "#fafafa99",
+    "scrollbar": "#e1e1e1",
+    "date": "#222"
+  },
+  "dark": {
+    "background": "#252525",
+    "color": "#fff",
+    "card": "#252525",
+    "navbar": "#212121",
+    "border": "#3b3b3b",
+    "shadow": "#1a1a1a",
+    "hamburger": "#2a2a2a",
+    "header": "#252525aa",
+    "scrollbar": "#333",
+    "date": "#bbb"
+  }
+}
