@@ -1,0 +1,23 @@
+[
+  { "header": "React", "href": "https://pl.reactjs.org/" },
+  { "header": "Emotion", "href": "https://emotion.sh/docs/introduction" },
+  { "header": "framer-motion", "href": "https://github.com/framer/motion" },
+  { "header": "react-router-dom", "href": "https://reactrouter.com/" },
+  {
+    "header": "use-local-storage",
+    "href": "https://github.com/nas5w/use-local-storage#readm"
+  },
+  {
+    "header": "react-use-system-theme",
+    "href": "https://github.com/zebateira/react-use-system-theme#readme"
+  },
+  { "header": "react-i18next", "href": "https://react.i18next.com/" },
+  {
+    "header": "react-circle-flags",
+    "href": "https://github.com/tnovau/react-circle-flags#readme"
+  },
+  {
+    "header": "fluentui-system-icons",
+    "href": "https://github.com/microsoft/fluentui-system-icons"
+  }
+]
