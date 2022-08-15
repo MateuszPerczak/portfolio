@@ -9,6 +9,8 @@ export default defineConfig({
     alias: {
       "@": resolve(__dirname, "./src"),
       "@components": resolve(__dirname, "./src/components"),
+      "@hooks": resolve(__dirname, "./src/hooks"),
+      "@pages": resolve(__dirname, "./src/pages"),
     },
   },
   plugins: [

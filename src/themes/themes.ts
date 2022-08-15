@@ -21,7 +21,7 @@ const themes: Themes = {
     background: "#282828",
     color: "#fff",
     link: "#808080",
-    accent: "#3b4ca6",
+    accent: "#00ccff",
     navbar: "#212121aa",
     scrollbar: "#242424",
     shadow: "#00000066",

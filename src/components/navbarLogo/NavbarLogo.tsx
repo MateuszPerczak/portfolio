@@ -1,5 +1,5 @@
 import StyledNavbarLogo from "./NavbarLogo.styles";
-import useWindowDimensions from "@/hooks/useWindowDimensions";
+import useWindowDimensions from "@hooks/useWindowDimensions";
 
 const NavbarLogo = () => {
   const { width } = useWindowDimensions();

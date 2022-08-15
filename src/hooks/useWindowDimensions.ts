@@ -11,7 +11,7 @@ const useWindowDimensions = () => {
 
   useEffect(() => {
     const subscription = fromEvent(window, "resize")
-      .pipe(throttleTime(300))
+      .pipe(throttleTime(200))
       .subscribe(() => {
         setWindowDimensions(getWindowDimensions());
       });
