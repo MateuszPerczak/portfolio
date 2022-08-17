@@ -11,6 +11,7 @@ const StyledNavbar = styled(motion.nav)`
   gap: 10px;
   width: 300px;
   height: 100%;
+  user-select: none;
   border-right: 2px solid ${({ theme: { accent } }) => accent};
   background-color: ${({ theme: { navbar } }) => navbar};
   backdrop-filter: blur(30px) saturate(240%);
