@@ -4,11 +4,8 @@ declare module "@emotion/react" {
   export interface Theme {
     background: string;
     color: string;
-    card: string;
+    scrollbar: string;
     accent: string;
     navbar: string;
-    scrollbar: string;
-    shadow: string;
-    description: string;
   }
 }

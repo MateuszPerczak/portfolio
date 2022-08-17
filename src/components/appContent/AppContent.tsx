@@ -1,24 +1,20 @@
-import type { FC } from "react";
+import { FC, Suspense } from "react";
 import GlobalStyle from "@components/globalStyle/GlobalStyle";
-import Nav from "@components/nav/Nav";
-import AboutMe from "@/pages/AboutMe";
-import Skills from "@/pages/Skills";
-import Experience from "@/pages/Experience";
-import Projects from "@/pages/Projects";
-import Footer from "@components/footer/Footer";
-import Cursor from "@/components/cursor/Cursor";
+import Navbar from "@components/navbar/Navbar";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 const AppContent: FC = (): JSX.Element => {
+  const location = useLocation();
+
   return (
     <>
-      <Cursor />
       <GlobalStyle />
-      <Nav />
-      <AboutMe />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Footer />
+      <Navbar />
+      <Suspense fallback={<></>}>
+        <Routes location={location}>
+          <Route path="*" element={<>YOOOOOo</>} />
+        </Routes>
+      </Suspense>
     </>
   );
 };
