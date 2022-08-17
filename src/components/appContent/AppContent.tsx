@@ -8,7 +8,7 @@ const AppContent: FC = (): JSX.Element => {
 
   const Component = useMemo(() => {
     return lazy(() => {
-      return import(`../../pages/${page}`);
+      return import(`../../pages/${page}.tsx`);
     });
   }, [page]);
 

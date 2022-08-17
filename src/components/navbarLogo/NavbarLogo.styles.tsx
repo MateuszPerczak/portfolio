@@ -5,7 +5,7 @@ const StyledNavbarLogo = styled.div`
   font-weight: bold;
   padding: 10px;
   background-color: ${({ theme: { accent } }) => accent};
-  color: ${({ theme: { navbar } }) => navbar};
+  color: ${({ theme: { background } }) => background};
 `;
 
 export default StyledNavbarLogo;
