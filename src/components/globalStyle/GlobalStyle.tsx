@@ -13,7 +13,7 @@ const GlobalStyle: FC = (): JSX.Element => {
           box-sizing: border-box;
           margin: 0;
           padding: 0;
-          /* outline: 1px solid ${theme.accent}; */
+          /* outline: 1px solid #666; */
         }
         body {
           display: flex;
@@ -23,8 +23,11 @@ const GlobalStyle: FC = (): JSX.Element => {
           color: ${theme.color};
         }
         #root {
-          display: grid;
-          place-items: center;
+          display: flex;
+          margin-left: 70px;
+          padding: 20px;
+          width: 100%;
+          height: 100vh;
         }
         ::-webkit-scrollbar {
           width: 10px;

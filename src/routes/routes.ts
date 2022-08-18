@@ -8,17 +8,27 @@ const routes: Route[] = [
   {
     id: 1,
     path: "/",
-    name: "About",
+    name: "O mnie",
   },
   {
     id: 2,
     path: "/",
-    name: "Skills",
+    name: "Umiejętności",
   },
   {
     id: 3,
     path: "/",
-    name: "Projects",
+    name: "Doświadczenie",
+  },
+  {
+    id: 4,
+    path: "/",
+    name: "Projekty",
+  },
+  {
+    id: 5,
+    path: "/",
+    name: "Kontakt",
   },
 ];
 

@@ -22,7 +22,7 @@ const themes: Themes = {
     background: "#282828",
     color: "#fff",
     description: "#bbb",
-    accent: "#00ccff",
+    accent: "#00aaff",
     navbar: "#282828aa",
     scrollbar: "#242424",
     shadow: "#00000066",

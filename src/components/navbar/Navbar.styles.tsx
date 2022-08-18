@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 
 const StyledNavbar = styled(motion.nav)`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
