@@ -1,20 +1,17 @@
 import styled from "@emotion/styled";
+import { Link } from "react-router-dom";
 
-const StyledNavItem = styled.a`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+const StyledNavbarItem = styled(Link)`
   width: 100%;
   padding: 10px;
+  text-decoration: none;
   white-space: nowrap;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   transition: background-color 200ms;
   color: ${({ theme: { color } }) => color};
-  text-decoration: none;
-  cursor: none;
   &:hover {
     background-color: ${({ theme: { accent } }) => accent};
   }
 `;
 
-export default StyledNavItem;
+export default StyledNavbarItem;

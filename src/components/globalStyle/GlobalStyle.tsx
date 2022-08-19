@@ -13,7 +13,7 @@ const GlobalStyle: FC = (): JSX.Element => {
           box-sizing: border-box;
           margin: 0;
           padding: 0;
-          /* outline: 1px solid ${theme.accent}; */
+          /* outline: 1px solid #666; */
         }
         body {
           display: flex;
@@ -21,21 +21,13 @@ const GlobalStyle: FC = (): JSX.Element => {
           font-family: "Caros";
           background-color: ${theme.background};
           color: ${theme.color};
-          overflow: hidden;
-          width: 100%;
-          height: 100vh;
-          cursor: none;
         }
         #root {
           display: flex;
-          flex-direction: column;
+          margin-left: 70px;
+          padding: 20px;
           width: 100%;
-          height: 100%;
-          padding-left: 70px;
-          scroll-behavior: smooth;
-          scroll-snap-type: y mandatory;
-          overflow-y: scroll;
-          overflow-x: hidden;
+          height: 100vh;
         }
         ::-webkit-scrollbar {
           width: 10px;
