@@ -2,6 +2,8 @@ import { FC, Suspense } from "react";
 import GlobalStyle from "@components/globalStyle/GlobalStyle";
 import Navbar from "@components/navbar/Navbar";
 import { Route, Routes, useLocation } from "react-router-dom";
+import PageNotFound from "@components/pageNotFound/PageNotFound";
+import routes from "@routes/routes";
 
 const AppContent: FC = (): JSX.Element => {
   const location = useLocation();
@@ -12,7 +14,10 @@ const AppContent: FC = (): JSX.Element => {
       <Navbar />
       <Suspense fallback={<></>}>
         <Routes location={location}>
-          <Route path="*" element={<>YOOOOOo</>} />
+          {routes.map(({ id, path, element: Element }) => {
+            return <Route key={id} path={path} element={<Element />} />;
+          })}
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </Suspense>
     </>
