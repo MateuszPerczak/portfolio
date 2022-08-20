@@ -1,11 +1,12 @@
-import styled from "@emotion/styled";
-import { motion } from "framer-motion";
+import type { FC, PropsWithChildren } from "react";
+import StyledPage from "./Page.styles";
 
-const Page = styled(motion.article)`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-`;
+const Page: FC<PropsWithChildren> = ({ children }) => {
+  return (
+    <StyledPage initial="offscreen" whileInView="onscreen" viewport={{ amount: "all" }}>
+      {children}
+    </StyledPage>
+  );
+};
 
 export default Page;

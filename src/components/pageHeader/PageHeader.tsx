@@ -4,15 +4,18 @@ import StyledPageHeader, {
   StyledPageSubHeader,
 } from "./PageHeader.styles";
 import type PageHeaderProps from "./PageHeader.types";
+import { animatedHeaderItem, animatedHeader } from "@/animations/header";
 
 const PageHeader: FC<PageHeaderProps> = ({
   header,
   description,
 }: PageHeaderProps): JSX.Element => {
   return (
-    <StyledPageHeader>
-      <StyledPageDescription>{description}</StyledPageDescription>
-      <StyledPageSubHeader>{header}</StyledPageSubHeader>
+    <StyledPageHeader variants={animatedHeader}>
+      <StyledPageDescription variants={animatedHeaderItem}>
+        {description}
+      </StyledPageDescription>
+      <StyledPageSubHeader variants={animatedHeaderItem}>{header}</StyledPageSubHeader>
     </StyledPageHeader>
   );
 };

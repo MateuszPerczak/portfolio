@@ -11,6 +11,7 @@ export default defineConfig({
       "@components": resolve(__dirname, "./src/components"),
       "@hooks": resolve(__dirname, "./src/hooks"),
       "@routes": resolve(__dirname, "./src/routes"),
+      "@animations": resolve(__dirname, "./src/animations"),
     },
   },
   plugins: [

@@ -20,7 +20,8 @@
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
       "@hooks/*": ["./src/hooks/*"],
-      "@routes/*": ["./src/routes/*"]
+      "@routes/*": ["./src/routes/*"],
+      "@animations/*": ["./src/animations/*"]
     }
   },
   "include": ["src", "src/pages/.tsx"],
