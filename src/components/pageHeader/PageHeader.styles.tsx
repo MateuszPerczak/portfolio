@@ -17,10 +17,7 @@ export const StyledPageDescription = styled(motion.span)`
 `;
 
 export const StyledPageSubHeader = styled(motion.span)`
-  font-size: clamp(3rem, 6vmax, 3.5rem);
-  color: ${({ theme: { background } }) => background};
-  background-color: ${({ theme: { accent } }) => accent};
-  padding: 0 10px;
+  font-size: clamp(2rem, 6vmax, 3.5rem);
 `;
 
 export default StyledPageHeader;

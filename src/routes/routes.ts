@@ -16,19 +16,19 @@ const routes: Route[] = [
   {
     id: 1,
     path: "/",
-    name: "O mnie",
+    name: "O MNIE",
     element: About,
   },
   {
     id: 2,
     path: "/skills",
-    name: "Umiejętności",
+    name: "UMIEJĘTNOŚCI",
     element: Skills,
   },
   {
     id: 3,
     path: "/projects",
-    name: "Projekty",
+    name: "PROJEKTY",
     element: Projects,
   },
 ];

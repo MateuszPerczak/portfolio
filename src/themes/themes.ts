@@ -12,7 +12,7 @@ const themes: Themes = {
     background: "#fafafa",
     color: "#000",
     description: "#333",
-    accent: "#D9114A",
+    accent: "#0077aa",
     navbar: "#fafafaaa",
     scrollbar: "#eee",
     shadow: "#00000033",

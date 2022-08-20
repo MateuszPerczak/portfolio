@@ -21,6 +21,7 @@ const GlobalStyle: FC = (): JSX.Element => {
           font-family: "Caros";
           background-color: ${theme.background};
           color: ${theme.color};
+          user-select: none;
         }
         #root {
           display: flex;

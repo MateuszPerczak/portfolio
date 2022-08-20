@@ -7,10 +7,11 @@ const StyledNavbarItem = styled(Link)`
   text-decoration: none;
   white-space: nowrap;
   font-size: 1.1rem;
-  transition: background-color 200ms;
+  transition: color 200ms, transform 200ms;
   color: ${({ theme: { color } }) => color};
   &:hover {
-    background-color: ${({ theme: { accent } }) => accent};
+    color: ${({ theme: { accent } }) => accent};
+    transform: translateX(10px);
   }
 `;
 
