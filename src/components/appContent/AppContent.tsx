@@ -2,7 +2,7 @@ import { FC, Suspense } from "react";
 import GlobalStyle from "@components/globalStyle/GlobalStyle";
 import Navbar from "@components/navbar/Navbar";
 import { Route, Routes, useLocation } from "react-router-dom";
-import PageNotFound from "@components/pageNotFound/PageNotFound";
+import PageNotFound from "@pages/PageNotFound";
 import routes from "@routes/routes";
 
 const AppContent: FC = (): JSX.Element => {

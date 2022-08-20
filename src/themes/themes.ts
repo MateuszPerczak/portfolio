@@ -19,7 +19,7 @@ const themes: Themes = {
     card: "#eee",
   },
   dark: {
-    background: "#282828",
+    background: "#222",
     color: "#fff",
     description: "#bbb",
     accent: "#00aaff",

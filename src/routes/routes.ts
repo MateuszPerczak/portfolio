@@ -3,7 +3,7 @@ import { lazy } from "react";
 
 const About: LazyExoticComponent<FC> = lazy(() => import("../pages/About"));
 const Skills: LazyExoticComponent<FC> = lazy(() => import("../pages/Skills"));
-const Experience: LazyExoticComponent<FC> = lazy(() => import("../pages/Experience"));
+const Projects: LazyExoticComponent<FC> = lazy(() => import("../pages/Projects"));
 
 type Route = {
   id: number;
@@ -27,20 +27,10 @@ const routes: Route[] = [
   },
   {
     id: 3,
-    path: "/experience",
-    name: "Doświadczenie",
-    element: Experience,
+    path: "/projects",
+    name: "Projekty",
+    element: Projects,
   },
-  // {
-  //   id: 4,
-  //   path: "/",
-  //   name: "Projekty",
-  // },
-  // {
-  //   id: 5,
-  //   path: "/",
-  //   name: "Kontakt",
-  // },
 ];
 
 export default routes;

@@ -21,7 +21,8 @@
       "@components/*": ["./src/components/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@routes/*": ["./src/routes/*"],
-      "@animations/*": ["./src/animations/*"]
+      "@animations/*": ["./src/animations/*"],
+      "@pages/*": ["./src/pages/*"]
     }
   },
   "include": ["src", "src/pages/.tsx"],

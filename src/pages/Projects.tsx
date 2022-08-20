@@ -2,12 +2,12 @@ import Page from "@/components/page/Page";
 import PageHeader from "@/components/pageHeader/PageHeader";
 import type { FC } from "react";
 
-const Skills: FC = (): JSX.Element => {
+const Projects: FC = (): JSX.Element => {
   return (
     <Page>
-      <PageHeader header="CO UMIEM?" description="UMIEJĘTNOŚCI" />
+      <PageHeader header="CO ZROBIŁEM?" description="PROJEKTY" />
     </Page>
   );
 };
 
-export default Skills;
+export default Projects;

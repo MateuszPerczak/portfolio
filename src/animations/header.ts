@@ -3,7 +3,7 @@ import type { Variants } from "framer-motion";
 export const animatedHeader: Variants = {
   onscreen: {
     transition: {
-      staggerChildren: 0.1,
+      staggerChildren: 0.2,
       delayChildren: 0.2,
     },
   },

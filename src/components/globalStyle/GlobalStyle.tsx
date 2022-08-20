@@ -25,7 +25,7 @@ const GlobalStyle: FC = (): JSX.Element => {
         #root {
           display: flex;
           margin-left: 70px;
-          padding: 20px;
+
           width: 100%;
           height: 100vh;
         }
@@ -44,6 +44,10 @@ const GlobalStyle: FC = (): JSX.Element => {
           font-family: "Caros";
           font-style: normal;
           src: url("./fonts/Caros.woff") format("woff");
+        }
+        @font-face {
+          font-family: "Poppins";
+          src: url("./fonts/Poppins.ttf") format("truetype");
         }
       `}
     />

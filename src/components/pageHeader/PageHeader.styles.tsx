@@ -10,13 +10,14 @@ const StyledPageHeader = styled(motion.header)`
 `;
 
 export const StyledPageDescription = styled(motion.span)`
-  font-size: clamp(1rem, 5vmax, 1.3rem);
+  font-size: clamp(1rem, 2vmax, 1.4rem);
   color: ${({ theme: { accent } }) => accent};
   letter-spacing: 0.1rem;
+  font-family: "Poppins";
 `;
 
 export const StyledPageSubHeader = styled(motion.span)`
-  font-size: clamp(2rem, 8vmax, 4rem);
+  font-size: clamp(3rem, 6vmax, 3.5rem);
   color: ${({ theme: { background } }) => background};
   background-color: ${({ theme: { accent } }) => accent};
   padding: 0 10px;
