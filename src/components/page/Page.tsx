@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
-const Page = styled.div`
+const Page = styled(motion.article)`
   display: flex;
   flex-direction: column;
   width: 100%;
