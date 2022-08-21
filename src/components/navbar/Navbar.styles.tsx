@@ -12,6 +12,7 @@ const StyledNavbar = styled(motion.nav)`
   width: 300px;
   height: 100%;
   z-index: 2;
+  font-family: "Poppins";
   border-right: 2px solid ${({ theme: { accent } }) => accent};
   background-color: ${({ theme: { navbar } }) => navbar};
   backdrop-filter: blur(30px) saturate(240%);
@@ -20,9 +21,9 @@ const StyledNavbar = styled(motion.nav)`
 export const StyledNavbarHeader = styled.header`
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 10px;
   transform: rotate(-90deg);
-  height: 70px;
   font-size: 1.1rem;
 `;
 

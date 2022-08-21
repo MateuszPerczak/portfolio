@@ -21,7 +21,7 @@ export const animatedHeaderItem: Variants = {
       type: "spring",
       stiffness: 100,
       damping: 15,
-      mass: 0.7,
+      mass: 0.6,
     },
   },
 };

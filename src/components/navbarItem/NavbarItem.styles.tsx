@@ -10,8 +10,17 @@ const StyledNavbarItem = styled(Link)`
   transition: color 200ms, transform 200ms;
   color: ${({ theme: { color } }) => color};
   &:hover {
-    color: ${({ theme: { accent } }) => accent};
     transform: translateX(10px);
+    color: ${({ theme: { accent } }) => accent};
+    &:before {
+      opacity: 1;
+    }
+  }
+  &:before {
+    content: "•";
+    padding-right: 5px;
+    opacity: 0;
+    transition: opacity 200ms;
   }
 `;
 
