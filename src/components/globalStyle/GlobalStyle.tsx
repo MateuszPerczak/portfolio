@@ -46,10 +46,6 @@ const GlobalStyle: FC = (): JSX.Element => {
           font-style: normal;
           src: url("./fonts/Caros.woff") format("woff");
         }
-        @font-face {
-          font-family: "Poppins";
-          src: url("./fonts/Poppins.ttf") format("truetype");
-        }
       `}
     />
   );

@@ -7,5 +7,8 @@ declare module "@emotion/react" {
     scrollbar: string;
     accent: string;
     navbar: string;
+    shadow: string;
+    card: string;
+    description: string;
   }
 }

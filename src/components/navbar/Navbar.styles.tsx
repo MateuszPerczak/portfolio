@@ -16,6 +16,7 @@ const StyledNavbar = styled(motion.nav)`
   border-right: 2px solid ${({ theme: { accent } }) => accent};
   background-color: ${({ theme: { navbar } }) => navbar};
   backdrop-filter: blur(30px) saturate(240%);
+  box-shadow: 0 0 10px ${({ theme: { shadow } }) => shadow};
 `;
 
 export const StyledNavbarHeader = styled.header`
