@@ -1,9 +1,9 @@
-export type Link = {
+type Link = {
   header: string;
   href: string;
 };
 
-type Project = {
+export type Project = {
   id: number;
   header: string;
   description: string;

@@ -5,28 +5,27 @@ const StyledProject = styled(motion.div)`
   display: flex;
   flex-direction: column;
   flex: 1;
-  min-width: 200px;
+  @media (min-width: 768px) {
+    min-width: 350px;
+  }
   font-family: "Poppins";
   background-color: ${({ theme: { navbar } }) => navbar};
   box-shadow: 0 0 5px ${({ theme: { shadow } }) => shadow};
-  border: 2px solid transparent;
   backdrop-filter: blur(30px) saturate(240%);
-  transition: border 200ms;
-  &:hover {
-    border: 2px solid ${({ theme: { accent } }) => accent};
-  }
 `;
 
 export const StyledProjectHeader = styled.header`
   font-weight: bold;
   font-size: clamp(1rem, 2vmax, 1.4rem);
   padding: 10px 20px;
+  font-family: "Caros";
 `;
 
 export const StyledProjectDescription = styled.section`
   flex: 1;
   padding: 20px;
   backdrop-filter: blur(30px) saturate(240%);
+  font-size: clamp(0.8rem, 2vmax, 1rem);
 `;
 
 export const StyledProjectLinks = styled.div`
@@ -43,8 +42,9 @@ export const StyledProjectLibs = styled.div`
 `;
 
 export const StyledProjectLink = styled.a`
+  text-decoration: none;
+  transition: color 200ms, background-color 200ms;
   color: ${({ theme: { color } }) => color};
-  transition: color 200ms;
   &:hover {
     color: ${({ theme: { accent } }) => accent};
   }
