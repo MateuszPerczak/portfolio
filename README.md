@@ -10,11 +10,12 @@
 
 - React
 - Emotion
-- react-spring
-- react-reduce-motion
+- framer-motion
 - react-router-dom
 - react-i18next
 - react-use-system-theme
+- use-local-storage
+- react-circle-flags
 
 ## Icons
 
