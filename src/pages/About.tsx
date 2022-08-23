@@ -1,18 +1,12 @@
-import PageHeader from "@/components/pageHeader/PageHeader";
+import Page from "@components/page/Page";
+import PageHeader from "@components/pageHeader/PageHeader";
 import type { FC } from "react";
 
 const About: FC = (): JSX.Element => {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "flex-start",
-        flexDirection: "column",
-        padding: "20px",
-      }}
-    >
-      <PageHeader header="O MNIE" />
-    </div>
+    <Page>
+      <PageHeader header="O mnie" />
+    </Page>
   );
 };
 export default About;

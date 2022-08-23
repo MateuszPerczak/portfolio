@@ -20,7 +20,8 @@
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
       "@hooks/*": ["./src/hooks/*"],
-      "@pages/*": ["./src/pages/*"]
+      "@pages/*": ["./src/pages/*"],
+      "@animations/*": ["./src/animations/*"]
     }
   },
   "include": ["src"],

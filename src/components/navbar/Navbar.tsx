@@ -10,9 +10,8 @@ const Navbar: FC<NavbarProps> = ({ setPage }: NavbarProps): JSX.Element => {
       <NavbarLogo />
       <StyledNavbarItems>
         <NavbarItem header="O mnie" onClick={() => setPage("About")} />
-        <NavbarItem header="Dośwaidczenie" onClick={() => setPage("Test")} />
-        <NavbarItem header="Umiejętności" onClick={() => setPage("About")} />
-        <NavbarItem header="Projekty" onClick={() => setPage("About")} />
+        <NavbarItem header="Umiejętności" onClick={() => setPage("Test")} />
+        <NavbarItem header="Projekty" onClick={() => setPage("Test")} />
       </StyledNavbarItems>
     </StyledNavbar>
   );

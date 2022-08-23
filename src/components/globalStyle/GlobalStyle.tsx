@@ -13,10 +13,10 @@ const GlobalStyle: FC = (): JSX.Element => {
           box-sizing: border-box;
           margin: 0;
           padding: 0;
-          /* outline: 1px solid ${theme.accent}; */
+          /* outline: 1px solid #acac00; */
         }
         body {
-          font-family: "Caros";
+          font-family: "Sora";
           background-color: ${theme.background};
           color: ${theme.color};
           overflow: hidden;
@@ -40,11 +40,6 @@ const GlobalStyle: FC = (): JSX.Element => {
         ::selection {
           background-color: ${theme.accent};
           color: ${theme.color};
-        }
-        @font-face {
-          font-family: "Caros";
-          font-style: normal;
-          src: url("./fonts/Caros.woff") format("woff");
         }
       `}
     />
