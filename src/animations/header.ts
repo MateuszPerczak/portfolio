@@ -10,9 +10,9 @@ export const animatedHeader: Variants = {
     opacity: 1,
     transition: {
       type: "spring",
-      stiffness: 100,
+      mass: 0.4,
+      stiffness: 200,
       damping: 15,
-      mass: 0.6,
     },
   },
 };
