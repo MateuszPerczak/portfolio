@@ -5,7 +5,7 @@ import type { FC } from "react";
 const About: FC = (): JSX.Element => {
   return (
     <Page>
-      <PageHeader header="O mnie" />
+      <PageHeader header="Coś o mnie" />
     </Page>
   );
 };
