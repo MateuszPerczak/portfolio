@@ -9,7 +9,6 @@ const StyledNavbar = styled(motion.nav)`
   width: 100%;
   padding: 20px;
   user-select: none;
-  border-bottom: 2px solid ${({ theme: { accent } }) => accent};
   background-color: ${({ theme: { navbar } }) => navbar};
 `;
 

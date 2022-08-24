@@ -16,9 +16,9 @@ const AppContent: FC = (): JSX.Element => {
     <>
       <GlobalStyle />
       <Navbar setPage={setPage} />
-      <Suspense fallback={<></>}>
+      {/* <Suspense fallback={<></>}>
         <Component />
-      </Suspense>
+      </Suspense> */}
     </>
   );
 };
