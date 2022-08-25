@@ -17,31 +17,8 @@ const GlobalStyle: FC = (): JSX.Element => {
         }
         body {
           font-family: "Sora";
-          background-color: ${theme.background};
-          color: ${theme.color};
-          overflow: hidden;
-          width: 100%;
-          height: 100vh;
         }
         #root {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
-          width: 100%;
-          height: 100%;
-          overflow: hidden;
-        }
-        ::-webkit-scrollbar {
-          width: 10px;
-          background-color: ${theme.scrollbar};
-        }
-        ::-webkit-scrollbar-thumb {
-          background-color: ${theme.accent};
-        }
-        ::selection {
-          background-color: ${theme.accent};
-          color: ${theme.color};
         }
       `}
     />
