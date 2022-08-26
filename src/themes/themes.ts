@@ -11,11 +11,11 @@ const themes: Themes = {
   light: {
     background: "#fafafa",
     color: "#000",
-    accent: "#D9114A",
-    navbar: "#fafafaaa",
-    scrollbar: "#eee",
-    shadow: "#00000033",
-    card: "#eee",
+    // accent: "#D9114A",
+    // navbar: "#fafafaaa",
+    // scrollbar: "#eee",
+    // shadow: "#00000033",
+    // card: "#eee",
   },
   dark: {
     background: "#000",

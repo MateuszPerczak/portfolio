@@ -19,20 +19,21 @@ const GlobalStyle: FC = (): JSX.Element => {
           font-family: "Sora";
           background: ${theme.background};
           color: ${theme.color};
+          user-select: none;
         }
         #root {
           display: flex;
+          flex-direction: column;
           align-items: center;
-          justify-content: center;
           width: 100%;
           height: 100vh;
         }
         ::-webkit-scrollbar {
           width: 10px;
-          background-color: ${theme.scrollbar};
+          background-color: ${theme.background};
         }
         ::-webkit-scrollbar-thumb {
-          background-color: ${theme.accent};
+          background-color: ${theme.color};
         }
       `}
     />

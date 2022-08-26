@@ -1,13 +1,15 @@
 import type { FC } from "react";
 import { Suspense } from "react";
 import GlobalStyle from "@components/globalStyle/GlobalStyle";
-import Button from "@components/button/Button";
+import Intro from "@components/intro/Intro";
 
 const AppContent: FC = (): JSX.Element => {
   return (
     <>
       <GlobalStyle />
-      <Suspense fallback={<>LOADING</>}></Suspense>
+      <Suspense fallback={<>LOADING</>}>
+        <Intro />
+      </Suspense>
     </>
   );
 };
