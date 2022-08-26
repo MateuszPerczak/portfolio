@@ -17,10 +17,15 @@ const GlobalStyle: FC = (): JSX.Element => {
         }
         body {
           font-family: "Sora";
-          background-color: ${theme.background};
+          background: ${theme.background};
           color: ${theme.color};
         }
         #root {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100vh;
         }
         ::-webkit-scrollbar {
           width: 10px;
