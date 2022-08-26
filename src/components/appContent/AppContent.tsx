@@ -7,7 +7,8 @@ const AppContent: FC = (): JSX.Element => {
   return (
     <>
       <GlobalStyle />
-      <Suspense fallback={<>LOADING</>}>
+      <Suspense fallback={<></>}>
+        <Intro />
         <Intro />
       </Suspense>
     </>
