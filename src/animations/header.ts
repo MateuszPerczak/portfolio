@@ -46,13 +46,12 @@ export const animatedHeaderContent: Variants = {
     },
   },
   iddle: {
-    y: [0, 10, 0],
+    y: [0, 10],
     transition: {
-      type: "spring",
-      stiffness: 50,
       repeat: Infinity,
       repeatType: "reverse",
-      repeatDelay: 1,
+      duration: 0.8,
+      ease: "easeInOut",
     },
   },
 };
