@@ -9,8 +9,7 @@ const StyledIntroContent = styled(motion.article)`
   gap: 10px;
   flex: 1 1 50%;
   width: 100%;
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  color: ${({ theme: { description } }) => description};
+  font-size: clamp(1rem, 5vw, 2rem);
 `;
 
 export default StyledIntroContent;

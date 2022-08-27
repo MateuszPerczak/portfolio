@@ -13,20 +13,21 @@ const GlobalStyle: FC = (): JSX.Element => {
           box-sizing: border-box;
           margin: 0;
           padding: 0;
-          /* outline: 1px dotted #dbce0d; */
+          /* outline: 1px dotted red; */
         }
         body {
           font-family: "Sora";
           background: ${theme.background};
           color: ${theme.color};
           user-select: none;
+          overflow: hidden;
         }
         #root {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
           width: 100%;
           height: 100vh;
+          overflow-y: auto;
+          overflow-x: hidden;
+          scroll-snap-type: y proximity;
         }
         @font-face {
           font-family: "Segoe Fluent Icons";

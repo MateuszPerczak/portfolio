@@ -1,17 +1,18 @@
 import type { FC } from "react";
 import { Suspense } from "react";
 import GlobalStyle from "@components/globalStyle/GlobalStyle";
-import SectionsWrapper from "@components/sectionsWrapper/SectionsWrapper";
 import Intro from "@sections/Intro";
+import About from "@sections/About";
+import Skills from "@sections/Skills";
 
 const AppContent: FC = (): JSX.Element => {
   return (
     <>
       <GlobalStyle />
       <Suspense fallback={<></>}>
-        <SectionsWrapper>
-          <Intro />
-        </SectionsWrapper>
+        <Intro />
+        <About />
+        <Skills />
       </Suspense>
     </>
   );

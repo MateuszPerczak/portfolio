@@ -31,7 +31,7 @@ export const animatedIntroH1: Variants = {
 
 export const animatedIntroContent: Variants = {
   offscreen: {
-    y: -100,
+    y: -50,
     opacity: 0,
   },
   onscreen: {
@@ -48,12 +48,12 @@ export const animatedIntroContent: Variants = {
 };
 export const animatedIntroArrow: Variants = {
   scroll: {
-    y: [-5, 5],
+    y: 5,
     transition: {
-      restDelta: 0.1,
-      repeat: Infinity,
-      repeatType: "mirror",
-      duration: 1,
+      type: "spring",
+      stiffness: 30,
+      damping: 0,
+      mass: 0.8,
     },
   },
 };
