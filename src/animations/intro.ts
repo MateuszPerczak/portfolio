@@ -28,3 +28,21 @@ export const animatedIntroH1: Variants = {
     },
   },
 };
+
+export const animatedIntroContent: Variants = {
+  offscreen: {
+    y: -100,
+    opacity: 0,
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 60,
+      damping: 15,
+      mass: 1,
+      restDelta: 0.1,
+    },
+  },
+};

@@ -28,6 +28,10 @@ const GlobalStyle: FC = (): JSX.Element => {
           width: 100%;
           height: 100vh;
         }
+        @font-face {
+          font-family: "Segoe Fluent Icons";
+          src: url("./fonts/Segoe Fluent Icons.ttf") format("truetype");
+        }
         ::-webkit-scrollbar {
           width: 10px;
           background-color: ${theme.background};

@@ -6,8 +6,8 @@ const StyledIntroHeader = styled(motion.header)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex: 1 1 50%;
   width: 100%;
-  height: 50%;
 `;
 
 export const StyledIntroWrapper = styled.div`

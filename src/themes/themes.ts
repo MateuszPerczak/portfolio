@@ -11,15 +11,12 @@ const themes: Themes = {
   light: {
     background: "#fafafa",
     color: "#000",
-    // accent: "#D9114A",
-    // navbar: "#fafafaaa",
-    // scrollbar: "#eee",
-    // shadow: "#00000033",
-    // card: "#eee",
+    description: "#808080",
   },
   dark: {
     background: "#000",
     color: "#fff",
+    description: "#808080",
   },
 };
 
@@ -36,3 +33,8 @@ export default themes;
 
 //     shadow: "#00000066",
 //     card: "#1a1a1a",
+// accent: "#D9114A",
+// navbar: "#fafafaaa",
+// scrollbar: "#eee",
+// shadow: "#00000033",
+// card: "#eee",
