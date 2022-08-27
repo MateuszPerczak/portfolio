@@ -1,13 +1,13 @@
 import type { FC } from "react";
 import StyledIntroContent from "./IntroContent.styled";
 import Icon from "@components/icon/Icon";
-import { animatedIntroContent } from "@animations/intro";
+import { animatedIntroArrow, animatedIntroContent } from "@animations/intro";
 
 const IntroContent: FC = (): JSX.Element => {
   return (
     <StyledIntroContent variants={animatedIntroContent}>
-      <span>SEE MORE</span>
-      <Icon>&#xE011;</Icon>
+      <Icon>&#xE962;</Icon>
+      <Icon variants={animatedIntroArrow}>&#xE011;</Icon>
     </StyledIntroContent>
   );
 };

@@ -6,9 +6,10 @@ const StyledIntroContent = styled(motion.article)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
   flex: 1 1 50%;
   width: 100%;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.5rem);
   color: ${({ theme: { description } }) => description};
 `;
 

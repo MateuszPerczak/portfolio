@@ -9,7 +9,7 @@ const Intro: FC = (): JSX.Element => {
     <Section
       variants={animatedIntro}
       initial="offscreen"
-      whileInView="onscreen"
+      whileInView={["onscreen", "scroll"]}
       viewport={{ amount: "all", once: true }}
     >
       <IntroHeader />

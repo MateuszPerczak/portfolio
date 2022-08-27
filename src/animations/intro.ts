@@ -46,3 +46,14 @@ export const animatedIntroContent: Variants = {
     },
   },
 };
+export const animatedIntroArrow: Variants = {
+  scroll: {
+    y: [-5, 5],
+    transition: {
+      restDelta: 0.1,
+      repeat: Infinity,
+      repeatType: "mirror",
+      duration: 1,
+    },
+  },
+};
