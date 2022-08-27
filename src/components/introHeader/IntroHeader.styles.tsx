@@ -10,16 +10,8 @@ const StyledIntroHeader = styled(motion.header)`
   height: 50%;
 `;
 
-export const StyledIntroHeaderWrapper = styled(motion.div)`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+export const StyledIntroWrapper = styled.div`
   overflow: hidden;
-`;
-
-export const StyledIntroHeaderText = styled(motion.span)`
-  font-weight: bold;
-  font-size: clamp(1rem, 8vw, 4rem);
 `;
 
 export default StyledIntroHeader;

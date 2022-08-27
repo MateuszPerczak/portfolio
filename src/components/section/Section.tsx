@@ -1,13 +1,14 @@
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 
-const Container = styled(motion.div)`
+const Section = styled(motion.section)`
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   padding: 20px;
   width: 100%;
-  min-height: 100vh;
-  max-width: 1000px;
+  height: 100%;
 `;
 
-export default Container;
+export default Section;

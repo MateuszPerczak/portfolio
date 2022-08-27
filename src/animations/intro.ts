@@ -1,6 +1,6 @@
 import type { Variants } from "framer-motion";
 
-export const animatedHeader: Variants = {
+export const animatedIntro: Variants = {
   onscreen: {
     transition: {
       staggerChildren: 0.5,
@@ -9,7 +9,7 @@ export const animatedHeader: Variants = {
   },
 };
 
-export const animatedHeaderText: Variants = {
+export const animatedIntroH1: Variants = {
   offscreen: {
     y: 70,
     skewY: 10,

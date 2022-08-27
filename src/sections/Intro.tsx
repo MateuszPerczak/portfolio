@@ -1,14 +1,20 @@
 import type { FC } from "react";
-import Container from "@components/container/Container";
+import Section from "@components/section/Section";
 import IntroHeader from "@components/introHeader/IntroHeader";
+import { animatedIntro } from "@animations/intro";
 import IntroContent from "@components/introContent/IntroContent";
 
 const Intro: FC = (): JSX.Element => {
   return (
-    <Container>
+    <Section
+      variants={animatedIntro}
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ amount: "all", once: true }}
+    >
       <IntroHeader />
       <IntroContent />
-    </Container>
+    </Section>
   );
 };
 
