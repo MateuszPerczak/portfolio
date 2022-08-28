@@ -1,11 +1,19 @@
 import type { FC } from "react";
 import Section from "@components/section/Section";
-import Header from "@/components/header/Header";
+import SkillsHeader from "@components/skillsHeader/SkillsHeader";
+import SkillsContent from "@components/skillsContent/SkillsContent";
+import { animatedSkills } from "@animations/skills";
 
 const Skills: FC = (): JSX.Element => {
   return (
-    <Section>
-      <Header>My knowleage</Header>
+    <Section
+      variants={animatedSkills}
+      initial="offscreen"
+      whileInView={["onscreen", "float"]}
+      viewport={{ amount: 0.9, once: true }}
+    >
+      <SkillsHeader />
+      <SkillsContent />
     </Section>
   );
 };

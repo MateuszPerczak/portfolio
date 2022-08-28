@@ -4,6 +4,8 @@ import GlobalStyle from "@components/globalStyle/GlobalStyle";
 import Intro from "@sections/Intro";
 import About from "@sections/About";
 import Skills from "@sections/Skills";
+import Projects from "@sections/Projects";
+import Footer from "@components/footer/Footer";
 
 const AppContent: FC = (): JSX.Element => {
   return (
@@ -13,6 +15,8 @@ const AppContent: FC = (): JSX.Element => {
         <Intro />
         <About />
         <Skills />
+        <Projects />
+        <Footer />
       </Suspense>
     </>
   );

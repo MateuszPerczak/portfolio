@@ -1,24 +1,21 @@
 import type { Variants } from "framer-motion";
 
-export const animatedIntro: Variants = {
+export const animatedAbout: Variants = {
   onscreen: {
     transition: {
       staggerChildren: 0.5,
-      delayChildren: 1,
     },
   },
 };
 
-export const animatedIntroHeader: Variants = {
+export const animatedAboutHeader: Variants = {
   offscreen: {
-    y: 70,
-    skewY: 10,
+    x: "100%",
     opacity: 0,
   },
   onscreen: {
-    y: 0,
+    x: 0,
     opacity: 1,
-    skewY: 0,
     transition: {
       type: "spring",
       stiffness: 50,
@@ -29,31 +26,20 @@ export const animatedIntroHeader: Variants = {
   },
 };
 
-export const animatedIntroContent: Variants = {
+export const animatedAboutText: Variants = {
   offscreen: {
-    y: -50,
     opacity: 0,
+    x: "-100%",
   },
   onscreen: {
-    y: 0,
     opacity: 1,
+    x: 0,
     transition: {
       type: "spring",
-      stiffness: 60,
+      stiffness: 50,
       damping: 15,
       mass: 1,
-      restDelta: 0.1,
-    },
-  },
-};
-export const animatedIntroArrow: Variants = {
-  scroll: {
-    y: 5,
-    transition: {
-      type: "spring",
-      stiffness: 30,
-      damping: 0,
-      mass: 0.8,
+      restDelta: 0.01,
     },
   },
 };

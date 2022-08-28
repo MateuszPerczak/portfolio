@@ -28,6 +28,7 @@ const GlobalStyle: FC = (): JSX.Element => {
           overflow-y: auto;
           overflow-x: hidden;
           scroll-snap-type: y proximity;
+          scroll-behavior: smooth;
         }
         @font-face {
           font-family: "Segoe Fluent Icons";

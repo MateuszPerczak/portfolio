@@ -1,11 +1,19 @@
 import type { FC } from "react";
 import Section from "@components/section/Section";
-import Header from "@/components/header/Header";
+import AboutHeader from "@components/aboutHeader/AboutHeader";
+import AboutContent from "@components/aboutContent/AboutContent";
+import { animatedAbout } from "@animations/about";
 
 const About: FC = (): JSX.Element => {
   return (
-    <Section reverseColor>
-      <Header>About me</Header>
+    <Section
+      variants={animatedAbout}
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ amount: 0.9, once: true }}
+    >
+      <AboutHeader />
+      <AboutContent />
     </Section>
   );
 };
