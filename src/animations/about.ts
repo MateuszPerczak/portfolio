@@ -43,3 +43,21 @@ export const animatedAboutText: Variants = {
     },
   },
 };
+
+export const animatedAboutButton: Variants = {
+  offscreen: {
+    opacity: 0,
+    x: 100,
+  },
+  onscreen: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      stiffness: 50,
+      damping: 15,
+      mass: 1,
+      restDelta: 0.01,
+    },
+  },
+};

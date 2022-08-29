@@ -3,10 +3,18 @@ import { motion } from "framer-motion";
 
 const StyledProjectsContent = styled(motion.div)`
   display: flex;
-  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+  flex: 1 1 75%;
+  width: 100%;
+`;
+
+export const StyledProjectsContentButtons = styled.div`
+  display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1 1 75%;
+  gap: 1rem;
+  padding: 1rem 0;
   width: 100%;
 `;
 

@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 const StyledSkillsContent = styled(motion.div)`
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   flex: 1 1 75%;
   width: 100%;

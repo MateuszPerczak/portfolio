@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const StyledProjectsHeader = styled(motion.div)`
   display: flex;
-  flex-direction: column;
+  gap: 1rem;
   align-items: center;
   justify-content: center;
   flex: 1 1 25%;
