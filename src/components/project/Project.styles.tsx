@@ -12,7 +12,7 @@ const StyledProject = styled(motion.a)`
 `;
 
 export const StyledProjectHeader = styled.span`
-  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  font-size: clamp(1rem, 4vw, 2.5rem);
   font-weight: bold;
 `;
 
