@@ -5,19 +5,20 @@ import { resolve } from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "mateuszperczak.github.io",
   resolve: {
     alias: {
       "@": resolve(__dirname, "./src"),
       "@components": resolve(__dirname, "./src/components"),
+      "@sections": resolve(__dirname, "./src/sections"),
       "@hooks": resolve(__dirname, "./src/hooks"),
-      "@pages": resolve(__dirname, "./src/pages"),
       "@animations": resolve(__dirname, "./src/animations"),
     },
   },
   plugins: [
     react({
       babel: {
-        plugins: ["@emotion/babel-plugin"],
+        plugins: ["@emotion"],
       },
     }),
     eslintPlugin(),

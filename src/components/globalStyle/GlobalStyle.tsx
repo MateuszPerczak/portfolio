@@ -13,35 +13,33 @@ const GlobalStyle: FC = (): JSX.Element => {
           box-sizing: border-box;
           margin: 0;
           padding: 0;
-          /* outline: 1px solid #acac00; */
+          /* outline: 1px dotted red; */
         }
         body {
           font-family: "Sora";
-          background-color: ${theme.background};
+          background: ${theme.background};
           color: ${theme.color};
+          user-select: none;
           overflow: hidden;
-          width: 100%;
-          height: 100vh;
         }
         #root {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-
           width: 100%;
-          height: 100%;
-          overflow: hidden;
+          height: 100vh;
+          overflow-y: auto;
+          overflow-x: hidden;
+          scroll-snap-type: y proximity;
+          scroll-behavior: smooth;
+        }
+        @font-face {
+          font-family: "Segoe Fluent Icons";
+          src: url("./fonts/Segoe Fluent Icons.ttf") format("truetype");
         }
         ::-webkit-scrollbar {
           width: 10px;
-          background-color: ${theme.scrollbar};
+          background-color: ${theme.background};
         }
         ::-webkit-scrollbar-thumb {
-          background-color: ${theme.accent};
-        }
-        ::selection {
-          background-color: ${theme.accent};
-          color: ${theme.color};
+          background-color: ${theme.color};
         }
       `}
     />

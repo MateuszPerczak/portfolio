@@ -19,8 +19,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
+      "@sections/*": ["./src/sections/*"],
       "@hooks/*": ["./src/hooks/*"],
-      "@pages/*": ["./src/pages/*"],
       "@animations/*": ["./src/animations/*"]
     }
   },

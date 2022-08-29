@@ -1,23 +1,22 @@
-import { FC, lazy, Suspense, useMemo } from "react";
-import { useState } from "react";
+import type { FC } from "react";
+import { Suspense } from "react";
 import GlobalStyle from "@components/globalStyle/GlobalStyle";
-import Navbar from "@components/navbar/Navbar";
+import Intro from "@sections/Intro";
+import About from "@sections/About";
+import Skills from "@sections/Skills";
+import Projects from "@sections/Projects";
+import Footer from "@components/footer/Footer";
 
 const AppContent: FC = (): JSX.Element => {
-  const [page, setPage] = useState("About");
-
-  const Component = useMemo(() => {
-    return lazy(() => {
-      return import(`../../pages/${page}.tsx`);
-    });
-  }, [page]);
-
   return (
     <>
       <GlobalStyle />
-      <Navbar setPage={setPage} />
       <Suspense fallback={<></>}>
-        <Component />
+        <Intro />
+        <About />
+        <Skills />
+        <Projects />
+        <Footer />
       </Suspense>
     </>
   );
