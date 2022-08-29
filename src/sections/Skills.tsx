@@ -10,7 +10,7 @@ const Skills: FC = (): JSX.Element => {
       variants={animatedSkills}
       initial="offscreen"
       whileInView={["onscreen", "float"]}
-      viewport={{ amount: 0.9, once: true }}
+      viewport={{ amount: 0.7, once: true }}
     >
       <SkillsHeader />
       <SkillsContent />

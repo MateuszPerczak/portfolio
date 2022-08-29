@@ -10,7 +10,7 @@ const Projects: FC = (): JSX.Element => {
       variants={animatedProjects}
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ amount: 0.9, once: true }}
+      viewport={{ amount: 0.7, once: true }}
     >
       <ProjectsHeader />
       <ProjectsContent />

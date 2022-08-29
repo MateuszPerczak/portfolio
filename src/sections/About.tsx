@@ -10,7 +10,7 @@ const About: FC = (): JSX.Element => {
       variants={animatedAbout}
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ amount: 0.9, once: true }}
+      viewport={{ amount: 0.7, once: true }}
     >
       <AboutHeader />
       <AboutContent />
