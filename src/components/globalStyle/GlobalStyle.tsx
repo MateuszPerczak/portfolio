@@ -27,7 +27,7 @@ const GlobalStyle: FC = (): JSX.Element => {
           height: 100vh;
           overflow-y: auto;
           overflow-x: hidden;
-          scroll-snap-type: y proximity;
+          scroll-snap-type: y mandatory;
           scroll-behavior: smooth;
         }
         @font-face {

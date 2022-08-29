@@ -3,7 +3,7 @@ import type { Variants } from "framer-motion";
 export const animatedAbout: Variants = {
   onscreen: {
     transition: {
-      staggerChildren: 0.5,
+      staggerChildren: 0.2,
     },
   },
 };

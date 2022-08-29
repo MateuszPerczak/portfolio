@@ -4,7 +4,7 @@ export const animatedIntro: Variants = {
   onscreen: {
     transition: {
       staggerChildren: 0.5,
-      delayChildren: 1,
+      delayChildren: 0.5,
     },
   },
 };
