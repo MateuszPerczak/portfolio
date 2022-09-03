@@ -1,6 +1,5 @@
 {
   "name": "mateuszperczak.github.io",
-  "homepage": "https://mateuszperczak.github.io",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -12,9 +11,10 @@
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
-    "framer-motion": "^6.5.1",
+    "framer-motion": "^7.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
     "react-use-system-theme": "^1.1.1",
     "rxjs": "^7.5.6"
   },
