@@ -19,16 +19,8 @@ const GlobalStyle: FC = (): JSX.Element => {
           font-family: "Sora";
           background: ${theme.background};
           color: ${theme.color};
-          user-select: none;
-          overflow: hidden;
         }
         #root {
-          width: 100%;
-          height: 100vh;
-          overflow-y: auto;
-          overflow-x: hidden;
-          scroll-snap-type: y proximity;
-          scroll-behavior: smooth;
         }
         @font-face {
           font-family: "Segoe Fluent Icons";

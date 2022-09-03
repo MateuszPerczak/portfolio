@@ -5,14 +5,11 @@ import { resolve } from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "mateuszperczak.github.io",
+  base: "",
   resolve: {
     alias: {
-      "@": resolve(__dirname, "./src"),
       "@components": resolve(__dirname, "./src/components"),
-      "@sections": resolve(__dirname, "./src/sections"),
       "@hooks": resolve(__dirname, "./src/hooks"),
-      "@animations": resolve(__dirname, "./src/animations"),
     },
   },
   plugins: [

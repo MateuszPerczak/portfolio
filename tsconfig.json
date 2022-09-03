@@ -17,11 +17,8 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
-      "@sections/*": ["./src/sections/*"],
-      "@hooks/*": ["./src/hooks/*"],
-      "@animations/*": ["./src/animations/*"]
+      "@hooks/*": ["./src/hooks/*"]
     }
   },
   "include": ["src"],

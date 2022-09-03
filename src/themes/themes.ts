@@ -11,12 +11,10 @@ const themes: Themes = {
   light: {
     background: "#fafafa",
     color: "#000",
-    description: "#808080",
   },
   dark: {
-    background: "#000",
+    background: "#212121",
     color: "#fff",
-    description: "#808080",
   },
 };
 
