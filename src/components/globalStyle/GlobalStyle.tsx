@@ -13,10 +13,10 @@ const GlobalStyle: FC = (): JSX.Element => {
           box-sizing: border-box;
           margin: 0;
           padding: 0;
-          /* outline: 1px dotted red; */
+          /* outline: 1px solid ${theme.accent}; */
         }
         body {
-          font-family: "Sora";
+          font-family: "Nunito";
           background: ${theme.background};
           color: ${theme.color};
         }
