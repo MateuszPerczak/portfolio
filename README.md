@@ -12,7 +12,6 @@
 - React
 - Emotion
 - framer-motion
-- react-i18next
 - react-use-system-theme
 
 ## Icons
