@@ -5,10 +5,8 @@ const Page = styled(motion.article)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
   flex: 1 1 100%;
-  margin-top: 60px;
   padding: 10px;
 `;
 

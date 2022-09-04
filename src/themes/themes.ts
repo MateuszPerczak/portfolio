@@ -13,12 +13,14 @@ const themes: Themes = {
     color: "#000",
     nav: "#f1f1f1",
     accent: "#0077ff",
+    scrollbar: "#f1f1f1",
   },
   dark: {
     background: "#252525",
     color: "#fff",
     nav: "#252525aa",
     accent: "#00ccff",
+    scrollbar: "#1e1e1e",
   },
 };
 

@@ -1,8 +1,7 @@
 import type { FC } from "react";
-import Greatings from "@components/greatings/Greatings";
 import Page from "@components/page/Page";
 
-const Home: FC = (): JSX.Element => {
+const About: FC = (): JSX.Element => {
   return (
     <Page
       initial={{ opacity: 0 }}
@@ -14,9 +13,9 @@ const Home: FC = (): JSX.Element => {
         mass: 0.6,
       }}
     >
-      <Greatings />
+      <h1>HELLO IM MATEUSZ</h1>
     </Page>
   );
 };
 
-export default Home;
+export default About;

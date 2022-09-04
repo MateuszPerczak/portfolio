@@ -38,7 +38,7 @@ const GlobalStyle: FC = (): JSX.Element => {
         }
         ::-webkit-scrollbar {
           width: 10px;
-          background-color: ${theme.background};
+          background-color: ${theme.scrollbar};
         }
         ::-webkit-scrollbar-thumb {
           background-color: ${theme.accent};
