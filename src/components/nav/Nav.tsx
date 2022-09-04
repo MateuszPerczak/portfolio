@@ -1,7 +1,11 @@
 import type { FC } from "react";
 import StyledNav, { NavButtons, NavContent } from "./Nav.styles";
 import Logo from "@components/logo/Logo";
-import NavButton from "@components/navButton/NavButton";
+
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import NavLink from "@components/navLink/NavLink";
 
 const Nav: FC = (): JSX.Element => {
   return (
@@ -13,14 +17,15 @@ const Nav: FC = (): JSX.Element => {
         stiffness: 120,
         damping: 20,
         mass: 0.5,
-        delay: 0.5,
+        delay: 0.2,
       }}
     >
       <NavContent>
         <Logo />
         <NavButtons>
-          <NavButton>&#xE706;</NavButton>
-          <NavButton>&#xE119;</NavButton>
+          <NavLink href="" icon={faEnvelope} />
+          <NavLink href="https://www.linkedin.com/in/mateuszperczak/" icon={faLinkedin} />
+          <NavLink href="https://github.com/MateuszPerczak" icon={faGithub} />
         </NavButtons>
       </NavContent>
     </StyledNav>

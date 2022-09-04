@@ -16,11 +16,21 @@ const GlobalStyle: FC = (): JSX.Element => {
           /* outline: 1px solid ${theme.accent}; */
         }
         body {
+          display: flex;
+          flex-direction: column;
           font-family: "Nunito";
           background: ${theme.background};
           color: ${theme.color};
+          width: 100%;
+          height: 100vh;
+          overflow: hidden;
         }
         #root {
+          display: flex;
+          flex-direction: column;
+          flex: 1 1 100%;
+          overflow-y: auto;
+          overflow-x: hidden;
         }
         @font-face {
           font-family: "Segoe Fluent Icons";
@@ -31,7 +41,7 @@ const GlobalStyle: FC = (): JSX.Element => {
           background-color: ${theme.background};
         }
         ::-webkit-scrollbar-thumb {
-          background-color: ${theme.color};
+          background-color: ${theme.accent};
         }
       `}
     />
