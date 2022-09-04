@@ -2,22 +2,22 @@
 
 ![GitHub](https://img.shields.io/github/license/MateuszPerczak/mateuszperczak.github.io?style=flat-square)
 ![GitHub last commit](https://img.shields.io/github/last-commit/MateuszPerczak/mateuszperczak.github.io?style=flat-square)
-![GitHub branch checks state](https://img.shields.io/github/checks-status/MateuszPerczak/mateuszperczak.github.io/test?style=flat-square)
-![Website](https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Fmateuszperczak.github.io%2F)
-
+![Website](https://img.shields.io/website?style=flat-square&url=https://mateuszperczak.netlify.app/)
+![GitHub top language](https://img.shields.io/github/languages/top/MateuszPerczak/mateuszperczak.github.io?style=flat-square)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/MateuszPerczak/mateuszperczak.github.io?style=flat-square)
 ![Website preview](./images/preview.png)
 
 ## Libraries
 
 - React
 - Emotion
-- framer-motion
-- react-i18next
-- react-use-system-theme
+- Framer-motion
+- Vite
+- React-use-system-theme
 
 ## Icons
 
-- Segoe Fluent Icons
+- Font Awesome v5
 
 ## Running this project
 
@@ -30,7 +30,7 @@ yarn
 2. Start react development server.
 
 ```sh
-yarn start
+yarn dev
 ```
 
 3. Find out that this react app is using TypeScript.
