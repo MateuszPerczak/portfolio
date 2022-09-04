@@ -6,7 +6,7 @@ const Page = styled(motion.article)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 2rem;
   flex: 1 1 100%;
   margin-top: 60px;
   padding: 10px;
