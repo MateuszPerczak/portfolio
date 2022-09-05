@@ -37,6 +37,9 @@ const GlobalStyle: FC = (): JSX.Element => {
           src: url("./fonts/Segoe Fluent Icons.ttf") format("truetype");
         }
         ::-webkit-scrollbar {
+          @media (max-width: 768px) {
+            width: 6px;
+          }
           width: 10px;
           background-color: ${theme.scrollbar};
         }

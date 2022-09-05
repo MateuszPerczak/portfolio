@@ -1,12 +1,14 @@
 import type { FC } from "react";
 import Greatings from "@components/greatings/Greatings";
 import Page from "@components/page/Page";
+import Project from "@components/project/Project";
 
 const Home: FC = (): JSX.Element => {
   return (
     <Page
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
       transition={{
         type: "spring",
         stiffness: 100,
@@ -15,6 +17,10 @@ const Home: FC = (): JSX.Element => {
       }}
     >
       <Greatings />
+      <Project />
+      <Project />
+      <Project />
+      <Project />
     </Page>
   );
 };
