@@ -9,7 +9,7 @@ const StyledGreatings = styled.section`
   padding: 2rem;
   width: 100%;
   max-width: 1000px;
-  font-size: 2.5rem;
+  font-size: clamp(1rem, 10vw, 2.5rem);
   font-weight: bold;
 `;
 

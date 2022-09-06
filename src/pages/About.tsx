@@ -14,7 +14,7 @@ const About: FC = (): JSX.Element => {
         mass: 0.6,
       }}
     >
-      <h1>HELLO IM MATEUSZ</h1>
+      <h1 style={{ padding: "2rem" }}>HELLO IM MATEUSZ</h1>
     </Page>
   );
 };

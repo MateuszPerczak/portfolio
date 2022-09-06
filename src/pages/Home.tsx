@@ -2,6 +2,7 @@ import type { FC } from "react";
 import Greatings from "@components/greatings/Greatings";
 import Page from "@components/page/Page";
 import Project from "@components/project/Project";
+import { projects } from "../data/projects";
 
 const Home: FC = (): JSX.Element => {
   return (
@@ -17,10 +18,9 @@ const Home: FC = (): JSX.Element => {
       }}
     >
       <Greatings />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
+      {projects.map(({ id, ...rest }) => {
+        return <Project key={id} {...rest} />;
+      })}
     </Page>
   );
 };

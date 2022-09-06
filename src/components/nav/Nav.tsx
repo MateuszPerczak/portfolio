@@ -1,7 +1,7 @@
 import type { FC } from "react";
+import { memo } from "react";
 import StyledNav, { NavButtons, NavContent } from "./Nav.styles";
 import Logo from "@components/logo/Logo";
-
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -23,13 +23,21 @@ const Nav: FC = (): JSX.Element => {
       <NavContent>
         <Logo />
         <NavButtons>
-          <NavLink href="" icon={faEnvelope} />
-          <NavLink href="https://www.linkedin.com/in/mateuszperczak/" icon={faLinkedin} />
-          <NavLink href="https://github.com/MateuszPerczak" icon={faGithub} />
+          <NavLink href="" icon={faEnvelope} aria-label="Email" />
+          <NavLink
+            href="https://www.linkedin.com/in/mateuszperczak/"
+            icon={faLinkedin}
+            aria-label="LinkedIn"
+          />
+          <NavLink
+            href="https://github.com/MateuszPerczak"
+            icon={faGithub}
+            aria-label="Github"
+          />
         </NavButtons>
       </NavContent>
     </StyledNav>
   );
 };
 
-export default Nav;
+export default memo(Nav);

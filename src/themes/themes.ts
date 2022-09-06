@@ -15,14 +15,16 @@ const themes: Themes = {
     accent: "#0077ff",
     scrollbar: "#f1f1f1",
     project: "#f1f1f1",
+    projectHeader: "#eaeaea",
   },
   dark: {
     background: "#252525",
     color: "#fff",
-    nav: "#1e1e1eaa",
+    nav: "#1e1e1edd",
     accent: "#00ccff",
     scrollbar: "#1e1e1e",
     project: "#1e1e1e",
+    projectHeader: "#212121",
   },
 };
 

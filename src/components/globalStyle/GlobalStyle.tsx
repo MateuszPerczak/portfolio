@@ -13,7 +13,7 @@ const GlobalStyle: FC = (): JSX.Element => {
           box-sizing: border-box;
           margin: 0;
           padding: 0;
-          /* outline: 1px solid ${theme.accent}; */
+          outline: 1px solid #aaccee33;
         }
         body {
           display: flex;
@@ -29,12 +29,8 @@ const GlobalStyle: FC = (): JSX.Element => {
           display: flex;
           flex-direction: column;
           flex: 1 1 100%;
-          overflow-y: auto;
+          overflow-y: scroll;
           overflow-x: hidden;
-        }
-        @font-face {
-          font-family: "Segoe Fluent Icons";
-          src: url("./fonts/Segoe Fluent Icons.ttf") format("truetype");
         }
         ::-webkit-scrollbar {
           @media (max-width: 768px) {
