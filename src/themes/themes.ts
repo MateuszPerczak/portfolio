@@ -16,6 +16,7 @@ const themes: Themes = {
     scrollbar: "#f1f1f1",
     project: "#f1f1f1",
     projectHeader: "#eaeaea",
+    footer: "#f1f1f1",
   },
   dark: {
     background: "#252525",
@@ -25,6 +26,7 @@ const themes: Themes = {
     scrollbar: "#1e1e1e",
     project: "#1e1e1e",
     projectHeader: "#212121",
+    footer: "#1e1e1e",
   },
 };
 

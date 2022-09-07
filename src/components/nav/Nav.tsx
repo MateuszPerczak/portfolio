@@ -23,7 +23,11 @@ const Nav: FC = (): JSX.Element => {
       <NavContent>
         <Logo />
         <NavButtons>
-          <NavLink href="" icon={faEnvelope} aria-label="Email" />
+          <NavLink
+            href="mailto:mateusz.perczak.mp@gmail.com"
+            icon={faEnvelope}
+            aria-label="Email"
+          />
           <NavLink
             href="https://www.linkedin.com/in/mateuszperczak/"
             icon={faLinkedin}

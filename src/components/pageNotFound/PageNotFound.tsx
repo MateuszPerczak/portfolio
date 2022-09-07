@@ -19,7 +19,7 @@ const PageNotFound: FC = (): JSX.Element => {
     >
       <FontAwesomeIcon icon={faPoo} />
       <PageHeader>Page Not Found</PageHeader>
-      <BackButton to="/" text="Go back" />
+      <BackButton to="/" text="Go back" aria-label="Go back" />
     </StyledPageNotFound>
   );
 };

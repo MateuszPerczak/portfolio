@@ -18,7 +18,7 @@ const ProjectHeader: FC<ProjectHeaderProps> = ({
         <StyledProjectTitle>{name}</StyledProjectTitle>
         <StyledProjectType>{type}</StyledProjectType>
       </StyledProjectWrapper>
-      <NextButton to={to} text="See more" aria-label="See more" />
+      <NextButton to={to} text="Project details" aria-label="Project details" />
     </StyledProjectHeader>
   );
 };

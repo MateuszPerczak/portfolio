@@ -9,5 +9,6 @@ declare module "@emotion/react" {
     scrollbar: string;
     project: string;
     projectHeader: string;
+    footer: string;
   }
 }
