@@ -7,14 +7,15 @@ import BackButton from "@components/backButton/BackButton";
 const PageNotFound: FC = (): JSX.Element => {
   return (
     <StyledPageNotFound
-      initial={{ scale: 0.9, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
+      initial={{ y: "100%", opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
       transition={{
         type: "spring",
         stiffness: 100,
         damping: 15,
         mass: 0.6,
       }}
+      layoutScroll
     >
       <FontAwesomeIcon icon={faPoo} />
       <PageHeader>Page Not Found</PageHeader>

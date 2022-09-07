@@ -13,7 +13,7 @@ const GlobalStyle: FC = (): JSX.Element => {
           box-sizing: border-box;
           margin: 0;
           padding: 0;
-          /* outline: 1px solid #aaccee33; */
+          /* outline: 1px solid #d323897a; */
         }
         body {
           display: flex;
@@ -21,7 +21,6 @@ const GlobalStyle: FC = (): JSX.Element => {
           font-family: "Nunito";
           background: ${theme.background};
           color: ${theme.color};
-          width: 100%;
           height: 100vh;
           overflow: hidden;
         }
@@ -34,13 +33,14 @@ const GlobalStyle: FC = (): JSX.Element => {
         }
         ::-webkit-scrollbar {
           @media (max-width: 768px) {
-            width: 6px;
+            width: 4px;
           }
-          width: 10px;
+          width: 6px;
           background-color: ${theme.scrollbar};
         }
         ::-webkit-scrollbar-thumb {
           background-color: ${theme.accent};
+          border-radius: 0.05rem;
         }
       `}
     />

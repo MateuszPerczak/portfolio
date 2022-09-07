@@ -10,12 +10,12 @@ type Route = {
 
 export const routes: Route[] = [
   {
-    id: 1,
+    id: 0,
     path: "/",
     element: Home,
   },
   {
-    id: 2,
+    id: 1,
     path: "/about",
     element: About,
   },

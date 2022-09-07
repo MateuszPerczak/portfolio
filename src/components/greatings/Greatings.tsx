@@ -8,7 +8,7 @@ const Greatings: FC = (): JSX.Element => {
       <header>
         Hi 👋, I&apos;m Mateusz. I am a self-taught Web & Desktop Developer.
       </header>
-      <NextButton to="/about" text="More about me" />
+      <NextButton to="/about" text="More about me" aria-label="More about me" />
     </StyledGreatings>
   );
 };
