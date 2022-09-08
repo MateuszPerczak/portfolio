@@ -1,5 +1,8 @@
 import type { FC } from "react";
 import Page from "@components/page/Page";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faReact } from "@fortawesome/free-brands-svg-icons";
 
 const Portfolio: FC = (): JSX.Element => {
   return (
@@ -15,6 +18,7 @@ const Portfolio: FC = (): JSX.Element => {
       }}
     >
       <h1>Moje portfolio</h1>
+      <FontAwesomeIcon icon={faReact} />
     </Page>
   );
 };

@@ -8,7 +8,7 @@ const StyledProject = styled.section`
   width: calc(100% - 2rem);
   height: 300px;
   max-width: 1000px;
-  border-radius: 0.3rem;
+  border-radius: 0.4rem;
   overflow: hidden;
   background-color: ${({ theme: { project } }) => project};
 `;
