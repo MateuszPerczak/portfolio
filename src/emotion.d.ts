@@ -10,5 +10,6 @@ declare module "@emotion/react" {
     project: string;
     projectHeader: string;
     footer: string;
+    shadow: string;
   }
 }

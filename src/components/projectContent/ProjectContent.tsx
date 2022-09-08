@@ -1,6 +1,8 @@
 import type { FC } from "react";
 import StyledProjectContent from "./ProjectContent.styles";
 import type { ProjectContentProps } from "./ProjectContent.types";
+// import { faCode } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProjectContent: FC<ProjectContentProps> = ({
   image,

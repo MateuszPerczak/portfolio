@@ -17,6 +17,7 @@ const themes: Themes = {
     project: "#f1f1f1",
     projectHeader: "#eaeaea",
     footer: "#f1f1f1",
+    shadow: "#00000022",
   },
   dark: {
     background: "#252525",
@@ -27,6 +28,7 @@ const themes: Themes = {
     project: "#1e1e1e",
     projectHeader: "#212121",
     footer: "#1e1e1e",
+    shadow: "#00000033",
   },
 };
 
