@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import Page from "@components/page/Page";
 
-const About: FC = (): JSX.Element => {
+const Portfolio: FC = (): JSX.Element => {
   return (
     <Page
       initial={{ opacity: 0 }}
@@ -14,9 +14,9 @@ const About: FC = (): JSX.Element => {
         mass: 0.6,
       }}
     >
-      <h1 style={{ padding: "2rem" }}>CONTENT</h1>
+      <h1>Moje portfolio</h1>
     </Page>
   );
 };
 
-export default About;
+export default Portfolio;

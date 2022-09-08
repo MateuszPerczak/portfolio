@@ -10,6 +10,9 @@ export const projects: ProjectWithId[] = [
       type: "Website",
       to: "/portfolio",
     },
+    content: {
+      image: "./images/portfolio.jpg",
+    },
   },
   {
     id: 1,
@@ -17,6 +20,9 @@ export const projects: ProjectWithId[] = [
       name: "Hardwareinfo",
       type: "Desktop app",
       to: "/hardwareinfo",
+    },
+    content: {
+      image: "./images/hardwareinfo.webp",
     },
   },
   {
@@ -26,6 +32,9 @@ export const projects: ProjectWithId[] = [
       type: "Website",
       to: "/weather",
     },
+    content: {
+      image: "./images/weather.webp",
+    },
   },
   {
     id: 3,
@@ -34,6 +43,9 @@ export const projects: ProjectWithId[] = [
       type: "Website",
       to: "/luix",
     },
+    content: {
+      image: "./images/3.png",
+    },
   },
   {
     id: 4,
@@ -41,6 +53,9 @@ export const projects: ProjectWithId[] = [
       name: "TicTacToe",
       type: "Website",
       to: "/tictactoe",
+    },
+    content: {
+      image: "./images/5.jpg",
     },
   },
 ];

@@ -1,6 +1,9 @@
 import type { FC } from "react";
-import About from "../pages/About";
+import { lazy } from "react";
 import Home from "../pages/Home";
+
+const About = lazy(() => import("../pages/About"));
+const Portfolio = lazy(() => import("../pages/Portfolio"));
 
 type Route = {
   id: number;
@@ -18,5 +21,10 @@ export const routes: Route[] = [
     id: 1,
     path: "/about",
     element: About,
+  },
+  {
+    id: 1,
+    path: "/portfolio",
+    element: Portfolio,
   },
 ];
