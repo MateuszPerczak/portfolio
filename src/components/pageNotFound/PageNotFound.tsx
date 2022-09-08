@@ -15,7 +15,6 @@ const PageNotFound: FC = (): JSX.Element => {
         damping: 15,
         mass: 0.6,
       }}
-      layoutScroll
     >
       <FontAwesomeIcon icon={faPoo} />
       <PageHeader>Page Not Found</PageHeader>

@@ -11,7 +11,7 @@ export const projects: ProjectWithId[] = [
       to: "/portfolio",
     },
     content: {
-      image: "./images/portfolio.jpg",
+      image: "./images/portfolio.webp",
     },
   },
   {
@@ -44,7 +44,7 @@ export const projects: ProjectWithId[] = [
       to: "/luix",
     },
     content: {
-      image: "./images/3.png",
+      image: "./images/luix.webp",
     },
   },
   {
@@ -55,7 +55,7 @@ export const projects: ProjectWithId[] = [
       to: "/tictactoe",
     },
     content: {
-      image: "./images/5.jpg",
+      image: "./images/tictactoe.webp",
     },
   },
 ];
