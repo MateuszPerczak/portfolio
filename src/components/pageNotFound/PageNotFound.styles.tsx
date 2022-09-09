@@ -7,12 +7,12 @@ const StyledPageNotFound = styled(motion.article)`
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  flex: 1 1 100%;
+  flex: 1 0 100%;
   font-size: clamp(5rem, 20vw, 8rem);
   user-select: none;
 `;
 
-export const PageHeader = styled.header`
+export const PageNotFoundHeader = styled.header`
   font-size: clamp(1rem, 4vw, 2rem);
   font-weight: bold;
 `;

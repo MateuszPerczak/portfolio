@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import StyledPageNotFound, { PageHeader } from "./PageNotFound.styles";
+import StyledPageNotFound, { PageNotFoundHeader } from "./PageNotFound.styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPoo } from "@fortawesome/free-solid-svg-icons";
 import BackButton from "@components/backButton/BackButton";
@@ -17,7 +17,7 @@ const PageNotFound: FC = (): JSX.Element => {
       }}
     >
       <FontAwesomeIcon icon={faPoo} />
-      <PageHeader>Page Not Found</PageHeader>
+      <PageNotFoundHeader>Page Not Found</PageNotFoundHeader>
       <BackButton to="/" text="Go back" aria-label="Go back" />
     </StyledPageNotFound>
   );

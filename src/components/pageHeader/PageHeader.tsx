@@ -1,13 +1,8 @@
-import styled from "@emotion/styled";
+import type { FC, PropsWithChildren } from "react";
+import StyledPageHeader from "./PageHeader.style";
 
-const PageHeader = styled.header`
-  display: flex;
-  max-width: 1000px;
-  flex: 0 1 20%;
-  width: calc(100% - 2rem);
-  padding: 2rem 1rem;
-  font-size: clamp(1rem, 10vw, 2.5rem);
-  font-weight: bold;
-`;
+const PageHeader: FC<PropsWithChildren> = ({ children }): JSX.Element => {
+  return <StyledPageHeader>{children}</StyledPageHeader>;
+};
 
 export default PageHeader;

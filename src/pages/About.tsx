@@ -16,17 +16,12 @@ const About: FC = (): JSX.Element => {
         mass: 0.6,
       }}
     >
-      <PageHeader>About me</PageHeader>
+      <PageHeader>About me 🤔</PageHeader>
       <PageArticle>
         Hi, I&apos;m Mateusz, a software developer from Poland. I&apos;ve been programing
         since 2014. I have a passion for creating web applications/desktop apps that are
         useful, easy to use, and beautiful 👀. I&apos;m always looking forward to
         improving my skills ✍️.
-      </PageArticle>
-
-      <PageArticle>
-        In my spare time, I enjoy writing some code 🐢 while listening to music, playing
-        games with my friends, and creating some tunes/music in Fl Studio 🎹.
       </PageArticle>
     </Page>
   );

@@ -6,17 +6,6 @@ export const projects: ProjectWithId[] = [
   {
     id: 0,
     header: {
-      name: "Portfolio",
-      type: "Website",
-      to: "/portfolio",
-    },
-    content: {
-      image: "./images/portfolio.webp",
-    },
-  },
-  {
-    id: 1,
-    header: {
       name: "Hardwareinfo",
       type: "Desktop app",
       to: "/hardwareinfo",
@@ -26,7 +15,7 @@ export const projects: ProjectWithId[] = [
     },
   },
   {
-    id: 2,
+    id: 1,
     header: {
       name: "Weather",
       type: "Website",
@@ -37,7 +26,7 @@ export const projects: ProjectWithId[] = [
     },
   },
   {
-    id: 3,
+    id: 2,
     header: {
       name: "Luix",
       type: "Website",
@@ -48,7 +37,7 @@ export const projects: ProjectWithId[] = [
     },
   },
   {
-    id: 4,
+    id: 3,
     header: {
       name: "TicTacToe",
       type: "Website",
