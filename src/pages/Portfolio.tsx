@@ -19,6 +19,7 @@ const Portfolio: FC = (): JSX.Element => {
         mass: 0.6,
       }}
     >
+      <PageHeader>About my Portfolio</PageHeader>
       {/* <PageHeader>About this site</PageHeader> */}
       <FontAwesomeIcon icon={faReact} />
     </Page>

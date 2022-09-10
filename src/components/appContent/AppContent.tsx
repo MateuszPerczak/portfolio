@@ -7,7 +7,7 @@ import { AnimatePresence } from "framer-motion";
 import { routes } from "@routes/routes";
 import Nav from "@components/nav/Nav";
 import Footer from "@components/footer/Footer";
-// import Footer from "@components/footer/Footer";
+import Loader from "@components/loader/Loader";
 
 const AppContent: FC = (): JSX.Element => {
   const location = useLocation();
@@ -16,7 +16,7 @@ const AppContent: FC = (): JSX.Element => {
     <>
       <GlobalStyle />
       <Nav />
-      <Suspense fallback={<></>}>
+      <Suspense fallback={<Loader />}>
         <AnimatePresence mode="wait">
           <Routes key={location.pathname} location={location}>
             {routes.map(({ id, element: Element, ...rest }) => {
