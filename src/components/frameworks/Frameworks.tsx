@@ -9,7 +9,7 @@ const Frameworks: FC = (): JSX.Element => {
     <StyledFrameworks>
       <h1>Used Frameworks</h1>
       <StyledFrameworksWrapper>
-        <Framework icon={faReact} text="React" href="https://pl.reactjs.org/" />
+        <Framework icon={faReact} text="React" href="https://reactjs.org/" />
         <Framework
           icon={faCode}
           text="Emotion"
