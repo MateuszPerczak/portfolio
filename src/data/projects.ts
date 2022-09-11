@@ -8,7 +8,7 @@ export const projects: ProjectWithId[] = [
     header: {
       name: "Hardwareinfo",
       type: "Desktop app",
-      to: "/hardwareinfo",
+      href: "https://github.com/MateuszPerczak/hardwareinfo",
     },
     content: {
       image: "./images/hardwareinfo.webp",
@@ -19,7 +19,7 @@ export const projects: ProjectWithId[] = [
     header: {
       name: "Weather",
       type: "Website",
-      to: "/weather",
+      href: "https://github.com/MateuszPerczak/weather",
     },
     content: {
       image: "./images/weather.webp",
@@ -30,7 +30,7 @@ export const projects: ProjectWithId[] = [
     header: {
       name: "Luix",
       type: "Website",
-      to: "/luix",
+      href: "https://github.com/MateuszPerczak/Luix",
     },
     content: {
       image: "./images/luix.webp",
@@ -41,7 +41,7 @@ export const projects: ProjectWithId[] = [
     header: {
       name: "TicTacToe",
       type: "Website",
-      to: "/tictactoe",
+      href: "https://github.com/MateuszPerczak/tictactoe",
     },
     content: {
       image: "./images/tictactoe.webp",

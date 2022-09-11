@@ -5,12 +5,12 @@ import StyledProjectHeader, {
   StyledProjectWrapper,
 } from "./ProjectHeader.styles";
 import type { ProjectHeaderProps } from "./ProjectHeader.types";
-import NextButton from "@components/nextButton/NextButton";
+import ProjectButton from "@components/projectButton/ProjectButton";
 
 const ProjectHeader: FC<ProjectHeaderProps> = ({
   name,
   type,
-  to,
+  href,
 }: ProjectHeaderProps): JSX.Element => {
   return (
     <StyledProjectHeader>
@@ -18,7 +18,7 @@ const ProjectHeader: FC<ProjectHeaderProps> = ({
         <StyledProjectTitle>{name}</StyledProjectTitle>
         <StyledProjectType>{type}</StyledProjectType>
       </StyledProjectWrapper>
-      <NextButton to={to} text="Project details" aria-label="Project details" />
+      <ProjectButton text="Project details" aria-label="Project details" href={href} />
     </StyledProjectHeader>
   );
 };
