@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { fromEvent, throttleTime } from "rxjs";
+import { debounceTime, fromEvent } from "rxjs";
 
 const useWindowDimensions = () => {
   const getWindowDimensions = () => {
@@ -11,7 +11,7 @@ const useWindowDimensions = () => {
 
   useEffect(() => {
     const subscription = fromEvent(window, "resize")
-      .pipe(throttleTime(200))
+      .pipe(debounceTime(100))
       .subscribe(() => {
         setWindowDimensions(getWindowDimensions());
       });
