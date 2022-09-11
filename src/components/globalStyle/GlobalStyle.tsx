@@ -1,9 +1,12 @@
 import { css, Global, Theme, useTheme } from "@emotion/react";
 import { memo } from "react";
 import type { FC } from "react";
+import useWindowDimensions from "@hooks/useWindowDimensions";
 
 const GlobalStyle: FC = (): JSX.Element => {
   const theme: Theme = useTheme();
+  const { height } = useWindowDimensions();
+
   return (
     <Global
       styles={css`
@@ -21,13 +24,14 @@ const GlobalStyle: FC = (): JSX.Element => {
           font-family: "Nunito";
           background: ${theme.background};
           color: ${theme.color};
-          height: 100vh;
           overflow: hidden;
+          user-select: none;
+          height: ${`${height}px`};
         }
         #root {
           display: flex;
           flex-direction: column;
-          flex: 1 1 100%;
+          flex: 1 1 auto;
           overflow-y: scroll;
           overflow-x: hidden;
         }
@@ -40,7 +44,7 @@ const GlobalStyle: FC = (): JSX.Element => {
         }
         ::-webkit-scrollbar-thumb {
           background-color: ${theme.accent};
-          border-radius: 0.05rem;
+          border-radius: 0.4rem;
         }
       `}
     />

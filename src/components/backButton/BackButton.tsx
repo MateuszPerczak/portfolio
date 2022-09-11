@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import type BackButtonProps from "./BackButton.types";
+import type { BackButtonProps } from "./BackButton.types";
 import StyledBackButton from "./BackButton.styles";
 
 const BackButton: FC<BackButtonProps> = ({

@@ -12,7 +12,7 @@ const themes: Themes = {
     background: "#fff",
     color: "#000",
     nav: "#f1f1f1aa",
-    accent: "#0077ff",
+    accent: "#34495e",
     scrollbar: "#f1f1f1",
     project: "#f1f1f1",
     projectHeader: "#eaeaea",

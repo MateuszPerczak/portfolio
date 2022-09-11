@@ -1,10 +1,10 @@
 import type { IconProp } from "@fortawesome/fontawesome-svg-core";
 import type { DetailedHTMLProps, AnchorHTMLAttributes } from "react";
 
-export type NavLinkProps = DetailedHTMLProps<
+export type FrameworkProps = DetailedHTMLProps<
   AnchorHTMLAttributes<HTMLAnchorElement>,
   HTMLAnchorElement
 > & {
-  href: string;
   icon: IconProp;
+  text: string;
 };

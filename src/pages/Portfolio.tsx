@@ -1,27 +1,23 @@
 import type { FC } from "react";
 import Page from "@components/page/Page";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact } from "@fortawesome/free-brands-svg-icons";
-import PageArticle from "@components/pageArticle/PageArticle";
 import PageHeader from "@components/pageHeader/PageHeader";
+import Frameworks from "@components/frameworks/Frameworks";
+import PageArticle from "@components/pageArticle/PageArticle";
 
 const Portfolio: FC = (): JSX.Element => {
   return (
-    <Page
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{
-        type: "spring",
-        stiffness: 100,
-        damping: 15,
-        mass: 0.6,
-      }}
-    >
-      <PageHeader>About my Portfolio</PageHeader>
-      {/* <PageHeader>About this site</PageHeader> */}
-      <FontAwesomeIcon icon={faReact} />
+    <Page>
+      <PageHeader>About this site</PageHeader>
+      <PageArticle>
+        In short, this is the fifth version of my portfolio which includes a newly
+        designed navigation and content presentation with subtle animations across the
+        whole web page.
+      </PageArticle>
+      <PageArticle>
+        The biggest difference between the old and new versions is the use of Vite, which
+        greatly improves bundle size and overall performance.
+      </PageArticle>
+      <Frameworks />
     </Page>
   );
 };

@@ -7,17 +7,7 @@ import NextButton from "@components/nextButton/NextButton";
 
 const Home: FC = (): JSX.Element => {
   return (
-    <Page
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{
-        type: "spring",
-        stiffness: 100,
-        damping: 15,
-        mass: 0.6,
-      }}
-    >
+    <Page>
       <PageHeader>
         <span>Hi 👋, I&apos;m Mateusz. I am a self-taught Web & Desktop Developer.</span>
         <NextButton to="/about" text="More about me" aria-label="More about me" />

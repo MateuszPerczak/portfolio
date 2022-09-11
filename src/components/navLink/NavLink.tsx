@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import type NavLinkProps from "./NavLink.types";
+import type { NavLinkProps } from "./NavLink.types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import StyledNavLink from "./NavLink.styles";
 

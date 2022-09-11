@@ -7,7 +7,7 @@ const StyledProjectContent = styled.div<ProjectContentProps>`
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  box-shadow: inset 0 0 10px ${({ theme: { shadow } }) => shadow};
+  /* box-shadow: inset 0 0 10px ${({ theme: { shadow } }) => shadow}; */
 `;
 
 export default StyledProjectContent;
