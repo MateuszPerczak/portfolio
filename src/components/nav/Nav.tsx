@@ -3,8 +3,7 @@ import { memo } from "react";
 import StyledNav, { NavButtons, NavContent } from "./Nav.styles";
 import Logo from "@components/logo/Logo";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import NavLink from "@components/navLink/NavLink";
 
 const Nav: FC = (): JSX.Element => {
