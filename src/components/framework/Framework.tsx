@@ -7,10 +7,10 @@ import type { FrameworkProps } from "./Framework.types";
 const Framework: FC<FrameworkProps> = ({
   icon,
   text,
-  ...rest
+  href,
 }: FrameworkProps): JSX.Element => {
   return (
-    <StyledFramework target="_blank" rel="noreferrer noopener" {...rest}>
+    <StyledFramework target="_blank" rel="noreferrer noopener" href={href}>
       <FontAwesomeIcon icon={icon} />
       <StyledFrameworkText>{text}</StyledFrameworkText>
     </StyledFramework>

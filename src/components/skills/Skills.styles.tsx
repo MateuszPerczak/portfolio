@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const StyledFrameworks = styled.section`
+const StyledSkills = styled.section`
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -10,11 +10,11 @@ const StyledFrameworks = styled.section`
   gap: 1rem;
 `;
 
-export const StyledFrameworksWrapper = styled.div`
+export const StyledSkillsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 1rem;
 `;
 
-export default StyledFrameworks;
+export default StyledSkills;

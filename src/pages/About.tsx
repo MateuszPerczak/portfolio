@@ -2,6 +2,7 @@ import type { FC } from "react";
 import Page from "@components/page/Page";
 import PageHeader from "@components/pageHeader/PageHeader";
 import PageArticle from "@components/pageArticle/PageArticle";
+import Skills from "@components/skills/Skills";
 
 const About: FC = (): JSX.Element => {
   return (
@@ -13,6 +14,7 @@ const About: FC = (): JSX.Element => {
         useful, easy to use, and beautiful. I&apos;m always looking forward to improving
         my skills.
       </PageArticle>
+      <Skills />
     </Page>
   );
 };

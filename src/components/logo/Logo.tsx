@@ -1,4 +1,5 @@
 import type { FC } from "react";
+import { memo } from "react";
 import StyledLogo from "./Logo.styles";
 
 const Logo: FC = (): JSX.Element => {
@@ -9,4 +10,4 @@ const Logo: FC = (): JSX.Element => {
   );
 };
 
-export default Logo;
+export default memo(Logo);

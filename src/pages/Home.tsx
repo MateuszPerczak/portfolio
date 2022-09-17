@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import Page from "@components/page/Page";
 import Project from "@components/project/Project";
-import { projects } from "../data/projects";
+import { projects } from "@data/projects";
 import PageHeader from "@components/pageHeader/PageHeader";
 import NextButton from "@components/nextButton/NextButton";
 
