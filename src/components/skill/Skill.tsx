@@ -4,7 +4,7 @@ const Skill = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1rem;
+  font-size: clamp(1rem, 3vw, 1.2rem);
   font-weight: bold;
   padding: 0.4rem 0.8rem;
   border-radius: 0.4rem;
