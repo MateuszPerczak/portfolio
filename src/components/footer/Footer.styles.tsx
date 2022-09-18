@@ -4,6 +4,7 @@ const StyledFooter = styled.footer`
   display: grid;
   place-items: center;
   padding: 1rem;
+  background-color: ${({ theme: { footer } }) => footer};
 `;
 
 export const FooterContent = styled.div`
