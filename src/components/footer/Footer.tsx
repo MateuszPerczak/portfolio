@@ -13,7 +13,6 @@ const Footer: FC = (): JSX.Element => {
           <FontAwesomeIcon icon={faCopyright} />
           <span>2022 By Mateusz Perczak</span>
         </FooterCopyright>
-
         <NextButton to="/portfolio" text="About this site" aria-label="About this site" />
       </FooterContent>
     </StyledFooter>
