@@ -1,10 +1,7 @@
 import type { ProjectProps } from "@components/project/Project.types";
 
-type ProjectWithId = ProjectProps & { id: number };
-
-export const projects: ProjectWithId[] = [
+export const projects: ProjectProps[] = [
   {
-    id: 0,
     header: {
       name: "Hardwareinfo",
       type: "Desktop app",
@@ -15,7 +12,6 @@ export const projects: ProjectWithId[] = [
     },
   },
   {
-    id: 1,
     header: {
       name: "Weather",
       type: "Website",
@@ -26,7 +22,6 @@ export const projects: ProjectWithId[] = [
     },
   },
   {
-    id: 2,
     header: {
       name: "Luix",
       type: "Website",
@@ -37,7 +32,6 @@ export const projects: ProjectWithId[] = [
     },
   },
   {
-    id: 3,
     header: {
       name: "TicTacToe",
       type: "Website",

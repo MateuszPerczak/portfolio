@@ -12,8 +12,8 @@ const Home: FC = (): JSX.Element => {
         <span>Hi 👋, I&apos;m Mateusz. I am a self-taught Web & Desktop Developer.</span>
         <NextButton to="/about" text="More about me" aria-label="More about me" />
       </PageHeader>
-      {projects.map(({ id, ...rest }) => {
-        return <Project key={id} {...rest} />;
+      {projects.map(({ ...rest }, index) => {
+        return <Project key={`project-${index}`} {...rest} />;
       })}
     </Page>
   );

@@ -10,7 +10,7 @@ const Skills: FC = (): JSX.Element => {
       <h1>My skills</h1>
       <StyledSkillsWrapper>
         {skills.map((skill, id) => {
-          return <Skill key={id}>{skill}</Skill>;
+          return <Skill key={`skill-${id}`}>{skill}</Skill>;
         })}
       </StyledSkillsWrapper>
     </StyledSkills>

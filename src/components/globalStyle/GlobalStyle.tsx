@@ -4,7 +4,7 @@ import type { FC } from "react";
 import useWindowDimensions from "@hooks/useWindowDimensions";
 
 const GlobalStyle: FC = (): JSX.Element => {
-  const theme: Theme = useTheme();
+  const { background, color, scrollbar, accent }: Theme = useTheme();
   const { height } = useWindowDimensions();
 
   return (
@@ -22,8 +22,8 @@ const GlobalStyle: FC = (): JSX.Element => {
           display: flex;
           flex-direction: column;
           font-family: "Nunito";
-          background: ${theme.background};
-          color: ${theme.color};
+          background: ${background};
+          color: ${color};
           overflow: hidden;
           user-select: none;
           height: ${`${height}px`};
@@ -41,10 +41,10 @@ const GlobalStyle: FC = (): JSX.Element => {
             width: 4px;
           }
           width: 6px;
-          background-color: ${theme.scrollbar};
+          background-color: ${scrollbar};
         }
         ::-webkit-scrollbar-thumb {
-          background-color: ${theme.accent};
+          background-color: ${accent};
           border-radius: 0.4rem;
         }
       `}

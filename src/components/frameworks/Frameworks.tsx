@@ -9,8 +9,8 @@ const Frameworks: FC = (): JSX.Element => {
     <StyledFrameworks>
       <h1>Used Frameworks</h1>
       <StyledFrameworksWrapper>
-        {framerowks.map(({ id, ...rest }) => {
-          return <Framework key={id} {...rest} />;
+        {framerowks.map(({ ...rest }, index) => {
+          return <Framework key={`framework-${index}`} {...rest} />;
         })}
       </StyledFrameworksWrapper>
     </StyledFrameworks>
