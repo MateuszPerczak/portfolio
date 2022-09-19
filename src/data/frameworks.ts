@@ -2,7 +2,7 @@ import type { FrameworkProps } from "@components/framework/Framework.types";
 import { faReact, faFontAwesome } from "@fortawesome/free-brands-svg-icons";
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 
-export const framerowks: FrameworkProps[] = [
+export const frameworks: FrameworkProps[] = [
   {
     icon: faReact,
     text: "React",

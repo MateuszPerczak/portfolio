@@ -14,7 +14,3 @@ const Project: FC<ProjectProps> = ({ header, content }: ProjectProps): JSX.Eleme
 };
 
 export default Project;
-
-//import NextButton from "@components/nextButton/NextButton";
-// import { faCode } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
