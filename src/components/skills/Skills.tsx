@@ -3,14 +3,19 @@ import { memo } from "react";
 import Skill from "@components/skill/Skill";
 import StyledSkills, { StyledSkillsWrapper } from "./Skills.styles";
 import { skills } from "@data/skills";
+import { skillsAnimation, skillsWrapper } from "@animations/animations";
 
 const Skills: FC = (): JSX.Element => {
   return (
     <StyledSkills>
       <h1>My skills</h1>
-      <StyledSkillsWrapper>
+      <StyledSkillsWrapper {...skillsWrapper}>
         {skills.map((skill, id) => {
-          return <Skill key={`skill-${id}`}>{skill}</Skill>;
+          return (
+            <Skill key={`skill-${id}`} {...skillsAnimation}>
+              {skill}
+            </Skill>
+          );
         })}
       </StyledSkillsWrapper>
     </StyledSkills>
