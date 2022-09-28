@@ -12,6 +12,7 @@ const StyledNav = styled(motion.nav)`
   flex: 1 0 60px;
   user-select: none;
   background-color: ${({ theme: { nav } }) => nav};
+  z-index: 2;
 `;
 
 export const NavContent = styled.div`
