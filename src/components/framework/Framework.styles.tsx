@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
-const StyledFramework = styled.a`
+const StyledFramework = styled(motion.a)`
   display: flex;
   align-items: center;
   justify-content: center;

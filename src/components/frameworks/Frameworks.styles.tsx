@@ -1,4 +1,5 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
 const StyledFrameworks = styled.section`
   display: flex;
@@ -10,7 +11,7 @@ const StyledFrameworks = styled.section`
   gap: 1rem;
 `;
 
-export const StyledFrameworksWrapper = styled.div`
+export const StyledFrameworksWrapper = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
