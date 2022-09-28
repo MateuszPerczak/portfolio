@@ -94,3 +94,15 @@ export const frameworkAnimation: MotionProps = {
     },
   },
 };
+
+export const mainPageAnimation: MotionProps = {
+  initial: { opacity: 0, x: -500 },
+  animate: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: -500 },
+};
+
+export const subPagesAnimation: MotionProps = {
+  initial: { opacity: 0, x: 500 },
+  animate: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: 500 },
+};

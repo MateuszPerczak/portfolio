@@ -3,10 +3,11 @@ import Page from "@components/page/Page";
 import PageHeader from "@components/pageHeader/PageHeader";
 import Frameworks from "@components/frameworks/Frameworks";
 import PageArticle from "@components/pageArticle/PageArticle";
+import { subPagesAnimation } from "@animations/animations";
 
 const Portfolio: FC = (): JSX.Element => {
   return (
-    <Page>
+    <Page {...subPagesAnimation}>
       <PageHeader>About this site</PageHeader>
       <PageArticle>
         In short, this is the fifth version of my portfolio which includes a newly

@@ -1,18 +1,17 @@
-import type { FC, PropsWithChildren } from "react";
+import type { FC } from "react";
 import StyledPage from "./Page.styles";
+import type { PageProps } from "./Page.types";
 
-const Page: FC<PropsWithChildren> = ({ children }): JSX.Element => {
+const Page: FC<PageProps> = ({ children, ...rest }: PageProps): JSX.Element => {
   return (
     <StyledPage
-      initial={{ opacity: 0, x: "-100%" }}
-      animate={{ opacity: 1, x: 0 }}
-      exit={{ opacity: 0, x: "100%" }}
       transition={{
         type: "spring",
-        stiffness: 100,
+        stiffness: 150,
         damping: 15,
         mass: 0.6,
       }}
+      {...rest}
     >
       {children}
     </StyledPage>
