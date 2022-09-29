@@ -1,19 +1,18 @@
-import type { FC } from "react";
-import StyledPage from "./Page.styles";
-import type { PageProps } from "./Page.types";
+import { useIsPresent } from "framer-motion";
+import type { FC, PropsWithChildren } from "react";
+import StyledPage, { StyledPageAnimation } from "./Page.styles";
 
-const Page: FC<PageProps> = ({ children, ...rest }: PageProps): JSX.Element => {
+const Page: FC<PropsWithChildren> = ({ children }): JSX.Element => {
+  const isPresent = useIsPresent();
   return (
-    <StyledPage
-      transition={{
-        type: "spring",
-        stiffness: 150,
-        damping: 15,
-        mass: 0.6,
-      }}
-      {...rest}
-    >
+    <StyledPage>
       {children}
+      <StyledPageAnimation
+        initial={{ scaleX: 1 }}
+        animate={{ scaleX: 0, transition: { type: "spring", mass: 0.6, stiffness: 80 } }}
+        exit={{ scaleX: 1, transition: { type: "spring", mass: 0.6, stiffness: 50 } }}
+        style={{ originX: isPresent ? 1 : 0 }}
+      />
     </StyledPage>
   );
 };

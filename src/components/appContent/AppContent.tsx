@@ -11,13 +11,12 @@ import Loader from "@components/loader/Loader";
 
 const AppContent: FC = (): JSX.Element => {
   const location = useLocation();
-
   return (
     <>
       <GlobalStyle />
       <Nav />
       <Suspense fallback={<Loader />}>
-        <AnimatePresence mode="wait">
+        <AnimatePresence mode="wait" initial={false}>
           <Routes key={location.pathname} location={location}>
             {routes.map(({ id, element: Element, ...rest }) => {
               return <Route key={id} element={<Element />} {...rest} />;

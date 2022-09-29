@@ -6,7 +6,6 @@ const StyledProject = styled(motion.section)`
   @media (max-width: 768px) {
     flex-direction: column-reverse;
   }
-
   height: 300px;
   max-width: 1000px;
   border-radius: 0.4rem;

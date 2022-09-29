@@ -3,11 +3,10 @@ import Page from "@components/page/Page";
 import PageHeader from "@components/pageHeader/PageHeader";
 import PageArticle from "@components/pageArticle/PageArticle";
 import Skills from "@components/skills/Skills";
-import { subPagesAnimation } from "@animations/animations";
 
 const About: FC = (): JSX.Element => {
   return (
-    <Page {...subPagesAnimation}>
+    <Page>
       <PageHeader>About me</PageHeader>
       <PageArticle>
         Hi, I&apos;m Mateusz, a software developer from Poland. I&apos;ve been programing
