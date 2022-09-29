@@ -41,4 +41,14 @@ export const projects: ProjectProps[] = [
       image: "./images/tictactoe.webp",
     },
   },
+  {
+    header: {
+      name: "Sounder",
+      type: "Desktop app",
+      href: "https://github.com/MateuszPerczak/Sounder5",
+    },
+    content: {
+      image: "./images/sounder.webp",
+    },
+  },
 ];
