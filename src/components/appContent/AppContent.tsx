@@ -25,7 +25,7 @@ const AppContent: FC = (): JSX.Element => {
           </Routes>
         </AnimatePresence>
       </Suspense>
-      <Footer />
+      <Footer path={location.pathname} />
     </>
   );
 };

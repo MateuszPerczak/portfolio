@@ -12,12 +12,13 @@ const themes: Themes = {
     background: "#fff",
     color: "#000",
     nav: "#f1f1f1aa",
-    accent: "#34495e",
+    accent: "#004477",
     scrollbar: "#f1f1f1",
     project: "#f1f1f1",
     projectHeader: "#eaeaea",
     footer: "#f1f1f1",
     shadow: "#00000022",
+    inactive: "#505050",
   },
   dark: {
     background: "#252525",
@@ -29,6 +30,7 @@ const themes: Themes = {
     projectHeader: "#212121",
     footer: "#1e1e1e",
     shadow: "#00000033",
+    inactive: "#808080",
   },
 };
 

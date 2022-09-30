@@ -4,8 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCopyright } from "@fortawesome/free-regular-svg-icons";
 import StyledFooter, { FooterContent, FooterCopyright } from "./Footer.styles";
 import NextButton from "@components/nextButton/NextButton";
+import type { FooterProps } from "./Footer.types";
 
-const Footer: FC = (): JSX.Element => {
+const Footer: FC<FooterProps> = ({ path }: FooterProps): JSX.Element => {
   return (
     <StyledFooter>
       <FooterContent>
@@ -13,7 +14,12 @@ const Footer: FC = (): JSX.Element => {
           <FontAwesomeIcon icon={faCopyright} />
           <span>2022 By Mateusz Perczak</span>
         </FooterCopyright>
-        <NextButton to="/portfolio" text="About this site" aria-label="About this site" />
+        <NextButton
+          to="/portfolio"
+          text="About this site"
+          aria-label="About this site"
+          disabled={path === "/portfolio"}
+        />
       </FooterContent>
     </StyledFooter>
   );
