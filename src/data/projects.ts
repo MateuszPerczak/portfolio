@@ -51,4 +51,14 @@ export const projects: ProjectProps[] = [
       image: "./images/sounder.webp",
     },
   },
+  {
+    header: {
+      name: "TkDeb",
+      type: "Dev tool",
+      href: "https://github.com/MateuszPerczak/TkDeb",
+    },
+    content: {
+      image: "./images/tkdeb.webp",
+    },
+  },
 ];

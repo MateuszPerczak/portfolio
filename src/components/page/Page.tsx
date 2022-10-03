@@ -9,7 +9,7 @@ const Page: FC<PropsWithChildren> = ({ children }): JSX.Element => {
       {children}
       <StyledPageAnimation
         initial={{ scaleX: 1 }}
-        animate={{ scaleX: 0, transition: { type: "spring", mass: 0.6, stiffness: 80 } }}
+        animate={{ scaleX: 0, transition: { type: "spring", mass: 0.6, stiffness: 100 } }}
         exit={{ scaleX: 1, transition: { type: "spring", mass: 0.6, stiffness: 50 } }}
         style={{ originX: isPresent ? 1 : 0 }}
       />
