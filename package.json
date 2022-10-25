@@ -27,7 +27,7 @@
     "@emotion/babel-plugin": "^11.10.0",
     "@nabla/vite-plugin-eslint": "^1.4.1",
     "@types/node": "^18.11.5",
-    "@types/react": "^18.0.21",
+    "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.41.0",
     "@typescript-eslint/parser": "^5.41.0",
