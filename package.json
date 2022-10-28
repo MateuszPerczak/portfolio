@@ -24,7 +24,7 @@
     "rxjs": "^7.5.7"
   },
   "devDependencies": {
-    "@emotion/babel-plugin": "^11.10.0",
+    "@emotion/babel-plugin": "^11.10.5",
     "@nabla/vite-plugin-eslint": "^1.4.1",
     "@types/node": "^18.11.7",
     "@types/react": "^18.0.23",
