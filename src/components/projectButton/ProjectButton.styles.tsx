@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 const StyledProjectButton = styled.a`
   display: flex;
-  gap: 0.5rem;
+  gap: 8px;
   align-items: center;
   justify-content: center;
   font-size: 1rem;

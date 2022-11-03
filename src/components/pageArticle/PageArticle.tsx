@@ -5,7 +5,7 @@ const PageArticle = styled.section`
   max-width: 1000px;
   flex: 0 1 auto;
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 32px;
   font-size: clamp(1rem, 5vw, 1.5rem);
 `;
 

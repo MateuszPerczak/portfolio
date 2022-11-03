@@ -7,8 +7,8 @@ const Skill = styled(motion.div)`
   justify-content: center;
   font-size: clamp(1rem, 3vw, 1.2rem);
   font-weight: bold;
-  padding: 0.4rem 0.8rem;
-  border-radius: 0.4rem;
+  padding: 8px 10px;
+  border-radius: 4px;
   @media (max-width: 768px) {
     flex: 1 1 auto;
   }

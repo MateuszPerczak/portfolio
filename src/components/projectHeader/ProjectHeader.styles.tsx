@@ -5,9 +5,9 @@ const StyledProjectHeader = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 16px;
   flex: 0 1 30%;
-  padding: 1rem;
+  padding: 16px;
   @media (max-width: 768px) and (min-width: 350px) {
     flex-direction: row;
     align-items: flex-end;

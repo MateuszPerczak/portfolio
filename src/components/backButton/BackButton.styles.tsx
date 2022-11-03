@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const StyledBackButton = styled(Link)`
   display: flex;
-  gap: 0.5rem;
+  gap: 8px;
   align-items: center;
   justify-content: center;
   font-size: 1rem;

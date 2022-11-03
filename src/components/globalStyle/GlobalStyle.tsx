@@ -32,7 +32,7 @@ const GlobalStyle: FC = (): JSX.Element => {
           display: flex;
           flex-direction: column;
           flex: 1 1 auto;
-          gap: 1rem;
+          gap: 16px;
           overflow-y: scroll;
           overflow-x: hidden;
         }
@@ -45,7 +45,7 @@ const GlobalStyle: FC = (): JSX.Element => {
         }
         ::-webkit-scrollbar-thumb {
           background-color: ${accent};
-          border-radius: 0.4rem;
+          border-radius: 4px;
         }
       `}
     />

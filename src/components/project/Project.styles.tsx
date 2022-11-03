@@ -8,7 +8,7 @@ const StyledProject = styled(motion.section)`
   }
   height: 300px;
   max-width: 1000px;
-  border-radius: 0.4rem;
+  border-radius: 8px;
   overflow: hidden;
   background-color: ${({ theme: { project } }) => project};
 `;

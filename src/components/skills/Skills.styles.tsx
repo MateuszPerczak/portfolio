@@ -7,15 +7,15 @@ const StyledSkills = styled.section`
   width: 100%;
   flex: 1 1 auto;
   max-width: 1000px;
-  padding: 2rem;
-  gap: 1rem;
+  padding: 32px;
+  gap: 16px;
 `;
 
 export const StyledSkillsWrapper = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 1rem;
+  gap: 16px;
 `;
 
 export default StyledSkills;

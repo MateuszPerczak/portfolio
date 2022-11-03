@@ -5,10 +5,10 @@ const StyledFramework = styled(motion.a)`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.4rem;
-  gap: 1rem;
+  border-radius: 8px;
+  gap: 16px;
   font-size: 1rem;
-  padding: 1rem;
+  padding: 10px 16px;
   @media (max-width: 768px) {
     flex: 1 0 auto;
   }

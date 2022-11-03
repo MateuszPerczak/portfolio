@@ -5,7 +5,7 @@ const StyledPage = styled.main`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 16px;
   flex: 1 1 100%;
 `;
 

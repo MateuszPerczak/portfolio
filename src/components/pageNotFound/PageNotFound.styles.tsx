@@ -6,7 +6,7 @@ const StyledPageNotFound = styled(motion.article)`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 16px;
   flex: 1 1 100%;
   font-size: clamp(5rem, 20vw, 8rem);
   user-select: none;

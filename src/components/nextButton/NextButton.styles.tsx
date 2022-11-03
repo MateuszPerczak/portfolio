@@ -4,7 +4,7 @@ import type { StyleProps } from "./NextButton.types";
 
 const StyledNextButton = styled(Link)<StyleProps>`
   display: flex;
-  gap: 0.5rem;
+  gap: 8px;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
