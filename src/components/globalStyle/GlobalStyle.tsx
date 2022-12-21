@@ -4,7 +4,7 @@ import type { FC } from "react";
 import { memo } from "react";
 
 const GlobalStyle: FC = (): JSX.Element => {
-  const theme: Theme = useTheme();
+  const { background, color }: Theme = useTheme();
   const { height } = useWindowDimensions();
 
   return (
@@ -22,8 +22,8 @@ const GlobalStyle: FC = (): JSX.Element => {
           display: flex;
           flex-direction: column;
           font-family: "Nunito";
-          background: ${theme.background};
-          color: ${theme.color};
+          background: ${background};
+          color: ${color};
           overflow: hidden;
           user-select: none;
           height: ${`${height}px`};
@@ -32,19 +32,8 @@ const GlobalStyle: FC = (): JSX.Element => {
           display: flex;
           flex-direction: column;
           flex: 1 1 auto;
-          overflow-y: scroll;
-          overflow-x: hidden;
-        }
-        ::-webkit-scrollbar {
-          @media (max-width: 768px) {
-            width: 4px;
-          }
-          width: 6px;
-          background-color: ${theme.scrollbar};
-        }
-        ::-webkit-scrollbar-thumb {
-          background-color: ${theme.accent};
-          border-radius: 0.4rem;
+          /* overflow-y: scroll;
+          overflow-x: hidden; */
         }
       `}
     />
