@@ -1,7 +1,7 @@
 import { css, Global, Theme, useTheme } from "@emotion/react";
-import { memo } from "react";
-import type { FC } from "react";
 import useWindowDimensions from "@hooks/useWindowDimensions";
+import type { FC } from "react";
+import { memo } from "react";
 
 const GlobalStyle: FC = (): JSX.Element => {
   const theme: Theme = useTheme();

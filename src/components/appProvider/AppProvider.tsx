@@ -1,6 +1,6 @@
-import type { FC, PropsWithChildren } from "react";
 import { ThemeProvider } from "@emotion/react";
 import useTheme from "@hooks/useTheme";
+import type { FC, PropsWithChildren } from "react";
 import { BrowserRouter } from "react-router-dom";
 
 const AppProvider: FC<PropsWithChildren> = ({ children }) => {
