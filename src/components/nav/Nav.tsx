@@ -1,7 +1,7 @@
 import NavButton from "@components/navButton/NavButton";
 import NavLogo from "@components/navLogo/NavLogo";
+import { ReactComponent as Blog } from "@icons/blog.svg";
 import { ReactComponent as Code } from "@icons/code.svg";
-import { ReactComponent as Memo } from "@icons/memo-pad.svg";
 import type { FC } from "react";
 
 import StyledNav, { StyledNavWrapper, StyledNavWrapperButtons } from "./Nav.styles";
@@ -13,7 +13,7 @@ const Nav: FC = (): JSX.Element => {
         <NavLogo />
         <StyledNavWrapperButtons>
           <NavButton>
-            <Memo style={{ height: "1em" }} />
+            <Blog style={{ height: "1em" }} />
             Blog
           </NavButton>
           <NavButton>

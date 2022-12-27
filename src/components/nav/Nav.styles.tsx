@@ -8,7 +8,7 @@ const StyledNav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1 0 60px;
+  flex: 0 0 60px;
   user-select: none;
   background-color: ${({ theme: { nav } }): string => nav};
   border-bottom: 1px solid ${({ theme: { border } }): string => border};

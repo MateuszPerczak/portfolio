@@ -7,7 +7,7 @@ const StyledHome = styled.div`
 `;
 
 const Home: FC = (): JSX.Element => {
-  return <StyledHome>Basic react component</StyledHome>;
+  return <StyledHome></StyledHome>;
 };
 
 export default Home;

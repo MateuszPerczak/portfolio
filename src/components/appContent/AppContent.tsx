@@ -19,7 +19,7 @@ const AppContent: FC = (): JSX.Element => {
             {routes.map(({ id, element: Element, ...rest }) => (
               <Route key={`route-${id}`} element={<Element />} {...rest} />
             ))}
-            <Route path="*" element={<>Page not found</>} />
+            <Route path="*" element={<Loader />} />
           </Routes>
         </AnimatePresence>
       </Suspense>
