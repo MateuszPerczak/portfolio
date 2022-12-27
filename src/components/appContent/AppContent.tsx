@@ -1,4 +1,6 @@
+import Footer from "@components/footer/Footer";
 import GlobalStyle from "@components/globalStyle/GlobalStyle";
+import Loader from "@components/loader/Loader";
 import Nav from "@components/nav/Nav";
 import { routes } from "@routes/routes";
 import { AnimatePresence } from "framer-motion";
@@ -11,12 +13,17 @@ const AppContent: FC = (): JSX.Element => {
     <>
       <GlobalStyle />
       <Nav />
-      <div
-        style={{
-          display: "flex",
-          flex: "1 1 100%",
-        }}
-      ></div>
+      <Suspense fallback={<Loader />}>
+        <AnimatePresence>
+          <Routes>
+            {routes.map(({ id, element: Element, ...rest }) => (
+              <Route key={`route-${id}`} element={<Element />} {...rest} />
+            ))}
+            <Route path="*" element={<>Page not found</>} />
+          </Routes>
+        </AnimatePresence>
+      </Suspense>
+      <Footer />
     </>
   );
 };

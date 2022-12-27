@@ -24,4 +24,10 @@ export const StyledNavWrapper = styled.div`
   padding: 0 clamp(10px, 10vw, 40px);
 `;
 
+export const StyledNavWrapperButtons = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+`;
+
 export default StyledNav;

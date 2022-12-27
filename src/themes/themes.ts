@@ -19,6 +19,7 @@ const themes: Themes = {
     background: "#1a1a1a",
     color: "#fff",
     nav: "#1a1a1a",
+    navButton: "#313131",
     card: "#2c2c2c",
     innerCard: "#232323",
     border: "#212121",

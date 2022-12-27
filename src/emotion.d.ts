@@ -10,5 +10,6 @@ declare module "@emotion/react" {
     border: string;
     shadow: string;
     accent: string;
+    navButton: string;
   }
 }

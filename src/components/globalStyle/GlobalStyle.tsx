@@ -32,8 +32,8 @@ const GlobalStyle: FC = (): JSX.Element => {
           display: flex;
           flex-direction: column;
           flex: 1 1 auto;
-          /* overflow-y: scroll;
-          overflow-x: hidden; */
+          overflow-y: scroll;
+          overflow-x: hidden;
         }
       `}
     />
