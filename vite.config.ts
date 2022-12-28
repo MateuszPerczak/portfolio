@@ -24,6 +24,7 @@ export default defineConfig({
     eslintPlugin(),
     svgr({
       svgrOptions: {
+        icon: true,
         svgProps: {
           fill: "currentColor",
         },

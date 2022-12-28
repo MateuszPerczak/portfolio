@@ -13,4 +13,14 @@ export const routes: Route[] = [
     element: lazy(() => import("../pages/Home")),
     path: "/",
   },
+  {
+    id: 1,
+    element: lazy(() => import("../pages/Home")),
+    path: "/blog",
+  },
+  {
+    id: 2,
+    element: lazy(() => import("../pages/Home")),
+    path: "/dev",
+  },
 ];

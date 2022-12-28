@@ -9,9 +9,9 @@ const StyledLoader = styled.div`
 `;
 
 export const StyledLoaderIcon = styled.span`
-  flex: 0 0 32px;
   color: ${({ theme: { accent } }): string => accent};
   line-height: 0;
+  font-size: 2rem;
   animation: spin 500ms linear infinite forwards;
   @keyframes spin {
     from {

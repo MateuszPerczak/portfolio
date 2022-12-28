@@ -4,7 +4,7 @@ import type { FC } from "react";
 import { memo } from "react";
 
 const GlobalStyle: FC = (): JSX.Element => {
-  const { background, color }: Theme = useTheme();
+  const { background, color, scrollbar, scrollbarActive }: Theme = useTheme();
   const { height } = useWindowDimensions();
 
   return (
@@ -34,6 +34,19 @@ const GlobalStyle: FC = (): JSX.Element => {
           flex: 1 1 auto;
           overflow-y: scroll;
           overflow-x: hidden;
+        }
+        ::-webkit-scrollbar {
+          width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+          background: ${background};
+        }
+        ::-webkit-scrollbar-thumb {
+          background: ${scrollbar};
+          border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+          background: ${scrollbarActive};
         }
       `}
     />

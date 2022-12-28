@@ -10,6 +10,7 @@ const StyledNav = styled.nav`
   justify-content: center;
   flex: 0 0 60px;
   user-select: none;
+  z-index: 2;
   background-color: ${({ theme: { nav } }): string => nav};
   border-bottom: 1px solid ${({ theme: { border } }): string => border};
   box-shadow: 0 0 5px ${({ theme: { shadow } }): string => shadow};

@@ -16,6 +16,8 @@ const themes: Themes = {
     innerCard: "#fff",
   },
   dark: {
+    scrollbar: "#262626",
+    scrollbarActive: "#313131",
     background: "#1a1a1a",
     color: "#fff",
     nav: "#1a1a1a",

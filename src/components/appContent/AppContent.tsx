@@ -2,6 +2,7 @@ import Footer from "@components/footer/Footer";
 import GlobalStyle from "@components/globalStyle/GlobalStyle";
 import Loader from "@components/loader/Loader";
 import Nav from "@components/nav/Nav";
+import PageNotFound from "@components/pageNotFound/PageNotFound";
 import { routes } from "@routes/routes";
 import { AnimatePresence } from "framer-motion";
 import type { FC } from "react";

@@ -1,12 +1,10 @@
 import styled from "@emotion/styled";
 
-const StyledNavButton = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 16px;
+const StyledNavHamburger = styled.div`
+  display: grid;
+  place-items: center;
+  padding: 8px;
   border-radius: 4px;
-  font-weight: bold;
   transition: background-color 200ms;
   cursor: pointer;
   color: ${({ theme: { accent } }): string => accent};
@@ -15,4 +13,4 @@ const StyledNavButton = styled.div`
   }
 `;
 
-export default StyledNavButton;
+export default StyledNavHamburger;
