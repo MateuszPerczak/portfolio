@@ -3,14 +3,16 @@ import type { FC } from "react";
 import StyledNavMenu from "./NavMenu.styles";
 import type { NavMenuProps } from "./NavMenu.types";
 
-const NavMenu: FC<NavMenuProps> = ({ isOpen, children }): JSX.Element => {
+const NavMenu: FC<NavMenuProps> = ({ isOpen, children, ...rest }): JSX.Element => {
   return (
     <StyledNavMenu
       animate={{
-        height: isOpen ? "100px" : "0px",
+        top: isOpen ? "60px" : "-70px",
       }}
-      exit={{ height: "0px" }}
-      initial={{ height: "0px" }}
+      initial={{ top: "-70px" }}
+      exit={{ top: "-70px" }}
+      transition={{ duration: 0.3 }}
+      {...rest}
     >
       {children}
     </StyledNavMenu>
