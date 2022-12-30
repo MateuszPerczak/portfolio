@@ -5,7 +5,8 @@ import { AnimatePresence } from "framer-motion";
 import type { FC } from "react";
 import { useState } from "react";
 
-import { NavButton, NavHamburger, NavLogo, NavMenu } from "./components";
+import { navItems } from "../../config/nav";
+import { NavHamburger, NavItem, NavLogo, NavMenu } from "./components";
 import StyledNav, { StyledNavWrapper, StyledNavWrapperButtons } from "./Nav.styles";
 
 const Nav: FC = (): JSX.Element => {
@@ -26,21 +27,28 @@ const Nav: FC = (): JSX.Element => {
             {showNavMenu && <NavHamburger onClick={toggleOpen} />}
             {!showNavMenu && (
               <>
-                <NavButton to="/blog">
-                  <Blog />
-                  Blog
-                </NavButton>
-                <NavButton to="/dev">
-                  <Code />
-                  Development
-                </NavButton>
+                {navItems.map((navItem, index) => (
+                  <NavItem key={`nav-item-${index}`} {...navItem} />
+                ))}
               </>
             )}
           </StyledNavWrapperButtons>
         </StyledNavWrapper>
       </StyledNav>
       <AnimatePresence mode="wait">
-        {showNavMenu && <NavMenu isOpen={isOpen} />}
+        {showNavMenu && (
+          <NavMenu isOpen={isOpen}>
+            <span>TEST</span>
+            {/* <>
+              {navItems.map(({ icon: Icon, name, ...rest }) => (
+                <NavButton key={name} {...rest}>
+                  {name}
+                  <Icon />
+                </NavButton>
+              ))}
+            </> */}
+          </NavMenu>
+        )}
       </AnimatePresence>
     </>
   );

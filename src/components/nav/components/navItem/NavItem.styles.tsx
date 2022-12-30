@@ -1,12 +1,12 @@
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 
-const StyledNavButton = styled(Link)`
+const StyledNavItem = styled(Link)`
   display: flex;
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  padding: 8px;
+  padding: 8px 10px;
   border-radius: 4px;
   font-weight: bold;
   transition: background-color 200ms;
@@ -17,4 +17,4 @@ const StyledNavButton = styled(Link)`
   }
 `;
 
-export default StyledNavButton;
+export default StyledNavItem;

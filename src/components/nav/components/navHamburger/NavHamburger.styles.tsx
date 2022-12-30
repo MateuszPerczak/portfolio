@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 const StyledNavHamburger = styled.div`
   display: grid;
   place-items: center;
-  padding: 8px;
+  padding: 10px;
   border-radius: 4px;
   transition: background-color 200ms;
   cursor: pointer;
