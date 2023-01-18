@@ -1,13 +1,12 @@
-import styled from "@emotion/styled";
+import Page from "@components/page/Page";
 import type { FC } from "react";
 
-const StyledHome = styled.div`
-  display: flex;
-  flex: 1 0 100%;
-`;
-
 const Home: FC = (): JSX.Element => {
-  return <StyledHome></StyledHome>;
+  return (
+    <Page>
+      <h1>Hello</h1>
+    </Page>
+  );
 };
 
 export default Home;

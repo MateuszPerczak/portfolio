@@ -9,7 +9,7 @@ const StyledLoader = styled.div`
 `;
 
 export const StyledLoaderIcon = styled.span`
-  color: ${({ theme: { accent } }): string => accent};
+  color: ${({ theme: { spinner } }): string => spinner};
   line-height: 0;
   font-size: 2rem;
   animation: spin 500ms linear infinite forwards;

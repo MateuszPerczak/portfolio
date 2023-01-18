@@ -1,4 +1,4 @@
-export type Theme = Record<string, string>;
+import type { Theme } from "@emotion/react";
 
 export enum ColorThemes {
   Light = "light",
@@ -9,24 +9,32 @@ type Themes = Record<ColorThemes, Theme>;
 
 const themes: Themes = {
   light: {
-    background: "#fff",
-    color: "#000",
-    nav: "#f1f1f1aa",
-    card: "#f1f1f1",
-    innerCard: "#fff",
+    scrollbar: "",
+    scrollbarActive: "",
+    nav: "",
+    navItem: "",
+    navItemActive: "",
+    background: "",
+    color: "",
+    border: "",
+    shadow: "",
+    spinner: "",
   },
   dark: {
     scrollbar: "#262626",
     scrollbarActive: "#313131",
+    navItemActive: "#ffffff",
+    navItem: "#aaaaaa",
     background: "#1a1a1a",
     color: "#fff",
     nav: "#1a1a1a",
-    navButton: "#313131",
-    card: "#2c2c2c",
-    innerCard: "#232323",
     border: "#212121",
     shadow: "#11111133",
-    accent: "#aaa",
+    spinner: "#aaaaaa",
+    // navButton: "#313131",
+    // card: "#2c2c2c",
+    // innerCard: "#232323",
+    // accent: "#aaa",
   },
 };
 

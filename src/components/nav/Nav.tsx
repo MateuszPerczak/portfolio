@@ -34,7 +34,7 @@ const Nav: FC = (): JSX.Element => {
       </StyledNav>
       <AnimatePresence mode="wait">
         {showNavMenu && (
-          <NavMenu isOpen={isOpen} onClick={() => setIsOpen(false)}>
+          <NavMenu isOpen={isOpen} onClick={(): void => setIsOpen(false)}>
             {navItems.map((navItem, index) => (
               <NavMenuItem key={`nav-menu-item-${index}`} {...navItem} />
             ))}

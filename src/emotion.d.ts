@@ -4,14 +4,18 @@ declare module "@emotion/react" {
   export interface Theme {
     scrollbar: string;
     scrollbarActive: string;
+    nav: string;
+    navItem: string;
+    navItemActive: string;
     background: string;
     color: string;
-    nav: string;
-    card: string;
-    innerCard: string;
-    border: string;
     shadow: string;
-    accent: string;
-    navButton: string;
+    border: string;
+    spinner: string;
+
+    // card: string;
+    // innerCard: string;
+    // accent: string;
+    // navButton: string;
   }
 }

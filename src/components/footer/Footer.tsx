@@ -4,7 +4,7 @@ import { memo } from "react";
 import StyledFooter from "./Footer.styles";
 
 const Footer: FC = (): JSX.Element => {
-  return <StyledFooter>Footer</StyledFooter>;
+  return <StyledFooter></StyledFooter>;
 };
 
 export default memo(Footer);

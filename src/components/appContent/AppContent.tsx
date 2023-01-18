@@ -7,20 +7,21 @@ import { routes } from "@routes/routes";
 import { AnimatePresence } from "framer-motion";
 import type { FC } from "react";
 import { Suspense } from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 const AppContent: FC = (): JSX.Element => {
+  const location = useLocation();
   return (
     <>
       <GlobalStyle />
       <Nav />
       <Suspense fallback={<Loader />}>
-        <AnimatePresence>
-          <Routes>
+        <AnimatePresence mode="wait">
+          <Routes key={location.pathname} location={location}>
             {routes.map(({ id, element: Element, ...rest }) => (
               <Route key={`route-${id}`} element={<Element />} {...rest} />
             ))}
-            <Route path="*" element={<Loader />} />
+            <Route path="*" element={<PageNotFound />} />
           </Routes>
         </AnimatePresence>
       </Suspense>

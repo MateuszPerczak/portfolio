@@ -15,12 +15,12 @@ export const routes: Route[] = [
   },
   {
     id: 1,
-    element: lazy(() => import("../pages/Home")),
+    element: lazy(() => import("../pages/Blog")),
     path: "/blog",
   },
   {
     id: 2,
-    element: lazy(() => import("../pages/Home")),
+    element: lazy(() => import("../pages/Dev")),
     path: "/dev",
   },
 ];

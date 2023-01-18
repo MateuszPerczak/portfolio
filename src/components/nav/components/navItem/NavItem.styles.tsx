@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const StyledNavItem = styled(Link)`
+const StyledNavItem = styled(NavLink)`
   display: flex;
   align-items: center;
   gap: 10px;
@@ -9,11 +9,11 @@ const StyledNavItem = styled(Link)`
   padding: 8px 10px;
   border-radius: 4px;
   font-weight: bold;
-  transition: background-color 200ms;
+  transition: color 200ms;
   cursor: pointer;
-  color: ${({ theme: { accent } }): string => accent};
-  &:hover {
-    background-color: ${({ theme: { navButton } }): string => navButton};
+  color: ${({ theme: { navItem } }): string => navItem};
+  &.active {
+    color: ${({ theme: { navItemActive } }): string => navItemActive};
   }
 `;
 

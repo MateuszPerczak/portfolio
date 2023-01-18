@@ -1,4 +1,5 @@
 import type { FC } from "react";
+
 import StyledNavMenuItem from "./NavMenuItem.styles";
 import type { NavMenuItemProps } from "./NavMenuItem.types";
 
