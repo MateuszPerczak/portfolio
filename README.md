@@ -24,13 +24,13 @@
 1. Install all dependencies.
 
 ```sh
-yarn
+pnpm i
 ```
 
 2. Start react development server.
 
 ```sh
-yarn dev
+pnpm dev
 ```
 
 3. Find out that this react app is using TypeScript.
