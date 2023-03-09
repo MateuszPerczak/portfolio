@@ -3,6 +3,7 @@ import GlobalStyle from "@components/globalStyle/GlobalStyle";
 import Loader from "@components/loader/Loader";
 import Nav from "@components/nav/Nav";
 import PageNotFound from "@components/pageNotFound/PageNotFound";
+import PageWrapper from "@components/pageWrapper/PageWrapper";
 import { routes } from "@routes/routes";
 import { AnimatePresence } from "framer-motion";
 import type { FC } from "react";
@@ -16,14 +17,16 @@ const AppContent: FC = (): JSX.Element => {
       <GlobalStyle />
       <Nav />
       <Suspense fallback={<Loader />}>
-        <AnimatePresence mode="wait">
-          <Routes key={location.pathname} location={location}>
-            {routes.map(({ id, element: Element, ...rest }) => (
-              <Route key={`route-${id}`} element={<Element />} {...rest} />
-            ))}
-            <Route path="*" element={<PageNotFound />} />
-          </Routes>
-        </AnimatePresence>
+        <PageWrapper>
+          <AnimatePresence mode="wait">
+            <Routes key={location.pathname} location={location}>
+              {routes.map(({ id, element: Element, ...rest }) => (
+                <Route key={`route-${id}`} element={<Element />} {...rest} />
+              ))}
+              <Route path="*" element={<PageNotFound />} />
+            </Routes>
+          </AnimatePresence>
+        </PageWrapper>
       </Suspense>
       <Footer />
     </>

@@ -2,7 +2,7 @@ import type { FC } from "react";
 import { memo } from "react";
 
 import StyledPageNotFound, {
-  StyledBomb,
+  StyledExclamation,
   StyledPageNotFoundWrapper,
 } from "./PageNotFound.styles";
 
@@ -13,7 +13,7 @@ const PageNotFound: FC = (): JSX.Element => (
       animate={{ opacity: 1 }}
       transition={{ type: "spring", stiffness: 100, damping: 20 }}
     >
-      <StyledBomb />
+      <StyledExclamation />
       <h1>Page not found</h1>
     </StyledPageNotFoundWrapper>
   </StyledPageNotFound>

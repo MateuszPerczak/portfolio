@@ -16,7 +16,7 @@ const GlobalStyle: FC = (): JSX.Element => {
           box-sizing: border-box;
           margin: 0;
           padding: 0;
-          /* outline: 1px solid #b6fc03aa; */
+          /* outline: 1px solid #bd1ba7aa; */
         }
         body {
           display: flex;
@@ -33,7 +33,7 @@ const GlobalStyle: FC = (): JSX.Element => {
           flex-direction: column;
           flex: 1 1 auto;
           overflow-y: scroll;
-          overflow-x: hidden;
+          overflow-x: hidden; 
         }
         ::-webkit-scrollbar {
           width: 8px;
