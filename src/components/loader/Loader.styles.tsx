@@ -6,10 +6,8 @@ const StyledLoader = styled.div`
   align-items: center;
   justify-content: center;
   padding-bottom: 60px;
-`;
-
-export const StyledLoaderIcon = styled.span`
-  color: ${({ theme: { spinner } }): string => spinner};
+  .span-loader {
+    color: ${({ theme: { spinner } }): string => spinner};
   line-height: 0;
   font-size: 2rem;
   animation: spin 500ms linear infinite forwards;
@@ -21,6 +19,9 @@ export const StyledLoaderIcon = styled.span`
       transform: rotate(360deg);
     }
   }
+  }
 `;
+
+
 
 export default StyledLoader;
