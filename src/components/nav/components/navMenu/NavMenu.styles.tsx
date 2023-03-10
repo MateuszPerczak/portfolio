@@ -3,15 +3,16 @@ import { motion } from "framer-motion";
 
 const StyledNavMenu = styled(motion.div)`
   position: absolute;
-  left: 0;
-  right: 10px;
+  right: 20px;
+  top: 70px;
   display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  border-radius: 10px;
   z-index: 1;
+  overflow: hidden;
+  padding: 10px;
   background-color: ${({ theme: { nav } }): string => nav};
-  border-bottom: 1px solid ${({ theme: { border } }): string => border};
-  box-shadow: 0 0 5px ${({ theme: { shadow } }): string => shadow};
+  box-shadow: 0 0 10px ${({ theme: { shadow } }): string => shadow};
+  border: 2px solid ${({ theme: { border } }): string => border};
 `;
 
 export default StyledNavMenu;

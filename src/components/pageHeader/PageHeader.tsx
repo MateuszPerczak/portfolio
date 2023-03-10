@@ -1,9 +1,12 @@
 import type { FC } from "react";
 
-import StyledPageHeader from "./PageHeader.styled";
+import StyledPageHeader from "./PageHeader.styles";
 import type { PageHeaderProps } from "./PageHeader.types";
 
-const PageHeader: FC<PageHeaderProps> = ({header, children}: PageHeaderProps): JSX.Element => {
+const PageHeader: FC<PageHeaderProps> = ({
+  header,
+  children,
+}: PageHeaderProps): JSX.Element => {
   return (
     <StyledPageHeader>
       {header && <h1>{header}</h1>}

@@ -7,11 +7,11 @@ const NavMenu: FC<NavMenuProps> = ({ isOpen, children, ...rest }): JSX.Element =
   return (
     <StyledNavMenu
       animate={{
-        top: isOpen ? "60px" : "-70px",
+        y: isOpen ? 0 : "-100%",
+        opacity: isOpen ? 1 : 0,
       }}
-      initial={{ top: "-70px" }}
-      exit={{ top: "-70px" }}
-      transition={{ duration: 0.3 }}
+      initial={{ y: "-100%", opacity: 0 }}
+      transition={{ type: "spring", stiffness: 120, damping: 10, mass: 0.2 }}
       {...rest}
     >
       {children}

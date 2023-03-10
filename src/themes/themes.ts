@@ -19,6 +19,8 @@ const themes: Themes = {
     border: "",
     shadow: "",
     spinner: "",
+    footerTop: "",
+    footerBottom: "",
   },
   dark: {
     scrollbar: "#262626",
@@ -31,6 +33,8 @@ const themes: Themes = {
     border: "#212121",
     shadow: "#11111133",
     spinner: "#aaaaaa",
+    footerTop: "#1a1a1a",
+    footerBottom: "#0f0f0f",
     // navButton: "#313131",
     // card: "#2c2c2c",
     // innerCard: "#232323",

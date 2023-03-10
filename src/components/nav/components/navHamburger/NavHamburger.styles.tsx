@@ -7,10 +7,7 @@ const StyledNavHamburger = styled.div`
   border-radius: 4px;
   transition: background-color 200ms;
   cursor: pointer;
-  color: ${({ theme: { accent } }): string => accent};
-  &:hover {
-    background-color: ${({ theme: { navButton } }): string => navButton};
-  }
+  color: ${({ theme: { navItem } }): string => navItem};
 `;
 
 export default StyledNavHamburger;

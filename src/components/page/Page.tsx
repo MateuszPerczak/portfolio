@@ -1,17 +1,12 @@
-import type { FC, PropsWithChildren } from "react";
+import styled from "@emotion/styled";
 
-import StyledPage from "./Page.styles";
+const Page = styled.main`
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 100%;
+  gap: 10px;
+  max-width: 1000px;
+  padding: 10px;
+`;
 
-const Page: FC<PropsWithChildren> = ({ children }: PropsWithChildren): JSX.Element => {
-  return (
-    <StyledPage
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      {children}
-    </StyledPage>
-  );
-};
- 
 export default Page;

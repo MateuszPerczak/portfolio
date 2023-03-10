@@ -8,11 +8,11 @@ const StyledNav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 60px;
+  flex: 0 0 64px;
   user-select: none;
   z-index: 2;
   background-color: ${({ theme: { nav } }): string => nav};
-  border-bottom: 1px solid ${({ theme: { border } }): string => border};
+  border-bottom: 2px solid ${({ theme: { border } }): string => border};
   box-shadow: 0 0 5px ${({ theme: { shadow } }): string => shadow};
 `;
 

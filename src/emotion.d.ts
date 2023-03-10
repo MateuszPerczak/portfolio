@@ -1,17 +1,21 @@
 import "@emotion/react";
 
+type Hex = `#${string}`
+
 declare module "@emotion/react" {
   export interface Theme {
-    scrollbar: string;
-    scrollbarActive: string;
-    nav: string;
-    navItem: string;
-    navItemActive: string;
-    background: string;
-    color: string;
-    shadow: string;
-    border: string;
-    spinner: string;
+    scrollbar: Hex;
+    scrollbarActive: Hex;
+    nav: Hex;
+    navItem: Hex;
+    navItemActive: Hex;
+    background: Hex;
+    color: Hex;
+    shadow: Hex;
+    border: Hex;
+    spinner: Hex;
+    footerTop: Hex,
+    footerBottom: Hex,
 
     // card: string;
     // innerCard: string;

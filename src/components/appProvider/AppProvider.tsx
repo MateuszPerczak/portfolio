@@ -1,13 +1,16 @@
+import GlobalStyle from "@components/globalStyle/GlobalStyle";
 import { ThemeProvider } from "@emotion/react";
 import useTheme from "@hooks/useTheme";
-import type { FC, PropsWithChildren } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { router } from "@routes/routes";
+import type { FC } from "react";
+import { RouterProvider } from "react-router-dom";
 
-const AppProvider: FC<PropsWithChildren> = ({ children }) => {
+const AppProvider: FC = () => {
   const theme = useTheme();
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>{children}</BrowserRouter>
+      <GlobalStyle />
+      <RouterProvider router={router} />
     </ThemeProvider>
   );
 };

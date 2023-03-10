@@ -6,7 +6,6 @@ const Home: FC = (): JSX.Element => {
   return (
     <Page>
       <PageHeader header="Hi 👋, I'm Mateusz. I am a self-taught Web & Desktop Developer."/>
-
     </Page>
   );
 };
