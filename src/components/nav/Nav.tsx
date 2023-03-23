@@ -21,8 +21,9 @@ const Nav: FC = (): JSX.Element => {
         <StyledNavWrapper>
           <NavLogo />
           <StyledNavWrapperButtons>
-            {showNavMenu && <NavHamburger onClick={toggleOpen} />}
-            {!showNavMenu && (
+            {showNavMenu ? (
+              <NavHamburger onClick={toggleOpen} isOpen={isOpen} />
+            ) : (
               <>
                 {navItems.map((navItem, index) => (
                   <NavItem key={`nav-item-${index}`} {...navItem} />

@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
-const StyledNavHamburger = styled.div`
+const StyledNavHamburger = styled(motion.span)`
   display: grid;
   place-items: center;
   padding: 10px;

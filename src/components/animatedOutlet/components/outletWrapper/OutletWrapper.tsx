@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 
-const StyledAnimatedOutlet = styled(motion.div)`
+const OutletWrapper = styled(motion.main)`
   display: flex;
   justify-content: center;
   flex: 1 0 100%;
 `;
 
-export default StyledAnimatedOutlet;
+export default OutletWrapper;

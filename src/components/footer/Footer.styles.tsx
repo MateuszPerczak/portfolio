@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const StyledFooter = styled.div`
+const StyledFooter = styled.footer`
   display: flex;
   flex: 0 0 300px;
   border-top: 2px solid ${({ theme: { border } }): string => border};

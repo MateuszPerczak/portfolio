@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 
-const StyledNavMenu = styled(motion.div)`
+const StyledNavMenu = styled(motion.menu)`
   position: absolute;
   right: 20px;
   top: 70px;
@@ -11,7 +11,7 @@ const StyledNavMenu = styled(motion.div)`
   overflow: hidden;
   padding: 10px;
   background-color: ${({ theme: { nav } }): string => nav};
-  box-shadow: 0 0 10px ${({ theme: { shadow } }): string => shadow};
+  box-shadow: 0 0 5px 5px ${({ theme: { shadow } }): string => shadow};
   border: 2px solid ${({ theme: { border } }): string => border};
 `;
 

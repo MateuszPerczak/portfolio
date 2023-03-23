@@ -33,7 +33,7 @@ const GlobalStyle: FC = (): JSX.Element => {
           flex-direction: column;
           flex: 1 1 auto;
           overflow-y: scroll;
-          overflow-x: hidden; 
+          overflow-x: hidden;
         }
         ::-webkit-scrollbar {
           width: 8px;

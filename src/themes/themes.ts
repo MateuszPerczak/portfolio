@@ -9,18 +9,20 @@ type Themes = Record<ColorThemes, Theme>;
 
 const themes: Themes = {
   light: {
-    scrollbar: "",
-    scrollbarActive: "",
-    nav: "",
-    navItem: "",
-    navItemActive: "",
-    background: "",
-    color: "",
-    border: "",
-    shadow: "",
-    spinner: "",
-    footerTop: "",
-    footerBottom: "",
+    scrollbar: "#",
+    scrollbarActive: "#",
+    nav: "#",
+    navItem: "#",
+    navItemActive: "#",
+    background: "#",
+    color: "#",
+    border: "#",
+    shadow: "#",
+    spinner: "#",
+    footerTop: "#",
+    footerBottom: "#",
+    link: "#",
+    warning: "#",
   },
   dark: {
     scrollbar: "#262626",
@@ -35,10 +37,11 @@ const themes: Themes = {
     spinner: "#aaaaaa",
     footerTop: "#1a1a1a",
     footerBottom: "#0f0f0f",
+    link: "#0cf", // #0cf alternate 00ffcc
+    warning: "#f8c54e",
     // navButton: "#313131",
     // card: "#2c2c2c",
     // innerCard: "#232323",
-    // accent: "#aaa",
   },
 };
 

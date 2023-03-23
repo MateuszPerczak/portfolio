@@ -22,7 +22,7 @@ export const StyledNavWrapper = styled.div`
   justify-content: space-between;
   max-width: 1000px;
   flex: 1 1 100%;
-  padding: 0 clamp(10px, 10vw, 40px);
+  padding: 0 20px;
 `;
 
 export const StyledNavWrapperButtons = styled.div`

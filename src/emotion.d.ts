@@ -1,6 +1,6 @@
 import "@emotion/react";
 
-type Hex = `#${string}`
+type Hex = `#${string}`;
 
 declare module "@emotion/react" {
   export interface Theme {
@@ -14,8 +14,10 @@ declare module "@emotion/react" {
     shadow: Hex;
     border: Hex;
     spinner: Hex;
-    footerTop: Hex,
-    footerBottom: Hex,
+    footerTop: Hex;
+    footerBottom: Hex;
+    link: Hex;
+    warning: Hex;
 
     // card: string;
     // innerCard: string;
