@@ -5,7 +5,8 @@ const StyledFooter = styled.footer`
   flex: 0 0 300px;
   border-top: 2px solid ${({ theme: { border } }): string => border};
   box-shadow: 0 0 5px ${({ theme: { shadow } }): string => shadow};
-  background: ${({ theme: { nav } }): string => `linear-gradient(${nav}, #0f0f0f)`};
+  background: ${({ theme: { footerTop, footerBottom } }): string =>
+    `linear-gradient(${footerTop}, ${footerBottom})`};
 `;
 
 export default StyledFooter;
