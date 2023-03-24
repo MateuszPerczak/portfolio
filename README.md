@@ -14,24 +14,26 @@
 - Framer-motion
 - Vite
 - React-use-system-theme
+- React-use-measure
+- RxJS
 
 ## Icons
 
-- Font Awesome v5
+- Font Awesome v6
 
 ## Running this project
 
 1. Install all dependencies.
 
 ```sh
-yarn
+pnpm i
 ```
 
 2. Start react development server.
 
 ```sh
-yarn dev
+pnpm dev
 ```
 
 3. Find out that this react app is using TypeScript.
-4. Be impresed!
+4. Be impressed!
