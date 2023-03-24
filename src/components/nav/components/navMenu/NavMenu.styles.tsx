@@ -3,8 +3,7 @@ import { motion } from "framer-motion";
 
 const StyledNavMenu = styled(motion.menu)`
   position: absolute;
-  right: 20px;
-  top: 70px;
+  top: 74px;
   display: flex;
   border-radius: 10px;
   z-index: 1;

@@ -16,7 +16,7 @@ const GlobalStyle: FC = (): JSX.Element => {
           box-sizing: border-box;
           margin: 0;
           padding: 0;
-          /* outline: 1px solid #bd1ba7aa; */
+          /* outline: 1px solid #0bd871aa; */
         }
         body {
           display: flex;

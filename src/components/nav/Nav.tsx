@@ -2,6 +2,7 @@ import useMobile from "@hooks/useMobile";
 import { AnimatePresence } from "framer-motion";
 import type { FC } from "react";
 import { useState } from "react";
+import useMeasure from "react-use-measure";
 
 import { navItems } from "../../config/nav";
 import { NavHamburger, NavItem, NavLogo, NavMenu, NavMenuItem } from "./components";
@@ -9,16 +10,23 @@ import StyledNav, { StyledNavWrapper, StyledNavWrapperButtons } from "./Nav.styl
 
 const Nav: FC = (): JSX.Element => {
   const showNavMenu = useMobile();
+  const [ref, { left }] = useMeasure({ debounce: 500 });
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = (): void => {
     setIsOpen((wasOpen) => !wasOpen);
   };
 
+  const closeNav = (): void => {
+    if (isOpen) {
+      setIsOpen(false);
+    }
+  };
+
   return (
     <>
-      <StyledNav>
-        <StyledNavWrapper>
+      <StyledNav onClick={closeNav}>
+        <StyledNavWrapper ref={ref}>
           <NavLogo />
           <StyledNavWrapperButtons>
             {showNavMenu ? (
@@ -35,7 +43,7 @@ const Nav: FC = (): JSX.Element => {
       </StyledNav>
       <AnimatePresence mode="wait">
         {showNavMenu && (
-          <NavMenu isOpen={isOpen} onClick={(): void => setIsOpen(false)}>
+          <NavMenu isOpen={isOpen} onClick={closeNav} offset={left}>
             {navItems.map((navItem, index) => (
               <NavMenuItem key={`nav-menu-item-${index}`} {...navItem} />
             ))}
