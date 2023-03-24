@@ -1,7 +1,8 @@
 import styled from "@emotion/styled";
 import { ReactComponent as Exclamation } from "@icons/exclamation.svg";
+import { motion } from "framer-motion";
 
-const StyledPageNotFound = styled.div`
+const StyledPageNotFound = styled(motion.section)`
   display: grid;
   place-items: center;
   flex: 1 0 100%;

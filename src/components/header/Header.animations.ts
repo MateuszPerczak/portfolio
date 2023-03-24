@@ -13,8 +13,3 @@ export const animation: Variants = {
   initial: { opacity: 0 },
   animate: { opacity: 1 },
 };
-
-export const animationChildren: Variants = {
-  initial: { opacity: 0 },
-  animate: { opacity: 1 },
-};

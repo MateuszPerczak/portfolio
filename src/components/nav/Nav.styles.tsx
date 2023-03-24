@@ -2,9 +2,9 @@ import styled from "@emotion/styled";
 
 const StyledNav = styled.nav`
   position: sticky;
-  top: 0;
   left: 0;
   right: 0;
+  top: 0;
   display: flex;
   align-items: center;
   justify-content: center;

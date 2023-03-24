@@ -7,13 +7,11 @@ import { OutletWrapper, StaticOutlet } from "./components";
 const AnimatedOutlet: FC = (): JSX.Element => {
   const location = useLocation();
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="popLayout">
       <OutletWrapper
         key={location.pathname}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.1 }}
       >
         <StaticOutlet />
       </OutletWrapper>

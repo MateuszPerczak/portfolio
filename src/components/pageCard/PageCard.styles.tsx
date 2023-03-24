@@ -1,8 +1,9 @@
 import styled from "@emotion/styled";
+import { motion } from "framer-motion";
 
 import type { PageCardLayouts } from "./PageCard.types";
 
-const StyledPageCard = styled.div<PageCardLayouts>`
+const StyledPageCard = styled(motion.div)<PageCardLayouts>`
   display: flex;
   flex-direction: ${({ flexDirection }): string => flexDirection ?? "row"};
   gap: 20px;

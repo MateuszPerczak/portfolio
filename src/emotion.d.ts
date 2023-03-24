@@ -18,10 +18,5 @@ declare module "@emotion/react" {
     footerBottom: Hex;
     link: Hex;
     warning: Hex;
-
-    // card: string;
-    // innerCard: string;
-    // accent: string;
-    // navButton: string;
   }
 }
