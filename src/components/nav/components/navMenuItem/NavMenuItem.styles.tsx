@@ -5,7 +5,7 @@ const StyledNavMenuItem = styled(NavLink)`
   display: flex;
   align-items: center;
   gap: 10px;
-  flex: 1 0 60px;
+  flex: 0 0 60px;
   padding: 10px;
   text-decoration: none;
   font-weight: bold;

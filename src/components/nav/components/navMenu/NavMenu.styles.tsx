@@ -5,6 +5,9 @@ const StyledNavMenu = styled(motion.menu)`
   position: absolute;
   top: 74px;
   display: flex;
+  @media (max-width: 300px) {
+    flex-direction: column;
+  }
   border-radius: 10px;
   z-index: 1;
   overflow: hidden;
