@@ -10,7 +10,7 @@ import StyledNav, { StyledNavWrapper, StyledNavWrapperButtons } from "./Nav.styl
 
 const Nav: FC = (): JSX.Element => {
   const showNavMenu = useMobile();
-  const [ref, { left }] = useMeasure({ debounce: 500 });
+  const [ref, { left }] = useMeasure({ debounce: 200 });
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = (): void => {

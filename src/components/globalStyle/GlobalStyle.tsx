@@ -1,11 +1,9 @@
 import { css, Global, Theme, useTheme } from "@emotion/react";
-import useWindowDimensions from "@hooks/useWindowDimensions";
 import type { FC } from "react";
 import { memo } from "react";
 
 const GlobalStyle: FC = (): JSX.Element => {
   const { background, color, scrollbar, scrollbarActive }: Theme = useTheme();
-  const { height } = useWindowDimensions();
 
   return (
     <Global
@@ -18,22 +16,25 @@ const GlobalStyle: FC = (): JSX.Element => {
           padding: 0;
           /* outline: 1px solid #0bd871aa; */
         }
+        html,
+        body {
+          height: 100%;
+          scroll-behavior: smooth;
+        }
         body {
           display: flex;
           flex-direction: column;
           font-family: "Nunito";
           background: ${background};
           color: ${color};
-          overflow: hidden;
+          overflow-y: scroll;
+          overflow-x: hidden;
           user-select: none;
-          height: ${`${height}px`};
         }
         #root {
           display: flex;
           flex-direction: column;
-          flex: 1 1 auto;
-          overflow-y: scroll;
-          overflow-x: hidden;
+          flex: 1 0 auto;
         }
         ::-webkit-scrollbar {
           width: 8px;

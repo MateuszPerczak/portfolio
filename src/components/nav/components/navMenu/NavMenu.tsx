@@ -14,7 +14,7 @@ const NavMenu: FC<NavMenuProps> = ({
       animate={{
         y: isOpen ? 0 : "-100%",
         opacity: isOpen ? 1 : 0,
-        right: offset + 20,
+        right: offset + 10,
       }}
       initial={{ y: "-100%", opacity: 0 }}
       transition={{ type: "spring", stiffness: 120, damping: 10, mass: 0.2 }}

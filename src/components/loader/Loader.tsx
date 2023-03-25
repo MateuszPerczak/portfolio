@@ -1,5 +1,5 @@
 import { ReactComponent as Spinner } from "@icons/spinner.svg";
-import type { FC } from "react";
+import { FC, memo } from "react";
 
 import StyledLoader from "./Loader.styles";
 
@@ -13,4 +13,4 @@ const Loader: FC = (): JSX.Element => {
   );
 };
 
-export default Loader;
+export default memo(Loader);

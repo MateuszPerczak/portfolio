@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 
 const StyledNavMenu = styled(motion.menu)`
-  position: absolute;
+  position: fixed;
   top: 74px;
   display: flex;
   @media (max-width: 300px) {
