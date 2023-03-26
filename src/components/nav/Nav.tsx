@@ -4,8 +4,8 @@ import type { FC } from "react";
 import { useState } from "react";
 import useMeasure from "react-use-measure";
 
-import { navItems } from "../../config/nav";
 import { NavHamburger, NavItem, NavLogo, NavMenu, NavMenuItem } from "./components";
+import { navItems } from "./Nav.items";
 import StyledNav, { StyledNavWrapper, StyledNavWrapperButtons } from "./Nav.styles";
 
 const Nav: FC = (): JSX.Element => {

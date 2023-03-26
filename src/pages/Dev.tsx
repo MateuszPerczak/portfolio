@@ -1,12 +1,24 @@
+import Header from "@components/header/Header";
 import Page from "@components/page/Page";
 import PageCard from "@components/pageCard/PageCard";
+import TextWrapper from "@components/textWrapper/TextWrapper";
+import { ReactComponent as Code } from "@icons/code.svg";
 import type { FC } from "react";
 
 const Dev: FC = (): JSX.Element => {
   return (
     <Page>
-      <PageCard>
-        <h1>My projects</h1>
+      <PageCard flexDirection="column">
+        <Header>
+          <Code />
+          Development
+        </Header>
+        <TextWrapper>
+          <span className="description bold">Here are some of my best projects</span>
+          <span className="description">
+            There will be more projects in the future 😋
+          </span>
+        </TextWrapper>
       </PageCard>
     </Page>
   );

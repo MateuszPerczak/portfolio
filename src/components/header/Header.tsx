@@ -1,22 +1,10 @@
-import { motion } from "framer-motion";
-import type { FC } from "react";
+import styled from "@emotion/styled";
 
-import { animation, transition } from "./Header.animations";
-import StyledHeader from "./Header.styles";
-import type { HeaderProps } from "./Header.types";
-
-const Header: FC<HeaderProps> = ({ text }): JSX.Element => {
-  const splitedText = text.split("");
-
-  return (
-    <StyledHeader variants={transition} initial="initial" animate="animate">
-      {splitedText.map((letter, index) => (
-        <motion.span key={`animated-letter-${index}`} variants={animation}>
-          {letter}
-        </motion.span>
-      ))}
-    </StyledHeader>
-  );
-};
+const Header = styled.h1`
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+`;
 
 export default Header;

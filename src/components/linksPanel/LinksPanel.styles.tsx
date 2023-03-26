@@ -12,7 +12,7 @@ const StyledLinks = styled.div`
     }
   }
   .links-header {
-    font-size: clamp(0.5rem, 1rem, 0.8rem);
+    font-size: 1rem;
     font-weight: bold;
   }
 `;
@@ -24,7 +24,7 @@ export const StyledLink = styled.a`
   justify-content: center;
   padding: 5px 10px;
   color: ${({ theme: { link } }): string => link};
-  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-size: 0.9rem;
   font-weight: bold;
   text-decoration: none;
   border: 1px solid ${({ theme: { link } }): string => link};

@@ -1,6 +1,7 @@
-import type { NavItemProps } from "@components/nav/components/navItem/NavItem.types";
 import { ReactComponent as Blog } from "@icons/blog.svg";
 import { ReactComponent as Code } from "@icons/code.svg";
+
+import type { NavItemProps } from "./components/navItem/NavItem.types";
 
 export const navItems: NavItemProps[] = [
   {
