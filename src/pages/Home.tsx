@@ -31,17 +31,23 @@ const Home: FC = (): JSX.Element => {
         />
       </PageCard>
       <PageCard alignItems="center">
-        <h2>#1</h2>
-        <TextWrapper>
-          <span className="description">This a test card</span>
-          <span className="ps">☠️</span>
+        <TextWrapper gap={5}>
+          <span className="title">About me</span>
+          <span className="description bold">
+            I&apos;m a software developer from Poland. I&apos;ve been programming since
+            2014. I have a passion for creating web applications/desktop apps that are
+            useful, easy to use, and beautiful.
+          </span>
+          <span className="description">
+            I&apos;m always looking forward to improving my skills.
+          </span>
         </TextWrapper>
       </PageCard>
       <PageCard alignItems="center">
-        <h2>#2</h2>
-        <TextWrapper>
-          <span className="description">Hello again</span>
-          <span className="ps">Never gonna give u up</span>
+        <TextWrapper gap={5}>
+          <span className="title">My skills</span>
+          <span className="description bold">This a test card</span>
+          <span className="description">☠️</span>
         </TextWrapper>
       </PageCard>
     </Page>

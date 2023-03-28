@@ -1,19 +1,23 @@
 import styled from "@emotion/styled";
 
-const StyledLinks = styled.div`
+import type { LinksPanelProps } from "./LinksPanel.types";
+
+const StyledLinks = styled.div<Pick<LinksPanelProps, "justifyContent">>`
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 10px;
   .links-wrapper {
     display: flex;
     gap: 10px;
+    flex-basis: 100%;
+    justify-content: ${({ justifyContent }): string => justifyContent ?? "flex-start"};
     @media (max-width: 350px) {
       flex-direction: column;
     }
   }
-  .links-header {
+  .links-title {
     font-size: 1rem;
-    font-weight: bold;
   }
 `;
 

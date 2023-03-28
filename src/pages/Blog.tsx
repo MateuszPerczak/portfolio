@@ -1,8 +1,9 @@
 import Header from "@components/header/Header";
+import LinksPanel from "@components/linksPanel/LinksPanel";
 import Page from "@components/page/Page";
 import PageCard from "@components/pageCard/PageCard";
 import TextWrapper from "@components/textWrapper/TextWrapper";
-import { ReactComponent as Bullhorn } from "@icons/bullhorn.svg";
+import { ReactComponent as Link } from "@icons/link.svg";
 import type { FC } from "react";
 
 const Blog: FC = (): JSX.Element => {
@@ -10,14 +11,13 @@ const Blog: FC = (): JSX.Element => {
     <Page>
       <PageCard flexDirection="column">
         <Header>
-          <Bullhorn />
           <span>Blog</span>
         </Header>
         <TextWrapper>
           <span className="description bold">Just a basic summary of all events!</span>
         </TextWrapper>
       </PageCard>
-      <PageCard>
+      <PageCard flexDirection="column">
         <TextWrapper>
           <span className="title">Updated sounder code!</span>
           <span className="description bold">
@@ -28,6 +28,15 @@ const Blog: FC = (): JSX.Element => {
             Estimated time of completion: <span className="bold">Some day :D</span>
           </span>
         </TextWrapper>
+        <LinksPanel
+          links={[
+            {
+              icon: Link,
+              title: "See more",
+              url: "https://github.com/MateuszPerczak",
+            },
+          ]}
+        />
       </PageCard>
     </Page>
   );

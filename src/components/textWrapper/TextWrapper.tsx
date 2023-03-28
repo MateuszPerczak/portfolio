@@ -10,6 +10,9 @@ const TextWrapper = styled.p<TextWrapperProps>`
     return `${gap ?? 0}px`;
   }};
   .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 1.2rem;
     font-weight: bold;
   }
