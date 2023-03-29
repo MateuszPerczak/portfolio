@@ -1,7 +1,10 @@
 import Header from "@components/header/Header";
+import LinksPanel from "@components/linksPanel/LinksPanel";
 import Page from "@components/page/Page";
 import PageCard from "@components/pageCard/PageCard";
 import TextWrapper from "@components/textWrapper/TextWrapper";
+import { ReactComponent as Download } from "@icons/download.svg";
+import { ReactComponent as Link } from "@icons/link.svg";
 import type { FC } from "react";
 
 const Dev: FC = (): JSX.Element => {
@@ -15,6 +18,28 @@ const Dev: FC = (): JSX.Element => {
             There will be more projects in the future 😋
           </span>
         </TextWrapper>
+      </PageCard>
+      <PageCard flexDirection="column">
+        <TextWrapper>
+          <span className="title">Sounder 5</span>
+          <span className="description bold">
+            Sounder 5 is a music player written in python
+          </span>
+        </TextWrapper>
+        <LinksPanel
+          links={[
+            {
+              icon: Link,
+              title: "See more",
+              url: "",
+            },
+            {
+              icon: Download,
+              title: "Download",
+              url: "",
+            },
+          ]}
+        />
       </PageCard>
     </Page>
   );
