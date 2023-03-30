@@ -20,9 +20,11 @@ const StyledFooter = styled.footer`
     }
   }
 
-  .title {
+  .title-link {
     font-size: 1.2rem;
     font-weight: bold;
+    color: ${({ theme: { color } }): string => color};
+    text-decoration: none;
   }
 
   .text-wrapper {

@@ -8,13 +8,20 @@ const Footer: FC = (): JSX.Element => {
   return (
     <StyledFooter>
       <p className="footer-wrapper">
-        <span className="title">Portfolio</span>
+        <a
+          className="title-link"
+          href="https://github.com/MateuszPerczak/portfolio"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          Portfolio
+        </a>
         <span className="text-wrapper">
           {smallText.map((text, index, textArray) => (
             <>
               <span key={`small-text-${index}`}>{text}</span>
               {textArray.at(-1) !== text && (
-                <span key={`small-text-seperator${index}`}>|</span>
+                <span key={`small-text-separator${index}`}>|</span>
               )}
             </>
           ))}
