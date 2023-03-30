@@ -13,5 +13,5 @@ export const transition: Variants = {
       restDelta: 0.01,
     },
   },
-  exit: { opacity: 0 },
+  exit: { opacity: 0, transition: { duration: 0.1 } },
 };
