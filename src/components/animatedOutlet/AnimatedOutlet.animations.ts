@@ -7,4 +7,9 @@ export const transition: Variants = {
       delayChildren: 0.2,
     },
   },
+  exit: {
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
 };

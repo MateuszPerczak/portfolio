@@ -17,7 +17,8 @@ const StyledLinks = styled.div<Pick<LinksPanelProps, "justifyContent">>`
     }
   }
   .links-title {
-    font-size: 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
   }
 `;
 

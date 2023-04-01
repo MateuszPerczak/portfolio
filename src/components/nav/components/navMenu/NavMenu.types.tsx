@@ -1,5 +1,5 @@
 import type { MotionProps } from "framer-motion";
-import type { HTMLAttributes, PropsWithChildren } from "react";
+import type { HTMLAttributes, PropsWithChildren, RefAttributes } from "react";
 
 export type NavMenuProps = PropsWithChildren<{
   isOpen: boolean;
@@ -7,4 +7,4 @@ export type NavMenuProps = PropsWithChildren<{
 }> &
   HTMLAttributes<HTMLDivElement> &
   MotionProps &
-  React.RefAttributes<HTMLDivElement>;
+  RefAttributes<HTMLDivElement>;

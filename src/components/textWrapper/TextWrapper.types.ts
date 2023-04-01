@@ -1,3 +1,3 @@
-export type TextWrapperProps = {
+export interface TextWrapperProps {
   gap?: number;
-};
+}

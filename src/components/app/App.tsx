@@ -2,10 +2,10 @@ import AnimatedOutlet from "@components/animatedOutlet/AnimatedOutlet";
 import Footer from "@components/footer/Footer";
 import Loader from "@components/loader/Loader";
 import Nav from "@components/nav/Nav";
-import { FC, Suspense } from "react";
+import { Suspense } from "react";
 import { ScrollRestoration } from "react-router-dom";
 
-const App: FC = (): JSX.Element => {
+const App = (): JSX.Element => {
   return (
     <>
       <ScrollRestoration

@@ -1,13 +1,13 @@
 import type { FC } from "react";
 
-type Link = {
+interface Link {
   title: string;
   url: string;
   icon: FC;
-};
+}
 
-export type LinksPanelProps = {
+export interface LinksPanelProps {
   links: Link[];
   title?: string;
   justifyContent?: "center" | "flex-start" | "flex-end";
-};
+}

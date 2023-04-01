@@ -4,9 +4,8 @@ import Page from "@components/page/Page";
 import PageCard from "@components/pageCard/PageCard";
 import TextWrapper from "@components/textWrapper/TextWrapper";
 import { ReactComponent as Link } from "@icons/link.svg";
-import type { FC } from "react";
 
-const Blog: FC = (): JSX.Element => {
+const Blog = (): JSX.Element => {
   return (
     <Page>
       <PageCard flexDirection="column">

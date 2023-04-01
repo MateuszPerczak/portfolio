@@ -1,6 +1,5 @@
 import useMobile from "@hooks/useMobile";
 import { AnimatePresence } from "framer-motion";
-import type { FC } from "react";
 import { useState } from "react";
 import useMeasure from "react-use-measure";
 
@@ -8,7 +7,7 @@ import { NavHamburger, NavItem, NavLogo, NavMenu, NavMenuItem } from "./componen
 import { navItems } from "./Nav.items";
 import StyledNav, { StyledNavWrapper, StyledNavWrapperButtons } from "./Nav.styles";
 
-const Nav: FC = (): JSX.Element => {
+const Nav = (): JSX.Element => {
   const showNavMenu = useMobile();
   const [ref, { left }] = useMeasure({ debounce: 200 });
   const [isOpen, setIsOpen] = useState(false);

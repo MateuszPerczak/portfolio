@@ -5,9 +5,8 @@ import PageCard from "@components/pageCard/PageCard";
 import TextWrapper from "@components/textWrapper/TextWrapper";
 import { ReactComponent as Download } from "@icons/download.svg";
 import { ReactComponent as Link } from "@icons/link.svg";
-import type { FC } from "react";
 
-const Dev: FC = (): JSX.Element => {
+const Dev = (): JSX.Element => {
   return (
     <Page>
       <PageCard flexDirection="column">

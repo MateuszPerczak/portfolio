@@ -1,9 +1,8 @@
-import type { FC } from "react";
 import { memo } from "react";
 
 import StyledPageNotFound, { StyledExclamation } from "./PageNotFound.styles";
 
-const PageNotFound: FC = (): JSX.Element => (
+const PageNotFound = (): JSX.Element => (
   <StyledPageNotFound>
     <div className="not-found-message">
       <StyledExclamation />

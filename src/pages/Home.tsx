@@ -5,9 +5,8 @@ import PageCard from "@components/pageCard/PageCard";
 import TextWrapper from "@components/textWrapper/TextWrapper";
 import { ReactComponent as Github } from "@icons/github.svg";
 import { ReactComponent as LinkedIn } from "@icons/linkedin.svg";
-import type { FC } from "react";
 
-const Home: FC = (): JSX.Element => {
+const Home = (): JSX.Element => {
   return (
     <Page>
       <PageCard flexDirection="column">

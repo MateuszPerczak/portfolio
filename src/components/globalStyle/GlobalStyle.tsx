@@ -1,8 +1,7 @@
 import { css, Global, Theme, useTheme } from "@emotion/react";
-import type { FC } from "react";
 import { memo } from "react";
 
-const GlobalStyle: FC = (): JSX.Element => {
+const GlobalStyle = (): JSX.Element => {
   const { background, color, scrollbar, scrollbarActive }: Theme = useTheme();
 
   return (

@@ -1,14 +1,7 @@
-import type { FC } from "react";
-
 import StyledNavMenu from "./NavMenu.styles";
 import type { NavMenuProps } from "./NavMenu.types";
 
-const NavMenu: FC<NavMenuProps> = ({
-  isOpen,
-  offset,
-  children,
-  ...rest
-}): JSX.Element => {
+const NavMenu = ({ isOpen, offset, children, ...rest }: NavMenuProps): JSX.Element => {
   return (
     <StyledNavMenu
       animate={{

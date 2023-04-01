@@ -1,9 +1,9 @@
-import type { PropsWithChildren } from "react";
+export interface PageCardProps extends PageCardLayouts {
+  children: React.ReactNode;
+}
 
-export type PageCardProps = PropsWithChildren<PageCardLayouts>;
-
-export type PageCardLayouts = {
+export interface PageCardLayouts {
   flexDirection?: "column" | "row";
   alignItems?: "center" | "flex-start" | "flex-end";
   //   gap?: number;
-};
+}

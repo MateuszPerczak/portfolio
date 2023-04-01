@@ -1,9 +1,8 @@
-import type { FC } from "react";
 import { memo } from "react";
 
 import StyledFooter from "./Footer.styles";
 
-const Footer: FC = (): JSX.Element => {
+const Footer = (): JSX.Element => {
   const smallText = ["v7.0.0", "GPL-3.0", "2022 - 2023", "© Mateusz Perczak"];
   return (
     <StyledFooter>

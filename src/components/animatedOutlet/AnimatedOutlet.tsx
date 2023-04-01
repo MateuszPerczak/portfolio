@@ -1,11 +1,10 @@
 import { AnimatePresence } from "framer-motion";
-import type { FC } from "react";
 import { useLocation } from "react-router-dom";
 
 import { transition } from "./AnimatedOutlet.animations";
 import { OutletWrapper, StaticOutlet } from "./components";
 
-const AnimatedOutlet: FC = (): JSX.Element => {
+const AnimatedOutlet = (): JSX.Element => {
   const location = useLocation();
   return (
     <AnimatePresence mode="wait">
