@@ -18,11 +18,9 @@ const Footer = (): JSX.Element => {
         </a>
         <span className="text-wrapper">
           {smallText.map((text, index, textArray) => (
-            <Fragment key={`react-fragment-${index}`}>
-              <span key={`small-text-${index}`}>{text}</span>
-              {textArray.at(-1) !== text && (
-                <span key={`small-text-separator${index}`}>|</span>
-              )}
+            <Fragment key={`footer-text-${index}`}>
+              <span>{text}</span>
+              {textArray.at(-1) !== text && <span>|</span>}
             </Fragment>
           ))}
         </span>
