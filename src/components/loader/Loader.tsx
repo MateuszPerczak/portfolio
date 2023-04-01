@@ -6,9 +6,11 @@ import StyledLoader from "./Loader.styles";
 const Loader = (): JSX.Element => {
   return (
     <StyledLoader>
-      <span className="span-loader">
-        <Spinner />
-      </span>
+      <div className="loader-wrapper">
+        <span className="loader">
+          <Spinner />
+        </span>
+      </div>
     </StyledLoader>
   );
 };

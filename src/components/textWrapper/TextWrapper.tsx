@@ -9,6 +9,10 @@ const TextWrapper = styled.p<TextWrapperProps>`
   gap: ${({ gap }): string => {
     return `${gap ?? 0}px`;
   }};
+  .header {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
   .title {
     display: flex;
     align-items: center;

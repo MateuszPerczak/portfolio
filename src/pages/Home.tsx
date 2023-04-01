@@ -10,9 +10,7 @@ const Home = (): JSX.Element => {
   return (
     <Page>
       <PageCard flexDirection="column">
-        <Header>
-          Hi 👋, I&apos;m Mateusz. I am a self-taught Web & Desktop Developer.
-        </Header>
+        <Header>Hi 👋, I am Mateusz. I am a self-taught Web & Desktop Developer.</Header>
         <LinksPanel
           title="You can reach me via:"
           links={[

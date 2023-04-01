@@ -23,6 +23,8 @@ export const StyledNavWrapper = styled.div`
   max-width: 1000px;
   flex: 1 1 100%;
   padding: 0 20px;
+  border-left: 2px solid ${({ theme: { border } }): string => border};
+  border-right: 2px solid ${({ theme: { border } }): string => border};
 `;
 
 export const StyledNavWrapperButtons = styled.div`

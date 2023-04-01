@@ -4,7 +4,6 @@ const StyledFooter = styled.footer`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 100px;
   padding: 20px;
   border-top: 2px solid ${({ theme: { border } }): string => border};
   box-shadow: 0 0 5px ${({ theme: { shadow } }): string => shadow};
@@ -15,6 +14,9 @@ const StyledFooter = styled.footer`
     display: flex;
     flex-direction: column;
     flex: 0 1 1000px;
+    padding: 0px 20px;
+    border-left: 2px solid ${({ theme: { border } }): string => border};
+    border-right: 2px solid ${({ theme: { border } }): string => border};
     @media (max-width: 350px) {
       align-items: center;
     }
