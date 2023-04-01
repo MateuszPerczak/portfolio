@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 
-const Page = styled.section`
+const Page = styled.article`
   display: flex;
   flex-direction: column;
   flex: 1 0 100%;

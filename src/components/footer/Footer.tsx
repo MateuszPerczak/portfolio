@@ -1,4 +1,5 @@
 import { memo } from "react";
+import { Fragment } from "react";
 
 import StyledFooter from "./Footer.styles";
 
@@ -17,12 +18,12 @@ const Footer = (): JSX.Element => {
         </a>
         <span className="text-wrapper">
           {smallText.map((text, index, textArray) => (
-            <>
+            <Fragment key={`react-fragment-${index}`}>
               <span key={`small-text-${index}`}>{text}</span>
               {textArray.at(-1) !== text && (
                 <span key={`small-text-separator${index}`}>|</span>
               )}
-            </>
+            </Fragment>
           ))}
         </span>
       </p>

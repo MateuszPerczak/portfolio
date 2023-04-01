@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import type { PageCardLayouts } from "./PageCard.types";
 
-const StyledPageCard = styled(motion.div)<PageCardLayouts>`
+const StyledPageCard = styled(motion.section)<PageCardLayouts>`
   display: flex;
   flex-direction: ${({ flexDirection }): string => flexDirection ?? "row"};
   align-items: ${({ alignItems }): string => alignItems ?? "flex-start"};
