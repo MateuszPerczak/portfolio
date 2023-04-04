@@ -43,7 +43,7 @@ const GlobalStyle = (): JSX.Element => {
         }
         ::-webkit-scrollbar-thumb {
           background: ${scrollbar};
-          border-radius: 4px;
+          border-radius: 5px;
         }
         ::-webkit-scrollbar-thumb:hover {
           background: ${scrollbarActive};

@@ -21,12 +21,12 @@ const StyledPageNotFound = styled(motion.section)`
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
 `;
 
 export const StyledExclamation = styled(Exclamation)`
-  font-size: 2rem;
+  font-size: 3rem;
   color: ${({ theme: { warning } }): string => warning};
 `;
 

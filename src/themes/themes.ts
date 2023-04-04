@@ -37,7 +37,7 @@ const themes: Themes = {
     spinner: "#aaaaaa",
     footerTop: "#1a1a1a",
     footerBottom: "#0f0f0f",
-    link: "#00ccff", // #0cf  #00ffcc #7bfc01 #7d26cd
+    link: "#aaaaaa", // #0cf  #00ffcc #7bfc01 #7d26cd
     warning: "#f8c54e",
     // navButton: "#313131",
     // card: "#2c2c2c",

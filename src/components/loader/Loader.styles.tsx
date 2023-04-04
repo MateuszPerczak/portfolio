@@ -17,7 +17,7 @@ const StyledLoader = styled.div`
   .loader {
     color: ${({ theme: { spinner } }): string => spinner};
     line-height: 0;
-    font-size: 2rem;
+    font-size: 3rem;
     animation: spin 500ms linear infinite forwards;
     @keyframes spin {
       from {

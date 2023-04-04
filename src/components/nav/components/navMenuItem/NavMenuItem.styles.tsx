@@ -9,11 +9,15 @@ const StyledNavMenuItem = styled(NavLink)`
   padding: 10px;
   text-decoration: none;
   font-weight: bold;
-  transition: color 200ms;
+  border-radius: 5px;
+  transition: color 200ms, background-color 200ms;
   cursor: pointer;
   color: ${({ theme: { navItem } }): string => navItem};
   &.active {
     color: ${({ theme: { navItemActive } }): string => navItemActive};
+  }
+  &:hover {
+    background-color: ${({ theme: { border } }): string => border};
   }
 `;
 

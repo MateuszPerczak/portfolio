@@ -1,14 +1,12 @@
-import Header from "@components/header/Header";
 import LinksPanel from "@components/linksPanel/LinksPanel";
 import Page from "@components/page/Page";
-import PageCard from "@components/pageCard/PageCard";
 import TextWrapper from "@components/textWrapper/TextWrapper";
 import { ReactComponent as Link } from "@icons/link.svg";
 
 const Blog = (): JSX.Element => {
   return (
     <Page>
-      <PageCard flexDirection="column">
+      {/* <PageCard flexDirection="column">
         <Header>
           <span>Blog</span>
         </Header>
@@ -36,7 +34,7 @@ const Blog = (): JSX.Element => {
             },
           ]}
         />
-      </PageCard>
+      </PageCard> */}
     </Page>
   );
 };

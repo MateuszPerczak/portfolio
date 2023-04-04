@@ -1,15 +1,13 @@
-import Header from "@components/header/Header";
-import LinksPanel from "@components/linksPanel/LinksPanel";
+import AnimatedHeader from "@components/animatedHeader/AnimatedHeader";
 import Page from "@components/page/Page";
-import PageCard from "@components/pageCard/PageCard";
-import TextWrapper from "@components/textWrapper/TextWrapper";
 import { ReactComponent as Github } from "@icons/github.svg";
 import { ReactComponent as LinkedIn } from "@icons/linkedin.svg";
 
 const Home = (): JSX.Element => {
   return (
     <Page>
-      <PageCard flexDirection="column">
+      <AnimatedHeader title={["Hi, i am Mateusz", "a Web Developer"]} />
+      {/* <PageCard flexDirection="column">
         <Header>Hi 👋, I am Mateusz. I am a self-taught Web & Desktop Developer.</Header>
         <LinksPanel
           title="You can reach me via:"
@@ -46,7 +44,7 @@ const Home = (): JSX.Element => {
           <span className="description bold">This a test card</span>
           <span className="description">☠️</span>
         </TextWrapper>
-      </PageCard>
+      </PageCard> */}
     </Page>
   );
 };
