@@ -6,8 +6,9 @@ export const animation: Variants = {
     y: 0,
     opacity: 1,
     transition: {
-      ease: "easeInOut",
-      duration: 0.3,
+      type: "tween",
+      duration: 0.6,
+      ease: [0.12, 0.23, 0.5, 1],
     },
   },
 };
@@ -15,7 +16,7 @@ export const animation: Variants = {
 export const transition: Variants = {
   onscreen: {
     transition: {
-      staggerChildren: 0.2,
+      staggerChildren: 0.1,
       delayChildren: 0.2,
     },
   },
