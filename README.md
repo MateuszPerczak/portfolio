@@ -13,7 +13,6 @@
 - Emotion
 - Framer-motion
 - Vite
-- React-use-system-theme
 - React-use-measure
 - React-router
 - RxJS
