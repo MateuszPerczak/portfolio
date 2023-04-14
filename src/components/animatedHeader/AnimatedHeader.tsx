@@ -1,8 +1,11 @@
 import { animation, transition } from "./AnimatedHeader.animations";
-import StyledAnimatedHeader, { StyledAnimatedTitle } from "./AnimatedHeader.styles";
+import StyledAnimatedHeader, {
+  StyledAnimatedDescription,
+  StyledAnimatedTitle,
+} from "./AnimatedHeader.styles";
 import type { AnimatedHeaderProps } from "./AnimatedHeader.types";
 
-const AnimatedHeader = ({ title }: AnimatedHeaderProps): JSX.Element => {
+const AnimatedHeader = ({ title, description }: AnimatedHeaderProps): JSX.Element => {
   return (
     <StyledAnimatedHeader
       variants={transition}
@@ -15,6 +18,9 @@ const AnimatedHeader = ({ title }: AnimatedHeaderProps): JSX.Element => {
           {title}
         </StyledAnimatedTitle>
       ))}
+      <StyledAnimatedDescription variants={animation}>
+        {description}
+      </StyledAnimatedDescription>
     </StyledAnimatedHeader>
   );
 };

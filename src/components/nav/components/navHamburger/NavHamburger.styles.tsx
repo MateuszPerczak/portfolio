@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 
-const StyledNavHamburger = styled(motion.span)`
+const StyledNavHamburger = styled(motion.div)`
   display: grid;
   place-items: center;
   padding: 10px;
@@ -11,6 +11,10 @@ const StyledNavHamburger = styled(motion.span)`
   color: ${({ theme: { navItem } }): string => navItem};
   &:hover {
     background-color: ${({ theme: { border } }): string => border};
+  }
+  .hamburger-icon-wrapper {
+    display: grid;
+    place-items: center;
   }
 `;
 

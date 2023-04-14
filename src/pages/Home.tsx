@@ -1,4 +1,5 @@
 import AnimatedHeader from "@components/animatedHeader/AnimatedHeader";
+import AnimatedQuote from "@components/animatedQuote/AnimatedQuote";
 import Page from "@components/page/Page";
 import { ReactComponent as Github } from "@icons/github.svg";
 import { ReactComponent as LinkedIn } from "@icons/linkedin.svg";
@@ -6,7 +7,13 @@ import { ReactComponent as LinkedIn } from "@icons/linkedin.svg";
 const Home = (): JSX.Element => {
   return (
     <Page>
-      <AnimatedHeader title={["Hi, i am Mateusz", "a Web Developer"]} />
+      <AnimatedHeader
+        title={["Hi, i am Mateusz", "a Web Developer"]}
+        description="I'am also a desktop dev 😊"
+      />
+
+      <AnimatedQuote quote="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." />
+
       {/* <PageCard flexDirection="column">
         <Header>Hi 👋, I am Mateusz. I am a self-taught Web & Desktop Developer.</Header>
         <LinksPanel
