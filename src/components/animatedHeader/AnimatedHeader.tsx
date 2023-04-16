@@ -1,5 +1,10 @@
+import { ReactComponent as Down } from "@icons/down.svg";
+import { ReactComponent as Mouse } from "@icons/mouse.svg";
+import { motion } from "framer-motion";
+
 import { animation, transition } from "./AnimatedHeader.animations";
 import StyledAnimatedHeader, {
+  StyledAnimatedControls,
   StyledAnimatedDescription,
   StyledAnimatedTitle,
 } from "./AnimatedHeader.styles";
@@ -21,6 +26,21 @@ const AnimatedHeader = ({ title, description }: AnimatedHeaderProps): JSX.Elemen
       <StyledAnimatedDescription variants={animation}>
         {description}
       </StyledAnimatedDescription>
+      <StyledAnimatedControls variants={animation}>
+        <Mouse />
+        <motion.span
+          initial={{ y: 0 }}
+          animate={{ y: [0, 5] }}
+          transition={{
+            repeat: Infinity,
+            repeatType: "reverse",
+            duration: 0.5,
+            ease: [0.12, 0.23, 0.5, 1],
+          }}
+        >
+          <Down />
+        </motion.span>
+      </StyledAnimatedControls>
     </StyledAnimatedHeader>
   );
 };

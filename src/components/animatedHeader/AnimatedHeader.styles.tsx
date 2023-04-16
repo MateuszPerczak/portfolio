@@ -5,7 +5,8 @@ const StyledAnimatedHeader = styled(motion.header)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: clamp(1rem, 9vw, 4rem);
+  justify-content: center;
+  flex: 1 0 100%;
 `;
 
 export const StyledAnimatedTitle = styled(motion.span)`
@@ -24,6 +25,15 @@ export const StyledAnimatedDescription = styled(motion.span)`
   font-size: clamp(0.2rem, 4vw, 1.7rem);
   font-weight: bold;
   padding-top: 10px;
+  color: ${({ theme: { link } }): string => link};
+`;
+
+export const StyledAnimatedControls = styled(motion.div)`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.3rem;
+  padding-top: 20px;
   color: ${({ theme: { link } }): string => link};
 `;
 
