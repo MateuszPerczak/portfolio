@@ -20,6 +20,7 @@ module.exports = {
     },
     ecmaVersion: "latest",
     sourceType: "module",
+    project: ["./tsconfig.json"],
   },
   plugins: ["react", "@typescript-eslint", "import", "simple-import-sort", "@emotion"],
   rules: {
@@ -29,8 +30,11 @@ module.exports = {
     "@emotion/pkg-renaming": "error",
     "@emotion/import-from-emotion": "error",
     "@typescript-eslint/explicit-function-return-type": "error",
-    "@typescript-eslint/consistent-type-exports": "error",
-    "@typescript-eslint/consistent-type-imports": "error",
+    "@typescript-eslint/consistent-type-exports": [
+      "error",
+      { fixMixedExportsWithInlineTypeSpecifier: true },
+    ],
+    "@typescript-eslint/consistent-type-imports": ["error", { fixStyle: "inline-type-imports" }],
     eqeqeq: "error",
   },
   settings: {

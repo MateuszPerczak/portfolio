@@ -7,6 +7,7 @@ import { ReactComponent as Link } from "@icons/link.svg";
 const Dev = (): JSX.Element => {
   return (
     <Page>
+      <h1>ZAMKNĄĆ MORDY</h1>
       {/* <PageCard flexDirection="column">
         <Header>Development</Header>
         <TextWrapper>

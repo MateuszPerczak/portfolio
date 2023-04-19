@@ -1,57 +1,55 @@
 import AnimatedHeader from "@components/animatedHeader/AnimatedHeader";
-import AnimatedQuote from "@components/animatedQuote/AnimatedQuote";
+import AnimatedText from "@components/animatedText/AnimatedText";
 import Page from "@components/page/Page";
 import { ReactComponent as Github } from "@icons/github.svg";
 import { ReactComponent as LinkedIn } from "@icons/linkedin.svg";
+
+import styled from "@emotion/styled";
+import { motion } from "framer-motion";
+
+const Project = styled.div`
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
+  .projects-wrapper {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 700px;
+  }
+  .project {
+    display: flex;
+    flex: 1 0 300px;
+    padding: 10px 20px;
+    background-color: #212121;
+    border-radius: 5px;
+    aspect-ratio: 3/2;
+    border: 1px solid ${({ theme: { border } }): string => border};
+  }
+`;
 
 const Home = (): JSX.Element => {
   return (
     <Page>
       <AnimatedHeader
         title={["Hi, i am Mateusz", "a Web Developer"]}
-        description="I'am also a desktop dev 😊"
+        description="I'm also a desktop dev 😊"
       />
-
-      <AnimatedQuote quote="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." />
-
-      {/* <PageCard flexDirection="column">
-        <Header>Hi 👋, I am Mateusz. I am a self-taught Web & Desktop Developer.</Header>
-        <LinksPanel
-          title="You can reach me via:"
-          links={[
-            {
-              icon: Github,
-              title: "My Github",
-              url: "https://github.com/MateuszPerczak",
-            },
-            {
-              icon: LinkedIn,
-              title: "My Linkedin",
-              url: "https://www.linkedin.com/in/mateuszperczak/",
-            },
-          ]}
-        />
-      </PageCard>
-      <PageCard alignItems="center">
-        <TextWrapper gap={5}>
-          <span className="title">About me</span>
-          <span className="description bold">
-            I&apos;m a software developer from Poland. I&apos;ve been programming since
-            2014. I have a passion for creating web applications/desktop apps that are
-            useful, easy to use, and beautiful.
-          </span>
-          <span className="description">
-            I&apos;m always looking forward to improving my skills.
-          </span>
-        </TextWrapper>
-      </PageCard>
-      <PageCard alignItems="center">
-        <TextWrapper gap={5}>
-          <span className="title">My skills</span>
-          <span className="description bold">This a test card</span>
-          <span className="description">☠️</span>
-        </TextWrapper>
-      </PageCard> */}
+      <Project>
+        <div className="projects-wrapper">
+          <div className="project">1</div>
+          <div className="project">2</div>
+          <div className="project">3</div>
+          <div className="project">4</div>
+          <div className="project">5</div>
+          <div className="project">6</div>
+          <div className="project">7</div>
+          <div className="project">8</div>
+        </div>
+      </Project>
     </Page>
   );
 };

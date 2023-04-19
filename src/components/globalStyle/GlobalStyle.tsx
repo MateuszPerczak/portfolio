@@ -1,4 +1,4 @@
-import { css, Global, Theme, useTheme } from "@emotion/react";
+import { css, Global, type Theme, useTheme } from "@emotion/react";
 import { memo } from "react";
 
 const GlobalStyle = (): JSX.Element => {
