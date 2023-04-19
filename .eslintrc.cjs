@@ -29,6 +29,8 @@ module.exports = {
     "@emotion/pkg-renaming": "error",
     "@emotion/import-from-emotion": "error",
     "@typescript-eslint/explicit-function-return-type": "error",
+    "@typescript-eslint/consistent-type-exports": "error",
+    "@typescript-eslint/consistent-type-imports": "error",
     eqeqeq: "error",
   },
   settings: {
