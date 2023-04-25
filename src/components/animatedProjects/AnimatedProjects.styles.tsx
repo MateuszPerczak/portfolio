@@ -17,7 +17,7 @@ const StyledAnimatedProjects = styled(motion.section)`
       grid-template-columns: auto;
     }
     grid-template-columns: auto auto;
-    gap: 10px;
+    gap: 20px;
     padding: 20px;
   }
 `;
