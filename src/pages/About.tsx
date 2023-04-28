@@ -9,10 +9,9 @@ const About: FC = (): JSX.Element => {
     <Page>
       <PageHeader>About me</PageHeader>
       <PageArticle>
-        Hi, I&apos;m Mateusz, a software developer from Poland. I&apos;ve been programing
+        Hi, I&apos;m Mateusz, a software developer from Poland. I&apos;ve been programming
         since 2014. I have a passion for creating web applications/desktop apps that are
-        useful, easy to use, and beautiful. I&apos;m always looking forward to improving
-        my skills.
+        useful, easy to use, and beautiful.
       </PageArticle>
       <Skills />
     </Page>
