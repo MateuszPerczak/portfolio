@@ -12,7 +12,7 @@ const Footer: FC<FooterProps> = ({ path }: FooterProps): JSX.Element => {
       <FooterContent>
         <FooterCopyright>
           <FontAwesomeIcon icon={faCopyright} />
-          <span>2022 By Mateusz Perczak</span>
+          <span>2024 By Mateusz Perczak</span>
         </FooterCopyright>
         <NextButton
           to="/portfolio"
