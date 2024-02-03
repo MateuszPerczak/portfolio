@@ -4,7 +4,7 @@ import { Fragment } from "react";
 import StyledFooter from "./Footer.styles";
 
 const Footer = (): JSX.Element => {
-  const smallText = ["v7.0.0", "GPL-3.0", "2022 - 2023", "© Mateusz Perczak"];
+  const smallText = ["v7.0.0", "GPL-3.0", "2022 - 2024", "© Mateusz Perczak"];
   return (
     <StyledFooter>
       <p className="footer-wrapper">
