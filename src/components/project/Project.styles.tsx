@@ -1,13 +1,13 @@
 import styled from "@emotion/styled";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
 import type { ProjectProps, ProjectType } from "./Project.types";
 
-const StyledProject = styled(motion.div)`
+const StyledProject = styled(m.div)`
   display: flex;
   flex-direction: column;
-  flex: 1 1 400px;
-  height: 300px;
+  flex: 1 1 350px;
+  height: 250px;
   border: 1px solid ${({ theme: { border } }): string => border};
   border-radius: 5px;
   box-shadow: 0 0 5px ${({ theme: { shadow } }): string => shadow};
@@ -79,11 +79,11 @@ export const StyledProjectLink = styled.a`
 
 export const StyledProjectType = styled.span<Pick<ProjectProps, "type">>`
   font-size: 0.8rem;
-  color: ${({ theme: { web, desktop, link }, type }): string =>
+  color: ${({ theme: { blue, green, link }, type }): string =>
     ((
       {
-        desktop: desktop,
-        web: web,
+        desktop: blue,
+        web: green,
       } as Record<ProjectType, string>
     )[type] ?? link)};
 `;

@@ -1,5 +1,5 @@
-import { ReactComponent as Github } from "@icons/github.svg";
-import { ReactComponent as Link } from "@icons/link.svg";
+import Github from "@icons/github.svg?react";
+import Link from "@icons/link.svg?react";
 import { memo } from "react";
 
 import { projectTypeMapper } from "./Project.mappers";

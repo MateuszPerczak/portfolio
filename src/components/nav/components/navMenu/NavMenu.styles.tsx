@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
-const StyledNavMenu = styled(motion.menu)`
+const StyledNavMenu = styled(m.menu)`
   position: fixed;
   top: 74px;
   display: flex;

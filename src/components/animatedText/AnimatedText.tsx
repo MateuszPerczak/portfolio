@@ -1,4 +1,4 @@
-import { motion, useAnimation, type Variants } from "framer-motion";
+import { m, useAnimation, type Variants } from "framer-motion";
 import { useEffect, useMemo } from "react";
 
 import StyledAnimatedText from "./AnimatedText.styles";
@@ -45,9 +45,9 @@ const AnimatedText = ({ text }: AnimatedTextProps): JSX.Element => {
     <StyledAnimatedText initial="initial" animate={controls} variants={textVariant}>
       <div className="text-wrapper">
         {spitedText.map((letter, index) => (
-          <motion.span key={`letter-${index}`} variants={letterVariant}>
+          <m.span key={`letter-${index}`} variants={letterVariant}>
             {letter === " " ? "\u00A0" : letter}
-          </motion.span>
+          </m.span>
         ))}
       </div>
     </StyledAnimatedText>

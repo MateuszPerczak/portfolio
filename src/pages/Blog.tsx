@@ -1,5 +1,5 @@
 import Page from "@components/page/Page";
-import { ReactComponent as Link } from "@icons/link.svg";
+// import Link from "@icons/link.svg?react";
 
 const Blog = (): JSX.Element => {
   return (

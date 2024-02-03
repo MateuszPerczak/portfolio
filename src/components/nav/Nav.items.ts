@@ -1,5 +1,5 @@
-import { ReactComponent as Blog } from "@icons/blog.svg";
-import { ReactComponent as Code } from "@icons/code.svg";
+import Blog from "@icons/blog.svg?react";
+import Code from "@icons/code.svg?react";
 
 import type { NavItemProps } from "./components/navItem/NavItem.types";
 

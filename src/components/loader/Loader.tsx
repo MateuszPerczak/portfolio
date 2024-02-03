@@ -1,4 +1,4 @@
-import { ReactComponent as Spinner } from "@icons/spinner.svg";
+import Spinner from "@icons/spinner.svg?react";
 import { memo } from "react";
 
 import StyledLoader from "./Loader.styles";

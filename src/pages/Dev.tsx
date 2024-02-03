@@ -93,6 +93,7 @@ const cardVariants: Variants = {
     transition: {
       type: "spring",
       duration: 0.3,
+      bounce: 0.3,
     },
   },
 };
@@ -108,8 +109,17 @@ const providerVariants: Variants = {
 const Dev = (): JSX.Element => {
   return (
     <Page>
-      {/* <h1>Projects</h1> */}
-      <AnimationProvider initial="initial" animate="animate" variants={providerVariants}>
+      <AnimationProvider
+        initial="initial"
+        animate="animate"
+        variants={providerVariants}
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: 20,
+          padding: 20,
+        }}
+      >
         {lol.map((props, index) => (
           <Project key={index} {...props} variants={cardVariants} />
         ))}

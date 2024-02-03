@@ -8,5 +8,6 @@ const Page = styled.article`
   overflow: hidden;
   border-left: 2px solid ${({ theme: { border } }): string => border};
   border-right: 2px solid ${({ theme: { border } }): string => border};
+  padding-bottom: 64px;
 `;
 export default Page;

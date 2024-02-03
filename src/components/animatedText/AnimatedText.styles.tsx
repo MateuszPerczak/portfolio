@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
-const StyledAnimatedText = styled(motion.div)`
+const StyledAnimatedText = styled(m.div)`
   display: grid;
   place-items: center;
   height: 400px;

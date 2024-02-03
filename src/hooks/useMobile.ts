@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
+import { debounceTime, fromEvent } from "rxjs";
 
 const useMobile = (): boolean => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-  const updateIsMobile = (): void => setIsMobile(window.innerWidth < 768);
-
   useEffect(() => {
-    window.addEventListener("resize", updateIsMobile);
-    return () => window.removeEventListener("resize", updateIsMobile);
+    const subscription = fromEvent(window, "resize")
+      .pipe(debounceTime(200))
+      .subscribe(() => setIsMobile(window.innerWidth < 768));
+    return () => subscription.unsubscribe();
   }, []);
 
   return isMobile;

@@ -1,13 +1,12 @@
-import { memo } from "react";
+import { m } from "framer-motion";
 
-import StyledAnimationProvider from "./AnimationProvider.styles";
 import type { AnimationProviderProps } from "./AnimationProvider.types";
 
 const AnimationProvider = ({
   children,
   ...rest
 }: AnimationProviderProps): JSX.Element => {
-  return <StyledAnimationProvider {...rest}>{children}</StyledAnimationProvider>;
+  return <m.div {...rest}>{children}</m.div>;
 };
 
-export default memo(AnimationProvider);
+export default AnimationProvider;

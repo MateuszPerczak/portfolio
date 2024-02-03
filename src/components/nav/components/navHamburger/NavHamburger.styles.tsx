@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 
-const StyledNavHamburger = styled(motion.button)`
+const StyledNavHamburger = styled(m.button)`
   all: unset;
   display: grid;
   place-items: center;
