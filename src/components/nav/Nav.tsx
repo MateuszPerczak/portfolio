@@ -44,7 +44,7 @@ const Nav = (): JSX.Element => {
         {showNavMenu && (
           <NavMenu isOpen={isOpen} onClick={closeNav} offset={left}>
             {navItems.map((navItem, index) => (
-              <NavMenuItem key={`nav-menu-item-${index}`} {...navItem} />
+              <NavMenuItem key={`nav-menu-item-${index}`} {...navItem} tabIndex={index} />
             ))}
           </NavMenu>
         )}

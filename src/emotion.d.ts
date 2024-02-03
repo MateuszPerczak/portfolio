@@ -18,5 +18,7 @@ declare module "@emotion/react" {
     footerBottom: Hex;
     link: Hex;
     warning: Hex;
+    desktop: Hex;
+    web: Hex;
   }
 }

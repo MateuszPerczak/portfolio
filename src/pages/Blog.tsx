@@ -1,6 +1,4 @@
-import LinksPanel from "@components/linksPanel/LinksPanel";
 import Page from "@components/page/Page";
-import TextWrapper from "@components/textWrapper/TextWrapper";
 import { ReactComponent as Link } from "@icons/link.svg";
 
 const Blog = (): JSX.Element => {

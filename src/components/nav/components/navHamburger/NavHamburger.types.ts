@@ -4,5 +4,5 @@ import type { DetailedHTMLProps, HTMLAttributes, RefAttributes } from "react";
 export type NavHamburgerProps = {
   isOpen: boolean;
 } & MotionProps &
-  DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> &
-  RefAttributes<HTMLDivElement>;
+  DetailedHTMLProps<HTMLAttributes<HTMLButtonElement>, HTMLButtonElement> &
+  RefAttributes<HTMLButtonElement>;

@@ -8,7 +8,7 @@ import type { NavHamburgerProps } from "./NavHamburger.types";
 
 const NavHamburger = ({ isOpen, ...rest }: NavHamburgerProps): JSX.Element => {
   return (
-    <StyledNavHamburger {...rest} whileTap="tap">
+    <StyledNavHamburger {...rest} whileTap="tap" type="button">
       <motion.div className="hamburger-icon-wrapper" variants={animation}>
         {isOpen ? <Close /> : <Menu />}
       </motion.div>

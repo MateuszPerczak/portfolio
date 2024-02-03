@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 
 const useMobile = (): boolean => {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  const updateIsMobile = (): void => setIsMobile(window.innerWidth < 768);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      setIsMobile(window.innerWidth < 768);
-    }
+    window.addEventListener("resize", updateIsMobile);
+    return () => window.removeEventListener("resize", updateIsMobile);
   }, []);
 
   return isMobile;

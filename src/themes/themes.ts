@@ -21,8 +21,10 @@ const themes: Themes = {
     spinner: "#797979",
     footerTop: "#e5e5e5",
     footerBottom: "#aaa",
-    link: "#00617A",
+    link: "#aaa",
     warning: "#f8c54e",
+    desktop: "#007a99",
+    web: "#00997a",
   },
   dark: {
     scrollbar: "#262626",
@@ -39,6 +41,8 @@ const themes: Themes = {
     footerBottom: "#0f0f0f",
     link: "#aaaaaa", // #0cf  #00ffcc #7bfc01 #7d26cd
     warning: "#f8c54e",
+    desktop: "#0cf",
+    web: "#00ffcc",
     // navButton: "#313131",
     // card: "#2c2c2c",
     // innerCard: "#232323",

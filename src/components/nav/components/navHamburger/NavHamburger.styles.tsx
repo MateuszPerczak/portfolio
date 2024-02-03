@@ -1,7 +1,8 @@
 import styled from "@emotion/styled";
 import { motion } from "framer-motion";
 
-const StyledNavHamburger = styled(motion.div)`
+const StyledNavHamburger = styled(motion.button)`
+  all: unset;
   display: grid;
   place-items: center;
   padding: 10px;
@@ -15,6 +16,9 @@ const StyledNavHamburger = styled(motion.div)`
   .hamburger-icon-wrapper {
     display: grid;
     place-items: center;
+  }
+  &:focus-visible {
+    outline: 1px solid ${({ theme: { color } }): string => color};
   }
 `;
 

@@ -21,7 +21,7 @@ const StyledPageNotFound = styled(motion.section)`
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 `;
 
