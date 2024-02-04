@@ -4,7 +4,7 @@ export const notFoundMessageVariants: Variants = {
   animate: {
     transition: {
       staggerChildren: 0.09,
-      delayChildren: 0.05,
+      delayChildren: 0.1,
     },
   },
 };

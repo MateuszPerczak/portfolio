@@ -5,7 +5,7 @@ const StyledNotFoundMessage = styled(m.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 400px;
+  max-width: clamp(300px, 80vw, 400px);
   gap: 10px;
 `;
 
