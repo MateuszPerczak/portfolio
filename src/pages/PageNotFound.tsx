@@ -1,18 +1,13 @@
 import NotFoundMessage from "@components/notFoundMessage/NotFoundMessage";
 import Page from "@components/page/Page";
+import StackPanel from "@components/stackPanel/StackPanel";
 
 const PageNotFound = (): JSX.Element => {
   return (
     <Page>
-      <div
-        style={{
-          flex: 1,
-          display: "grid",
-          placeItems: "center",
-        }}
-      >
+      <StackPanel display="grid" placeItems="center" flex="1">
         <NotFoundMessage />
-      </div>
+      </StackPanel>
     </Page>
   );
 };

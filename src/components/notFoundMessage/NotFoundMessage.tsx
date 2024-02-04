@@ -3,10 +3,10 @@ import { memo } from "react";
 import { useNavigate } from "react-router-dom";
 
 import StyledNotFoundMessage, {
+  StyledButton,
   StyledDescription,
   StyledExclamation,
   StyledLabel,
-  StyledLink,
 } from "./NotFoundMessage.styles";
 import {
   exclamationVariants,
@@ -17,7 +17,7 @@ import {
 const NotFoundMessage = (): JSX.Element => {
   const navigate = useNavigate();
 
-  const goBack = (): void => navigate("/", { replace: true });
+  const goHome = (): void => navigate("/", { replace: true });
 
   return (
     <StyledNotFoundMessage
@@ -33,9 +33,9 @@ const NotFoundMessage = (): JSX.Element => {
         It looks like the page you are looking for does not exist. Make sure the page url
         is correct. How about going back to the home page?
       </StyledDescription>
-      <StyledLink variants={textVariants} onClick={goBack}>
+      <StyledButton variants={textVariants} onClick={goHome} type="button">
         <span>Home page</span>
-      </StyledLink>
+      </StyledButton>
     </StyledNotFoundMessage>
   );
 };

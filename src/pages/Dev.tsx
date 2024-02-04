@@ -2,9 +2,10 @@ import AnimationProvider from "@components/animationProvider/AnimationProvider";
 import Page from "@components/page/Page";
 import Project from "@components/project/Project";
 import type { ProjectProps } from "@components/project/Project.types";
+import StackPanel from "@components/stackPanel/StackPanel";
 import { type Variants } from "framer-motion";
 
-const lol: ProjectProps[] = [
+const projects: ProjectProps[] = [
   {
     image: "./images/hardwareinfo.webp",
     name: "Hardwareinfo",
@@ -82,22 +83,6 @@ const lol: ProjectProps[] = [
   },
 ];
 
-const cardVariants: Variants = {
-  initial: {
-    opacity: 0,
-    y: 50,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: "spring",
-      duration: 0.3,
-      bounce: 0.3,
-    },
-  },
-};
-
 const providerVariants: Variants = {
   animate: {
     transition: {
@@ -109,53 +94,13 @@ const providerVariants: Variants = {
 const Dev = (): JSX.Element => {
   return (
     <Page>
-      <AnimationProvider
-        initial="initial"
-        animate="animate"
-        variants={providerVariants}
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          gap: 20,
-          padding: 20,
-        }}
-      >
-        {lol.map((props, index) => (
-          <Project key={index} {...props} variants={cardVariants} />
-        ))}
+      <AnimationProvider initial="initial" animate="animate" variants={providerVariants}>
+        <StackPanel display="flex" flexWrap="wrap" gap={20} padding={20}>
+          {projects.map((props, index) => (
+            <Project key={index} {...props} />
+          ))}
+        </StackPanel>
       </AnimationProvider>
-      {/* <PageCard flexDirection="column">
-      <DevCard></DevCard>
-        <Header>Development</Header>
-        <TextWrapper>
-          <span className="description bold">Here are some of my best projects</span>
-          <span className="description">
-            There will be more projects in the future 😋
-          </span>
-        </TextWrapper>
-      </PageCard>
-      <PageCard flexDirection="column">
-        <TextWrapper>
-          <span className="title">Sounder 5</span>
-          <span className="description bold">
-            Sounder 5 is a music player written in python
-          </span>
-        </TextWrapper>
-        <LinksPanel
-          links={[
-            {
-              icon: Link,
-              title: "See more",
-              url: "",
-            },
-            {
-              icon: Download,
-              title: "Download",
-              url: "",
-            },
-          ]}
-        />
-      </PageCard> */}
     </Page>
   );
 };

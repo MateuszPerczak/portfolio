@@ -5,10 +5,11 @@ import { memo } from "react";
 import { projectTypeMapper } from "./Project.mappers";
 import StyledProject, { StyledProjectLink, StyledProjectType } from "./Project.styles";
 import type { ProjectProps } from "./Project.types";
+import { projectVariants } from "./Project.variants";
 
 const Project = ({ image, name, type, links, ...rest }: ProjectProps): JSX.Element => {
   return (
-    <StyledProject {...rest}>
+    <StyledProject {...rest} variants={projectVariants}>
       <div className="project-image" style={{ backgroundImage: `url(${image})` }} />
       <div className="project-bottom">
         <div className="project-info">

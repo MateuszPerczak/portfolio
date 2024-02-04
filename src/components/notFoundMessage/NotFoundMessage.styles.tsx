@@ -26,7 +26,7 @@ export const StyledDescription = styled(m.span)`
   color: ${({ theme: { link } }): string => link};
 `;
 
-export const StyledLink = styled(m.button)`
+export const StyledButton = styled(m.button)`
   all: unset;
   display: inline-flex;
   align-items: center;
