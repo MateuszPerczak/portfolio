@@ -16,6 +16,7 @@ const StyledNavHamburger = styled(m.button)`
   .hamburger-icon-wrapper {
     display: grid;
     place-items: center;
+    pointer-events: none;
   }
   &:focus-visible {
     outline: 1px solid ${({ theme: { color } }): string => color};

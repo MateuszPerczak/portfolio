@@ -22,7 +22,8 @@
       "@components/*": ["./src/components/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@routes/*": ["./src/routes/*"],
-      "@icons/*": ["./src/icons/*"]
+      "@icons/*": ["./src/icons/*"],
+      "@pages/*": ["./src/pages/*"]
     }
   },
   "include": ["src", ".eslintrc.cjs", "vite.config.ts"],

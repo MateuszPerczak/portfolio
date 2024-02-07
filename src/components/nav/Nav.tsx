@@ -1,48 +1,58 @@
-import useMobile from "@hooks/useMobile";
+import { useMobile } from "@hooks/index";
 import { AnimatePresence } from "framer-motion";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { NavHamburger, NavItem, NavLogo, NavMenu, NavMenuItem } from "./components";
 import { navItems } from "./Nav.items";
-import StyledNav, { StyledNavWrapper, StyledNavWrapperButtons } from "./Nav.styles";
+import StyledNav from "./Nav.styles";
 
 const Nav = (): JSX.Element => {
-  const showNavMenu = useMobile();
-  const [isOpen, setIsOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+  const isMobile = useMobile();
 
-  const toggleOpen = (): void => {
-    setIsOpen((wasOpen) => !wasOpen);
-  };
+  const toggleMenu = (): void => setIsMenuOpen((wasMenuOpen): boolean => !wasMenuOpen);
+  const closeMenu = (): void => setIsMenuOpen(false);
 
-  const closeNav = (): void => {
-    if (isOpen) {
-      setIsOpen(false);
-    }
-  };
+  const menuRef = useRef<HTMLMenuElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent): void => {
+      !menuRef.current?.contains(event.target as Node) &&
+        !buttonRef.current?.contains(event.target as Node) &&
+        setIsMenuOpen(false);
+    };
+    document.addEventListener("click", handleClickOutside);
+
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, []);
 
   return (
     <>
-      <StyledNav onClick={closeNav}>
-        <StyledNavWrapper>
+      <StyledNav>
+        <div className="nav-content-wrapper">
           <NavLogo />
-          <StyledNavWrapperButtons>
-            {showNavMenu ? (
-              <NavHamburger onClick={toggleOpen} isOpen={isOpen} />
-            ) : (
-              <>
-                {navItems.map((navItem, index) => (
-                  <NavItem key={`nav-item-${index}`} {...navItem} />
-                ))}
-              </>
-            )}
-          </StyledNavWrapperButtons>
-        </StyledNavWrapper>
+          {isMobile ? (
+            <NavHamburger isMenuOpen={isMenuOpen} onClick={toggleMenu} ref={buttonRef} />
+          ) : (
+            <div className="nav-buttons-wrapper">
+              {navItems.map((navItem, index) => (
+                <NavItem {...navItem} key={`nav-item-${index}`} />
+              ))}
+            </div>
+          )}
+        </div>
       </StyledNav>
       <AnimatePresence mode="wait">
-        {showNavMenu && (
-          <NavMenu isOpen={isOpen} onClick={closeNav}>
-            {navItems.map((navItem, index) => (
-              <NavMenuItem key={`nav-menu-item-${index}`} {...navItem} tabIndex={index} />
+        {isMobile && (
+          <NavMenu isMenuOpen={isMenuOpen} ref={menuRef}>
+            {navItems.map((navMenuItem, index) => (
+              <NavMenuItem
+                key={`nav-menu-item-${index}`}
+                {...navMenuItem}
+                tabIndex={index}
+                onClick={closeMenu}
+              />
             ))}
           </NavMenu>
         )}

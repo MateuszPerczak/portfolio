@@ -1,10 +1,12 @@
-import { memo } from "react";
+import { memo, useMemo } from "react";
 import { Fragment } from "react";
 
 import StyledFooter from "./Footer.styles";
 
 const Footer = (): JSX.Element => {
-  const smallText = ["v7.0.0", "GPL-3.0", "2024", "© Mateusz Perczak"];
+  const year = useMemo(() => new Date().getFullYear(), []);
+
+  const footerText = ["v7.0.0", "GPL-3.0", year, "© Mateusz Perczak"];
 
   return (
     <StyledFooter>
@@ -18,10 +20,10 @@ const Footer = (): JSX.Element => {
           Portfolio
         </a>
         <span className="text-wrapper">
-          {smallText.map((text, index) => (
+          {footerText.map((text, index) => (
             <Fragment key={`footer-text-${index}`}>
               <span>{text}</span>
-              {smallText.length - 1 !== index && <span>|</span>}
+              {footerText.length - 1 !== index && <span>|</span>}
             </Fragment>
           ))}
         </span>

@@ -1,7 +1,7 @@
 import type { FC } from "react";
 
-export interface NavItemProps {
+export type NavItemProps = {
   name: string;
   to: string;
   icon: FC;
-}
+};
