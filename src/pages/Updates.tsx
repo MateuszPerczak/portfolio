@@ -1,7 +1,7 @@
 import Page from "@components/page/Page";
 // import Link from "@icons/link.svg?react";
 
-const Blog = (): JSX.Element => {
+const Updates = (): JSX.Element => {
   return (
     <Page>
       {/* <PageCard flexDirection="column">
@@ -37,4 +37,4 @@ const Blog = (): JSX.Element => {
   );
 };
 
-export default Blog;
+export default Updates;

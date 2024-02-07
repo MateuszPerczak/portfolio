@@ -15,12 +15,12 @@ export const StyledExclamation = styled(m.div)`
   line-height: 0;
 `;
 
-export const StyledLabel = styled(m.span)`
+export const StyledLabel = styled(m.p)`
   font-size: 1.5rem;
   font-weight: bold;
 `;
 
-export const StyledDescription = styled(m.span)`
+export const StyledDescription = styled(m.p)`
   font-size: 0.8rem;
   text-align: center;
   color: ${({ theme: { link } }): string => link};

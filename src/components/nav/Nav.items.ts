@@ -1,17 +1,23 @@
 import Blog from "@icons/blog.svg?react";
-import Code from "@icons/code.svg?react";
+import Bullhorn from "@icons/bullhorn.svg?react";
+import User from "@icons/user.svg?react";
 
 import type { NavItemProps } from "./components/navItem/NavItem.types";
 
 export const navItems: NavItemProps[] = [
   {
-    name: "Blog",
-    to: "/blog",
-    icon: Blog,
+    name: "About me",
+    to: "/aboutme",
+    icon: User,
   },
   {
-    name: "Development",
-    to: "/dev",
-    icon: Code,
+    name: "Updates",
+    to: "/updates",
+    icon: Bullhorn,
+  },
+  {
+    name: "Projects",
+    to: "/projects",
+    icon: Blog,
   },
 ];

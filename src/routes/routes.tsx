@@ -2,10 +2,10 @@ import App from "@components/app/App";
 import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
 
-const Home = lazy(() => import("../pages/Home"));
-const Blog = lazy(() => import("../pages/Blog"));
-const Dev = lazy(() => import("../pages/Dev"));
-const PageNotFound = lazy(() => import("../pages/PageNotFound"));
+const Home = lazy(() => import("../pages/Home/Home"));
+const Updates = lazy(() => import("../pages/Updates"));
+const Projects = lazy(() => import("../pages/Projects/Projects"));
+const PageNotFound = lazy(() => import("../pages/PageNotFound/PageNotFound"));
 
 // const Blog = lazy(() => {
 //   return new Promise((resolve) => {
@@ -29,12 +29,12 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/blog",
-        element: <Blog />,
+        path: "/updates",
+        element: <Updates />,
       },
       {
-        path: "/dev",
-        element: <Dev />,
+        path: "/projects",
+        element: <Projects />,
       },
 
       { path: "*", element: <PageNotFound /> },

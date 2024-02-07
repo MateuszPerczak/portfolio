@@ -5,9 +5,7 @@ const StyledNavMenu = styled(m.menu)`
   position: fixed;
   top: 74px;
   display: flex;
-  @media (max-width: 300px) {
-    flex-direction: column;
-  }
+  flex-direction: column;
   border-radius: 5px;
   z-index: 1;
   overflow: hidden;

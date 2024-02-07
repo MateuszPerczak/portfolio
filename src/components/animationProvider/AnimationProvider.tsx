@@ -2,11 +2,8 @@ import { m } from "framer-motion";
 
 import type { AnimationProviderProps } from "./AnimationProvider.types";
 
-const AnimationProvider = ({
-  children,
-  ...rest
-}: AnimationProviderProps): JSX.Element => {
-  return <m.div {...rest}>{children}</m.div>;
-};
+const AnimationProvider = (props: AnimationProviderProps): JSX.Element => (
+  <m.div {...props} />
+);
 
 export default AnimationProvider;

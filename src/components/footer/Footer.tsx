@@ -4,7 +4,8 @@ import { Fragment } from "react";
 import StyledFooter from "./Footer.styles";
 
 const Footer = (): JSX.Element => {
-  const smallText = ["v7.0.0", "GPL-3.0", "2022 - 2024", "© Mateusz Perczak"];
+  const smallText = ["v7.0.0", "GPL-3.0", "2024", "© Mateusz Perczak"];
+
   return (
     <StyledFooter>
       <p className="footer-wrapper">
@@ -17,10 +18,10 @@ const Footer = (): JSX.Element => {
           Portfolio
         </a>
         <span className="text-wrapper">
-          {smallText.map((text, index, textArray) => (
+          {smallText.map((text, index) => (
             <Fragment key={`footer-text-${index}`}>
               <span>{text}</span>
-              {textArray.at(-1) !== text && <span>|</span>}
+              {smallText.length - 1 !== index && <span>|</span>}
             </Fragment>
           ))}
         </span>

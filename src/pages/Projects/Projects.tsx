@@ -1,9 +1,9 @@
-import AnimationProvider from "@components/animationProvider/AnimationProvider";
 import Page from "@components/page/Page";
 import Project from "@components/project/Project";
 import type { ProjectProps } from "@components/project/Project.types";
-import StackPanel from "@components/stackPanel/StackPanel";
 import { type Variants } from "framer-motion";
+
+import StyledProjectsAnimationProvider from "./Projects.styles";
 
 const projects: ProjectProps[] = [
   {
@@ -91,18 +91,20 @@ const providerVariants: Variants = {
   },
 };
 
-const Dev = (): JSX.Element => {
+const Projects = (): JSX.Element => {
   return (
     <Page>
-      <AnimationProvider initial="initial" animate="animate" variants={providerVariants}>
-        <StackPanel display="flex" flexWrap="wrap" gap={20} padding={20}>
-          {projects.map((props, index) => (
-            <Project key={index} {...props} />
-          ))}
-        </StackPanel>
-      </AnimationProvider>
+      <StyledProjectsAnimationProvider
+        initial="initial"
+        animate="animate"
+        variants={providerVariants}
+      >
+        {projects.map((props, index) => (
+          <Project key={`project-${index}`} {...props} />
+        ))}
+      </StyledProjectsAnimationProvider>
     </Page>
   );
 };
 
-export default Dev;
+export default Projects;
