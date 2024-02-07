@@ -16,6 +16,9 @@ export default defineConfig({
       "@pages": resolve(__dirname, "./src/pages"),
     },
   },
+  build: {
+    target: "esnext",
+  },
   plugins: [
     react({
       jsxImportSource: "@emotion/react",

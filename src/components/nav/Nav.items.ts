@@ -20,4 +20,9 @@ export const navItems: NavItemProps[] = [
     to: "/projects",
     icon: Blog,
   },
+  {
+    name: "",
+    to: "/settings",
+    icon: Blog,
+  },
 ];

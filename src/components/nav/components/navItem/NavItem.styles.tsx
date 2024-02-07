@@ -5,8 +5,9 @@ const StyledNavItem = styled(NavLink)`
   display: flex;
   align-items: center;
   gap: 10px;
+  padding: 0 10px;
+  height: 36px;
   text-decoration: none;
-  padding: 8px 10px;
   border-radius: 5px;
   font-weight: bold;
   transition: color 200ms, background-color 200ms;

@@ -2,7 +2,7 @@ import { useMobile } from "@hooks/index";
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
-import { NavHamburger, NavItem, NavLogo, NavMenu, NavMenuItem } from "./components";
+import { NavHamburger, NavItem, NavLogo, NavMenu } from "./components";
 import { navItems } from "./Nav.items";
 import StyledNav from "./Nav.styles";
 
@@ -46,13 +46,8 @@ const Nav = (): JSX.Element => {
       <AnimatePresence mode="wait">
         {isMobile && (
           <NavMenu isMenuOpen={isMenuOpen} ref={menuRef}>
-            {navItems.map((navMenuItem, index) => (
-              <NavMenuItem
-                key={`nav-menu-item-${index}`}
-                {...navMenuItem}
-                tabIndex={index}
-                onClick={closeMenu}
-              />
+            {navItems.map((navItem, index) => (
+              <NavItem key={`nav-menu-item-${index}`} {...navItem} onClick={closeMenu} />
             ))}
           </NavMenu>
         )}
